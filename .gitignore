@@ -1,0 +1,64 @@
+# === Secretos y credenciales ===
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+credentials.*
+secrets.*
+secret.*
+tokens.*
+api_keys.*
+apikeys.*
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+coverage.xml
+.coverage
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# === Java / JVM ===
+*.class
+*.jar
+*.war
+*.ear
+target/
+out/
+.gradle/
+.idea/
+*.iml
+
+# === Editores y sistema ===
+.vscode/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+*.tmp
+*.temp
+*.log
+
+# === Archivos potencialmente sensibles de laboratorios ===
+*.pcap
+*.pcapng
+capturas_privadas/
+evidencia_privada/
+datos_sensibles/
