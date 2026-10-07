@@ -1,3 +1,19 @@
+# Estado actual — Cuarta entrega de v3
+
+Módulos 1–4 redactados y revisados documentalmente. Módulos 5–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 4 — Rutas absolutas, relativas y nombres con espacios](modulo-04-rutas-absolutas-relativas-espacios.md).
+
+Incluye interpretación de rutas, tilde, punto y doble punto, comillas y un recorrido guiado entre carpetas de práctica. La v2 y las lecciones anteriores se conservan intactas. La nueva instantánea Markdown para Drive reúne siete archivos y conserva las copias de entregas anteriores; no constituye sincronización automática.
+
+Siguiente paso editorial: Módulo 5, árbol de archivos, FHS y enlaces.
+
+---
+
+## Registro histórico — Tercera entrega y anteriores
+
+El contenido siguiente se conserva íntegro y refleja el estado de cada entrega pasada.
+
 # Estado actual — Tercera entrega de v3
 
 Módulos 1, 2 y 3 redactados y revisados documentalmente. Módulos 4–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
