@@ -1,3 +1,19 @@
+# Estado actual — Decimoséptima entrega de v3
+
+Módulos 1–17 redactados y revisados documentalmente. Módulos 18–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 17 — systemd, unidades y servicios; otros sistemas init en contexto](modulo-17-systemd-unidades-servicios-init.md).
+
+Esta entrega introduce systemd como gestor principal del currículo sin presentarlo como el único init existente; diferencia unidades y servicios, start/enable, stop/disable, reload/restart y daemon-reload, e incorpora consultas seguras de estado, unidades, targets y timers. SysV init, OpenRC y runit se conservan como contexto de compatibilidad y otros entornos.
+
+La v2 y los Módulos 1–16 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 18 — Logs y diagnóstico inicial con journalctl**.
+
+---
+
+## Registro histórico — Decimosexta entrega y anteriores
+
 # Estado actual — Decimosexta entrega de v3
 
 Módulos 1–16 redactados y revisados documentalmente. Módulos 17–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
