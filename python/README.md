@@ -1,13 +1,23 @@
 # Python
 
-Material de aprendizaje de Python desde nivel básico.
+Material de aprendizaje de Python desde nivel básico, organizado para documentar el progreso real del curso.
 
-## Organización prevista
+## Documento maestro
 
+La referencia principal del curso es **Manual Maestro de Python — Edición 2026 — Maqueta Final**, conservado en Google Drive dentro del proyecto de Python. GitHub se usa para versionar clases, ejercicios, evaluaciones, proyectos y correcciones.
+
+## Organización
+
+- `clases/`: apuntes y explicaciones de los temas ya estudiados.
 - `ejercicios/`: prácticas cortas por tema.
 - `examenes/`: mini evaluaciones y ejercicios de repaso.
 - `proyectos/`: proyectos completos cuando la base esté dominada.
+- `PROGRESO.md`: registro resumido de temas trabajados y próximos pasos.
 
 ## Regla de trabajo
 
-Cada ejercicio debe conservar una versión clara y funcional. Los errores corregidos pueden mantenerse en el historial de Git mediante commits para documentar el aprendizaje.
+1. No adelantar temas que todavía no se hayan visto en clase.
+2. Guardar cada ejercicio importante en GitHub.
+3. Conservar una versión clara y funcional del código.
+4. Registrar correcciones relevantes mediante commits para documentar el aprendizaje.
+5. No guardar contraseñas, tokens, claves ni datos sensibles.
