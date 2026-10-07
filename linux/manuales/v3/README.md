@@ -1,3 +1,19 @@
+# Estado actual — Vigesimosegunda entrega de v3
+
+Módulos 1–22 redactados y revisados documentalmente. Módulos 23–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 22 — vi/Vim: edición segura de archivos de texto](modulo-22-vi-vim-edicion-segura.md).
+
+Esta entrega introduce el modelo modal de vi/Vim, movimiento, inserción, guardado, salida, deshacer/rehacer, búsqueda, copia/pegado y borrado controlado. Las prácticas se limitan a archivos propios de `~/linux-lab`; `:q!`, `:w!`, `dd` y edición con privilegios se explican con advertencias explícitas antes de usarse.
+
+La v2 y los Módulos 1–21 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 23 — Primer script Bash y shebang**.
+
+---
+
+## Registro histórico — Vigesimoprimera entrega y anteriores
+
 # Estado actual — Vigesimoprimera entrega de v3
 
 Módulos 1–21 redactados y revisados documentalmente. Módulos 22–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
