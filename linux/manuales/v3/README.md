@@ -1,3 +1,11 @@
+# Revisión pedagógica — Módulo 20
+
+El Módulo 20 fue revisado para dejar explícito que el itinerario sí incluirá aprendizaje de técnicas ofensivas relacionadas con autenticación SSH, pero únicamente en laboratorios propios, CTF o sistemas expresamente autorizados. La revisión incorpora el enfoque mecanismo de fallo → evidencia → detección → mitigación y evita convertir el material en una receta contra sistemas reales sin permiso.
+
+El estado general permanece en Módulos 1–20 redactados. El siguiente módulo sigue siendo el **Módulo 21 — Firewall: nftables, UFW y firewalld según el entorno**.
+
+---
+
 # Estado actual — Vigésima entrega de v3
 
 Módulos 1–20 redactados y revisados documentalmente. Módulos 21–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
