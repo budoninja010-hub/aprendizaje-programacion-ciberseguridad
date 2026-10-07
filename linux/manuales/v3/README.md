@@ -1,3 +1,19 @@
+# Estado actual — Decimocuarta entrega de v3
+
+Módulos 1–14 redactados y revisados documentalmente. Módulos 15–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 14 — jobs, fg, bg, señales y kill](modulo-14-jobs-fg-bg-senales-kill.md).
+
+Esta entrega introduce control de jobs con `jobs`, `fg`, `bg`, suspensión con `Ctrl+Z`, interrupción con `Ctrl+C`, señales y terminación controlada mediante `kill -TERM` sobre procesos `sleep` propios. SIGKILL se explica como último recurso y no se practica como hábito.
+
+La v2 y los Módulos 1–13 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 15 — Paquetes, repositorios y actualizaciones**.
+
+---
+
+## Registro histórico — Decimotercera entrega y anteriores
+
 # Estado actual — Decimotercera entrega de v3
 
 Módulos 1–13 redactados y revisados documentalmente. Módulos 14–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
