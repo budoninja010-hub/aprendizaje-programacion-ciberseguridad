@@ -1,3 +1,19 @@
+# Estado actual — Vigesimocuarta entrega de v3
+
+Módulos 1–24 redactados y revisados documentalmente. Módulos 25–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 24 — Variables, entrada, argumentos, expansiones y quoting en Bash](modulo-24-variables-entrada-argumentos-quoting.md).
+
+Esta entrega introduce variables, asignación, expansión, comillas simples/dobles, `read -r`, parámetros posicionales, `$#`, `"$@"`, `"$*"`, `$?`, sustitución de comandos y valores predeterminados. Se aclara que una expansión sin comillas provoca principalmente word splitting y globbing, no una reinterpretación automática como nueva sintaxis shell.
+
+La v2 y los Módulos 1–23 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 25 — Códigos de salida y composición con && y ||**.
+
+---
+
+## Registro histórico — Vigesimotercera entrega y anteriores
+
 # Estado actual — Vigesimotercera entrega de v3
 
 Módulos 1–23 redactados y revisados documentalmente. Módulos 24–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
