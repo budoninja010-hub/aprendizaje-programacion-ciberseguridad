@@ -1,3 +1,19 @@
+# Estado actual — Decimoctava entrega de v3
+
+Módulos 1–18 redactados y revisados documentalmente. Módulos 19–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 18 — Logs y diagnóstico inicial con journalctl](modulo-18-logs-journalctl-diagnostico.md).
+
+Esta entrega introduce logs, systemd-journald y journalctl; filtros por arranque, unidad, prioridad y tiempo; seguimiento con `-f`; diferencias entre journal y archivos tradicionales; persistencia dependiente de configuración; privacidad de logs; diagnóstico antes de reiniciar; y una introducción conceptual a auditd.
+
+La v2 y los Módulos 1–17 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 19 — Redes básicas: IP, DNS, rutas, ip y ss**.
+
+---
+
+## Registro histórico — Decimoséptima entrega y anteriores
+
 # Estado actual — Decimoséptima entrega de v3
 
 Módulos 1–17 redactados y revisados documentalmente. Módulos 18–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
