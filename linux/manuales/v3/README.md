@@ -1,3 +1,19 @@
+# Estado actual — Novena entrega de v3
+
+Módulos 1–9 redactados y revisados documentalmente. Módulos 10–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 9 — Tuberías (pipes) y composición de comandos](modulo-09-pipes-composicion-comandos.md).
+
+Esta entrega introduce `|` como conexión entre stdout e stdin, diferencia pipes de redirecciones, explica por qué stderr no entra por defecto en la tubería normal y añade una regla explícita de no canalizar código descargado o desconocido directamente a intérpretes.
+
+La v2 y los Módulos 1–8 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 10 — grep, find y locate; búsqueda de texto y archivos**.
+
+---
+
+## Registro histórico — Octava entrega y anteriores
+
 # Estado actual — Octava entrega de v3
 
 Módulos 1–8 redactados y revisados documentalmente. Módulos 9–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
