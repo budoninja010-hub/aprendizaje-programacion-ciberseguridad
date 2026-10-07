@@ -27,7 +27,7 @@ Conocimientos previos:
 - procesos;
 - conceptos básicos de seguridad.
 
-**Alcance autorizado:** SSH se practica únicamente en equipos propios, máquinas virtuales, laboratorios, CTF autorizados o sistemas para los que tengas permiso expreso. No se usa para intentar entrar a equipos ajenos, probar contraseñas, evadir autenticación, ocultar identidad o desactivar controles de seguridad.
+**Alcance autorizado:** SSH se practica únicamente en equipos propios, máquinas virtuales, laboratorios, CTF autorizados o sistemas para los que tengas permiso expreso. El manual sí estudiará, en módulos avanzados, cómo pueden fallar los mecanismos de autenticación, qué configuraciones los debilitan, qué indicadores dejan esos intentos y cómo se detectan y corrigen. Las prácticas ofensivas se limitarán a entornos controlados y autorizados; no se usarán para intentar entrar a equipos ajenos ni para evadir controles en sistemas reales sin permiso.
 
 ## 2. Qué es SSH
 
@@ -494,18 +494,21 @@ No configuraremos ni recomendaremos habilitar root login en este módulo.
 
 Trabajaremos con cuentas normales y mínimo privilegio.
 
-## 30. Contraseñas y brute force
+## 30. Ataques contra autenticación: qué sí estudiaremos
 
-No practicaremos:
+Para aprender ciberseguridad de forma completa, el manual sí abordará más adelante, dentro de laboratorios propios o CTF autorizados:
 
-- adivinar contraseñas;
-- listas de contraseñas;
-- password spraying;
-- fuerza bruta;
-- automatización de intentos;
-- evasión de bloqueos.
+- qué es fuerza bruta y por qué funciona cuando existen credenciales débiles;
+- qué es password spraying a nivel conceptual;
+- qué configuraciones de SSH aumentan el riesgo;
+- qué registros e indicadores dejan los intentos de autenticación fallidos;
+- cómo detectar patrones anómalos;
+- cómo aplicar bloqueo, MFA, claves, políticas de contraseña y mínimo privilegio;
+- cómo revisar y corregir una configuración vulnerable.
 
-Eso no es necesario para aprender SSH y quedaría fuera del alcance autorizado de este manual.
+La finalidad será comprender **el mecanismo de fallo, la detección y la mitigación**.
+
+No se incluirán procedimientos operativos destinados a vulnerar sistemas reales sin autorización ni automatizaciones reutilizables contra terceros.
 
 ## 31. Ejecutar un comando remoto
 
@@ -772,7 +775,9 @@ Sin conectarte a sistemas externos:
 7. explica diferencia entre pública y privada;
 8. explica por qué la privada nunca va a GitHub;
 9. explica qué harías ante una host key cambiada;
-10. explica qué autorización necesitarías antes de usar SSH contra otro equipo.
+10. explica qué autorización necesitarías antes de usar SSH contra otro equipo;
+11. explica qué parte ofensiva de SSH estudiarías únicamente en un laboratorio autorizado;
+12. indica qué evidencia revisarías para detectar intentos anómalos de autenticación.
 
 ## 47. Mini evaluación
 
@@ -865,7 +870,11 @@ Se posponen:
 - ProxyJump;
 - certificados SSH;
 - bastion hosts;
-- hardening avanzado.
+- hardening avanzado;
+- análisis de ataques contra autenticación en laboratorio;
+- detección de fuerza bruta/password spraying en logs;
+- ejercicios ofensivos controlados en CTF o máquinas propias;
+- mitigaciones avanzadas como MFA, rate limiting y políticas de acceso.
 
 **Estado de la lección:** redactada y revisada documentalmente. Las prácticas son locales o requieren sistema propio/autorizado; no se realizan intentos contra terceros.
 
