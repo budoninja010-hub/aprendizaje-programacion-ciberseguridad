@@ -1,3 +1,19 @@
+# Estado actual — Tercera entrega de v3
+
+Módulos 1, 2 y 3 redactados y revisados documentalmente. Módulos 4–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 3 — Navegación inicial: pwd, ls y cd](modulo-03-navegacion-pwd-ls-cd.md).
+
+Esta entrega añade consultas de ubicación, listados y navegación, con explicación paso a paso, errores y evaluación. La v2 y las lecciones anteriores permanecen intactas. La nueva copia para Drive reúne los seis archivos actuales y conserva la copia de la segunda entrega; es una instantánea, no sincronización automática.
+
+Siguiente paso editorial: Módulo 4, rutas absolutas y relativas.
+
+---
+
+## Registro histórico — Segunda entrega
+
+Todo el contenido que sigue corresponde a la segunda entrega y se conserva íntegro. Sus pendientes y su recuento de archivos describen ese momento.
+
 # Manual Maestro de Linux y Shell Scripting — v3 · Estado actual
 
 ## Segunda entrega
