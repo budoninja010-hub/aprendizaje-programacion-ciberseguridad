@@ -1,3 +1,18 @@
+# Estado actual — Vigesimoquinta entrega de v3
+
+Módulos 1–25 redactados y revisados documentalmente. Módulos 26–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 25 — Códigos de salida y composición de órdenes en Bash](modulo-25-codigos-salida-composicion-ordenes.md).
+
+Esta entrega explica estados de salida, `$?`, `true`, `false`, `;`, `&&`, `||`, `exit`, los usos especiales de `126` y `127`, la relación con señales y el estado de tuberías. Se documenta expresamente por qué `A && B || C` no debe memorizarse como sustituto general de `if/else` y se pospone `pipefail` como política hasta el módulo de manejo de errores.
+
+La v2 y los Módulos 1–24 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 26 — Decisiones con `if`, `test`, `[ ]`, `[[ ]]`, `case` y aritmética**.
+
+---
+
+## Registro histórico — Vigesimocuarta entrega y anteriores
 # Estado actual — Vigesimocuarta entrega de v3
 
 Módulos 1–24 redactados y revisados documentalmente. Módulos 25–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
