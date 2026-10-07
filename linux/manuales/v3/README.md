@@ -1,3 +1,19 @@
+# Estado actual — Octava entrega de v3
+
+Módulos 1–8 redactados y revisados documentalmente. Módulos 9–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 8 — stdin, stdout, stderr y redirecciones](modulo-08-stdin-stdout-stderr-redirecciones.md).
+
+Esta entrega introduce los flujos estándar 0/1/2, las redirecciones `>`, `>>`, `2>` y `<`, el riesgo de truncamiento con `>`, la separación entre stdout y stderr y el error conceptual de anteponer `sudo` sin entender quién procesa la redirección.
+
+La v2 y los Módulos 1–7 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 9 — Tuberías (pipes) y composición de comandos**.
+
+---
+
+## Registro histórico — Séptima entrega y anteriores
+
 # Estado actual — Séptima entrega de v3
 
 Módulos 1–7 redactados y revisados documentalmente. Módulos 8–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
