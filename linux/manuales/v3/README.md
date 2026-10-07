@@ -1,3 +1,19 @@
+# Estado actual — Duodécima entrega de v3
+
+Módulos 1–12 redactados y revisados documentalmente. Módulos 13–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 12 — Permisos, propietarios, chmod, chown, umask, sudo y ACL básica](modulo-12-permisos-chmod-chown-umask-sudo-acl.md).
+
+Esta entrega desarrolla permisos tradicionales para archivos y directorios, `chmod` simbólico y numérico, `chown` como concepto administrativo, `umask` mediante máscara de bits, mínimo privilegio con `sudo` y una introducción de lectura a ACL. Las prácticas modifican únicamente objetos propios del laboratorio.
+
+La v2 y los Módulos 1–11 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 13 — Procesos; ps, top y htop opcional**.
+
+---
+
+## Registro histórico — Undécima entrega y anteriores
+
 # Estado actual — Undécima entrega de v3
 
 Módulos 1–11 redactados y revisados documentalmente. Módulos 12–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
