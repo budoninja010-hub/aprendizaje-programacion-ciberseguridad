@@ -1,3 +1,19 @@
+# Estado actual — Séptima entrega de v3
+
+Módulos 1–7 redactados y revisados documentalmente. Módulos 8–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 7 — Leer archivos con cat, less, head y tail](modulo-07-cat-less-head-tail.md).
+
+Esta entrega añade selección de herramientas de lectura según tamaño y objetivo, navegación con `less`, lectura parcial con `head` y `tail`, seguimiento básico con `tail -f`, y reglas de privacidad para no compartir archivos o logs completos sin revisión.
+
+La v2 y los Módulos 1–6 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 8 — stdin, stdout, stderr y redirecciones**.
+
+---
+
+## Registro histórico — Sexta entrega y anteriores
+
 # Estado actual — Sexta entrega de v3
 
 Módulos 1–6 redactados y revisados documentalmente. Módulos 7–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
