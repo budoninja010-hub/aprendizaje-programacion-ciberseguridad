@@ -1,3 +1,19 @@
+# Estado actual — Sexta entrega de v3
+
+Módulos 1–6 redactados y revisados documentalmente. Módulos 7–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 6 — Crear, copiar, mover, renombrar y borrar con seguridad](modulo-06-crear-copiar-mover-borrar-seguro.md).
+
+Esta entrega añade `touch`, `mkdir`, `cp`, `mv`, `rm` y `rmdir` con énfasis en verificación de ubicación, objetivo y alcance. `rm -rf` queda fuera de las prácticas rutinarias de principiante.
+
+La v2 y los Módulos 1–5 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 7 — Lectura de archivos con cat, less, head y tail**.
+
+---
+
+## Registro histórico — Quinta entrega y anteriores
+
 # Estado actual — Quinta entrega de v3
 
 Módulos 1–5 redactados y revisados documentalmente. Módulos 6–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
