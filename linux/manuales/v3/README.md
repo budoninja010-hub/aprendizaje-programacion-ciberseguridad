@@ -1,3 +1,19 @@
+# Estado actual — Vigesimoprimera entrega de v3
+
+Módulos 1–21 redactados y revisados documentalmente. Módulos 22–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 21 — Firewall: nftables, UFW y firewalld según el entorno](modulo-21-firewall-nftables-ufw-firewalld.md).
+
+Esta entrega introduce Netfilter, nftables, UFW y firewalld; separa servicio escuchando de exposición real; explica entrada/salida/reenvío, stateful filtering, zonas y runtime/permanent; y limita la práctica a identificación y consulta. Se documenta explícitamente el riesgo de cambiar firewalls en sistemas remotos y se prohíbe usar `nft flush ruleset` como práctica.
+
+La v2 y los Módulos 1–20 se conservan intactos, incluida la revisión pedagógica del Módulo 20.
+
+Siguiente paso editorial: **Módulo 22 — vi/Vim: edición segura de archivos de texto**.
+
+---
+
+## Registro histórico — Vigesimoprimera entrega y anteriores
+
 # Revisión pedagógica — Módulo 20
 
 El Módulo 20 fue revisado para dejar explícito que el itinerario sí incluirá aprendizaje de técnicas ofensivas relacionadas con autenticación SSH, pero únicamente en laboratorios propios, CTF o sistemas expresamente autorizados. La revisión incorpora el enfoque mecanismo de fallo → evidencia → detección → mitigación y evita convertir el material en una receta contra sistemas reales sin permiso.
