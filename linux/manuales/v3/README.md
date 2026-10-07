@@ -1,3 +1,19 @@
+# Estado actual — Decimonovena entrega de v3
+
+Módulos 1–19 redactados y revisados documentalmente. Módulos 20–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 19 — Redes básicas: IP, DNS, rutas, ip y ss](modulo-19-redes-ip-dns-rutas-ip-ss.md).
+
+Esta entrega introduce interfaces, IPv4/IPv6, prefijos, loopback, rutas y gateway, resolución de nombres, `ip`, `getent`, `resolvectl` opcional y `ss`. Las prácticas son únicamente locales y de lectura; no modifican interfaces, rutas o DNS y no incluyen escaneo de otras máquinas.
+
+La v2 y los Módulos 1–18 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 20 — SSH en sistemas propios o expresamente autorizados**.
+
+---
+
+## Registro histórico — Decimoctava entrega y anteriores
+
 # Estado actual — Decimoctava entrega de v3
 
 Módulos 1–18 redactados y revisados documentalmente. Módulos 19–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
