@@ -1,3 +1,19 @@
+# Estado actual — Quinta entrega de v3
+
+Módulos 1–5 redactados y revisados documentalmente. Módulos 6–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 5 — Árbol de archivos, FHS, /proc, /sys y enlaces](modulo-05-arbol-fhs-proc-sys-enlaces.md).
+
+Esta entrega añade el modelo del árbol con raíz `/`, FHS, las funciones generales de `/etc`, `/usr`, `/var`, `/tmp`, `/proc` y `/sys`, y una introducción segura a enlaces simbólicos. Las consultas del sistema son de lectura; cualquier modificación de `/proc`, `/sys` o configuración queda fuera de esta práctica.
+
+La v2 y los Módulos 1–4 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 6 — Crear, copiar, mover y renombrar; rm y rmdir con seguridad**.
+
+---
+
+## Registro histórico — Cuarta entrega y anteriores
+
 # Estado actual — Cuarta entrega de v3
 
 Módulos 1–4 redactados y revisados documentalmente. Módulos 5–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
