@@ -1,3 +1,18 @@
+# Estado actual — Vigesimoséptima entrega de v3
+
+Módulos 1–27 redactados y revisados documentalmente. Módulos 28–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 27 — Bucles, lectura de líneas y nombres de archivo seguros](modulo-27-bucles-lectura-lineas-nombres-seguros.md).
+
+Esta entrega introduce `for`, `while`, `until`, `break`, `continue`, recorrido seguro de `"$@"`, globbing para pathnames, lectura con `while IFS= read -r`, efectos de tuberías y subshells, contadores y tratamiento de nombres con espacios. Se prohíbe como patrón pedagógico `for archivo in $(ls)` y se documentan alternativas seguras.
+
+La v2 y los Módulos 1–26 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 28 — Funciones, parámetros y ámbito en Bash**.
+
+---
+
+## Registro histórico — Vigesimosexta entrega y anteriores
 # Estado actual — Vigesimosexta entrega de v3
 
 Módulos 1–26 redactados y revisados documentalmente. Módulos 27–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
