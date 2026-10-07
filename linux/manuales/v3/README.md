@@ -1,3 +1,19 @@
+# Estado actual — Decimosexta entrega de v3
+
+Módulos 1–16 redactados y revisados documentalmente. Módulos 17–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 16 — Diferencias entre Debian, Ubuntu, Fedora y RHEL](modulo-16-debian-ubuntu-fedora-rhel.md).
+
+Esta entrega compara familias DEB y RPM, ciclos de publicación y soporte, APT/dpkg frente a DNF/RPM, Ubuntu LTS/interim, Debian stable/testing/unstable, Fedora tradicional frente a variantes image-based, AppArmor y SELinux, y evita generalizar UFW u otros defaults entre distribuciones.
+
+La v2 y los Módulos 1–15 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 17 — systemd, unidades y servicios; otros sistemas init en contexto**.
+
+---
+
+## Registro histórico — Decimoquinta entrega y anteriores
+
 # Estado actual — Decimoquinta entrega de v3
 
 Módulos 1–15 redactados y revisados documentalmente. Módulos 16–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
