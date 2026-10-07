@@ -1,3 +1,19 @@
+# Estado actual — Undécima entrega de v3
+
+Módulos 1–11 redactados y revisados documentalmente. Módulos 12–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 11 — Usuarios y grupos: whoami, id, UID, GID e identidad](modulo-11-usuarios-grupos-identidad.md).
+
+Esta entrega introduce usuarios, UID, grupos, GID, grupo primario y grupos suplementarios, consultas con `whoami` e `id`, lectura limitada de `/etc/passwd` y `/etc/group`, y reglas de seguridad para no trabajar como root ni exponer archivos de autenticación.
+
+La v2 y los Módulos 1–10 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 12 — Permisos, propietarios, chmod, chown, umask, sudo y ACL básica**.
+
+---
+
+## Registro histórico — Décima entrega y anteriores
+
 # Estado actual — Décima entrega de v3
 
 Módulos 1–10 redactados y revisados documentalmente. Módulos 11–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
