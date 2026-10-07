@@ -1,3 +1,18 @@
+# Estado actual — Vigesimosexta entrega de v3
+
+Módulos 1–26 redactados y revisados documentalmente. Módulos 27–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 26 — Decisiones con `if`, `test`, `[ ]`, `[[ ]]`, `case` y aritmética](modulo-26-if-test-condicionales-case-aritmetica.md).
+
+Esta entrega conecta los códigos de salida del Módulo 25 con estructuras explícitas de decisión. Introduce `if`, `then`, `else`, `elif`, `fi`, `test`, `[ ]`, `[[ ]]`, pruebas de cadenas, números y archivos, `case`, patrones, `(( ... ))` y `$(( ... ))`. Se diferencia portabilidad POSIX de sintaxis específica de Bash y se explican errores de quoting, espacios y comparación de tipos.
+
+La v2 y los Módulos 1–25 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 27 — Bucles, lectura de líneas y nombres de archivo seguros**.
+
+---
+
+## Registro histórico — Vigesimoquinta entrega y anteriores
 # Estado actual — Vigesimoquinta entrega de v3
 
 Módulos 1–25 redactados y revisados documentalmente. Módulos 26–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
