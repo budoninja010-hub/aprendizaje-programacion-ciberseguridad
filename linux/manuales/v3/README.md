@@ -1,3 +1,19 @@
+# Estado actual — Vigésima entrega de v3
+
+Módulos 1–20 redactados y revisados documentalmente. Módulos 21–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 20 — SSH en sistemas propios o expresamente autorizados](modulo-20-ssh-sistemas-autorizados.md).
+
+Esta entrega introduce cliente/servidor SSH, host keys, fingerprints, known_hosts, configuración efectiva con `ssh -G`, autenticación y claves pública/privada. Las prácticas son locales o sobre infraestructura propia/autorizada; no se desactivan verificaciones de host ni se incluyen intentos de acceso no autorizados.
+
+La v2 y los Módulos 1–19 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 21 — Firewall: nftables, UFW y firewalld según el entorno**.
+
+---
+
+## Registro histórico — Decimonovena entrega y anteriores
+
 # Estado actual — Decimonovena entrega de v3
 
 Módulos 1–19 redactados y revisados documentalmente. Módulos 20–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
