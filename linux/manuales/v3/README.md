@@ -1,3 +1,19 @@
+# Estado actual — Décima entrega de v3
+
+Módulos 1–10 redactados y revisados documentalmente. Módulos 11–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 10 — grep, find y locate](modulo-10-grep-find-locate.md).
+
+Esta entrega distingue búsqueda de contenido con `grep`, búsqueda de rutas actuales con `find` y búsqueda indexada con `locate`. Añade `grep -i`, `grep -n`, `find -type`, `find -name`, uso correcto de patrones citados y la advertencia de que `locate` puede no estar instalado o tener un índice desactualizado.
+
+La v2 y los Módulos 1–9 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 11 — Usuarios y grupos; whoami, id y conceptos de identidad**.
+
+---
+
+## Registro histórico — Novena entrega y anteriores
+
 # Estado actual — Novena entrega de v3
 
 Módulos 1–9 redactados y revisados documentalmente. Módulos 10–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
