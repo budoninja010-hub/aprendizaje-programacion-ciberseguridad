@@ -1,3 +1,19 @@
+# Estado actual — Vigesimotercera entrega de v3
+
+Módulos 1–23 redactados y revisados documentalmente. Módulos 24–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 23 — Primer script Bash y shebang](modulo-23-primer-script-bash-shebang.md).
+
+Esta entrega introduce scripts Bash mínimos, shebang, diferencias entre `bash script.sh` y `./script.sh`, permiso de ejecución, `chmod u+x`, validación con `bash -n`, comentarios y errores básicos. Las prácticas se limitan a `~/linux-lab` y no usan privilegios.
+
+La v2 y los Módulos 1–22 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 24 — Variables, entrada, argumentos, expansiones y quoting en Bash**.
+
+---
+
+## Registro histórico — Vigesimosegunda entrega y anteriores
+
 # Estado actual — Vigesimosegunda entrega de v3
 
 Módulos 1–22 redactados y revisados documentalmente. Módulos 23–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
