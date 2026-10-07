@@ -1,3 +1,19 @@
+# Estado actual — Decimoquinta entrega de v3
+
+Módulos 1–15 redactados y revisados documentalmente. Módulos 16–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 15 — Paquetes, repositorios y actualizaciones](modulo-15-paquetes-repositorios-actualizaciones.md).
+
+Esta entrega introduce paquetes, repositorios, dependencias y metadatos; separa APT/dpkg de DNF/RPM; distingue actualización de índices de actualización de paquetes; y limita las prácticas a consultas. Instalaciones, eliminaciones, actualizaciones y repositorios de terceros se explican sin ejecutarse como práctica básica.
+
+La v2 y los Módulos 1–14 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 16 — Diferencias Debian, Ubuntu, Fedora y RHEL**.
+
+---
+
+## Registro histórico — Decimocuarta entrega y anteriores
+
 # Estado actual — Decimocuarta entrega de v3
 
 Módulos 1–14 redactados y revisados documentalmente. Módulos 15–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
