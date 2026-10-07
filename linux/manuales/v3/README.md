@@ -1,3 +1,19 @@
+# Estado actual — Decimotercera entrega de v3
+
+Módulos 1–13 redactados y revisados documentalmente. Módulos 14–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 13 — Procesos: ps, top y htop opcional](modulo-13-procesos-ps-top-htop.md).
+
+Esta entrega introduce procesos, PID, PPID, estados, observación con `ps` y `top`, métricas básicas de CPU/memoria y `htop` como herramienta opcional. No se terminan procesos ni se usan privilegios elevados; las señales se reservan para el Módulo 14.
+
+La v2 y los Módulos 1–12 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 14 — jobs, fg, bg, señales y kill**.
+
+---
+
+## Registro histórico — Duodécima entrega y anteriores
+
 # Estado actual — Duodécima entrega de v3
 
 Módulos 1–12 redactados y revisados documentalmente. Módulos 13–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
