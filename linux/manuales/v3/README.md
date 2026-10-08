@@ -1,3 +1,15 @@
+# Estado editorial vigente — 8 de octubre de 2026
+
+**Núcleo:** 35 módulos disponibles en `linux/manuales/v3/`, incluido [Módulo 23](modulo-23-primer-script-bash-shebang.md). **La Entrega 24 de Google Drive es una instantánea histórica**, no representa el núcleo vigente y omitía el Módulo 23 en su compilación.
+
+**Versión vigente del Módulo 20:** [modulo-20-ssh-sistemas-autorizados.md](modulo-20-ssh-sistemas-autorizados.md). Las versiones duplicadas en compilaciones históricas no deben estudiarse como alternativas equivalentes.
+
+**Auditoría Entrega 24:** correcciones de EOF, señales, lectura con IFS, preparación segura del laboratorio, cuentas NSS, rutas os-release, AppArmor, DNF5, SSH y vi/Vim aplicadas en commits separados el 8 de octubre. **Pendientes editoriales:** verificar todos los bloques de código y diagramas en el PDF, revisar otras mejoras opcionales y sincronizar la edición íntegra actualizada a Google Drive. La práctica real del estudiante sigue pendiente.
+
+**Regla de respaldo:** conservar versiones anteriores y generar una copia de cada edición corregida en Google Drive; no afirmar que está sincronizada hasta verificar su contenido.
+
+---
+
 # Estado actual — Auditoría transversal v3 completada
 
 Los **35 módulos** del núcleo están redactados. La auditoría documental transversal completa del 8 de octubre de 2026 está disponible en [03 — Auditoría transversal completa v3](03-auditoria-transversal-completa-v3-2026-10-08.md).
