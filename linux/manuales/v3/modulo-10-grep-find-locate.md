@@ -500,13 +500,17 @@ No borres una práctica anterior.
 
 ## 25. Crear datos de práctica
 
-Crea tres subdirectorios:
+Primero comprueba cada nombre en el laboratorio con `ls -ld documentos`, `ls -ld registros` y `ls -ld notas`. Si alguno ya existe, **detente y revisa su contenido**; no sobrescribas prácticas anteriores.
+
+Solo si los tres nombres están libres, crea los subdirectorios:
 
 ```bash
 mkdir documentos
 mkdir registros
 mkdir notas
 ```
+
+Verifica con `ls -ld documentos registros notas` antes de crear archivos.
 
 Crea archivos:
 
