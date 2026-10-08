@@ -77,3 +77,14 @@ Se abrieron y consultaron las páginas originales de: espejo público de iproute
 **Observación:** `findmnt --verify` comprueba parseabilidad/usabilidad de la tabla, pero no garantiza que un futuro montaje sea seguro ni que el arranque funcione en todos los entornos. Se mantiene fuera de la práctica `mount -a`.
 
 **Resultado:** sin contradicciones técnicas detectadas en las afirmaciones examinadas. Esta pasada no equivale a una auditoría completa de los módulos ni de todas sus fuentes. Próximos pendientes: versiones M16/M32, consistencia de referencias y revisión global.
+
+## Sexta pasada — versiones fechadas M16/M32 (8 de octubre de 2026)
+
+| Afirmación | Fuente original comprobada | Dictamen |
+|---|---|---|
+| M16: Debian 13 «trixie» estable | https://www.debian.org/releases/ ; anuncio 13.7: https://lists.debian.org/debian-announce/2026/msg00009.html | Confirmado; 13.7 publicada el 12-09-2026 |
+| M16: Ubuntu 26.04 LTS | https://documentation.ubuntu.com/release-notes/26.04/ | Confirmado; publicada el 23-04-2026 |
+| M16: RHEL 10 | https://access.redhat.com/articles/red-hat-enterprise-linux-release-dates | Confirmado; 10.2 figura publicada en mayo de 2026 |
+| M32: rsync 3.5.1 | https://rsync.samba.org/ ; https://lists.samba.org/archive/rsync/2026-September/033395.html | Confirmado como versión upstream publicada el 21-09-2026 |
+
+**Mejoras guardadas:** M16 incorpora fecha de corte y referencias a las versiones puntuales (commit `af9f1370769130f59496e855edf48929ac268cb3`); M32 incorpora el anuncio original y fecha de verificación (commit `4d68c2a792fee321a2f74332f4c901c0e0d55116`). Se preservaron explicaciones anteriores. **Pendiente:** revisión editorial global y validación de todos los enlaces.
