@@ -151,7 +151,7 @@ Aclarar que los códigos son específicos de la herramienta y que este es un exc
 
 **Fuente primaria:** documentación de DNF, comando `check-update`; RHEL 10 confirma el uso de `dnf check-update`.
 
-**Estado:** pendiente de corregir en M15 y referenciar desde M35/M25.
+**Estado:** ✅ corregido en M15 y M35. Commits: `b205310e64e7c6da9196c8e2beb72baa0ca00218`, `c295d3e4c9c03bcee56557634d3e22a86ff0ea75` y `bceb1b1206058e3d7924eb45056b9209e3e96cac`.
 
 ### A03 — M30: precisar `Persistent=true`
 
@@ -375,7 +375,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 | 12 | 🟢 Correcto | `umask` y ACL bien diferenciados |
 | 13 | 🟡 Mejora pedagógica | Definir load average para evitar confusión con CPU% |
 | 14 | 🟢 Correcto | Mantener SIGTERM antes de SIGKILL |
-| 15 | 🟠 Corrección importante | Documentar `dnf check-update` = 0/100/1 |
+| 15 | 🟢 Corrección A02 aplicada | `dnf check-update` documentado como 0/100/1 y enlazado conceptualmente con M25 |
 | 16 | 🟡 Correcto con mantenimiento temporal | Conservar fecha en versiones actuales |
 | 17 | 🟢 Correcto | Sin corrección técnica prioritaria |
 | 18 | 🟢 Correcto | Default RHEL 10 de journal volátil confirmado |
@@ -395,14 +395,14 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 | 32 | 🟢 Correcto | `rsync --delete` solo dry-run; restauración incluida |
 | 33 | 🟠 Corrección importante | Añadir revocación/rotación tras secreto expuesto |
 | 34 | 🟡 Correcto con mejora de fuentes | Upstream util-linux como referencia principal |
-| 35 | 🟠 Corrección importante transversal | Añadir semántica 0/100/1 de DNF y enlazar M15/M25 |
+| 35 | 🟢 Corrección A02 aplicada | Semántica 0/100/1 añadida y enlazada con M15/M25 |
 
 ## 11. Priorización de correcciones
 
 ### Prioridad 1 — antes de edición consolidada
 
 1. ~~M19 RFC1918.~~ ✅ Corregido.
-2. M15/M35 estado `100` de DNF.
+2. ~~M15/M35 estado `100` de DNF.~~ ✅ Corregido.
 3. M30 `Persistent=true`.
 4. M31 seguridad de tar no confiable.
 5. M33 secreto ya expuesto.
