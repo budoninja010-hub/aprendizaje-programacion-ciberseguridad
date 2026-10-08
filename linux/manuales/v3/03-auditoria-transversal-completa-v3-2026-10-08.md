@@ -167,7 +167,7 @@ También diferenciar apagado/inactividad de la compensación de timers de calend
 
 **Fuente primaria:** `systemd.timer(5)` del repositorio upstream de systemd.
 
-**Estado:** pendiente de matiz en M30.
+**Estado:** ✅ corregido en M30 mediante commit `791d6c9b509ed5a5e9598cb2f412261a96cd51c3`.
 
 ### A04 — M31: reforzar extracción de archivos `tar` no confiables
 
@@ -390,7 +390,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 | 27 | 🟡 Mejora de robustez | Aclarar broken symlink/nullglob |
 | 28 | 🟢 Correcto | Ámbito dinámico y `return` bien tratados |
 | 29 | 🟢 Correcto | `set -e`, `pipefail`, `mktemp` y ShellCheck bien delimitados |
-| 30 | 🟠 Corrección importante | Precisar `Persistent=true`; upstream Cronie/systemd |
+| 30 | 🟢 Corrección A03 aplicada | `Persistent=true` precisado con fuente upstream de systemd; mejora upstream de Cronie aún pendiente |
 | 31 | 🟠 Endurecimiento importante | Añadir límites de inspección y aislamiento de extracción |
 | 32 | 🟢 Correcto | `rsync --delete` solo dry-run; restauración incluida |
 | 33 | 🟠 Corrección importante | Añadir revocación/rotación tras secreto expuesto |
@@ -403,7 +403,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 
 1. ~~M19 RFC1918.~~ ✅ Corregido.
 2. ~~M15/M35 estado `100` de DNF.~~ ✅ Corregido.
-3. M30 `Persistent=true`.
+3. ~~M30 `Persistent=true`.~~ ✅ Corregido.
 4. M31 seguridad de tar no confiable.
 5. M33 secreto ya expuesto.
 
