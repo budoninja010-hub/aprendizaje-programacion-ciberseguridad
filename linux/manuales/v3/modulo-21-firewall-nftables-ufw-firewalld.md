@@ -928,8 +928,6 @@ Fuentes principales verificadas para esta edición:
   https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_firewalls_and_packet_filters/
 - RHEL 10 — Getting started with nftables:
   https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_firewalls_and_packet_filters/getting-started-with-nftables
-- nftables project documentation:
-  https://wiki.nftables.org/
 
 Se posponen:
 
