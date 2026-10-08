@@ -809,8 +809,16 @@ Estado: EN APRENDIZAJE / PRACTICADO
 
 Fuentes principales verificadas para esta edición:
 
+**Corte de versiones: 8 de octubre de 2026.** Debian 13 «trixie» es la rama estable (actualización puntual 13.7 del 12 de septiembre de 2026); Ubuntu 26.04 LTS se publicó el 23 de abril de 2026; Red Hat documenta la rama RHEL 10, incluida la versión 10.2 publicada en mayo de 2026. Estos datos deben revisarse antes de reutilizar la guía en otra fecha. La versión mayor, la actualización puntual y el estado de soporte no son equivalentes.
+
 - Debian Releases:
   https://www.debian.org/releases/
+- Debian — anuncio de 13.7:
+  https://lists.debian.org/debian-announce/2026/msg00009.html
+- Ubuntu 26.04 LTS — notas oficiales:
+  https://documentation.ubuntu.com/release-notes/26.04/
+- Red Hat — fechas de versiones RHEL:
+  https://access.redhat.com/articles/red-hat-enterprise-linux-release-dates
 - Debian Reference:
   https://www.debian.org/doc/manuals/debian-reference/
 - Ubuntu Releases:
