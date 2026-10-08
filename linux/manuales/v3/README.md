@@ -1,3 +1,18 @@
+# Estado actual — Trigésima segunda entrega de v3
+
+Módulos 1–32 redactados y revisados documentalmente. Módulos 33–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 32 — Copias, sincronización y restauración con `rsync`](modulo-32-rsync-copias-restauracion.md).
+
+Esta entrega introduce transferencia incremental, diferencia entre copia/sincronización/espejo/backup, semántica de la barra final, `-a`, `--dry-run`, `-i`, `--stats`, exclusiones, checksums, restauración de prueba y riesgos de `--delete`. La opción `--delete` se limita a simulación en el laboratorio y se explican las limitaciones de `-a` respecto a ACL, xattrs y hardlinks.
+
+La v2 y los Módulos 1–31 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 33 — Git y GitHub para scripts; enlace al itinerario específico de Git**.
+
+---
+
+## Registro histórico — Trigésima primera entrega y anteriores
 # Estado actual — Trigésima primera entrega de v3
 
 Módulos 1–31 redactados y revisados documentalmente. Módulos 32–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
