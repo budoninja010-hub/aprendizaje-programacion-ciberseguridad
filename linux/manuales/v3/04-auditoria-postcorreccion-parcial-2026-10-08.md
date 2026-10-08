@@ -61,3 +61,19 @@ Se abrieron y consultaron las páginas originales de: espejo público de iproute
 **Resultado provisional:** no se detectó contradicción técnica evidente en las afirmaciones examinadas. No se declara que cada enlace específico o cada versión se haya comprobado exhaustivamente. Las prácticas continúan siendo locales, de consulta y sin cambios de configuración.
 
 **Siguiente revisión:** contraste puntual de M30 y M34, más revisión de las afirmaciones de versión de M16 y M32.
+
+## Quinta pasada — contraste upstream de M30 y M34
+
+**Fecha:** 2026-10-08. Se consultó directamente `systemd.timer.xml` upstream y el manual `findmnt(8)` de util-linux (árbol upstream y copia man7).
+
+| Afirmación del manual | Referencia contrastada | Dictamen |
+|---|---|---|
+| M30 §37: `Persistent=true` guarda el momento de la última activación del servicio, recupera si hubo al menos un vencimiento de `OnCalendar=` mientras estuvo inactivo y puede estar sujeto a `RandomizedDelaySec=` | https://github.com/systemd/systemd/blob/main/man/systemd.timer.xml | Coincide con la documentación original |
+| M30 §37: durante suspensión/hibernación el reloj de tiempo real avanza y varios vencimientos de un mismo timer de calendario durante una suspensión continua producen una sola activación | Misma referencia `systemd.timer.xml` | Coincide con la documentación original; no confundir con apagado |
+| M30 §38: `AccuracySec=` tiene valor predeterminado de un minuto | Misma referencia | Coincide con la documentación original |
+| M34 §§44–48: `findmnt --verify --verbose --tab-file fstab-practica` permite comprobar una tabla alternativa | https://kernel.googlesource.com/pub/scm/utils/util-linux/util-linux/+/refs/heads/master/misc-utils/findmnt.8.adoc y https://man7.org/linux/man-pages/man8/findmnt.8.html | Combinación de opciones documentada upstream |
+| M34 §§45–50: la práctica usa directorios y tabla de usuario, no edita `/etc/fstab` ni monta dispositivos | Lectura del contenido del módulo M34 | Alcance pedagógico seguro en el texto; ejecución real no comprobada |
+
+**Observación:** `findmnt --verify` comprueba parseabilidad/usabilidad de la tabla, pero no garantiza que un futuro montaje sea seguro ni que el arranque funcione en todos los entornos. Se mantiene fuera de la práctica `mount -a`.
+
+**Resultado:** sin contradicciones técnicas detectadas en las afirmaciones examinadas. Esta pasada no equivale a una auditoría completa de los módulos ni de todas sus fuentes. Próximos pendientes: versiones M16/M32, consistencia de referencias y revisión global.
