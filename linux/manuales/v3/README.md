@@ -1,3 +1,18 @@
+# Estado actual — Trigésima entrega de v3
+
+Módulos 1–30 redactados y revisados documentalmente. Módulos 31–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 30 — Automatización con `cron` y temporizadores de systemd](modulo-30-cron-temporizadores-systemd.md).
+
+Esta entrega introduce programación segura de tareas con cron y systemd timers. Incluye los cinco campos de crontab, entorno reducido, regla DOM/DOW de Cronie, pruebas manuales previas, separación script/programador, unidades `.timer` y `.service`, `OnCalendar=`, temporizadores monotónicos, `Persistent=true`, `AccuracySec=`, `RandomizedDelaySec=` y prácticas de usuario sin privilegios.
+
+La v2 y los Módulos 1–29 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 31 — Archivos y compresión con `tar`, `gzip` y `xz`**.
+
+---
+
+## Registro histórico — Vigesimonovena entrega y anteriores
 # Estado actual — Vigesimonovena entrega de v3
 
 Módulos 1–29 redactados y revisados documentalmente. Módulos 30–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
