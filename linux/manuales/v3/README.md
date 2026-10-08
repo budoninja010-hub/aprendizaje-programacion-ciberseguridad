@@ -1,3 +1,18 @@
+# Estado actual — Núcleo v3 completo: 35 de 35 módulos
+
+Los **Módulos 1–35** del Manual Maestro de Linux y Shell Scripting — Edición 2026 v3 están redactados y revisados documentalmente. Las prácticas en el Linux del estudiante siguen pendientes de ejecutar, explicar y validar durante las clases.
+
+**Nueva lección:** [Módulo 35 — Defensa, actualizaciones, mínimo privilegio, auditoría y AIDE](modulo-35-defensa-actualizaciones-minimo-privilegio-aide.md).
+
+Esta entrega cierra el núcleo con mínimo privilegio, consulta segura de actualizaciones, revisión de servicios/logs/listeners locales, evidencia defensiva, línea base con SHA-256, detección y recuperación de cambios, y el modelo de integridad de AIDE. La práctica principal es local, reversible, no requiere `sudo` y no modifica servicios ni configuración del sistema.
+
+La v2 y los Módulos 1–34 se conservan intactos.
+
+**Siguiente fase editorial:** auditoría transversal completa de los Módulos 1–35, corrección de inconsistencias y referencias cruzadas, revisión de seguridad y progresión pedagógica, y preparación de una edición consolidada.
+
+---
+
+## Registro histórico — Trigésima cuarta entrega y anteriores
 # Estado actual — Trigésima cuarta entrega de v3
 
 Módulos 1–34 redactados y revisados documentalmente. Módulo 35 pendiente. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
