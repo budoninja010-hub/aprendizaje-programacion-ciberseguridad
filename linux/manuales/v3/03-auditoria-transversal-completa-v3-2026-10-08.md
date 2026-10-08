@@ -198,7 +198,7 @@ M33 correctamente enseña que `.gitignore` no afecta automáticamente archivos y
 
 **Fuente primaria:** GitHub Docs — *Removing sensitive data from a repository* y documentación de push protection.
 
-**Estado:** pendiente de añadir en M33.
+**Estado:** ✅ corregido en M33 mediante commit `4304b3d69c20bc872125d25c7d59b1000486c8e5`.
 
 ## 7. Hallazgos de prioridad MEDIA
 
@@ -393,7 +393,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 | 30 | 🟢 Corrección A03 aplicada | `Persistent=true` precisado con fuente upstream de systemd; mejora upstream de Cronie aún pendiente |
 | 31 | 🟢 Corrección A04 aplicada | Extracción no confiable endurecida: listar no certifica seguridad, aislamiento por archivo y directorio/padre controlados |
 | 32 | 🟢 Correcto | `rsync --delete` solo dry-run; restauración incluida |
-| 33 | 🟠 Corrección importante | Añadir revocación/rotación tras secreto expuesto |
+| 33 | 🟢 Corrección A05 aplicada | Añadido flujo revocar/rotar → retirar del código → evaluar saneamiento de historial, con advertencias de reescritura |
 | 34 | 🟡 Correcto con mejora de fuentes | Upstream util-linux como referencia principal |
 | 35 | 🟢 Corrección A02 aplicada | Semántica 0/100/1 añadida y enlazada con M15/M25 |
 
@@ -405,7 +405,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 2. ~~M15/M35 estado `100` de DNF.~~ ✅ Corregido.
 3. ~~M30 `Persistent=true`.~~ ✅ Corregido.
 4. ~~M31 seguridad de tar no confiable.~~ ✅ Corregido.
-5. M33 secreto ya expuesto.
+5. ~~M33 secreto ya expuesto.~~ ✅ Corregido.
 
 ### Prioridad 2 — robustez y trazabilidad
 
@@ -469,13 +469,13 @@ Una fortaleza clara es que Bash no empieza con `if`: primero enseña estados de 
 **Núcleo redactado:** 35/35.  
 **Revisión documental transversal:** completada.  
 **Errores críticos detectados:** 0.  
-**Correcciones importantes antes de consolidar:** 5 grupos principales.  
+**Correcciones importantes antes de consolidar:** 5 grupos principales identificados; ✅ los 5 ya fueron corregidos.  
 **Mejoras medias/editoriales:** pendientes.  
 **Validación práctica en el Linux del estudiante:** pendiente.
 
 ### Conclusión
 
-El manual ya es una base técnicamente fuerte y segura para continuar el proceso editorial, pero **todavía no debe congelarse como “edición final consolidada”**. Deben aplicarse primero las correcciones A01–A05 y después una segunda pasada de comprobación de los archivos modificados.
+El manual ya es una base técnicamente fuerte y segura para continuar el proceso editorial. Las correcciones A01–A05 ya fueron aplicadas. **Todavía no debe congelarse como “edición final consolidada”** hasta completar las mejoras de prioridad media, la homogeneización editorial y una auditoría post-corrección.
 
 ## 15. Siguiente acción recomendada
 
