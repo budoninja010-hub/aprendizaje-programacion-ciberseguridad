@@ -828,6 +828,9 @@ Para considerar este módulo **DOMINADO** deberás poder en más de una ocasión
 Fuentes principales:
 
 - Sitio oficial de rsync: https://rsync.samba.org/
+- Anuncio original de rsync 3.5.1, 21 de septiembre de 2026: https://lists.samba.org/archive/rsync/2026-September/033395.html
+
+**Fecha de verificación de la versión:** 8 de octubre de 2026. La página oficial publica 3.5.1 (21-09-2026). No confundir versión upstream con la disponible en repositorios de Debian, Ubuntu, Fedora o RHEL; comprobar siempre `rsync --version` y los avisos de seguridad de la distribución.
 - Manual oficial `rsync(1)`: https://rsync.samba.org/ftp/rsync/rsync.1
 
 Puntos verificados documentalmente:
