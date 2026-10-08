@@ -241,11 +241,11 @@ M13 evita diagnosticar por un único número, lo cual es correcto.
 
 **Mejora pedagógica aplicada:** el Módulo 13 ahora explica que, en Linux, la carga media incluye tareas en estado `R` y tareas en estado `D`, promediadas en 1, 5 y 15 minutos, y distingue explícitamente `load average` de `%CPU`. Commit: `3562d9cf291cb2e20f0b14a21f3fc2fe26c5509b`.
 
-### M05 — M25: reforzar que el significado numérico es específico de cada programa
+### M05 — M25: reforzar que el significado numérico es específico de cada programa ✅ CORREGIDO
 
 El módulo ya enseña correctamente `0` frente a no-cero, `126`, `127` y `128+N`.
 
-**Mejora:** en cualquier tabla `1–255`, escribir «estado no cero; significado concreto definido por el programa o por convenciones de la shell», no «error» como significado universal.
+**Mejora aplicada:** estados no cero explicados según el contrato de cada programa, con ejemplo de DNF y evaluación. Commit `7fcf2df780ff731fc63a0c93a46a4ae65e08d26b`.
 
 ### M06 — M34: validar fuentes upstream de util-linux
 
@@ -385,7 +385,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 | 22 | 🟢 Correcto | Sin corrección técnica prioritaria |
 | 23 | 🟢 Correcto | Mantener advertencia de PATH con `/usr/bin/env` |
 | 24 | 🟢 Correcto | Quoting y `"$@"` correctamente explicados |
-| 25 | 🟡 Precisión menor | Reforzar significado command-specific de no-cero |
+| 25 | 🟢 Mejora M05 aplicada | Estados no cero diferenciados de errores operativos |
 | 26 | 🟢 Correcto | `[ ]`, `[[ ]]`, patrones y aritmética correctos |
 | 27 | 🟡 Mejora de robustez | Aclarar broken symlink/nullglob |
 | 28 | 🟢 Correcto | Ámbito dinámico y `return` bien tratados |
@@ -412,7 +412,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 6. M27 broken symlink/nullglob.
 7. sustituir fuentes espejo por upstream en M19/M21/M30/M34/M35 cuando corresponda.
 8. ~~añadir definición breve de load average en M13.~~ ✅ Corregido.
-9. precisión textual de estados no-cero en M25.
+9. ~~precisión textual de estados no-cero en M25.~~ ✅ Corregido.
 
 ### Prioridad 3 — consolidación editorial
 
