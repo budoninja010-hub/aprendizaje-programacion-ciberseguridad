@@ -130,7 +130,7 @@ Este es uno de los puntos más fuertes de la v3.
 
 **Fuente primaria:** RFC 1918 — RFC Editor/IETF.
 
-**Estado:** pendiente de corregir en M19.
+**Estado:** ✅ corregido en M19 mediante commit `77dc30b51cf5c9c27a1fcb988c13d0207e2af9bc`.
 
 ### A02 — M15 y M35: documentar explícitamente el estado `100` de `dnf check-update`
 
@@ -379,7 +379,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 | 16 | 🟡 Correcto con mantenimiento temporal | Conservar fecha en versiones actuales |
 | 17 | 🟢 Correcto | Sin corrección técnica prioritaria |
 | 18 | 🟢 Correcto | Default RHEL 10 de journal volátil confirmado |
-| 19 | 🟠 Corrección importante | Reformular RFC1918 y mejorar fuente iproute2 |
+| 19 | 🟢 Corrección A01 aplicada | RFC1918 reformulado con fuente primaria; mejora de fuente iproute2 aún pendiente |
 | 20 | 🟢 Correcto | Mantener host-key verification y alcance autorizado |
 | 21 | 🟡 Correcto con mejora de fuentes | Priorizar Netfilter/nftables upstream |
 | 22 | 🟢 Correcto | Sin corrección técnica prioritaria |
@@ -401,7 +401,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 
 ### Prioridad 1 — antes de edición consolidada
 
-1. M19 RFC1918.
+1. ~~M19 RFC1918.~~ ✅ Corregido.
 2. M15/M35 estado `100` de DNF.
 3. M30 `Persistent=true`.
 4. M31 seguridad de tar no confiable.
