@@ -1,3 +1,18 @@
+# Estado actual — Trigésima primera entrega de v3
+
+Módulos 1–31 redactados y revisados documentalmente. Módulos 32–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 31 — Archivos y compresión con `tar`, `gzip` y `xz`](modulo-31-tar-gzip-xz-archivos-compresion.md).
+
+Esta entrega separa archivar de comprimir, introduce creación/listado/extracción con GNU tar, compresión individual con gzip y xz, verificación con `-t`, conservación de originales con `-k`, extracción en carpetas vacías, `--keep-old-files`, `--one-top-level` y precauciones frente a opciones como `--absolute-names` y `--overwrite`.
+
+La v2 y los Módulos 1–30 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 32 — Copias y restauración con `rsync`**.
+
+---
+
+## Registro histórico — Trigésima entrega y anteriores
 # Estado actual — Trigésima entrega de v3
 
 Módulos 1–30 redactados y revisados documentalmente. Módulos 31–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
