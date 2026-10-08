@@ -1029,6 +1029,10 @@ Para considerar este módulo **DOMINADO** deberás poder en más de una ocasión
 
 Fuentes principales:
 
+- iproute2 upstream (origen de `ss`): https://git.kernel.org/pub/scm/network/iproute2/iproute2.git/
+- AIDE (proyecto original): https://aide.github.io/
+- systemd upstream (manuales originales de `systemctl` y `journalctl`): https://github.com/systemd/systemd/tree/main/man
+- Las guías oficiales RHEL y DNF siguientes respaldan los procedimientos específicos de distribución.
 - Red Hat Enterprise Linux 10 — Security hardening: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/security_hardening/
 - RHEL 10 — Checking integrity with AIDE: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/pdf/security_hardening/index
 - RHEL 10 — Managing sudo access: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/security_hardening/managing-sudo-access
