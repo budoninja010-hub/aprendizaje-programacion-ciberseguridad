@@ -1,0 +1,1499 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "resultados": [
+    {
+      "id": 1,
+      "status": "ejecutado",
+      "stdout": "Hola, explorador\n2026\nAño: 2026\n",
+      "stderr": ""
+    },
+    {
+      "id": 2,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 3,
+      "status": "ejecutado",
+      "stdout": "Mario\n2\n",
+      "stderr": ""
+    },
+    {
+      "id": 4,
+      "status": "ejecutado",
+      "stdout": "<class 'str'>\n<class 'float'>\n",
+      "stderr": ""
+    },
+    {
+      "id": 5,
+      "status": "ejecutado",
+      "stdout": "4\n",
+      "stderr": ""
+    },
+    {
+      "id": 6,
+      "status": "ejecutado",
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "id": 7,
+      "status": "ejecutado",
+      "stdout": "¿Cuál es tu edad? ¿Cuál es tu edad? <class 'int'>\n",
+      "stderr": ""
+    },
+    {
+      "id": 8,
+      "status": "ejecutado",
+      "stdout": "¿Cómo te llamas? ¿En qué año naciste? Hola Ana tu edad aproximada es 26\n",
+      "stderr": ""
+    },
+    {
+      "id": 9,
+      "status": "ejecutado",
+      "stdout": "Tu Nombre\n25\n",
+      "stderr": ""
+    },
+    {
+      "id": 10,
+      "status": "ejecutado",
+      "stdout": "Ingresa tu nombre: Ingresa tu año de nacimiento: Ingresa tu estatura en metros (ej. 1.75): --- FICHA PERSONAL ---\nNombre: Ana\nEdad aproximada: 26 años\nEstatura: 1.75 m\n----------------------\n",
+      "stderr": ""
+    },
+    {
+      "id": 11,
+      "status": "error_didactico_confirmado",
+      "stdout": "Precio del producto: ",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/manual-python-tl3hjj_y/ejemplo.py\", line 2, in <module>\n    total = precio + 10\n            ~~~~~~~^~~~\nTypeError: can only concatenate str (not \"int\") to str\n"
+    },
+    {
+      "id": 12,
+      "status": "ejecutado",
+      "stdout": "10\n",
+      "stderr": ""
+    },
+    {
+      "id": 13,
+      "status": "ejecutado",
+      "stdout": "Suma: 13\nDivisión normal: 3.3333333333333335\nDivisión entera: 3\nMódulo o residuo: 1\nExponente: 1000\n",
+      "stderr": ""
+    },
+    {
+      "id": 14,
+      "status": "ejecutado",
+      "stdout": "13\n",
+      "stderr": ""
+    },
+    {
+      "id": 15,
+      "status": "ejecutado",
+      "stdout": "¿Es adulto?: True\n¿Es un niño?: False\n¿Tiene exactamente 18?: True\n¿Es diferente de 20?: True\n",
+      "stderr": ""
+    },
+    {
+      "id": 16,
+      "status": "ejecutado",
+      "stdout": "¿Puede entrar al club?: True\n",
+      "stderr": ""
+    },
+    {
+      "id": 17,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 18,
+      "status": "ejecutado",
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "id": 19,
+      "status": "ejecutado",
+      "stdout": "Ingresa tu nombre: ¿Es administrador?: True\n",
+      "stderr": ""
+    },
+    {
+      "id": 20,
+      "status": "ejecutado",
+      "stdout": "¿De cuánto es la cuenta?: Deberías dejar de propina: 15.0\n",
+      "stderr": ""
+    },
+    {
+      "id": 21,
+      "status": "ejecutado",
+      "stdout": "Eres mayor de edad.\nPuedes pasar.\nFin del programa.\n",
+      "stderr": ""
+    },
+    {
+      "id": 22,
+      "status": "ejecutado",
+      "stdout": "Precaución, frena.\n",
+      "stderr": ""
+    },
+    {
+      "id": 23,
+      "status": "ejecutado",
+      "stdout": "Puedes conducir el vehículo.\n",
+      "stderr": ""
+    },
+    {
+      "id": 24,
+      "status": "ejecutado",
+      "stdout": "Usuario reconocido.\nAcceso concedido.\n",
+      "stderr": ""
+    },
+    {
+      "id": 25,
+      "status": "ejecutado",
+      "stdout": "¿Deseas continuar? (si/no): Continuando...\n",
+      "stderr": ""
+    },
+    {
+      "id": 26,
+      "status": "ejecutado",
+      "stdout": "Ingresa tu edad: Acceso permitido. Pulsera VIP.\n",
+      "stderr": ""
+    },
+    {
+      "id": 27,
+      "status": "ejecutado",
+      "stdout": "Es negativo\n",
+      "stderr": ""
+    },
+    {
+      "id": 28,
+      "status": "ejecutado",
+      "stdout": "Ingresa contraseña: Acceso\n",
+      "stderr": ""
+    },
+    {
+      "id": 29,
+      "status": "ejecutado",
+      "stdout": "Ingresa un número: El número es par.\n",
+      "stderr": ""
+    },
+    {
+      "id": 30,
+      "status": "error_didactico_confirmado",
+      "stdout": "",
+      "stderr": "  File \"/tmp/manual-python-h9zys5oa/ejemplo.py\", line 2\n    if clima = \"lluvia\"\n       ^^^^^^^^^^^^^^^^\nSyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?\n"
+    },
+    {
+      "id": 31,
+      "status": "ejecutado",
+      "stdout": "A\n",
+      "stderr": ""
+    },
+    {
+      "id": 32,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 33,
+      "status": "ejecutado",
+      "stdout": "rojo\namarillo\n",
+      "stderr": ""
+    },
+    {
+      "id": 34,
+      "status": "ejecutado",
+      "stdout": "['Zelda', 'Sonic', 'Halo']\nTrue\n",
+      "stderr": ""
+    },
+    {
+      "id": 35,
+      "status": "ejecutado",
+      "stdout": "['A', 'X', 'B']\nLongitud: 3\n",
+      "stderr": ""
+    },
+    {
+      "id": 36,
+      "status": "ejecutado",
+      "stdout": "10.5\n",
+      "stderr": ""
+    },
+    {
+      "id": 37,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 38,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 39,
+      "status": "ejecutado",
+      "stdout": "Ana\n{'nombre': 'Ana', 'edad': 29, 'rol': 'admin', 'pais': 'México'}\n",
+      "stderr": ""
+    },
+    {
+      "id": 40,
+      "status": "ejecutado",
+      "stdout": "No registrado\n",
+      "stderr": ""
+    },
+    {
+      "id": 41,
+      "status": "ejecutado",
+      "stdout": "{1, 2, 3, 4}\n",
+      "stderr": ""
+    },
+    {
+      "id": 42,
+      "status": "ejecutado",
+      "stdout": "{1, 2, 3, 4}\n",
+      "stderr": ""
+    },
+    {
+      "id": 43,
+      "status": "ejecutado",
+      "stdout": "Unión: {1, 2, 3, 4, 5}\nIntersección: {3}\nDiferencia: {1, 2}\n",
+      "stderr": ""
+    },
+    {
+      "id": 44,
+      "status": "ejecutado",
+      "stdout": "A\nE\n['B', 'C', 'D']\n['A', 'B', 'C']\n['C', 'D', 'E']\n",
+      "stderr": ""
+    },
+    {
+      "id": 45,
+      "status": "ejecutado",
+      "stdout": "2\nLuis\nAna\n",
+      "stderr": ""
+    },
+    {
+      "id": 46,
+      "status": "ejecutado",
+      "stdout": "Gladiador\n",
+      "stderr": ""
+    },
+    {
+      "id": 47,
+      "status": "ejecutado",
+      "stdout": "{'nombre': 'Arthur', 'vida': 80, 'armas': ['Espada', 'Arco']}\n",
+      "stderr": ""
+    },
+    {
+      "id": 48,
+      "status": "ejecutado",
+      "stdout": "{3}\n",
+      "stderr": ""
+    },
+    {
+      "id": 49,
+      "status": "ejecutado",
+      "stdout": "El segundo estudiante es: Sofía\n",
+      "stderr": ""
+    },
+    {
+      "id": 50,
+      "status": "error_didactico_confirmado",
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/manual-python-w728rspq/ejemplo.py\", line 2, in <module>\n    nombres[3] = \"María\"\n    ~~~~~~~^^^\nIndexError: list assignment index out of range\n"
+    },
+    {
+      "id": 51,
+      "status": "ejecutado",
+      "stdout": "Ana\nLuis\nCarlos\n",
+      "stderr": ""
+    },
+    {
+      "id": 52,
+      "status": "ejecutado",
+      "stdout": "P\ny\nt\nh\no\nn\n",
+      "stderr": ""
+    },
+    {
+      "id": 53,
+      "status": "ejecutado",
+      "stdout": "Contando: 1\nContando: 2\nContando: 3\nContando: 4\nContando: 5\n",
+      "stderr": ""
+    },
+    {
+      "id": 54,
+      "status": "ejecutado",
+      "stdout": "1\n2\n3\n4\n5\n",
+      "stderr": ""
+    },
+    {
+      "id": 55,
+      "status": "ejecutado",
+      "stdout": "1\n2\n3\n4\n",
+      "stderr": ""
+    },
+    {
+      "id": 56,
+      "status": "ejecutado",
+      "stdout": "1\n2\n3\n4\nEncontramos el 5. Deteniendo.\n",
+      "stderr": ""
+    },
+    {
+      "id": 57,
+      "status": "ejecutado",
+      "stdout": "1\n2\n4\n5\n",
+      "stderr": ""
+    },
+    {
+      "id": 58,
+      "status": "ejecutado",
+      "stdout": "10 es par\n15 es impar\n20 es par\n25 es impar\n30 es par\n",
+      "stderr": ""
+    },
+    {
+      "id": 59,
+      "status": "ejecutado",
+      "stdout": "Fila: 0 - Columna: 0\nFila: 0 - Columna: 1\nFila: 0 - Columna: 2\nFila: 1 - Columna: 0\nFila: 1 - Columna: 1\nFila: 1 - Columna: 2\nFila: 2 - Columna: 0\nFila: 2 - Columna: 1\nFila: 2 - Columna: 2\n",
+      "stderr": ""
+    },
+    {
+      "id": 60,
+      "status": "ejecutado",
+      "stdout": "7 x 1 = 7\n7 x 2 = 14\n7 x 3 = 21\n7 x 4 = 28\n7 x 5 = 35\n7 x 6 = 42\n7 x 7 = 49\n7 x 8 = 56\n7 x 9 = 63\n7 x 10 = 70\n",
+      "stderr": ""
+    },
+    {
+      "id": 61,
+      "status": "ejecutado",
+      "stdout": "La suma del 1 al 50 es: 1275\n",
+      "stderr": ""
+    },
+    {
+      "id": 62,
+      "status": "ejecutado",
+      "stdout": "estrella\nmeteorito\n",
+      "stderr": ""
+    },
+    {
+      "id": 63,
+      "status": "ejecutado",
+      "stdout": "Ingresa un número límite: --- RESULTADOS ---\nTotal de números pares encontrados: 5\nSuma de todos los pares: 30\n",
+      "stderr": ""
+    },
+    {
+      "id": 64,
+      "status": "bucle_infinito_intencional_revisado_sin_ejecutar"
+    },
+    {
+      "id": 65,
+      "status": "ejecutado",
+      "stdout": "A\n",
+      "stderr": ""
+    },
+    {
+      "id": 66,
+      "status": "ejecutado",
+      "stdout": "¡Hola, bienvenido al sistema!\n¡Hola, bienvenido al sistema!\n",
+      "stderr": ""
+    },
+    {
+      "id": 67,
+      "status": "ejecutado",
+      "stdout": "Hola Ana\nHola Carlos\n",
+      "stderr": ""
+    },
+    {
+      "id": 68,
+      "status": "ejecutado",
+      "stdout": "La suma es: 15\n",
+      "stderr": ""
+    },
+    {
+      "id": 69,
+      "status": "ejecutado",
+      "stdout": "El resultado devuelto es: 8\n",
+      "stderr": ""
+    },
+    {
+      "id": 70,
+      "status": "ejecutado",
+      "stdout": "Mayor de edad\n",
+      "stderr": ""
+    },
+    {
+      "id": 71,
+      "status": "ejecutado",
+      "stdout": "1\n2\n3\n",
+      "stderr": ""
+    },
+    {
+      "id": 72,
+      "status": "ejecutado",
+      "stdout": "Tu promedio es: 9.0\n",
+      "stderr": ""
+    },
+    {
+      "id": 73,
+      "status": "ejecutado",
+      "stdout": "Hola, Ana\nHola, Usuario\n",
+      "stderr": ""
+    },
+    {
+      "id": 74,
+      "status": "ejecutado",
+      "stdout": "Ana tiene 20 años\n",
+      "stderr": ""
+    },
+    {
+      "id": 75,
+      "status": "ejecutado",
+      "stdout": "20\n",
+      "stderr": ""
+    },
+    {
+      "id": 76,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 77,
+      "status": "ejecutado",
+      "stdout": "El mayor es: 89\n",
+      "stderr": ""
+    },
+    {
+      "id": 78,
+      "status": "ejecutado",
+      "stdout": "=== CALCULADORA MAESTRA ===\nIngresa el primer número: Ingresa el segundo número: \nOperaciones disponibles:\n1. Sumar\n2. Restar\n3. Multiplicar\n4. Dividir\nElige una opción (1/2/3/4): Resultado: 4.0\n",
+      "stderr": ""
+    },
+    {
+      "id": 79,
+      "status": "ejecutado",
+      "stdout": "None\n",
+      "stderr": ""
+    },
+    {
+      "id": 80,
+      "status": "ejecutado",
+      "stdout": "Hola Carlos\nHola Anónimo\n",
+      "stderr": ""
+    },
+    {
+      "id": 81,
+      "status": "ejecutado",
+      "stdout": "mensaje\nPython\n",
+      "stderr": ""
+    },
+    {
+      "id": 82,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 83,
+      "status": "ejecutado",
+      "stdout": "P\nn\n",
+      "stderr": ""
+    },
+    {
+      "id": 84,
+      "status": "ejecutado",
+      "stdout": "11\n",
+      "stderr": ""
+    },
+    {
+      "id": 85,
+      "status": "ejecutado",
+      "stdout": "Pro\nPro\nogramacion\nPormco\n",
+      "stderr": ""
+    },
+    {
+      "id": 86,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 87,
+      "status": "ejecutado",
+      "stdout": "Pato\n",
+      "stderr": ""
+    },
+    {
+      "id": 88,
+      "status": "ejecutado",
+      "stdout": "Ana García\n",
+      "stderr": ""
+    },
+    {
+      "id": 89,
+      "status": "ejecutado",
+      "stdout": "Hola Hola Hola \n",
+      "stderr": ""
+    },
+    {
+      "id": 90,
+      "status": "ejecutado",
+      "stdout": "True\nFalse\n",
+      "stderr": ""
+    },
+    {
+      "id": 91,
+      "status": "ejecutado",
+      "stdout": "  hola mundo  \n  HOLA MUNDO  \n  hola mundo  \n  Hola Mundo  \nhola MUNDO\n",
+      "stderr": ""
+    },
+    {
+      "id": 92,
+      "status": "ejecutado",
+      "stdout": "Python es poderoso\nTrue\nTrue\n7\n2\n",
+      "stderr": ""
+    },
+    {
+      "id": 93,
+      "status": "ejecutado",
+      "stdout": "['Python', 'es', 'muy', 'útil']\n",
+      "stderr": ""
+    },
+    {
+      "id": 94,
+      "status": "ejecutado",
+      "stdout": "Python es útil\n",
+      "stderr": ""
+    },
+    {
+      "id": 95,
+      "status": "ejecutado",
+      "stdout": "Me llamo Ana y tengo 20 años.\n",
+      "stderr": ""
+    },
+    {
+      "id": 96,
+      "status": "ejecutado",
+      "stdout": "El total con impuestos es: 116.00\n",
+      "stderr": ""
+    },
+    {
+      "id": 97,
+      "status": "ejecutado",
+      "stdout": "Línea 1\nLínea 2\nÉl dijo: \"Hola\"\nRuta:\\Carpeta\\Archivo\n",
+      "stderr": ""
+    },
+    {
+      "id": 98,
+      "status": "ejecutado",
+      "stdout": "Primera línea\nSegunda línea\nTercera línea\n",
+      "stderr": ""
+    },
+    {
+      "id": 99,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 100,
+      "status": "ejecutado",
+      "stdout": "¿Aceptas las condiciones? (si/no): ",
+      "stderr": ""
+    },
+    {
+      "id": 101,
+      "status": "ejecutado",
+      "stdout": "Es un archivo PDF válido.\n",
+      "stderr": ""
+    },
+    {
+      "id": 102,
+      "status": "ejecutado",
+      "stdout": "La palabra tiene 5 vocales.\n",
+      "stderr": ""
+    },
+    {
+      "id": 103,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 104,
+      "status": "ejecutado",
+      "stdout": "PYTHON ES DIVERTIDO\n",
+      "stderr": ""
+    },
+    {
+      "id": 105,
+      "status": "ejecutado",
+      "stdout": "Ingresa tu nombre completo: Tu primer nombre es Ana.\n",
+      "stderr": ""
+    },
+    {
+      "id": 106,
+      "status": "ejecutado",
+      "stdout": "Ingresa una palabra: ¿Es un palíndromo?: True\n",
+      "stderr": ""
+    },
+    {
+      "id": 107,
+      "status": "ejecutado",
+      "stdout": "Ingresa una frase larga: Ingresa una letra para contar: \n--- ANALIZADOR DE TEXTO ---\nTotal de caracteres: 14\nTotal de palabras: 3\nEn mayúsculas: PYTHON ES ÚTIL\nEn minúsculas: python es útil\nLa letra 'p' aparece 1 veces.\n¿Menciona a Python?: True\n---------------------------\n",
+      "stderr": ""
+    },
+    {
+      "id": 108,
+      "status": "ejecutado",
+      "stdout": "B2\n",
+      "stderr": ""
+    },
+    {
+      "id": 109,
+      "status": "ejecutado",
+      "stdout": "Hola\n",
+      "stderr": ""
+    },
+    {
+      "id": 110,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 111,
+      "status": "ejecutado",
+      "stdout": "primera\nsegunda\n\n",
+      "stderr": ""
+    },
+    {
+      "id": 112,
+      "status": "ejecutado",
+      "stdout": "Línea 1: primera\n\n",
+      "stderr": ""
+    },
+    {
+      "id": 113,
+      "status": "ejecutado",
+      "stdout": "primera\n\n",
+      "stderr": ""
+    },
+    {
+      "id": 114,
+      "status": "ejecutado",
+      "stdout": "primera\nsegunda\n\n",
+      "stderr": ""
+    },
+    {
+      "id": 115,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 116,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 117,
+      "status": "ejecutado",
+      "stdout": "primera\nsegunda\n",
+      "stderr": ""
+    },
+    {
+      "id": 118,
+      "status": "ejecutado",
+      "stdout": "Nombres cargados: ['Ana', 'Luis']\n",
+      "stderr": ""
+    },
+    {
+      "id": 119,
+      "status": "ejecutado",
+      "stdout": "Ingresa tu nombre: Usuario guardado con éxito.\n",
+      "stderr": ""
+    },
+    {
+      "id": 120,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 121,
+      "status": "ejecutado",
+      "stdout": "El archivo no existe.\n",
+      "stderr": ""
+    },
+    {
+      "id": 122,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 123,
+      "status": "ejecutado",
+      "stdout": "saludos.py\noperaciones.py\npeliculas.txt\nnombres.txt\nejemplo.py\ndatos.txt\ntextos.py\n",
+      "stderr": ""
+    },
+    {
+      "id": 124,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 125,
+      "status": "ejecutado",
+      "stdout": "Ingresa tu película favorita: ",
+      "stderr": ""
+    },
+    {
+      "id": 126,
+      "status": "ejecutado",
+      "stdout": "- Matrix\n",
+      "stderr": ""
+    },
+    {
+      "id": 127,
+      "status": "ejecutado",
+      "stdout": "\n--- AGENDA DE CONTACTOS ---\n1. Añadir contacto\n2. Ver contactos\n3. Salir\nElige una opción: \n--- TUS CONTACTOS ---\nLa agenda está vacía.\n\n--- AGENDA DE CONTACTOS ---\n1. Añadir contacto\n2. Ver contactos\n3. Salir\nElige una opción: Nombre: Teléfono: ¡Contacto guardado!\n\n--- AGENDA DE CONTACTOS ---\n1. Añadir contacto\n2. Ver contactos\n3. Salir\nElige una opción: \n--- TUS CONTACTOS ---\n• Ana - 123\n\n--- AGENDA DE CONTACTOS ---\n1. Añadir contacto\n2. Ver contactos\n3. Salir\nElige una opción: Saliendo de la agenda...\n",
+      "stderr": ""
+    },
+    {
+      "id": 128,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 129,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 130,
+      "status": "ejecutado",
+      "stdout": "El total es: 99.8\n",
+      "stderr": ""
+    },
+    {
+      "id": 131,
+      "status": "ejecutado",
+      "stdout": "Edad: Tienes 25 años.\n",
+      "stderr": ""
+    },
+    {
+      "id": 132,
+      "status": "ejecutado",
+      "stdout": "Ingresa un divisor: Resultado: 50.0\n",
+      "stderr": ""
+    },
+    {
+      "id": 133,
+      "status": "ejecutado",
+      "stdout": "Ingresa cantidad: ¡Dato capturado correctamente!\nProcesando: 2\n",
+      "stderr": ""
+    },
+    {
+      "id": 134,
+      "status": "ejecutado",
+      "stdout": "Este mensaje se imprimirá pase lo que pase.\n",
+      "stderr": ""
+    },
+    {
+      "id": 135,
+      "status": "ejecutado",
+      "stdout": "El archivo no existe. Creando archivo por defecto...\n",
+      "stderr": ""
+    },
+    {
+      "id": 136,
+      "status": "ejecutado",
+      "stdout": "Ingresa tu edad en números: Entrada inválida. Por favor, usa números enteros (ej. 25).\nIngresa tu edad en números: Edad registrada: 25\n",
+      "stderr": ""
+    },
+    {
+      "id": 137,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 138,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 139,
+      "status": "ejecutado",
+      "stdout": "Ingresa un número decimal: Número ingresado: 2.5\n",
+      "stderr": ""
+    },
+    {
+      "id": 140,
+      "status": "ejecutado",
+      "stdout": "Ingresa un índice para ver: 20\n",
+      "stderr": ""
+    },
+    {
+      "id": 141,
+      "status": "ejecutado",
+      "stdout": "Dividendo: Divisor: El resultado de la división es: 4.0\n",
+      "stderr": ""
+    },
+    {
+      "id": 142,
+      "status": "ejecutado",
+      "stdout": "=== CALCULADORA ROBUSTA ===\nEscribe 'salir' para apagar la calculadora.\n\nElige operación (+, -, *, /) o 'salir': Operación no válida. Intenta de nuevo.\n\nElige operación (+, -, *, /) o 'salir': Primer número: Segundo número: Error fatal prevenido: No se puede dividir entre cero.\n\nElige operación (+, -, *, /) o 'salir': Primer número: Error: Debes ingresar valores numéricos. Volviendo al menú.\n\nElige operación (+, -, *, /) o 'salir': Primer número: Segundo número: El resultado es: 5.0\n\nElige operación (+, -, *, /) o 'salir': Apagando calculadora...\n",
+      "stderr": ""
+    },
+    {
+      "id": 143,
+      "status": "ejecutado",
+      "stdout": "B\nD\n",
+      "stderr": ""
+    },
+    {
+      "id": 144,
+      "status": "ejecutado",
+      "stdout": "5.0\n",
+      "stderr": ""
+    },
+    {
+      "id": 145,
+      "status": "ejecutado",
+      "stdout": "5.0\n",
+      "stderr": ""
+    },
+    {
+      "id": 146,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 147,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 148,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 149,
+      "status": "ejecutado",
+      "stdout": "La suma es: 9\n",
+      "stderr": ""
+    },
+    {
+      "id": 150,
+      "status": "ejecutado",
+      "stdout": "El programa ha iniciado.\n",
+      "stderr": ""
+    },
+    {
+      "id": 151,
+      "status": "terminal_o_esquema_no_ejecutado"
+    },
+    {
+      "id": 152,
+      "status": "terminal_o_esquema_no_ejecutado"
+    },
+    {
+      "id": 153,
+      "status": "terminal_o_esquema_no_ejecutado"
+    },
+    {
+      "id": 154,
+      "status": "terminal_o_esquema_no_ejecutado"
+    },
+    {
+      "id": 155,
+      "status": "terminal_o_esquema_no_ejecutado"
+    },
+    {
+      "id": 156,
+      "status": "terminal_o_esquema_no_ejecutado"
+    },
+    {
+      "id": 157,
+      "status": "terminal_o_esquema_no_ejecutado"
+    },
+    {
+      "id": 158,
+      "status": "terminal_o_esquema_no_ejecutado"
+    },
+    {
+      "id": 159,
+      "status": "terminal_o_esquema_no_ejecutado"
+    },
+    {
+      "id": 160,
+      "status": "terminal_o_esquema_no_ejecutado"
+    },
+    {
+      "id": 161,
+      "status": "terminal_o_esquema_no_ejecutado"
+    },
+    {
+      "id": 162,
+      "status": "terminal_o_esquema_no_ejecutado"
+    },
+    {
+      "id": 163,
+      "status": "ejecutado",
+      "stdout": "El número ganador es: 5\n",
+      "stderr": ""
+    },
+    {
+      "id": 164,
+      "status": "ejecutado",
+      "stdout": "Estimado/a Ana, reciba un cordial saludo.\n",
+      "stderr": ""
+    },
+    {
+      "id": 165,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 166,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 167,
+      "status": "ejecutado",
+      "stdout": "--- CALCULADORA MODULAR ---\nIngresa la longitud del lado del cuadrado: El resultado calculado es: 16.0\n",
+      "stderr": ""
+    },
+    {
+      "id": 168,
+      "status": "terminal_o_esquema_no_ejecutado"
+    },
+    {
+      "id": 169,
+      "status": "ejecutado",
+      "stdout": "Cargando módulo...\n",
+      "stderr": ""
+    },
+    {
+      "id": 170,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 171,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 172,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 173,
+      "status": "ejecutado",
+      "stdout": "Juan\n31\n",
+      "stderr": ""
+    },
+    {
+      "id": 174,
+      "status": "ejecutado",
+      "stdout": "Hola, soy Ana\n",
+      "stderr": ""
+    },
+    {
+      "id": 175,
+      "status": "ejecutado",
+      "stdout": "Depositaste 50. Saldo nuevo: 150\n",
+      "stderr": ""
+    },
+    {
+      "id": 176,
+      "status": "ejecutado",
+      "stdout": "Humano\n",
+      "stderr": ""
+    },
+    {
+      "id": 177,
+      "status": "ejecutado",
+      "stdout": "'1984' escrito por George Orwell\n",
+      "stderr": ""
+    },
+    {
+      "id": 178,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 179,
+      "status": "ejecutado",
+      "stdout": "Sonido genérico\n",
+      "stderr": ""
+    },
+    {
+      "id": 180,
+      "status": "ejecutado",
+      "stdout": "Sonido genérico\n¡Guau!\n",
+      "stderr": ""
+    },
+    {
+      "id": 181,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 182,
+      "status": "ejecutado",
+      "stdout": "Sonido genérico\n¡Guau!\nMiau\nMuu\n¡Guau!\n",
+      "stderr": ""
+    },
+    {
+      "id": 183,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 184,
+      "status": "ejecutado",
+      "stdout": "50\n",
+      "stderr": ""
+    },
+    {
+      "id": 185,
+      "status": "ejecutado",
+      "stdout": "Batería: 70%\n",
+      "stderr": ""
+    },
+    {
+      "id": 186,
+      "status": "ejecutado",
+      "stdout": "Honda 600\n",
+      "stderr": ""
+    },
+    {
+      "id": 187,
+      "status": "ejecutado",
+      "stdout": "Libro 'El Quijote' agregado a la biblioteca.\nLibro '1984' agregado a la biblioteca.\n\n--- LIBROS DISPONIBLES ---\n'El Quijote' de Miguel de Cervantes (Disponible)\n'1984' de George Orwell (Disponible)\n\n--- PRESTANDO LIBRO ---\nÉxito: Se ha prestado 'El Quijote'.\n\n--- LIBROS DISPONIBLES ---\n'1984' de George Orwell (Disponible)\n",
+      "stderr": ""
+    },
+    {
+      "id": 188,
+      "status": "error_didactico_confirmado",
+      "stdout": "",
+      "stderr": "Traceback (most recent call last):\n  File \"/tmp/manual-python-9jtyn116/ejemplo.py\", line 6, in <module>\n    pc.encender()\nTypeError: Computadora.encender() takes 0 positional arguments but 1 was given\n"
+    },
+    {
+      "id": 189,
+      "status": "ejecutado",
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "id": 190,
+      "status": "ejecutado",
+      "stdout": "[1, 4, 9, 16, 25]\n",
+      "stderr": ""
+    },
+    {
+      "id": 191,
+      "status": "ejecutado",
+      "stdout": "[1, 4, 9, 16, 25]\n",
+      "stderr": ""
+    },
+    {
+      "id": 192,
+      "status": "ejecutado",
+      "stdout": "[0, 2, 4, 6, 8]\n",
+      "stderr": ""
+    },
+    {
+      "id": 193,
+      "status": "ejecutado",
+      "stdout": "{1: 1, 2: 4, 3: 9, 4: 16, 5: 25}\n",
+      "stderr": ""
+    },
+    {
+      "id": 194,
+      "status": "ejecutado",
+      "stdout": "{0, 1, 2}\n",
+      "stderr": ""
+    },
+    {
+      "id": 195,
+      "status": "ejecutado",
+      "stdout": "Ana\n",
+      "stderr": ""
+    },
+    {
+      "id": 196,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 197,
+      "status": "ejecutado",
+      "stdout": "1\n[2, 3, 4]\n",
+      "stderr": ""
+    },
+    {
+      "id": 198,
+      "status": "ejecutado",
+      "stdout": "0 Ana\n1 Luis\n2 Carlos\n",
+      "stderr": ""
+    },
+    {
+      "id": 199,
+      "status": "ejecutado",
+      "stdout": "0 Ana\n1 Luis\n2 Carlos\nPosición 0: Ana\nPosición 1: Luis\nPosición 2: Carlos\n",
+      "stderr": ""
+    },
+    {
+      "id": 200,
+      "status": "ejecutado",
+      "stdout": "Ana tiene 20 años\nLuis tiene 25 años\n",
+      "stderr": ""
+    },
+    {
+      "id": 201,
+      "status": "ejecutado",
+      "stdout": "[1, 2, 3]\nNone\n",
+      "stderr": ""
+    },
+    {
+      "id": 202,
+      "status": "ejecutado",
+      "stdout": "[3, 1, 2]\n[1, 2, 3]\n",
+      "stderr": ""
+    },
+    {
+      "id": 203,
+      "status": "ejecutado",
+      "stdout": "7.5\n10.0\n35.0\n",
+      "stderr": ""
+    },
+    {
+      "id": 204,
+      "status": "ejecutado",
+      "stdout": "False\nTrue\n",
+      "stderr": ""
+    },
+    {
+      "id": 205,
+      "status": "ejecutado",
+      "stdout": "10\n",
+      "stderr": ""
+    },
+    {
+      "id": 206,
+      "status": "ejecutado",
+      "stdout": "[2, 4, 6, 8]\n",
+      "stderr": ""
+    },
+    {
+      "id": 207,
+      "status": "ejecutado",
+      "stdout": "[2, 4, 6, 8]\n",
+      "stderr": ""
+    },
+    {
+      "id": 208,
+      "status": "ejecutado",
+      "stdout": "[2, 4, 6, 8]\n",
+      "stderr": ""
+    },
+    {
+      "id": 209,
+      "status": "ejecutado",
+      "stdout": "[2, 4, 6]\n",
+      "stderr": ""
+    },
+    {
+      "id": 210,
+      "status": "ejecutado",
+      "stdout": "10\n20\n",
+      "stderr": ""
+    },
+    {
+      "id": 211,
+      "status": "ejecutado",
+      "stdout": "1\n2\n",
+      "stderr": ""
+    },
+    {
+      "id": 212,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 213,
+      "status": "ejecutado",
+      "stdout": "<class 'tuple'>\n3\n<class 'tuple'>\n10\n",
+      "stderr": ""
+    },
+    {
+      "id": 214,
+      "status": "ejecutado",
+      "stdout": "<class 'dict'>\nnombre : Ana\nedad : 20\nrol : Admin\n",
+      "stderr": ""
+    },
+    {
+      "id": 215,
+      "status": "ejecutado",
+      "stdout": "6\n",
+      "stderr": ""
+    },
+    {
+      "id": 216,
+      "status": "ejecutado",
+      "stdout": "Hola a todos\n",
+      "stderr": ""
+    },
+    {
+      "id": 217,
+      "status": "ejecutado",
+      "stdout": "Adiós\n",
+      "stderr": ""
+    },
+    {
+      "id": 218,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 219,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 220,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 221,
+      "status": "ejecutado",
+      "stdout": "True\nFalse\n",
+      "stderr": ""
+    },
+    {
+      "id": 222,
+      "status": "ejecutado",
+      "stdout": "No hay resultado\n",
+      "stderr": ""
+    },
+    {
+      "id": 223,
+      "status": "ejecutado",
+      "stdout": "[99, 2, 3]\n",
+      "stderr": ""
+    },
+    {
+      "id": 224,
+      "status": "ejecutado",
+      "stdout": "[1, 2, 3]\n",
+      "stderr": ""
+    },
+    {
+      "id": 225,
+      "status": "ejecutado",
+      "stdout": "['HOLA', 'MUNDO']\n",
+      "stderr": ""
+    },
+    {
+      "id": 226,
+      "status": "ejecutado",
+      "stdout": "Ana tiene 20\nLuis tiene 25\n",
+      "stderr": ""
+    },
+    {
+      "id": 227,
+      "status": "ejecutado",
+      "stdout": "9.0\n",
+      "stderr": ""
+    },
+    {
+      "id": 228,
+      "status": "ejecutado",
+      "stdout": "--- ANÁLISIS ACADÉMICO ---\nNota Máxima: 9.2\nNota Mínima: 6.5\nPromedio Grupo: 7.80\nAlumnos Aprobados: 3\n\n--- CLASIFICACIÓN ---\nLugar 1: Ana - 9.2\nLugar 2: Luis - 8.0\nLugar 3: María - 7.5\nLugar 4: Carlos - 6.5\n",
+      "stderr": ""
+    },
+    {
+      "id": 229,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 230,
+      "status": "ejecutado",
+      "stdout": "None\n",
+      "stderr": ""
+    },
+    {
+      "id": 231,
+      "status": "ejecutado",
+      "stdout": "10\n",
+      "stderr": ""
+    },
+    {
+      "id": 232,
+      "status": "ejecutado",
+      "stdout": "Antes de ejecutar la función.\nHola, Ana\nDespués de ejecutar la función.\n",
+      "stderr": ""
+    },
+    {
+      "id": 233,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 234,
+      "status": "ejecutado",
+      "stdout": "2\n",
+      "stderr": ""
+    },
+    {
+      "id": 235,
+      "status": "ejecutado",
+      "stdout": "Usuario(nombre='Ana', edad=25, activo=True)\n",
+      "stderr": ""
+    },
+    {
+      "id": 236,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 237,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 238,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 239,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 240,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": "WARNING:root:El disco está casi lleno.\n"
+    },
+    {
+      "id": 241,
+      "status": "terminal_o_esquema_no_ejecutado"
+    },
+    {
+      "id": 242,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 243,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 244,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 245,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 246,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 247,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": "WARNING: Archivo no encontrado. Se creará uno nuevo.\nINFO: Tarea agregada: Estudiar Python Avanzado\nINFO: Tareas guardadas correctamente.\n"
+    },
+    {
+      "id": 248,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "id": 249,
+      "status": "ejecutado",
+      "stdout": "IP detectada: ['192.168.1.15']\n",
+      "stderr": ""
+    },
+    {
+      "id": 250,
+      "status": "ejecutado",
+      "stdout": "¿Es privada?: True\n",
+      "stderr": ""
+    },
+    {
+      "id": 251,
+      "status": "ejecutado",
+      "stdout": "True\n",
+      "stderr": ""
+    },
+    {
+      "id": 252,
+      "status": "ejecutado",
+      "stdout": "Alerta detectada.\n",
+      "stderr": ""
+    },
+    {
+      "id": 253,
+      "status": "ejecutado",
+      "stdout": "peliculas.txt\nnombres.txt\ndatos.txt\n",
+      "stderr": ""
+    },
+    {
+      "id": 254,
+      "status": "ejecutado",
+      "stdout": "",
+      "stderr": "INFO: Iniciando auditoría de integridad local...\nINFO: [prueba_integridad.txt] SHA-256: 200455470634f0d31a9991ce11c17df7f2d51b15cdf8cb490ff8b8e56b0bfdfc\nINFO: Analizando logs...\nWARNING: Alerta generada: 10:05 - User2 - Fallo de autenticacion\nWARNING: Alerta generada: 10:06 - User2 - Fallo de autenticacion\nINFO: Reporte exportado exitosamente a reporte_auditoria.json\n"
+    }
+  ]
+}

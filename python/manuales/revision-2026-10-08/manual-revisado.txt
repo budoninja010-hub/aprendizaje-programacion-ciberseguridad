@@ -1,0 +1,3642 @@
+MANUAL MAESTRO DE PYTHON
+De cero a Python avanzado y automatización defensiva
+Edición 2026 — En revisión
+
+ÍNDICE MAESTRO
+PARTE I — Introducción
+Qué es Python, para qué sirve y cómo funciona.
+El intérprete de Python.
+Instalación, Terminal y IDE/editor.
+Cómo ejecutar un archivo .py y nuestro primer programa.
+PARTE II — Fundamentos
+PARTE III — Operadores
+PARTE IV — Condicionales
+PARTE V — Colecciones
+PARTE VI — Bucles
+PARTE VII — Funciones
+PARTE VIII — Strings
+PARTE IX — Archivos
+PARTE X — Errores y excepciones
+PARTE XI — Módulos, paquetes, pip y entornos virtuales
+PARTE XII — Programación Orientada a Objetos
+PARTE XIII — Python Intermedio
+PARTE XIV — Python Avanzado
+PARTE XV — Python aplicado a ciberseguridad defensiva
+
+PARTE I — Introducción
+¡Bienvenido a Python! En esta primera parte, sentaremos las bases. No escribiremos código complejo aún, sino que prepararemos tu computadora y tu mente para programar.
+Fuentes oficiales de esta parte: instalación en Windows, Instalación de Python en Windows; macOS, Uso de Python en macOS; intérprete y errores, Errores y excepciones.
+Concepto 1: Python y su Intérprete
+1. Qué es
+Python es un lenguaje de programación de propósito general, diseñado para ser fácil de leer y escribir. Su intérprete ejecuta el programa. En CPython, al ejecutar un archivo .py, primero se analiza su sintaxis y se compila a instrucciones internas (bytecode); después se ejecutan. Un error de sintaxis en ese archivo puede impedir que se ejecute incluso su primera instrucción. En la consola interactiva se procesan entradas o bloques, no necesariamente un archivo completo.
+2. Para qué sirve
+Puedes usar Python para crear desde aplicaciones web y juegos sencillos, hasta automatización de tareas aburridas, análisis de datos e inteligencia artificial.
+3. Sintaxis (Concepto general)
+Python se destaca por no usar llaves {} para agrupar código, sino "indentación" (espacios al inicio de la línea).
+4. Ejemplo básico
+Un script típico de Python se guarda en un archivo con terminación .py.
+# Esto es un comentario
+print("¡Hola, mundo!")
+5. Explicación línea por línea
+La línea 1 inicia con #, lo que le indica a Python que la ignore. Es una nota para humanos.
+La línea 2 llama a una acción llamada print para mostrar texto en pantalla.
+6. Ejemplo práctico
+Imagina que quieres que tu computadora te salude automáticamente cada vez que la enciendes. Escribirías un script en Python usando comandos básicos como el de arriba y lo configurarías para ejecutarse al inicio.
+7. Errores frecuentes
+ERROR FRECUENTE: Intentar ejecutar Python sin comprobar su instalación. Algunos sistemas ya lo incluyen; verifica la versión antes de instalar otro intérprete.
+ERROR FRECUENTE: Escribir comandos en mayúsculas: Python diferencia entre mayúsculas y minúsculas. Print no es lo mismo que print.
+8. Ejercicio guiado
+Preparar el entorno:
+Ve a python.org/downloads.
+Elige una versión estable de Python 3 compatible con tu equipo; no una versión preliminar. Este manual usa la documentación de Python 3.14 como referencia.
+Windows: instala Python Install Manager desde python.org/downloads o Microsoft Store. Abre una terminal nueva y ejecuta py install 3.14; comprueba con py -V:3.14 --version. La casilla «Add Python to PATH» pertenece al instalador tradicional, obsoleto desde 3.14 y previsto para dejar de distribuirse en 3.16. Si ya tienes Python funcionando, no necesitas desinstalarlo. En macOS instala la versión estable desde python.org y verifica python3 --version. En Linux comprueba python3 --version; si falta, sigue la instalación de tu distribución.
+Para escribir código, necesitas un editor de texto. Te recomiendo instalar Visual Studio Code (VS Code).
+9. Ejercicio para el estudiante
+AHORA TE TOCA A TI
+★ Nivel 1 — Principiante: Comprueba tu instalación. En Windows escribe py --version; en macOS/Linux, python3 --version. Anota la versión que aparece. Si el comando no se reconoce, revisa la instalación antes de continuar.
+10. Mini evaluación
+¿Qué es un intérprete de Python?
+¿Por qué Python se considera fácil de leer?
+¿Qué comando usarías en tu sistema para comprobar que Python está disponible?
+11. Resumen
+Has aprendido para qué sirve el intérprete, cómo comprobar su instalación y que puedes escribir archivos .py con un editor. El comando disponible depende del sistema y del entorno que uses.
+Concepto 2: Tu Primer Programa y Ejecución
+1. Qué es
+Crear tu primer programa implica escribir instrucciones en un archivo .py usando un editor, y luego usar la Terminal para decirle al intérprete que lo ejecute.
+2. Para qué sirve
+Este es el ciclo de vida básico de cualquier aplicación en Python: Escribir -> Guardar -> Ejecutar.
+3. Sintaxis
+Comandos de terminal: Windows usa py nombre_del_archivo.py; macOS/Linux usa python3 nombre_del_archivo.py. Si has activado un entorno virtual, usa python nombre_del_archivo.py.
+py nombre_del_archivo.py
+4. Ejemplo básico
+Código dentro de saludo.py:
+print("Iniciando mi viaje en Python")
+5. Explicación línea por línea
+print(...): Es una orden incorporada en Python. Toma lo que está entre los paréntesis y lo envía a la pantalla.
+"Iniciando mi viaje en Python": El texto debe ir entre comillas para que Python sepa que es una oración y no un comando extraño.
+6. Ejemplo práctico
+Un científico de datos guarda su programa en analisis.py. Desde su carpeta lo ejecuta con py analisis.py en Windows o python3 analisis.py en macOS/Linux.
+7. Errores frecuentes
+ERROR FRECUENTE: SyntaxError (Error de Sintaxis): Ocurre cuando olvidas una comilla o un paréntesis. Ejemplo: print("Hola) (Falta la comilla final).
+ERROR FRECUENTE: No encontrar el archivo. Si ejecutas py saludo.py (Windows) o python3 saludo.py (macOS/Linux) desde otra carpeta, Python puede no encontrarlo. Usa cd para entrar en la carpeta donde lo guardaste, o pasa la ruta completa del archivo entre comillas si contiene espacios.
+8. Ejercicio guiado
+Abre tu editor (ej. VS Code).
+Crea un archivo nuevo y llámalo mi_primer_script.py.
+Escribe exactamente: print("Mi nombre es [Tu Nombre]").
+Guarda el archivo en tu Escritorio.
+Abre la Terminal.
+Escribe cd seguido de la ruta real de la carpeta donde guardaste el archivo, entre comillas si contiene espacios. No supongas que siempre se llama Desktop o Escritorio: puede estar traducida o redirigida a OneDrive.
+Escribe py mi_primer_script.py en Windows o python3 mi_primer_script.py en macOS/Linux y presiona Enter.
+9. Ejercicio para el estudiante
+AHORA TE TOCA A TI
+★★ Nivel 2 — Práctica: Modifica el archivo que creaste para que imprima tres líneas distintas. Una con tu nombre, otra con tu comida favorita y otra con tu edad. Ejecútalo en la terminal y verifica que aparezcan las tres líneas, una debajo de la otra.
+10. Mini evaluación
+¿Qué extensión de archivo deben tener los scripts de Python?
+Si olvidas cerrar una comilla dentro del print, ¿qué tipo de error te mostrará Python?
+¿Qué comando de terminal se usa para moverse a la carpeta donde guardaste tu script?
+11. Resumen
+Ya sabes cómo crear un archivo Python, guardar una instrucción válida usando print y comillas, y ejecutarlo usando la Terminal. Estás listo para avanzar a los fundamentos y entender qué tipos de datos puedes imprimir y cómo guardarlos en variables.
+Evaluación Módulo 1 (Introducción)
+Repaso: Al ejecutar un archivo, CPython analiza su sintaxis antes de ejecutar sus instrucciones. print() muestra información. Escribe el código en un editor, guárdalo y ejecútalo con el comando correspondiente a tu sistema.
+Práctica de código: Crea un archivo test.py y verifica que tu entorno funciona imprimiendo el número 2026.
+Errores para detectar: ¿Qué está mal en esta línea? -> Print(Hola Mundo). (No la corrijas ahora, piénsalo para el siguiente módulo).
+SOLUCIONES EXPLICADAS: En la Parte II veremos que "Print" en mayúscula no existe y el texto requiere comillas obligatoriamente.
+
+PARTE II — Fundamentos
+
+En esta segunda parte, aprenderás las piezas fundamentales de cualquier programa en Python: cómo guardar información, cómo interactuar con el usuario y cómo manejar diferentes tipos de datos.
+1. La función print() y Comentarios
+Qué es y para qué sirve
+print() es una instrucción (función) que envía información a la pantalla. Los comentarios son notas en el código que Python ignora, útiles para explicar qué hace el código.
+Sintaxis
+Para imprimir, escribimos print(contenido). Para comentar, usamos el símbolo #.
+Ejemplo básico
+CÓDIGO:
+# Este programa saluda y muestra un número
+print("Hola, explorador")
+print(2026)
+print("Año:", 2026)
+Explicación línea por línea
+- "# Este programa...": Es un comentario. Python lo ignora. Sirve para que otros programadores (o tú en el futuro) entiendan el propósito del código.
+- 'print("Hola, explorador")': Imprime el texto literal. Lleva comillas porque es una cadena de texto (string).
+- 'print(2026)': Imprime un número. No lleva comillas porque los números puros se escriben directamente.
+- 'print("Año:", 2026)': Imprime varias expresiones separadas por comas. Python automáticamente añade un espacio entre ellas.
+Diferencia entre escribir texto y usar una variable
+Si escribes print("mensaje"), imprimirás la palabra literal "mensaje". Si escribes print(mensaje) (sin comillas), Python buscará una variable llamada mensaje y mostrará su contenido.
+Errores frecuentes
+- ERROR FRECUENTE: Escribir Print() con P mayúscula. Python distingue mayúsculas de minúsculas.
+- ERROR FRECUENTE: Olvidar las comillas en el texto: print(Hola) causará un NameError porque pensará que 'Hola' es una variable que no existe.
+Buena práctica
+BUENA PRÁCTICA: Usa comentarios para explicar el "por qué" de una decisión compleja, no el "qué" de algo obvio. Abusar de comentarios (ej. print(5) # imprime 5) ensucia el código.
+AHORA TE TOCA A TI
+★ Explorador / Básico: Crea un script que imprima tu nombre en una línea, y en la siguiente línea un comentario con tu edad, seguido de un print de esa edad. No mires la solución hasta intentarlo.
+2. Variables
+Qué son y para qué sirven
+Una variable es un nombre asociado a un objeto, como una etiqueta que permite encontrar un dato. Asignar otro valor cambia esa asociación; no modifica necesariamente el objeto anterior.
+Sintaxis de asignación
+CÓDIGO:
+nombre_variable = valor
+Ejemplo básico y Reasignación
+CÓDIGO:
+jugador = "Mario"
+vidas = 3
+print(jugador)
+# Reasignación
+vidas = 2
+print(vidas)
+Explicación línea por línea
+- jugador = "Mario": jugador es el nombre; = lo asocia con el objeto de texto "Mario".
+- 'vidas = 3': Crea una variable "vidas" y le asigna el número entero 3.
+- 'print(jugador)': Muestra el contenido de la variable (Mario).
+- vidas = 2: El nombre vidas pasa a referirse al entero 2. Esto no significa que el objeto 3 se destruya: puede seguir existiendo y tener otras referencias.
+Nombres válidos e inválidos
+- Válidos: edad, nombre_completo, nivel1. Se recomienda usar snake_case (palabras en minúsculas separadas por guiones bajos) para variables en Python.
+- Inválidos: 1nivel (no puede empezar con número), mi-nombre (el guion medio es el operador de resta), "mi nombre" (no puede tener espacios).
+- Sensibilidad a mayúsculas: Edad y edad son dos variables completamente diferentes.
+Mini evaluación
+1. ¿Por qué 2jugador = "Luigi" es un nombre de variable inválido?
+2. ¿Qué convención de nombres se recomienda en Python para una variable de dos palabras como "nivel maximo"?
+3. Tipos de datos fundamentales y type()
+Qué son
+Python clasifica la información en diferentes tipos para saber qué operaciones puede hacer con ellos. Los fundamentales son:
+- str (String): Cadenas de texto.
+- int (Integer): Números enteros (sin decimales).
+- float (Float): Números de punto flotante (con decimales).
+- bool (Boolean): Valores de verdad (True o False).
+Ejemplo básico y type()
+CÓDIGO:
+nombre = "Ana"        # str
+edad = 20           # int
+estatura = 1.65     # float
+es_estudiante = True  # bool
+print(type(nombre))
+print(type(estatura))
+Explicación línea por línea
+- 'nombre = "Ana"': Asigna un str. Siempre va entre comillas (simples o dobles).
+- 'edad = 20': Asigna un int.
+- 'estatura = 1.65': Asigna un float. Nota que usa punto (.), no coma (,).
+- 'es_estudiante = True': Asigna un bool. Debe empezar con mayúscula (True, False), sin comillas.
+- 'print(type(nombre))': La función type() inspecciona la variable y devuelve su tipo. print() lo muestra en pantalla.
+4. La función len()
+Qué es y para qué sirve
+len() (de length = longitud) cuenta cuántos elementos hay dentro de algo. Principalmente lo usaremos ahora para contar cuántos caracteres tiene un string.
+Ejemplo práctico
+CÓDIGO:
+mensaje = "Hola"
+longitud = len(mensaje)
+print(longitud)  # Imprime 4
+Error frecuente
+ERROR FRECUENTE: Intentar usar len() en un número (len(2026)). Causará un error TypeError, porque los números no tienen "longitud" de caracteres.
+5. Conversión de tipos (Casting)
+Qué es y para qué sirve
+A veces necesitas cambiar un dato de un tipo a otro, por ejemplo, convertir un texto "10" al número 10 para poder sumarlo con otro número.
+Sintaxis
+Usamos int(), float(), str() y bool(). bool() comprueba el valor de verdad: bool(0) y bool("") producen False; bool(1) y bool("False") producen True. La cadena "False" no está vacía: bool() no interpreta su palabra como el booleano False.
+Ejemplo básico
+CÓDIGO:
+texto_numero = "15"
+numero_real = int(texto_numero)
+resultado = numero_real + 5
+print(resultado)  # Imprime 20
+Errores de conversión
+ERROR FRECUENTE: Intentar convertir texto que no contiene números: int("Hola") provocará un ValueError.
+6. Entradas del usuario con input()
+Qué es y para qué sirve
+input() pausa el programa, muestra un mensaje y espera a que el usuario escriba algo y presione Enter. IMPORTANTE: input() SIEMPRE devuelve un str (cadena de texto), sin importar lo que el usuario escriba.
+Ejemplo combinado con conversión
+CÓDIGO:
+edad_texto = input("¿Cuál es tu edad? ")
+edad_numero = int(edad_texto)
+# Todo en una sola línea (más común):
+edad = int(input("¿Cuál es tu edad? "))
+print(type(edad))
+Explicación línea por línea (versión en una línea)
+- 'input("¿Cuál es tu edad? ")': Muestra la pregunta y captura lo que escribes (por ejemplo, "25").
+- 'int(...)': Toma ese "25" (que es texto) y lo convierte al número 25.
+- 'edad = ...': Guarda el número resultante en la variable edad.
+- 'print(type(edad))': Confirma que la variable ahora es de tipo int.
+7. Combinar entrada, variables y salida
+Ejemplo real sencillo
+CÓDIGO:
+nombre = input("¿Cómo te llamas? ")
+anio_nacimiento = int(input("¿En qué año naciste? "))
+edad_aprox = 2026 - anio_nacimiento
+print("Hola", nombre, "tu edad aproximada es", edad_aprox)
+8. Proyecto de la PARTE II: Mi ficha personal en Python
+Instrucciones
+★★★ Estratega / Reto: Solicita nombre, año de nacimiento y estatura en metros. Calcula la edad aproximada como 2026 menos el año de nacimiento y muestra la ficha con print(). Sin conocer el día y mes de nacimiento, no puedes asegurar si ya cumplió años.
+AHORA TE TOCA A TI
+Intenta resolver el proyecto antes de mirar la solución de abajo.
+9. Soluciones Explicadas
+Solución del Ejercicio Básico
+CÓDIGO:
+print("Tu Nombre")
+# Mi edad es 25
+print(25)
+Solución del Proyecto "Mi ficha personal"
+CÓDIGO:
+# Solicitar datos
+nombre = input("Ingresa tu nombre: ")
+anio = int(input("Ingresa tu año de nacimiento: "))
+estatura = float(input("Ingresa tu estatura en metros (ej. 1.75): "))
+# Calcular edad
+edad = 2026 - anio
+# Mostrar ficha
+print("--- FICHA PERSONAL ---")
+print("Nombre:", nombre)
+print("Edad aproximada:", edad, "años")
+print("Estatura:", estatura, "m")
+print("----------------------")
+10. Evaluación de la PARTE II
+Preguntas conceptuales
+1. ¿Qué tipo de dato devuelve SIEMPRE la función input()?
+2. ¿Cuál es la diferencia entre 30 y "30" en Python?
+Detección de errores
+Encuentra el error en este código:
+CÓDIGO:
+precio = input("Precio del producto: ")
+total = precio + 10
+print(total)
+Solución: La variable precio es un str. No se puede sumar un str con un int. Falta hacer precio = float(input(...)).
+Predicción de salida
+¿Qué imprime el siguiente código?
+CÓDIGO:
+a = 5
+a = 10
+print(a)
+Solución: Imprime 10, porque a fue reasignada y ahora se refiere a 10, no a 5.
+
+PARTE III — Operadores
+
+En esta tercera parte, aprenderás a manipular la información. Los operadores son los símbolos que le dicen a Python qué operaciones matemáticas, de asignación o lógicas debe realizar con los datos.
+1. Operadores Aritméticos
+Qué es y para qué sirve
+Son símbolos que realizan operaciones matemáticas básicas, igual que en una calculadora. Sirven para hacer cálculos con números (int y float).
+Sintaxis y Tipos
+- Suma: +
+- Resta: -
+- Multiplicación: *
+- División (decimal): /
+- División entera: // (redondea el cociente hacia abajo, hacia menos infinito).
+- Módulo (residuo): % (lo que sobra de una división entera)
+- Exponente: ** (elevar a una potencia)
+Ejemplo básico
+CÓDIGO:
+a = 10
+b = 3
+print("Suma:", a + b)
+print("División normal:", a / b)
+print("División entera:", a // b)
+print("Módulo o residuo:", a % b)
+print("Exponente:", a ** b)
+Explicación línea por línea
+- 'a = 10' y 'b = 3': Se crean dos variables con valores enteros.
+- 'print("Suma:", a + b)': Suma 10 y 3. Muestra 13.
+- 'print("División normal:", a / b)': Divide 10 entre 3. Muestra 3.3333333333333335.
+- print("División entera:", a // b): 10 // 3 muestra 3. Con negativos, -10 // 3 da -4, no -3: el resultado se redondea hacia abajo. Si ambos operandos son int, devuelve int; 10.0 // 3 devuelve 3.0 (float).
+- 'print("Módulo o residuo:", a % b)': Si divides 10 entre 3, cabe 3 veces (3*3=9) y sobra 1. El módulo muestra ese 1. Es muy útil para saber si un número es par (numero % 2 == 0).
+- 'print("Exponente:", a ** b)': Multiplica 10 por sí mismo 3 veces (10 * 10 * 10). Muestra 1000.
+Error frecuente
+ERROR FRECUENTE: División por cero (10 / 0). Python arrojará un error ZeroDivisionError porque matemáticamente no es posible.
+2. Operadores de Asignación
+Qué es y para qué sirve
+Ya conoces = para asignar. Los operadores de asignación combinados son atajos para actualizar el valor de una variable haciendo una operación al mismo tiempo.
+Sintaxis
+En lugar de x = x + 1, puedes escribir x += 1. Funciona con +=, -=, *=, /=.
+Ejemplo básico
+CÓDIGO:
+puntos = 10
+puntos += 5   # Equivale a: puntos = puntos + 5
+puntos -= 2   # Equivale a: puntos = puntos - 2
+print(puntos)
+Explicación línea por línea
+- 'puntos = 10': Inicializa la variable con 10.
+- 'puntos += 5': Toma los 10 puntos, le suma 5, y el nuevo total (15) lo guarda en la misma variable.
+- 'puntos -= 2': Toma el valor actual (15), le resta 2, y guarda el nuevo total (13).
+- 'print(puntos)': Muestra el valor final, que es 13.
+3. Operadores de Comparación y = frente a ==
+Qué es y para qué sirve
+Sirven para comparar dos valores. El resultado de una comparación SIEMPRE es un valor booleano (True o False). Son la base para tomar decisiones en el código.
+Diferencia crítica entre = y ==
+- = (Un solo igual): ASIGNACIÓN. Asocia un nombre con un valor. "El nombre x ahora se refiere al valor 5".
+- == (Doble igual): COMPARACIÓN. Pregunta si dos cosas son iguales. "¿Lo que hay en x es igual a 5?".
+Sintaxis de comparación
+- Igual a: ==
+- Diferente de: !=
+- Mayor que: >
+- Menor que: <
+- Mayor o igual que: >=
+- Menor o igual que: <=
+Ejemplo básico
+CÓDIGO:
+edad = 18
+print("¿Es adulto?:", edad >= 18)
+print("¿Es un niño?:", edad < 12)
+print("¿Tiene exactamente 18?:", edad == 18)
+print("¿Es diferente de 20?:", edad != 20)
+Explicación línea por línea
+- 'edad = 18': Asignación (un solo =).
+- 'edad >= 18': Evalúa si 18 es mayor o igual a 18. Como es igual, el resultado es True.
+- 'edad < 12': Evalúa si 18 es menor que 12. Falso. Resultado: False.
+- 'edad == 18': Evalúa si 18 es exactamente igual a 18. Resultado: True.
+- 'edad != 20': Evalúa si 18 es distinto de 20. Como son diferentes, esto es True.
+4. Operadores Lógicos (and, or, not)
+Qué es y para qué sirve
+Permiten combinar varias comparaciones al mismo tiempo.
+- and (Y): Da True solo si TODAS las condiciones son verdaderas.
+- or (O): Da True si AL MENOS UNA condición es verdadera.
+- not (NO): Invierte el resultado (lo verdadero lo hace falso y viceversa).
+Ejemplo básico
+CÓDIGO:
+tiene_identificacion = True
+edad = 20
+puede_entrar = (edad >= 18) and tiene_identificacion
+print("¿Puede entrar al club?:", puede_entrar)
+Explicación línea por línea
+- 'tiene_identificacion = True': Variable booleana en verdadero.
+- 'edad = 20': Variable entera con valor 20.
+- '(edad >= 18) and tiene_identificacion': Primero evalúa edad >= 18 (que es True). Luego junta True and True. Como ambas son verdaderas, el resultado de and es True. Guarda ese resultado en puede_entrar.
+- 'print(...)': Imprime True.
+5. Precedencia y Uso de Paréntesis
+Qué es
+Si tienes una operación larga como 5 + 2 * 3, Python aplica reglas matemáticas (precedencia). Primero multiplicará (2 * 3 = 6) y luego sumará (5 + 6 = 11).
+Buena práctica
+BUENA PRÁCTICA: Aunque conozcas la precedencia de memoria, usa paréntesis para hacer el código más fácil de leer y forzar el orden que deseas.
+CÓDIGO:
+resultado = (5 + 2) * 3
+# Aquí el resultado será 21.
+6. Ejercicios de la PARTE III
+AHORA TE TOCA A TI
+No mires las soluciones hasta intentarlo.
+★ Explorador / Básico: Crea una variable llamada 'numero' con el valor 15. Usando un operador de asignación (+=), súmale 5. Imprime el resultado.
+★★ Detective / Intermedio: Escribe un código que pregunte el nombre de un usuario usando input(). Luego, imprime True si el nombre es exactamente "Admin" y False si es cualquier otra cosa (usando el operador de comparación correcto).
+★★★ Estratega / Reto: Crea un "Calculador de Propinas". Pregunta al usuario el total de la cuenta en un restaurante. Luego, calcula y muestra cuánto sería una propina del 15%. (Pista: el 15% es lo mismo que multiplicar por 0.15).
+7. Soluciones Explicadas
+Solución ★ Explorador
+CÓDIGO:
+numero = 15
+numero += 5
+print(numero)
+Explicación: numero += 5 es el atajo para numero = numero + 5. El total impreso es 20.
+Solución ★★ Detective
+CÓDIGO:
+usuario = input("Ingresa tu nombre: ")
+es_admin = (usuario == "Admin")
+print("¿Es administrador?:", es_admin)
+Explicación: Se usa '==' para comparar el texto ingresado con el texto "Admin". El resultado de esa comparación (True o False) se guarda y se imprime.
+Solución ★★★ Estratega
+CÓDIGO:
+cuenta_texto = input("¿De cuánto es la cuenta?: ")
+cuenta = float(cuenta_texto)
+propina = cuenta * 0.15
+print("Deberías dejar de propina:", propina)
+Explicación: Convertimos la entrada a float porque el dinero tiene decimales. Al multiplicar ese valor por 0.15, obtenemos la fracción correspondiente al 15% y la imprimimos directamente.
+8. Evaluación de la PARTE III
+1. ¿Cuál es la diferencia matemática en Python entre / y //?
+2. ¿Por qué la instrucción edad = 25 no te da un resultado de True o False?
+3. Si a = False y b = True, ¿cuál es el resultado de evaluar (a or b)?
+
+PARTE IV — Condicionales
+
+En esta cuarta parte, le daremos a tus programas la capacidad de tomar decisiones. Hasta ahora, el código se ejecutaba de arriba hacia abajo sin excepciones. Con los condicionales, el código puede elegir qué camino tomar basándose en ciertas situaciones.
+1. La sentencia if, indentación y los dos puntos (:)
+Qué es y para qué sirve
+La instrucción if (si condicional) evalúa una condición. Si la condición es verdadera (True), ejecuta un bloque de código. Si es falsa (False), lo salta.
+Sirve para que el programa reaccione diferente según los datos que reciba.
+Sintaxis
+Requiere la palabra if, seguida de la condición, y termina OBLIGATORIAMENTE con dos puntos (:). La siguiente línea debe tener "indentación" (espacios al inicio, generalmente 4) para indicarle a Python qué código pertenece al if.
+Ejemplo básico
+CÓDIGO:
+edad = 20
+if edad >= 18:
+    print("Eres mayor de edad.")
+    print("Puedes pasar.")
+print("Fin del programa.")
+Explicación línea por línea
+- edad = 20: Se asigna el valor 20 a la variable entera edad.
+- if edad >= 18:: Evalúa si 20 es mayor o igual a 18. Es True. Los : indican que empieza un bloque condicional.
+-     print("Eres mayor..."): Al estar indentado, se ejecuta porque la condición fue verdadera.
+-     print("Puedes pasar."): También está indentado, forma parte del bloque if.
+- print("Fin del programa."): No tiene indentación. Se ejecuta SIEMPRE, sin importar la condición, porque está fuera del bloque if.
+Error frecuente
+- ERROR FRECUENTE: Olvidar los dos puntos : al final del if. Provoca un SyntaxError.
+- ERROR FRECUENTE: No indentar o mezclar espacios y tabulaciones (IndentationError). En Python, la indentación define la estructura del código.
+2. Las alternativas: else y elif
+Qué es y para qué sirve
+- else (si no): Se ejecuta cuando la condición del if es falsa.
+- elif (else if - o si no, si...): Permite evaluar múltiples condiciones en cadena si la primera falla.
+Ejemplo básico
+CÓDIGO:
+semaforo = "amarillo"
+
+if semaforo == "verde":
+    print("Puedes avanzar.")
+elif semaforo == "amarillo":
+    print("Precaución, frena.")
+elif semaforo == "rojo":
+    print("Detente completamente.")
+else:
+    print("Color no reconocido.")
+Explicación línea por línea
+- semaforo = "amarillo": Guarda el string en la variable.
+- if semaforo == "verde":: Es falso, por lo que salta su bloque indentado.
+- elif semaforo == "amarillo":: Como el if falló, evalúa esto. Es verdadero, así que imprime "Precaución, frena.".
+- El resto del bloque (elif "rojo" y else) se ignora automáticamente porque ya se cumplió una condición.
+3. Condiciones Múltiples (and, or, not)
+Qué es y para qué sirve
+Puedes combinar varias preguntas en una sola línea usando los operadores lógicos que aprendiste en la parte anterior.
+Ejemplo práctico
+CÓDIGO:
+edad = 25
+tiene_licencia = True
+esta_ebrio = False
+
+if edad >= 18 and tiene_licencia and not esta_ebrio:
+    print("Puedes conducir el vehículo.")
+else:
+    print("No cumples los requisitos para conducir.")
+Buena práctica
+BUENA PRÁCTICA: Cuando uses muchas condiciones, puedes usar paréntesis para agruparlas y hacer el código más legible: if (edad >= 18) and (tiene_licencia):.
+4. Condicionales Anidados
+Qué es y para qué sirve
+Es colocar un if dentro de otro if. Sirve para tomar decisiones jerárquicas (primero compruebas algo general y, si se cumple, compruebas algo más específico).
+Ejemplo básico
+CÓDIGO:
+usuario = "admin"
+contrasena = "1234"
+
+if usuario == "admin":
+    print("Usuario reconocido.")
+    if contrasena == "1234":
+        print("Acceso concedido.")
+    else:
+        print("Contraseña incorrecta.")
+else:
+    print("Usuario no encontrado.")
+5. Comparación de Strings y Diferencia = vs ==
+Diferencia crítica
+Recuerda: = asigna un valor. == compara valores.
+Si escribes if edad = 18: Python arrojará un error de sintaxis porque estás intentando asignar un valor dentro de una pregunta.
+Comparación y validación básica de entradas
+Al comparar texto (strings), debes recordar que las mayúsculas importan. "hola" no es igual a "Hola".
+CÓDIGO:
+respuesta = input("¿Deseas continuar? (si/no): ")
+if respuesta == "si" or respuesta == "SI" or respuesta == "Si":
+    print("Continuando...")
+else:
+    print("Proceso detenido.")
+6. Proyecto de la PARTE IV: Sistema de acceso avanzado
+Instrucciones
+Escribe un programa de inscripción a una actividad para adultos.
+1. Pregunta la edad del usuario y conviértela a número.
+2. Si es menor de 18, rechaza la entrada.
+3. Si tiene entre 18 y 20 años (inclusive), dale pulsera estándar.
+4. Si tiene 21 o más, dale pulsera VIP (regla inventada de la actividad, solo para practicar).
+5. Agrega una validación básica: si el usuario ingresa una edad irreal (como mayor a 120 o menor a 0), imprime un mensaje de "Edad inválida".
+AHORA TE TOCA A TI
+Intenta programarlo tú mismo antes de ver la solución. Usa if, elif y else.
+7. Ejercicios de la PARTE IV
+AHORA TE TOCA A TI
+★ Explorador / Básico: Crea una variable con un número. Usa if, elif y else para distinguir tres casos: positivo, negativo y cero. Comprueba tu solución con -5, 0 y 5.
+★★ Detective / Intermedio: Pide al usuario que ingrese una contraseña. Si la contraseña es "secreta123", imprime "Acceso". Si está vacía (longitud igual a 0), imprime "No ingresaste nada". Si es cualquier otra, imprime "Denegado". (Usa la función len()).
+★★★ Estratega / Reto: Crea un evaluador de números pares. Pide un número al usuario (input), conviértelo a entero. Usa el operador módulo % para verificar si el residuo de dividirlo entre 2 es 0. Si es 0, imprime "Es par", sino, "Es impar".
+8. Soluciones Explicadas
+Solución del Proyecto Práctico
+CÓDIGO:
+edad_texto = input("Ingresa tu edad: ")
+edad = int(edad_texto)
+
+if edad < 0 or edad > 120:
+    print("Edad inválida. Intenta de nuevo.")
+elif edad < 18:
+    print("Acceso denegado. Eres menor de edad.")
+elif edad <= 20:  # Si llegó aquí, ya tiene 18 o más
+    print("Acceso permitido. Pulsera estándar.")
+else:
+    print("Acceso permitido. Pulsera VIP.")
+Solución ★ Explorador
+CÓDIGO:
+numero = -5
+if numero > 0:
+    print("Es positivo")
+elif numero < 0:
+    print("Es negativo")
+else:
+    print("Es cero")
+Solución ★★ Detective
+CÓDIGO:
+clave = input("Ingresa contraseña: ")
+if len(clave) == 0:
+    print("No ingresaste nada")
+elif clave == "secreta123":
+    print("Acceso")
+else:
+    print("Denegado")
+Solución ★★★ Estratega
+CÓDIGO:
+numero = int(input("Ingresa un número: "))
+if numero % 2 == 0:
+    print("El número es par.")
+else:
+    print("El número es impar.")
+Explicación: numero % 2 obtiene el residuo de la división entre 2. Si un número es par, su residuo siempre es exactamente 0.
+9. Evaluación de la PARTE IV
+Preguntas conceptuales
+1. ¿Qué error recibes si omites los espacios al inicio del bloque de código bajo un if?
+2. ¿Puede haber un else sin un if previo?
+3. ¿Cuál es la diferencia entre usar múltiples if consecutivos frente a usar if seguido de elif?
+Detección de errores
+Encuentra los DOS errores críticos en este código:
+CÓDIGO:
+clima = "lluvia"
+if clima = "lluvia"
+    print("Lleva paraguas")
+Solución:
+1. Usó = (asignación) en lugar de == (comparación).
+2. Olvidó los dos puntos : al final de la línea del if.
+Predicción de salida
+¿Qué imprimirá el siguiente código?
+CÓDIGO:
+x = 10
+if x > 5:
+    print("A")
+elif x > 8:
+    print("B")
+else:
+    print("C")
+Solución: Imprimirá solo "A". Aunque 10 también es mayor que 8, la estructura if/elif/else se detiene en la primera condición que sea True.
+
+PARTE V — Colecciones
+
+En esta quinta parte, aprenderás a guardar múltiples valores en una sola variable. Hasta ahora, cada variable se refería a un solo valor. Con las colecciones, una sola variable puede referirse a un grupo de valores, como un organizador con muchos compartimentos.
+1. Listas (list)
+Qué son y para qué sirven
+Una lista es una colección ordenada y modificable (mutable) de elementos. Sirven para almacenar secuencias de datos, como una lista de compras, nombres de usuarios o puntuaciones en un juego.
+Sintaxis y Creación
+Se crean usando corchetes [] y separando los elementos con comas.
+CÓDIGO:
+vacia = []
+frutas = ["manzana", "banana", "cereza"]
+edades = [20, 25, 30, 35]
+mixta = ["Juan", 28, True, 1.75]
+Índices positivos, negativos y acceso
+Cada elemento tiene una posición llamada "índice". ¡En Python, empezamos a contar desde 0!
+- Índice positivo: 0 (primero), 1 (segundo), 2 (tercero)...
+- Índice negativo: -1 (último), -2 (penúltimo)...
+CÓDIGO:
+colores = ["rojo", "verde", "azul", "amarillo"]
+print(colores[0])   # rojo
+print(colores[-1])  # amarillo
+Modificación y Operador in
+Puedes cambiar el valor de un elemento usando su índice. El operador in verifica si un valor existe dentro de la lista.
+CÓDIGO:
+juegos = ["Zelda", "Mario", "Halo"]
+juegos[1] = "Sonic"
+print(juegos)
+print("Halo" in juegos)
+Explicación línea por línea
+- juegos = [...]: Crea la lista con 3 strings.
+- juegos[1] = "Sonic": Va a la posición 1 (que era "Mario") y lo reemplaza por "Sonic".
+- print(juegos): Imprime ['Zelda', 'Sonic', 'Halo'].
+- print("Halo" in juegos): Pregunta si "Halo" está en la lista. Devuelve True.
+Métodos principales (append, insert, remove, pop) y len()
+- append(elemento): Añade al final.
+- insert(índice, elemento): Añade en una posición específica.
+- remove(elemento): Elimina la primera coincidencia del valor.
+- pop(índice): Elimina y devuelve el elemento en esa posición (por defecto, el último).
+- len(lista): Devuelve la cantidad de elementos.
+CÓDIGO:
+letras = ["A", "B", "C"]
+letras.append("D")
+letras.insert(1, "X")
+letras.remove("C")
+eliminada = letras.pop()
+print(letras)
+print("Longitud:", len(letras))
+Errores frecuentes
+- ERROR FRECUENTE: IndexError: Ocurre si intentas acceder a un índice que no existe (ej. letras[10]).
+2. Tuplas (tuple)
+Qué son y para qué sirven
+Las tuplas son secuencias inmutables: no puedes reemplazar, añadir ni quitar sus posiciones. Sin embargo, si contienen una lista, esa lista sí puede cambiar. Sirven para agrupar datos cuya estructura se mantendrá fija.
+Sintaxis
+Normalmente la coma crea la tupla: t = 1, 2 equivale a t = (1, 2). Los paréntesis agrupan y a veces son necesarios por la sintaxis. La tupla vacía se escribe ().
+CÓDIGO:
+coordenadas = (10.5, -4.2)
+print(coordenadas[0])
+# coordenadas[0] = 11.0  # ESTO CAUSARÍA UN ERROR
+Tupla de un solo elemento
+Una tupla de un elemento necesita coma: ("único",). En cambio, ("único") es una cadena str entre paréntesis; no es una tupla.
+CÓDIGO:
+tupla_sola = ("único",)
+no_es_tupla = ("único")
+Errores frecuentes
+- ERROR FRECUENTE: TypeError: Intentar modificar (tupla[0] = "algo"), agregar o eliminar elementos de una tupla.
+3. Diccionarios (dict)
+Qué son y para qué sirven
+Colecciones que almacenan datos en pares "clave-valor" (key-value). En lugar de usar índices numéricos, usas una palabra (clave) para buscar su significado (valor), igual que en un diccionario real.
+Sintaxis y Creación
+Se usan llaves {}. Cada par se separa con dos puntos : y los elementos con comas.
+CÓDIGO:
+usuario = {
+    "nombre": "Ana",
+    "edad": 28,
+    "rol": "admin"
+}
+Acceso, Modificación y Nuevas Claves
+CÓDIGO:
+print(usuario["nombre"])  # Acceso
+usuario["edad"] = 29      # Modificación
+usuario["pais"] = "México" # Nueva clave
+print(usuario)
+Métodos principales (get, keys, values, items)
+- get(clave, valor_por_defecto): Forma segura de acceder a un valor sin causar error si no existe.
+- keys(): Devuelve todas las claves.
+- values(): Devuelve todos los valores.
+- items(): Devuelve pares de clave y valor.
+CÓDIGO:
+# Usando el diccionario 'usuario' anterior
+print(usuario.get("telefono", "No registrado"))
+del usuario["rol"] # Elimina la clave 'rol'
+Errores frecuentes
+- ERROR FRECUENTE: KeyError: Intentar acceder a una clave que no existe usando corchetes (ej. usuario["telefono"]). Por eso a veces es mejor usar get().
+4. Conjuntos (set)
+Qué son y para qué sirven
+Son colecciones desordenadas de elementos únicos. Sirven para eliminar duplicados de una lista rápidamente o para realizar operaciones matemáticas de conjuntos (uniones, intersecciones).
+Sintaxis
+Se usan llaves {}, pero solo con valores, sin los dos puntos : (eso lo diferencia de un diccionario).
+CÓDIGO:
+numeros = {1, 2, 3, 3, 3, 4}
+print(numeros)  # Imprime {1, 2, 3, 4} (duplicados eliminados)
+Métodos principales
+CÓDIGO:
+numeros.add(5)
+numeros.remove(2)  # Da error si no existe
+numeros.discard(10) # Igual que remove, pero NO da error si no existe
+Operaciones básicas
+CÓDIGO:
+set_a = {1, 2, 3}
+set_b = {3, 4, 5}
+print("Unión:", set_a | set_b)          # Todo: {1, 2, 3, 4, 5}
+print("Intersección:", set_a & set_b)   # Comunes: {3}
+print("Diferencia:", set_a - set_b)     # En A pero no en B: {1, 2}
+Errores frecuentes
+- ERROR FRECUENTE: Confundir {}. Si escribes vacio = {}, creas un diccionario vacío, no un conjunto. Para crear un conjunto vacío debes usar vacio = set().
+5. Comparación de colecciones
+Aquí tienes una tabla clara para saber cuándo usar cuál:
+Colección
+Sintaxis
+Ordenada?
+Mutable? (Modificable)
+Duplicados?
+Forma de acceso
+Uso recomendado
+List (Lista)
+[1, 2]
+Sí
+Sí
+Sí
+Por índice (ej. lista[0])
+Colección general de elementos ordenados que pueden cambiar.
+Tuple (Tupla)
+(1, 2)
+Sí
+No
+Sí
+Por índice (ej. tupla[0])
+Datos fijos que no deben alterarse (ej. coordenadas).
+Dict (Diccionario)
+{"a": 1}
+Sí (desde 3.7)
+Sí
+No (claves únicas)
+Por clave (ej. dict["a"])
+Asociar datos (ej. perfiles de usuario, configuraciones).
+Set (Conjunto)
+{1, 2}
+No
+Sí
+No
+Sin acceso directo
+Eliminar duplicados, verificar pertenencia rápida.
+6. Indexación y slicing (Rebanado)
+Qué es
+El "slicing" te permite extraer una porción o sub-lista. La sintaxis es lista[inicio:fin]. (El 'inicio' se incluye, pero el 'fin' NO se incluye).
+Explicación detallada
+CÓDIGO:
+datos = ["A", "B", "C", "D", "E"]
+print(datos[0])    # "A" (Índice 0)
+print(datos[-1])   # "E" (Último elemento)
+print(datos[1:4])  # ["B", "C", "D"] (Del 1 al 3)
+print(datos[:3])   # ["A", "B", "C"] (Desde el principio hasta el 2)
+print(datos[2:])   # ["C", "D", "E"] (Desde el 2 hasta el final)
+7. Colecciones combinadas (Anidadas)
+Qué es
+Puedes meter colecciones dentro de otras colecciones.
+Ejemplos sencillos
+CÓDIGO:
+# Lista de listas (Matriz)
+matriz = [[1, 2], [3, 4]]
+print(matriz[0][1])  # Accede a la primera lista, segundo elemento: 2
+# Lista de diccionarios
+usuarios = [{"nombre": "Ana"}, {"nombre": "Luis"}]
+print(usuarios[1]["nombre"]) # Luis
+# Diccionario con listas
+curso = {"materia": "Python", "alumnos": ["Ana", "Juan", "Pedro"]}
+print(curso["alumnos"][0]) # Ana
+8. Errores frecuentes resumidos
+- Índice fuera de rango (IndexError): Acceder a la posición 5 de una lista de 3 elementos.
+- Modificar una tupla (TypeError): mi_tupla[0] = "Nuevo".
+- Clave inexistente (KeyError): mi_dict["inexistente"]. Usa .get().
+- {} vs set(): {} es un diccionario vacío. set() es un conjunto vacío.
+- Eliminar algo que no existe: .remove(X) falla si X no está. .discard(X) (en sets) es seguro. .pop(100) falla si el índice 100 no existe.
+9. Ejercicios de la PARTE V
+AHORA TE TOCA A TI
+No mires las soluciones hasta intentarlo.
+★ Explorador / Básico: Crea una lista con tus 3 películas favoritas. Usa append() para agregar una cuarta. Usa print para mostrar la segunda película de la lista.
+★★ Detective / Intermedio: Crea un diccionario vacío llamado personaje. Agrégale las claves "nombre" (un string), "vida" (un int con valor 100) y "armas" (una lista con 2 armas). Luego, modifica la "vida" para que sea 80.
+★★★ Estratega / Reto: Tienes dos listas: a = [1, 2, 2, 3] y b = [3, 4, 4, 5]. Usando la conversión a conjuntos (set()), crea una variable que contenga los números únicos que aparecen en AMBAS listas (intersección) e imprímela.
+10. Soluciones Explicadas
+Solución ★ Explorador
+CÓDIGO:
+peliculas = ["Matrix", "Gladiador", "Inception"]
+peliculas.append("Alien")
+print(peliculas[1]) # Imprime Gladiador (índice 1 es el segundo)
+Solución ★★ Detective
+CÓDIGO:
+personaje = {}
+personaje["nombre"] = "Arthur"
+personaje["vida"] = 100
+personaje["armas"] = ["Espada", "Arco"]
+personaje["vida"] = 80
+print(personaje)
+Solución ★★★ Estratega
+CÓDIGO:
+a = [1, 2, 2, 3]
+b = [3, 4, 4, 5]
+# Convertir a conjuntos
+set_a = set(a)
+set_b = set(b)
+# Intersección
+comunes = set_a & set_b
+print(comunes) # Imprime {3}
+11. Proyecto de la PARTE V: Registro sencillo de estudiantes
+Instrucciones
+Vamos a crear la base de datos de una escuela (de forma muy simplificada).
+Crea una lista llamada escuela.
+Dentro de esa lista, agrega manualmente dos diccionarios. Cada diccionario representará a un estudiante con tres claves: "nombre", "edad" y "curso".
+Luego, escribe código que extraiga el nombre del segundo estudiante y lo imprima en una frase: "El segundo estudiante es: [Nombre]".
+Solución del Proyecto
+CÓDIGO:
+# Creamos la lista y agregamos los diccionarios directamente
+escuela = [
+    {"nombre": "Carlos", "edad": 15, "curso": "Matemáticas"},
+    {"nombre": "Sofía", "edad": 16, "curso": "Historia"}
+]
+# Accedemos al segundo estudiante (índice 1) y luego a su clave "nombre"
+nombre_segundo = escuela[1]["nombre"]
+print("El segundo estudiante es:", nombre_segundo)
+Explicación
+- escuela = [...]: Define la lista principal.
+- {"nombre": "Carlos"...}: Es el diccionario en el índice 0.
+- {"nombre": "Sofía"...}: Es el diccionario en el índice 1.
+- escuela[1]: Nos da todo el diccionario de Sofía.
+- escuela[1]["nombre"]: Busca la clave "nombre" dentro del diccionario de Sofía.
+12. Evaluación de la PARTE V
+Preguntas conceptuales
+1. ¿Cuál es la diferencia principal entre una lista y una tupla?
+2. Si tienes un diccionario datos = {"x": 10}, ¿qué pasa si ejecutas datos["y"]? ¿Y si ejecutas datos.get("y")?
+Detección de errores
+Encuentra el error en este código:
+CÓDIGO:
+nombres = ["Ana", "Juan", "Pedro"]
+nombres[3] = "María"
+Solución: IndexError. La lista tiene 3 elementos (índices 0, 1, 2). No puedes asignar algo al índice 3 usando nombres[3] = ... porque no existe. Debes usar nombres.append("María").
+Elección de la colección adecuada
+¿Qué tipo de colección usarías para...?
+1. Guardar la configuración de tamaño de ventana (ancho, alto) de tu app, que nunca debe cambiar: (Solución: Tupla).
+2. Guardar las CURP únicas de las personas en un evento, para que no haya repetidos: (Solución: Set).
+3. Guardar el inventario de una tienda asociado a su precio (ej. Manzana -> $35): (Solución: Diccionario).
+
+PARTE VI — Bucles
+
+En esta sexta parte, aprenderás a automatizar tareas repetitivas. Los bucles le permiten a tu código ejecutar las mismas instrucciones una y otra vez sin que tengas que escribirlas múltiples veces.
+1. Qué es un bucle
+Qué es y para qué sirve
+Un bucle (o ciclo) es una estructura que repite un bloque de código mientras se cumpla una condición o hasta que termine de recorrer una colección de elementos.
+Sirve para la repetición automática. En lugar de escribir print("Hola") 100 veces manualmente, escribes un bucle de tres líneas que lo hace por ti al instante, reduciendo errores y ahorrando tiempo.
+2. El bucle for
+Qué es y para qué sirve
+El bucle for se utiliza para iterar (recorrer) una secuencia o colección (como una lista, una tupla, un diccionario, un set o un string).
+Sintaxis
+CÓDIGO:
+nombres = ["Ana", "Luis", "Carlos"]
+for nombre in nombres:
+    print(nombre)
+Explicación línea por línea
+- nombres = [...]: Creamos una lista llamada nombres (el "iterable").
+- for nombre in nombres:: Inicia el bucle. nombre es la "variable de iteración", una variable temporal que tomará el valor de cada elemento de la lista uno por uno.
+-     print(nombre): Debe llevar indentación. En la primera vuelta imprime "Ana", en la segunda "Luis", y en la tercera "Carlos".
+Recorrido de strings
+Un string también es una secuencia de caracteres, por lo que puedes recorrerlo con for.
+CÓDIGO:
+palabra = "Python"
+for letra in palabra:
+    print(letra)
+# Imprimirá P, luego y, luego t... en líneas separadas.
+3. La función range()
+Qué es y para qué sirve
+range() genera una secuencia de números. Es extremadamente útil cuando necesitas que un bucle se ejecute un número específico de veces.
+Sintaxis y argumentos
+- range(5): Genera números desde 0 hasta 4. (El límite final NO se incluye).
+- range(1, 6): Genera números desde el 1 (inicio) hasta el 5 (fin, recuerda que el 6 se excluye).
+- range(0, 10, 2): Genera números desde 0 hasta 9, saltando de 2 en 2 (paso). Resultado: 0, 2, 4, 6, 8.
+4. Bucle for con range()
+Ejemplo de contadores sencillos
+CÓDIGO:
+for numero in range(1, 6):
+    print("Contando:", numero)
+Explicación
+Este código imprimirá "Contando: 1", luego "Contando: 2", hasta el 5. La variable temporal numero toma los valores que genera range(1, 6).
+5. El bucle while
+Qué es y para qué sirve
+El bucle while (mientras) repite un bloque de código mientras una condición específica siga siendo verdadera (True).
+Ejemplo básico
+CÓDIGO:
+contador = 1
+while contador <= 5:
+    print(contador)
+    contador += 1
+Explicación línea por línea
+- contador = 1: Inicializa la variable antes del bucle.
+- while contador <= 5:: Evalúa la condición de continuación. Si es True, entra al bucle.
+-     print(contador): Imprime el valor actual (ej. 1).
+-     contador += 1: ¡CRÍTICO! Es la actualización de la variable. Suma 1 al contador. Si olvidas esta línea, el contador siempre será 1, la condición siempre será verdadera, y el bucle nunca terminará.
+6. Bucles infinitos
+Qué son y por qué ocurren
+Ocurren cuando la condición de un bucle while nunca se vuelve falsa. Generalmente es un error (olvidar actualizar la variable de control).
+Ejemplo seguro de corrección
+CÓDIGO:
+# Incorrecto (Infinito):
+# x = 1
+# while x > 0:
+#     print(x)
+# Correcto:
+x = 1
+while x < 5:
+    print(x)
+    x += 1 # La condición eventualmente será falsa
+7. La instrucción break
+Qué es y para qué sirve
+break sirve para terminar y salir del bucle inmediatamente, sin importar si la colección se terminó de recorrer o si la condición del while sigue siendo verdadera.
+Ejemplo
+CÓDIGO:
+for num in range(1, 10):
+    if num == 5:
+        print("Encontramos el 5. Deteniendo.")
+        break
+    print(num)
+# Imprimirá 1, 2, 3, 4 y luego se detendrá.
+8. La instrucción continue
+Qué es y para qué sirve
+continue detiene la iteración actual y salta directamente a la siguiente vuelta del bucle, pero NO rompe el bucle por completo.
+Comparación y ejemplo
+- break = terminar todo el bucle.
+- continue = saltar solo el paso actual.
+CÓDIGO:
+for num in range(1, 6):
+    if num == 3:
+        continue # El 3 se salta
+    print(num)
+# Imprimirá 1, 2, 4, 5 (nota que falta el 3).
+9. Condicionales dentro de bucles
+Ejemplo práctico
+Podemos combinar for / while con if para filtrar datos.
+CÓDIGO:
+numeros = [10, 15, 20, 25, 30]
+for n in numeros:
+    if n % 2 == 0:
+        print(n, "es par")
+    else:
+        print(n, "es impar")
+10. Bucles anidados
+Qué son
+Es colocar un bucle dentro de otro. El bucle interno completa todas sus vueltas por cada vuelta del bucle externo.
+Ejemplo básico
+CÓDIGO:
+for fila in range(3):
+    for columna in range(3):
+        print("Fila:", fila, "- Columna:", columna)
+Explicación
+Por cada fila (0, 1, 2), el bucle interno de columna cuenta (0, 1, 2). Esto genera coordenadas como (0,0), (0,1), (0,2), luego (1,0), etc.
+11. Errores frecuentes
+- ERROR FRECUENTE: Olvidar actualizar la variable en un while, causando un bucle infinito.
+- ERROR FRECUENTE: Mala indentación. Todo lo que deba repetirse debe estar indentado dentro del bucle.
+- ERROR FRECUENTE: Usar incorrectamente range() pensando que incluye el último número (ej. range(1, 10) se detiene en 9).
+- ERROR FRECUENTE: Confundir break (sale de todo) con continue (sale del paso actual).
+- ERROR FRECUENTE: Modificar una lista (añadir o borrar elementos) mientras la estás recorriendo con un for. Esto causa comportamientos impredecibles.
+12. Ejercicios de la PARTE VI
+AHORA TE TOCA A TI
+No mires las soluciones hasta intentarlo.
+★ Explorador / Básico: Crea un bucle for usando range() que imprima la tabla de multiplicar del 7 (desde 7x1 hasta 7x10).
+★★ Detective / Intermedio: Usa un bucle while para sumar todos los números del 1 al 50. Imprime solo el resultado final.
+★★★ Estratega / Reto: Crea una lista de palabras: ["sol", "luna", "estrella", "meteorito"]. Usa un bucle for para recorrerlas. Si la palabra tiene más de 5 letras, imprímela. (Usa len()).
+13. Soluciones Explicadas
+Solución ★ Explorador
+CÓDIGO:
+for i in range(1, 11):
+    resultado = 7 * i
+    print("7 x", i, "=", resultado)
+Solución ★★ Detective
+CÓDIGO:
+suma_total = 0
+contador = 1
+while contador <= 50:
+    suma_total += contador
+    contador += 1
+print("La suma del 1 al 50 es:", suma_total)
+Explicación: suma_total es un acumulador. Suma el valor de contador en cada vuelta.
+Solución ★★★ Estratega
+CÓDIGO:
+palabras = ["sol", "luna", "estrella", "meteorito"]
+for palabra in palabras:
+    if len(palabra) > 5:
+        print(palabra)
+14. Proyecto de la PARTE VI: Contador y analizador de números
+Instrucciones
+Crea un programa que pida al usuario un número límite.
+Luego, usa un bucle para recorrer todos los números desde el 1 hasta ese límite inclusive.
+El programa debe contar cuántos de esos números son pares y sumar su valor, e ignorar los impares usando condicionales. Al final, debe imprimir la cantidad de pares y la suma total.
+Solución del Proyecto
+CÓDIGO:
+limite = int(input("Ingresa un número límite: "))
+cantidad_pares = 0
+suma_pares = 0
+for numero in range(1, limite + 1):
+    if numero % 2 != 0:
+        continue # Si es impar, lo saltamos
+    
+    # Si llega aquí, es par
+    cantidad_pares += 1
+    suma_pares += numero
+print("--- RESULTADOS ---")
+print("Total de números pares encontrados:", cantidad_pares)
+print("Suma de todos los pares:", suma_pares)
+15. Evaluación de la PARTE VI
+Preguntas conceptuales
+1. ¿Cuál es la principal diferencia de uso entre un bucle for y un bucle while?
+2. ¿Qué diferencia hay entre break y continue?
+Detección de errores
+¿Qué causará este código?
+CÓDIGO:
+x = 10
+while x > 0:
+    print(x)
+Solución: Causará un bucle infinito porque x nunca se reduce. Falta un x -= 1.
+Predicción de salida
+¿Qué imprimirá esto?
+CÓDIGO:
+for i in range(3):
+    print("A")
+    break
+    print("B")
+Solución: Imprimirá solo "A" una sola vez. Al ejecutar break, el bucle termina inmediatamente, saltándose el print("B") y evitando las siguientes iteraciones.
+
+PARTE VII — Funciones
+
+En esta séptima parte, aprenderás a empaquetar tu código. Las funciones te permiten agrupar instrucciones bajo un nombre para que puedas reutilizarlas cuantas veces quieras, haciendo tu código más limpio, organizado y profesional.
+1. Qué es una función
+Qué es y qué problema resuelve
+Una función es un bloque de código diseñado para realizar una tarea específica. 
+Resuelve el problema de la repetición: si tienes una fórmula matemática o un proceso de validación que necesitas usar en 10 partes distintas de tu programa, en lugar de copiar y pegar el código 10 veces, lo escribes una sola vez dentro de una función y simplemente la "llamas" cuando la necesites.
+Esto mejora la organización (tu código se divide en partes lógicas) y la reutilización (ahorras tiempo y evitas errores por copiar/pegar).
+2. La instrucción def
+Definir vs Llamar
+Para crear una función usamos la palabra clave def (de definir). 
+- Definir una función: Es crearla y decirle a Python qué debe hacer. Esto NO ejecuta el código, solo lo guarda en la memoria.
+- Llamar una función: Es darle la orden a Python de que ejecute el código que guardaste previamente.
+Sintaxis y Ejemplo básico
+CÓDIGO:
+# 1. Definir la función
+def saludar():
+    print("¡Hola, bienvenido al sistema!")
+
+# 2. Llamar a la función
+saludar()
+saludar()
+Explicación línea por línea
+- def saludar():: def indica que vamos a crear una función. saludar es el nombre que le damos (usa snake_case). Los paréntesis () son obligatorios, y los dos puntos : indican que empieza el bloque de código.
+-     print("¡Hola..."): Este código está indentado. Es el cuerpo de la función. No se ejecutará hasta que llamemos a la función.
+- saludar(): Esta línea NO tiene indentación. Aquí estamos "llamando" o "invocando" a la función. Al ejecutar esto, Python busca la función saludar y ejecuta su contenido. Al llamarla dos veces, el saludo se imprimirá dos veces.
+3. Parámetros y argumentos
+Qué son y para qué sirven
+A menudo, las funciones necesitan información para trabajar. 
+- Parámetro: Es la variable que definimos dentro de los paréntesis al crear la función. Es como un espacio en blanco que espera ser llenado.
+- Argumento: Es el valor real (el dato) que le enviamos a la función cuando la llamamos.
+Ejemplo claro
+CÓDIGO:
+# 'nombre' es el PARÁMETRO
+def saludar_usuario(nombre):
+    print("Hola", nombre)
+
+# "Ana" y "Carlos" son los ARGUMENTOS
+saludar_usuario("Ana")
+saludar_usuario("Carlos")
+Explicación
+Cuando escribimos saludar_usuario("Ana"), el argumento "Ana" viaja hasta la función y se guarda en el parámetro nombre. Luego, la función imprime "Hola Ana".
+4. Varios parámetros
+Sintaxis
+Puedes pasar múltiples datos separándolos por comas.
+CÓDIGO:
+def sumar_imprimir(a, b):
+    resultado = a + b
+    print("La suma es:", resultado)
+
+sumar_imprimir(10, 5)
+5. El uso de return (vs print)
+Diferencia CRÍTICA
+Este es el concepto donde más se confunden los principiantes.
+- print(): Solo muestra un texto en la pantalla para que el humano lo lea. El programa no puede usar ese texto para seguir calculando.
+- return: Devuelve un valor al lugar donde la función fue llamada, permitiendo que el programa guarde ese dato en una variable o lo use para otra operación matemática. Cuando Python lee un return, la función termina inmediatamente.
+Ejemplo paso a paso
+CÓDIGO:
+def sumar(a, b):
+    return a + b
+
+resultado = sumar(5, 3)
+print("El resultado devuelto es:", resultado)
+Explicación línea por línea
+- def sumar(a, b):: Crea la función con dos parámetros.
+-     return a + b: Suma a y b, y devuelve el resultado. NO lo imprime.
+- resultado = sumar(5, 3): Python llama a sumar(5, 3). La función calcula 5 + 3 y devuelve un 8. Ese 8 viaja de regreso y se guarda en la variable resultado.
+- print(..., resultado): Finalmente, mostramos el valor guardado en la variable.
+6. Funciones con decisiones (if/elif/else)
+CÓDIGO:
+def verificar_edad(edad):
+    if edad >= 18:
+        return "Mayor de edad"
+    else:
+        return "Menor de edad"
+
+estado = verificar_edad(20)
+print(estado)
+7. Funciones con bucles (for/while)
+CÓDIGO:
+def contar_hasta(limite):
+    for i in range(1, limite + 1):
+        print(i)
+
+contar_hasta(3) # Imprimirá 1, 2, 3
+8. Funciones con listas
+Puedes pasar listas completas como argumentos.
+CÓDIGO:
+def sumar_lista(numeros):
+    total = 0
+    for num in numeros:
+        total += num
+    return total
+
+mis_notas = [10, 8, 9]
+promedio = sumar_lista(mis_notas) / len(mis_notas)
+print("Tu promedio es:", promedio)
+9. Argumentos predeterminados
+Si quieres que un parámetro tenga un valor por defecto en caso de que el usuario olvide enviarlo, usa = en la definición.
+CÓDIGO:
+def saludar(nombre="Usuario"):
+    print("Hola,", nombre)
+
+saludar("Ana") # Imprime: Hola, Ana
+saludar()      # Imprime: Hola, Usuario (usa el valor por defecto)
+10. Argumentos por nombre (Keyword Arguments)
+Normalmente, los argumentos se asignan en orden (argumentos posicionales). Pero puedes especificar a qué parámetro va cada valor usando su nombre.
+CÓDIGO:
+def presentar(nombre, edad):
+    print(nombre, "tiene", edad, "años")
+
+# Usando argumentos por nombre, el orden no importa
+presentar(edad=20, nombre="Ana")
+11. Variables locales y globales
+Ámbito (Scope)
+- Variable local: Su nombre pertenece al ámbito de la función y normalmente no se accede a él desde fuera. Al terminar la llamada no se destruyen necesariamente sus objetos: otros objetos, valores devueltos o funciones internas pueden conservar referencias.
+- Variable global: Su nombre se define en el ámbito del módulo. No queda disponible automáticamente en todos los módulos de un programa.
+Buenas prácticas
+BUENA PRÁCTICA: Evita usar (y sobre todo modificar) variables globales dentro de tus funciones. Trata a tus funciones como cajas negras: todo lo que necesitan deben recibirlo como argumentos (parámetros), y todo lo que producen deben entregarlo usando return.
+12. Errores frecuentes
+- ERROR FRECUENTE: Definir una función pero nunca llamarla. Tu programa no hará nada y no mostrará errores, simplemente terminará.
+- ERROR FRECUENTE: Olvidar los paréntesis al llamar la función: saludar en vez de saludar().
+- ERROR FRECUENTE: Olvidar los : al final de def (SyntaxError).
+- ERROR FRECUENTE: Pasar una cantidad incorrecta de argumentos. Si la función pide 2 y pasas 1, Python lanzará un TypeError.
+- ERROR FRECUENTE: Confundir print con return. Si una función solo imprime y tú intentas guardar su resultado en una variable (ej. x = funcion_con_print()), esa variable guardará un valor especial llamado None (Nada).
+- ERROR FRECUENTE: Intentar usar una variable local fuera de su función (NameError).
+13. Ejercicios de la PARTE VII
+AHORA TE TOCA A TI
+No mires las soluciones hasta intentarlo.
+★ Explorador / Básico: Crea una función llamada multiplicar que reciba dos parámetros, los multiplique y DEVUELVA (return) el resultado. Llama a la función pasándole 4 y 5, guarda el resultado en una variable e imprímela.
+★★ Detective / Intermedio: Crea una función llamada es_par que reciba un número. Si el número es divisible por 2 (residuo 0), que devuelva True. Si no, que devuelva False.
+★★★ Estratega / Reto: Crea una función encontrar_maximo que reciba una lista de números y devuelva el número más grande. (Pista: usa un bucle y una variable para recordar el número más grande visto hasta el momento).
+Soluciones Explicadas
+Solución ★ Explorador
+CÓDIGO:
+def multiplicar(a, b):
+    return a * b
+
+resultado = multiplicar(4, 5)
+print(resultado)
+Solución ★★ Detective
+CÓDIGO:
+def es_par(numero):
+    if numero % 2 == 0:
+        return True
+    else:
+        return False
+# Forma más corta (Avanzada): return numero % 2 == 0
+Solución ★★★ Estratega
+CÓDIGO:
+def encontrar_maximo(lista):
+    maximo_actual = lista[0] # Asumimos que el primero es el mayor
+    for numero in lista:
+        if numero > maximo_actual:
+            maximo_actual = numero
+    return maximo_actual
+
+mi_lista = [10, 45, 2, 89, 3]
+print("El mayor es:", encontrar_maximo(mi_lista))
+Nota: si la lista está vacía, lista[0] produce IndexError. Python ya incluye la función max(), que hace este mismo trabajo: max(mi_lista) devuelve 89. Con una lista vacía, max() lanza ValueError, salvo que indiques un valor por defecto: max([], default=None) devuelve None.
+14. Proyecto de la PARTE VII: Calculadora mediante funciones
+Instrucciones
+Vamos a construir una calculadora robusta y modular.
+1. Crea cuatro funciones: sumar(a, b), restar(a, b), multiplicar(a, b) y dividir(a, b).
+2. Cada función debe retornar el resultado matemático correcto. En el caso de la división, si b es 0, retorna el texto "Error: División por cero".
+3. Fuera de las funciones, pide al usuario (usando input) que ingrese dos números.
+4. Muestra un menú básico usando print y pide al usuario que elija una operación (1 para suma, 2 para resta, etc.).
+5. Usa condicionales (if/elif) para llamar a la función correcta según la elección del usuario y muestra el resultado devuelto.
+Solución del Proyecto
+CÓDIGO:
+# --- 1. DEFINICIÓN DE FUNCIONES ---
+def sumar(a, b):
+    return a + b
+
+def restar(a, b):
+    return a - b
+
+def multiplicar(a, b):
+    return a * b
+
+def dividir(a, b):
+    if b == 0:
+        return "Error: División por cero."
+    return a / b
+
+# --- 2. ENTRADAS DEL USUARIO ---
+print("=== CALCULADORA MAESTRA ===")
+num1 = float(input("Ingresa el primer número: "))
+num2 = float(input("Ingresa el segundo número: "))
+
+print("\nOperaciones disponibles:")
+print("1. Sumar")
+print("2. Restar")
+print("3. Multiplicar")
+print("4. Dividir")
+opcion = input("Elige una opción (1/2/3/4): ")
+
+# --- 3. LÓGICA DE DECISIÓN Y LLAMADAS A FUNCIONES ---
+if opcion == "1":
+    resultado = sumar(num1, num2)
+    print("Resultado:", resultado)
+elif opcion == "2":
+    resultado = restar(num1, num2)
+    print("Resultado:", resultado)
+elif opcion == "3":
+    resultado = multiplicar(num1, num2)
+    print("Resultado:", resultado)
+elif opcion == "4":
+    resultado = dividir(num1, num2)
+    print("Resultado:", resultado)
+else:
+    print("Opción no válida.")
+15. Evaluación de la PARTE VII
+Preguntas conceptuales
+1. ¿Cuál es la diferencia fundamental entre un parámetro y un argumento?
+2. Si una función ejecuta un print(resultado) pero no tiene un return, ¿qué valor devuelve realmente la función a quien la llamó?
+Detección de errores
+Encuentra el error en este código:
+CÓDIGO:
+def calcular_doble(x):
+    doble = x * 2
+
+mi_numero = calcular_doble(10)
+print(mi_numero)
+Solución: Imprimirá None. La función calcula el doble correctamente, pero le falta la instrucción return doble al final. El valor nunca sale de la función.
+Predicción de salida
+¿Qué imprime el siguiente código?
+CÓDIGO:
+def saludo(nombre="Anónimo"):
+    return "Hola " + nombre
+
+print(saludo("Carlos"))
+print(saludo())
+Solución: Imprimirá:
+Hola Carlos
+Hola Anónimo
+
+PARTE VIII — Strings
+
+En esta octava parte, exploraremos a fondo los "strings" (cadenas de texto). Aunque ya los has usado para imprimir mensajes, los strings son una de las herramientas más poderosas y versátiles en Python. Aprenderás a manipular, buscar, limpiar y dar formato al texto como un profesional.
+1. Qué es un string
+Qué es y qué representa
+Un string es una secuencia de caracteres (letras, números, espacios, símbolos) que representa texto. 
+Se definen encerrando el contenido entre comillas simples ('Hola') o dobles ("Hola"). Python no hace diferencia funcional entre ambas.
+Diferencia entre texto y variables
+CÓDIGO:
+mensaje = "Python"
+print("mensaje")
+print(mensaje)
+Explicación línea por línea
+- mensaje = "Python": Asignamos el string "Python" a la variable llamada mensaje.
+- print("mensaje"): Al llevar comillas, Python imprime literalmente la palabra "mensaje".
+- print(mensaje): Al no llevar comillas, Python busca la variable y muestra su contenido ("Python").
+Strings vacíos
+Puedes crear un string que no contenga nada. Es muy útil como punto de partida para construir texto dinámicamente.
+CÓDIGO:
+texto_vacio = ""
+2. Indexación
+Qué es y para qué sirve
+Cada carácter en un string tiene una posición numérica llamada "índice". ¡Recuerda que en Python siempre empezamos a contar desde el cero (0)!
+Índices positivos y negativos
+CÓDIGO:
+texto = "Python"
+print(texto[0])
+print(texto[-1])
+Explicación línea por línea
+- texto = "Python": Creamos la variable. P = 0, y = 1, t = 2, h = 3, o = 4, n = 5.
+- print(texto[0]): Accede al primer carácter (índice 0). Imprime P.
+- print(texto[-1]): Python permite índices negativos para contar desde el final. -1 es el último carácter. Imprime n.
+Errores por índice fuera de rango
+Si intentas acceder a texto[10], Python lanzará un IndexError: string index out of range porque la palabra solo tiene 6 caracteres.
+3. La función len()
+Cómo conocer la longitud
+Para saber cuántos caracteres tiene un string (incluyendo espacios), usamos len() (de length, longitud).
+CÓDIGO:
+saludo = "Hola, mundo"
+longitud = len(saludo)
+print(longitud) # Imprime 11
+4. Slicing (Rebanado)
+Qué es
+El slicing te permite extraer un "trozo" (subcadena) de un string.
+La sintaxis completa es [inicio : fin : paso]. El carácter de "inicio" se incluye, pero el de "fin" NO se incluye.
+Ejemplos paso a paso
+CÓDIGO:
+texto = "Programacion"
+print(texto[0:3])
+print(texto[:3])
+print(texto[2:])
+print(texto[::2])
+Explicación línea por línea
+- texto[0:3]: Extrae desde el índice 0 hasta el 2 (el 3 no se incluye). Imprime Pro.
+- texto[:3]: Si omites el inicio, Python asume que es 0. Imprime Pro.
+- texto[2:]: Si omites el fin, Python extrae hasta el último carácter. Extrae desde la 'o' en adelante. Imprime ogramacion.
+- texto[::2]: Omitir inicio y fin significa "todo el texto", pero el 2 al final indica el "paso" (saltar de dos en dos). Imprime Pormco.
+5. Inmutabilidad
+Qué es
+Los strings en Python son inmutables. Esto significa que, una vez creados, no puedes cambiar un carácter individual directamente.
+Error de inmutabilidad
+CÓDIGO:
+palabra = "Gato"
+# palabra[0] = "P"  # ESTO CAUSA UN ERROR (TypeError)
+La solución: Crear un nuevo string
+CÓDIGO:
+palabra_nueva = "P" + palabra[1:]
+print(palabra_nueva) # Imprime "Pato"
+6. Concatenación
+Qué es
+Concatenar es unir dos o más strings usando el operador de suma (+).
+CÓDIGO:
+nombre = "Ana"
+apellido = "García"
+nombre_completo = nombre + " " + apellido
+print(nombre_completo)
+7. Repetición
+Qué es
+Puedes multiplicar un string por un número entero usando el asterisco (*) para repetirlo.
+CÓDIGO:
+eco = "Hola " * 3
+print(eco) # Imprime: Hola Hola Hola 
+8. Operador in
+Qué es y para qué sirve
+El operador in verifica si una subcadena existe dentro de otro string. Devuelve True o False.
+CÓDIGO:
+print("Py" in "Python") # Imprime True
+print("java" in "Python") # Imprime False
+9. Métodos básicos de strings
+Los métodos son "funciones" especiales que pertenecen a los strings. Importante: Como los strings son inmutables, estos métodos no modifican el texto original, sino que devuelven un nuevo string con los cambios.
+Transformación de texto
+CÓDIGO:
+mensaje = "  hola MUNDO  "
+print(mensaje.lower())      # "  hola mundo  " (Todo minúsculas)
+print(mensaje.upper())      # "  HOLA MUNDO  " (Todo mayúsculas)
+print(mensaje.capitalize()) # "  hola mundo  ": el primer carácter es un espacio
+print(mensaje.title())      # "  Hola Mundo  " (Mayúscula inicial de cada palabra)
+print(mensaje.strip())      # "hola MUNDO" (Elimina espacios al inicio y final)
+Búsqueda y reemplazo
+CÓDIGO:
+texto = "Python es genial"
+print(texto.replace("genial", "poderoso")) # "Python es poderoso"
+print(texto.startswith("Py")) # True (¿Empieza con "Py"?)
+print(texto.endswith("al"))   # True (¿Termina con "al"?)
+print(texto.find("es"))       # 7 (Devuelve el índice donde empieza "es". -1 si no lo encuentra)
+print(texto.count("n"))       # 2 (Cuenta cuántas veces aparece la "n")
+10. El método split()
+Qué es y para qué sirve
+split() divide un string en varias partes y las guarda en una Lista. Por defecto, divide el texto cada vez que encuentra un espacio.
+CÓDIGO:
+frase = "Python es muy útil"
+palabras = frase.split()
+print(palabras) # Imprime: ['Python', 'es', 'muy', 'útil']
+11. El método join()
+Qué es y para qué sirve
+Es el inverso de split(). Toma una lista de strings y los une en un solo string, usando un "conector" (separador).
+CÓDIGO:
+palabras = ["Python", "es", "útil"]
+frase = " ".join(palabras) # Usa un espacio " " como conector
+print(frase) # Imprime: Python es útil
+Comparación: split() frente a join()
+- split(): Pasa de String a Lista.
+- join(): Pasa de Lista a String.
+12. f-strings (String Formatting)
+Qué es y para qué sirve
+A partir de Python 3.6, las "f-strings" son la forma más moderna, rápida y legible de insertar variables dentro de un texto.
+Sintaxis y Ejemplo
+Debes colocar una f justo antes de las comillas iniciales, y meter las variables entre llaves {}.
+CÓDIGO:
+nombre = "Ana"
+edad = 20
+print(f"Me llamo {nombre} y tengo {edad} años.")
+Expresiones dentro de f-strings
+Las llaves evalúan expresiones. Los float representan muchos decimales de forma aproximada: con precio = 100, precio * 1.16 produce 115.99999999999999. El formato :.2f muestra 116.00, pero no cambia la precisión interna del cálculo. Fuente: Representación de punto flotante
+CÓDIGO:
+precio = 100
+print(f"El total con impuestos es: {precio * 1.16:.2f}")
+13. Caracteres de escape
+Qué son
+Son combinaciones especiales que usan la barra invertida \ para insertar caracteres que normalmente romperían el string o que no se pueden escribir directamente.
+- \n: Nueva línea (Enter).
+- \t: Tabulación (Sangría).
+- \" y \': Comilla doble o simple literal.
+- \\: Barra invertida literal.
+CÓDIGO:
+print("Línea 1\nLínea 2")
+print("Él dijo: \"Hola\"")
+print("Ruta:\\Carpeta\\Archivo")
+14. Strings multilínea
+Qué son
+Si necesitas un texto muy largo que ocupe varios párrafos, puedes usar comillas triples (""" o '''). Respetarán todos los saltos de línea sin usar \n.
+CÓDIGO:
+texto = """Primera línea
+Segunda línea
+Tercera línea"""
+print(texto)
+15. Conversión entre strings y números
+Repaso
+No puedes hacer operaciones matemáticas entre texto y números. Debes convertirlos usando str(), int() o float().
+CÓDIGO:
+numero_texto = "50"
+numero_real = int(numero_texto)
+# Si intentas int("Hola"), Python arrojará un ValueError.
+16. Strings + input()
+El resultado de input() es siempre un string. Puedes aplicarle métodos inmediatamente.
+CÓDIGO:
+# Quita espacios accidentales y convierte a minúsculas para evaluar fácilmente
+respuesta = input("¿Aceptas las condiciones? (si/no): ").strip().lower()
+17. Strings + condicionales
+CÓDIGO:
+archivo = "documento.pdf"
+if archivo.endswith(".pdf"):
+    print("Es un archivo PDF válido.")
+else:
+    print("Formato no soportado.")
+18. Strings + bucles
+CÓDIGO:
+vocales = 0
+for letra in "Murcielago":
+    if letra.lower() in "aeiou":
+        vocales += 1
+print(f"La palabra tiene {vocales} vocales.")
+19. Strings + funciones
+CÓDIGO:
+def censurar_palabra(texto, palabra_prohibida):
+    censura = "*" * len(palabra_prohibida)
+    return texto.replace(palabra_prohibida, censura)
+resultado = censurar_palabra("Este secreto es muy secreto", "secreto")
+print(resultado) # "Este ******* es muy *******"
+20. Errores frecuentes
+- Índice fuera de rango: Intentar texto[100] en una palabra corta.
+- Intentar modificar directamente: texto[0] = "A" (falla por inmutabilidad).
+- Olvidar comillas: texto = Hola (Python pensará que Hola es una variable).
+- Concatenar str con int sin conversión: "Tengo " + 20 + " años" (TypeError). Correcto: "Tengo " + str(20) + " años" o usar f-strings.
+- Confundir split() con join(): Tratar de hacer .join() a un string en lugar de una lista.
+- Olvidar guardar el resultado: Como los strings son inmutables, texto.lower() por sí solo no cambia la variable texto. Debes hacer texto = texto.lower().
+- Uso incorrecto de escapes: Usar \n pensando que imprimirá una barra y una ene. Si quieres el texto literal "\n", debes usar \\n.
+21. Ejercicios de la PARTE VIII
+AHORA TE TOCA A TI
+★ Básico: Crea una variable con la frase "Python es divertido". Usa un método para convertirla toda a mayúsculas e imprímela.
+★★ Intermedio: Pide al usuario su nombre completo mediante input(). Usa .split() para separarlo en una lista. Imprime solo el primer nombre (el índice 0 de esa lista).
+★★★ Reto: Crea un programa que pida una palabra al usuario. Imprime True si la palabra es un palíndromo (se lee igual al derecho y al revés) y False si no lo es. (Pista: el slicing [::-1] invierte un string).
+Soluciones Explicadas
+Solución ★ Básico
+CÓDIGO:
+frase = "Python es divertido"
+frase_mayusculas = frase.upper()
+print(frase_mayusculas)
+Solución ★★ Intermedio
+CÓDIGO:
+nombre_completo = input("Ingresa tu nombre completo: ")
+partes = nombre_completo.split()
+primer_nombre = partes[0]
+print(f"Tu primer nombre es {primer_nombre}.")
+Solución ★★★ Reto
+CÓDIGO:
+palabra = input("Ingresa una palabra: ").lower().strip()
+palabra_invertida = palabra[::-1]
+es_palindromo = palabra == palabra_invertida
+print(f"¿Es un palíndromo?: {es_palindromo}")
+22. Proyecto de la PARTE VIII: Analizador Básico de Texto
+Instrucciones
+Crea un programa que pida una frase al usuario y una letra para buscar. El programa debe analizar la frase y mostrar un reporte detallado usando f-strings.
+Debe mostrar:
+1. Número total de caracteres.
+2. Cantidad de palabras.
+3. El texto completamente en mayúsculas.
+4. El texto en minúsculas.
+5. Cuántas veces aparece la letra elegida (usando un método de strings).
+6. ¿Contiene la palabra "Python"? (Devuelve True o False).
+Solución del Proyecto
+CÓDIGO:
+# 1. Entradas del usuario
+frase = input("Ingresa una frase larga: ")
+letra_buscar = input("Ingresa una letra para contar: ")
+# 2. Procesamiento
+total_caracteres = len(frase)
+palabras = frase.split()
+total_palabras = len(palabras)
+mayusculas = frase.upper()
+minusculas = frase.lower()
+cantidad_letra = frase.lower().count(letra_buscar.lower())
+contiene_python = "python" in frase.lower()
+# 3. Salida de resultados
+print("\n--- ANALIZADOR DE TEXTO ---")
+print(f"Total de caracteres: {total_caracteres}")
+print(f"Total de palabras: {total_palabras}")
+print(f"En mayúsculas: {mayusculas}")
+print(f"En minúsculas: {minusculas}")
+print(f"La letra '{letra_buscar}' aparece {cantidad_letra} veces.")
+print(f"¿Menciona a Python?: {contiene_python}")
+print("---------------------------")
+23. Evaluación de la PARTE VIII
+Preguntas conceptuales
+1. ¿Qué significa que un string sea inmutable?
+2. ¿Cuál es la principal diferencia entre split() y join()?
+Predicción de salida
+¿Qué imprime este código?
+CÓDIGO:
+codigo = "A1-B2-C3"
+partes = codigo.split("-")
+print(partes[1])
+Solución: Imprime B2. split("-") crea la lista ['A1', 'B2', 'C3'], y el índice 1 es 'B2'.
+Detección de errores
+Encuentra el error:
+CÓDIGO:
+mensaje = "Hola"
+mensaje.upper()
+print(mensaje)
+Solución: Imprimirá "Hola" (con la 'H' mayúscula inicial, pero el resto minúsculas). El método .upper() devuelve un texto nuevo pero no altera el original. Para que cambie, debe ser: mensaje = mensaje.upper().
+
+PARTE IX — Archivos
+
+En esta novena parte, daremos un paso gigantesco. Hasta ahora, todos los datos que guardabas en variables se perdían al cerrar el programa. Aquí aprenderás a interactuar con el disco duro para guardar y recuperar información de forma permanente.
+1. Qué es un archivo
+Qué es y para qué sirve
+Cuando declaras una variable (nombre = "Ana"), se guarda en la memoria RAM (memoria a corto plazo). Si apagas la computadora o cierras el programa, la RAM se limpia y los datos desaparecen. 
+Un archivo es una estructura guardada en el disco duro (memoria a largo plazo). Sirve para lograr la persistencia de la información. Un archivo de texto (.txt) almacena datos como simples cadenas de caracteres. Piensa en las listas de tareas en un bloc de notas, registros de temperaturas o una agenda de contactos.
+2. open()
+Qué es y para qué sirve
+Para interactuar con un archivo, primero debes "abrirlo", creando un puente de comunicación entre tu programa y el disco duro. Usamos la función incorporada open().
+Sintaxis
+CÓDIGO:
+archivo = open("datos.txt", "r", encoding="utf-8")
+Explicación línea por línea
+- archivo =: Guardamos el "puente" o manejador del archivo en una variable.
+- open(...): Es la función que abre el archivo.
+- "datos.txt": Es el nombre (o ruta) del archivo que queremos abrir.
+- "r": Es el modo de apertura. "r" viene de read (leer).
+- encoding="utf-8": Le dice a Python qué "diccionario de caracteres" usar. Es crucial para leer correctamente acentos y la letra ñ.
+3. read()
+Qué es y para qué sirve
+Una vez abierto el archivo, read() extrae TODO su contenido como un único y gigantesco string.
+Ejemplo
+CÓDIGO:
+archivo = open("datos.txt", "r", encoding="utf-8")
+contenido = archivo.read()
+print(contenido)
+archivo.close()
+4. readline()
+Qué es y para qué sirve
+Si el archivo es muy largo, quizá no quieras leerlo todo de golpe. readline() lee solo una línea cada vez que lo llamas (desde donde se quedó la última vez).
+CÓDIGO:
+archivo = open("datos.txt", "r", encoding="utf-8")
+linea1 = archivo.readline()
+linea2 = archivo.readline()
+print("Línea 1:", linea1)
+archivo.close()
+5. readlines()
+Qué es y para qué sirve
+readlines() (en plural) lee todo el archivo, pero en lugar de devolver un solo texto, devuelve una Lista donde cada elemento es una línea del archivo.
+CÓDIGO:
+archivo = open("datos.txt", "r", encoding="utf-8")
+lineas = archivo.readlines()
+print(lineas[0]) # Imprime la primera línea
+archivo.close()
+6. close()
+Por qué es vital
+Cerrar un archivo libera recursos y vacía los datos pendientes del búfer. Si no se cierra correctamente, parte de lo escrito podría no guardarse. No implica que todo archivo abierto esté bloqueado por el sistema operativo. Usa with open(...) para cerrarlo incluso si se produce una excepción.
+7. with open()
+Qué es y por qué es la mejor práctica
+Es fácil olvidar escribir close(). La estructura with open() (gestor de contexto) se encarga de cerrar el archivo automáticamente en el instante en que el bloque de código indentado termina o incluso si ocurre un error inesperado.
+Ejemplo
+CÓDIGO:
+with open("datos.txt", "r", encoding="utf-8") as archivo:
+    contenido = archivo.read()
+    print(contenido)
+# Aquí el archivo ya está cerrado automáticamente
+Explicación
+- with: Inicia el bloque seguro.
+- open(...): Abre el archivo.
+- as archivo:: Asigna el manejador a la variable archivo. Fíjate en los dos puntos :.
+- contenido = ...: Todo lo que esté indentado ocurrirá mientras el archivo esté abierto.
+8. Modos de apertura
+Cuando abres un archivo, debes declarar tu intención:
+- "r" (Read): Solo lectura. El archivo debe existir, de lo contrario da error.
+- "w" (Write): Escritura. ¡CUIDADO! Si el archivo ya existe, borra todo su contenido y lo sobrescribe desde cero. Si no existe, lo crea.
+- "a" (Append): Agregar. Añade contenido al final del archivo sin borrar lo anterior. Si no existe, lo crea.
+- "x" (Create): Crea un archivo nuevo. Si ya existe, lanza un error (ideal para no sobrescribir accidentalmente).
+9. Escritura ("w")
+Ejemplo
+CÓDIGO:
+with open("notas.txt", "w", encoding="utf-8") as archivo:
+    archivo.write("Primera línea\n")
+    archivo.write("Segunda línea\n")
+10. Agregar contenido ("a")
+Ejemplo
+CÓDIGO:
+with open("notas.txt", "a", encoding="utf-8") as archivo:
+    archivo.write("Esta línea se añade al final\n")
+Diferencia w vs a
+Cada apertura en modo "w" trunca el archivo existente. Si lo abres diez veces y escribes una línea cada vez, al final queda la última. Si lo abres una sola vez y llamas diez veces a write() con un salto de línea, puedes guardar diez líneas. El modo "a" añade contenido al final.
+11. Leer línea por línea
+La forma más eficiente
+La mejor manera de procesar un archivo, sin importar si tiene 10 o 1 millón de líneas, es iterarlo con un bucle for.
+CÓDIGO:
+with open("datos.txt", "r", encoding="utf-8") as archivo:
+    for linea in archivo:
+        print(linea.strip())
+Explicación
+- for linea in archivo:: Lee el archivo línea por línea, sin cargar todo en la RAM.
+- linea.strip(): Quita el salto de línea \n oculto al final de cada frase y los espacios sobrantes.
+12. Archivos + Listas
+Cómo guardar datos en la memoria a partir de un archivo
+CÓDIGO:
+nombres = []
+with open("nombres.txt", "r", encoding="utf-8") as archivo:
+    for linea in archivo:
+        nombre_limpio = linea.strip()
+        nombres.append(nombre_limpio)
+print("Nombres cargados:", nombres)
+13. Archivos + input()
+Interacción con el usuario
+CÓDIGO:
+nuevo_usuario = input("Ingresa tu nombre: ")
+with open("usuarios.txt", "a", encoding="utf-8") as archivo:
+    archivo.write(nuevo_usuario + "\n")
+print("Usuario guardado con éxito.")
+14. Codificación UTF-8
+¿Por qué lo usamos?
+Indica encoding="utf-8" al leer y escribir archivos de texto UTF-8. En Python 3.14 la codificación predeterminada depende de la configuración regional y del modo UTF-8; no siempre es cp1252 en Windows. PEP 686 establece el modo UTF-8 predeterminado desde Python 3.15, con opciones para desactivarlo. Leer un archivo con una codificación distinta de la usada al escribirlo puede producir errores o texto incorrecto. Fuente: PEP 686: modo UTF-8 predeterminado
+15. Rutas relativas
+Una ruta relativa se interpreta desde el directorio de trabajo actual, que puedes consultar con Path.cwd() tras importar Path. Puede ser distinto de la carpeta donde está el script.
+- "datos.txt": Busca el archivo dentro del directorio de trabajo actual.
+- "carpeta/datos.txt": Busca dentro de carpeta, una subcarpeta del directorio de trabajo actual.
+16. Rutas absolutas
+Una ruta absoluta es la dirección completa y exacta desde la raíz del disco duro.
+- Ejemplo ilustrativo en Windows: "C:/Users/Juan/Desktop/datos.txt". Sustituye usuario y carpetas por los reales; el Escritorio puede estar redirigido.
+- Ejemplo ilustrativo en macOS: "/Users/juan/Desktop/datos.txt". En Linux: "/home/juan/datos.txt". Ninguna de estas rutas garantiza que exista en tu equipo.
+Una ruta absoluta identifica una ubicación desde la raíz; una relativa depende del directorio de trabajo. Su portabilidad depende de la estructura y configuración: una ruta absoluta también podría existir en otro equipo.
+17. Introducción a pathlib
+Qué es
+pathlib es un módulo moderno de Python que hace que trabajar con rutas sea mucho más fácil y seguro, sin importar si estás en Windows o Mac.
+Ejemplo
+CÓDIGO:
+from pathlib import Path
+ruta = Path("datos.txt")  # Relativa al directorio de trabajo
+# En un archivo .py, para ubicarlo junto al script:
+ruta_junto_al_script = Path(__file__).resolve().parent / "datos.txt"
+# __file__ normalmente no existe en una consola o notebook.
+18. Comprobar existencia
+Antes de abrir un archivo en modo lectura, es buena práctica comprobar si existe.
+CÓDIGO:
+from pathlib import Path
+ruta = Path("mi_archivo.txt")
+if ruta.exists():
+    with open(ruta, "r", encoding="utf-8") as f:
+        print(f.read())
+else:
+    print("El archivo no existe.")
+19. Carpetas
+Puedes usar pathlib para crear carpetas fácilmente.
+CÓDIGO:
+from pathlib import Path
+carpeta = Path("mis_datos")
+carpeta.mkdir(exist_ok=True) # Lo crea si no existe, si existe no da error
+20. iterdir()
+Qué es
+Si quieres saber qué archivos hay dentro de una carpeta, usas iterdir(). Nota importante: Solo lee el contenido inmediato de la carpeta, no entra a buscar en subcarpetas.
+CÓDIGO:
+from pathlib import Path
+carpeta_actual = Path(".") # El punto significa "carpeta actual"
+for elemento in carpeta_actual.iterdir():
+    print(elemento)
+21. FileNotFoundError
+Si intentas hacer open("no_existo.txt", "r"), Python arrojará un error FileNotFoundError y el programa se detendrá. En la siguiente sección (Excepciones) veremos cómo evitar que el programa colapse cuando esto suceda.
+22. Buenas prácticas
+- Preferir siempre with open() en lugar de open() y close() manuales.
+- Usar siempre encoding="utf-8" al leer o escribir texto.
+- No sobrescribir ("w") archivos importantes accidentalmente; usar "a" o crear copias de seguridad.
+- Comprobar las rutas con Path(ruta).exists().
+- Separar datos (archivos .txt) de tu código fuente (.py).
+23. Errores frecuentes
+- ERROR FRECUENTE: FileNotFoundError: La ruta es incorrecta o el archivo no existe.
+- ERROR FRECUENTE: Olvidar cerrar el archivo (si no usas with open()).
+- ERROR FRECUENTE: Confundir "w" y "a", borrando meses de información al usar "w".
+- ERROR FRECUENTE: Olvidar añadir \n al usar write(), provocando que todo el texto quede pegado en una sola línea.
+- ERROR FRECUENTE: Intentar hacer archivo.read() después de que el bloque with open() ha terminado (ValueError: I/O operation on closed file).
+24. Ejercicios de la PARTE IX
+AHORA TE TOCA A TI
+★ Básico: Crea un programa que escriba la frase "Aprendiendo a guardar archivos" en un archivo llamado registro.txt.
+★★ Intermedio: Escribe un programa que pregunte al usuario su película favorita y la añada ("a") a un archivo llamado peliculas.txt. Si el usuario lo ejecuta 3 veces, el archivo debe tener 3 películas en líneas separadas.
+★★★ Reto: Lee el archivo peliculas.txt creado en el ejercicio anterior. Recórrelo línea por línea y muestra el texto con viñetas: "- [Película]". (Acuérdate de usar .strip()).
+Soluciones Explicadas
+Solución ★ Básico
+CÓDIGO:
+with open("registro.txt", "w", encoding="utf-8") as archivo:
+    archivo.write("Aprendiendo a guardar archivos\n")
+Solución ★★ Intermedio
+CÓDIGO:
+pelicula = input("Ingresa tu película favorita: ")
+with open("peliculas.txt", "a", encoding="utf-8") as archivo:
+    archivo.write(pelicula + "\n")
+Solución ★★★ Reto
+CÓDIGO:
+from pathlib import Path
+if Path("peliculas.txt").exists():
+    with open("peliculas.txt", "r", encoding="utf-8") as archivo:
+        for linea in archivo:
+            print("- " + linea.strip())
+else:
+    print("Aún no has guardado películas.")
+25. Proyecto de la PARTE IX: Agenda Guardada en Archivo
+Instrucciones
+Construye una pequeña agenda que no pierda sus datos al cerrarse.
+1. Haz un bucle infinito while True.
+2. Muestra un menú: "1. Añadir contacto", "2. Ver contactos", "3. Salir".
+3. Si elige 1, pide nombre y teléfono, y guárdalos en agenda.txt (con "a").
+4. Si elige 2, lee el archivo agenda.txt (con "r") y muéstralos. (Valida si existe primero con pathlib).
+5. Si elige 3, haz un break.
+Solución del Proyecto
+CÓDIGO:
+from pathlib import Path
+archivo_agenda = Path("agenda.txt")
+while True:
+    print("\n--- AGENDA DE CONTACTOS ---")
+    print("1. Añadir contacto")
+    print("2. Ver contactos")
+    print("3. Salir")
+    opcion = input("Elige una opción: ")
+    if opcion == "1":
+        nombre = input("Nombre: ")
+        telefono = input("Teléfono: ")
+        with open(archivo_agenda, "a", encoding="utf-8") as f:
+            f.write(f"{nombre} - {telefono}\n")
+        print("¡Contacto guardado!")
+    elif opcion == "2":
+        print("\n--- TUS CONTACTOS ---")
+        if archivo_agenda.exists():
+            with open(archivo_agenda, "r", encoding="utf-8") as f:
+                for linea in f:
+                    print("•", linea.strip())
+        else:
+            print("La agenda está vacía.")
+    elif opcion == "3":
+        print("Saliendo de la agenda...")
+        break
+    else:
+        print("Opción inválida.")
+26. Evaluación de la PARTE IX
+Preguntas conceptuales
+1. ¿Cuál es el peligro de abrir un archivo en modo "w"?
+2. ¿Por qué es mejor utilizar with open(...) en lugar de archivo = open(...)?
+3. ¿Qué hace la instrucción .strip() cuando iteramos sobre las líneas de un archivo?
+Detección de "errores" y buenas prácticas
+Encuentra las áreas de mejora en este código:
+CÓDIGO:
+with open("log.txt", "a") as file:
+    file.write("Usuario conectado")
+Solución: Técnicamente, este código es válido y no arrojará un error de ejecución. Sin embargo, carece de robustez por dos motivos:
+1. Omitir encoding="utf-8" deja que Python utilice la codificación predeterminada del entorno, lo que puede causar problemas de portabilidad.
+2. Omitir \n al final no es un error de sintaxis ni de ejecución, pero los registros posteriores quedarán concatenados en la misma línea.
+Ambas son mejoras de robustez y buenas prácticas, no errores obligatorios.
+Predicción de salida
+¿Qué ocurrirá si ejecutas este código dos veces seguidas?
+CÓDIGO:
+with open("test.txt", "w", encoding="utf-8") as f:
+    f.write("Hola\n")
+Solución: El archivo test.txt siempre contendrá únicamente una línea ("Hola\n"). Al usar "w", el archivo se sobrescribe completamente en la segunda ejecución.
+
+PARTE X — Errores y excepciones
+
+En esta décima parte, aprenderás que los errores no son el enemigo. Son, de hecho, la principal herramienta de comunicación que tiene Python para ayudarte a mejorar tu código. Aprenderás a entenderlos, anticiparlos y manejarlos con elegancia.
+1. Qué es un error en programación
+El error como parte del desarrollo
+Equivocarse forma parte normal del desarrollo de software. Ningún programador escribe código perfecto al primer intento. Los mensajes de error de Python no son "castigos", sino diagnósticos detallados que contienen información sumamente útil para decirte exactamente qué salió mal y dónde.
+2. Errores de sintaxis
+Qué son y ejemplos
+Los errores de sintaxis (SyntaxError) ocurren antes de que el programa siquiera empiece a correr. Significan que has escrito algo que viola las reglas gramaticales de Python. El intérprete ni siquiera puede entender la orden.
+Ejemplos comunes que causan SyntaxError:
+Olvidar los dos puntos : al final de un if, for o def.
+Abrir un paréntesis y olvidar cerrarlo: print("Hola"
+Abrir comillas y no cerrarlas: texto = "Mensaje
+Escribir palabras reservadas mal: iff edad > 18:
+3. Errores durante la ejecución (Excepciones)
+El concepto de excepción
+A diferencia de la sintaxis, estos errores ocurren cuando el código está gramaticalmente bien escrito, pero al ejecutarse, se encuentra con una situación imposible o prohibida. Python "levanta" (lanza) una excepción y detiene el programa.
+Tipos comunes de excepciones
+No todos los errores son iguales. Python los clasifica:
+NameError: Intentas usar una variable o función que no ha sido definida (ej. error tipográfico en el nombre).
+TypeError: Intentas hacer una operación con tipos incompatibles (ej. sumar un número con un string: 5 + "Hola").
+ValueError: El tipo es correcto, pero el valor en sí no tiene sentido para la operación (ej. int("Perro")).
+ZeroDivisionError: Intentas dividir un número matemáticamente entre cero (10 / 0).
+IndexError: Intentas acceder a una posición que no existe en una colección (ej. índice 10 en una lista de 3 elementos).
+KeyError: Intentas buscar una clave en un diccionario que no ha sido registrada.
+FileNotFoundError: Intentas abrir un archivo para lectura, pero la ruta es incorrecta o no existe.
+4. Errores lógicos
+Qué son y por qué son peligrosos
+Un programa puede ejecutarse perfectamente de principio a fin, sin lanzar ninguna excepción, y aun así producir un resultado completamente incorrecto. Estos son errores lógicos o "bugs".
+Ejemplo
+CÓDIGO:
+precio = 100
+descuento = 20
+total = precio - descuento / 100
+print("El total es:", total)
+Explicación
+El código no genera TypeError ni SyntaxError, pero calcula 99.8 en vez de 80.0. Primero divide 20 / 100 y resta 0.2 a 100. Corrección: total = precio * (1 - descuento / 100). Así, 20 / 100 = 0.2; 1 - 0.2 = 0.8; 100 * 0.8 = 80.0. La fórmula (precio - descuento) / 100 también sería incorrecta: produciría 0.8.
+5. Leer un traceback
+Anatomía del mensaje de error
+Cuando ocurre una excepción, Python imprime un "Traceback" (Rastreo). Aunque parezca intimidante, se lee muy fácilmente si lo observas de abajo hacia arriba:
+Tipo de excepción y mensaje: La última línea te dirá exactamente qué pasó (ej. ValueError: invalid literal for int()).
+Archivo y número de línea: Subiendo un poco, verás algo como File "script.py", line 4. Esto te indica la línea problemática.
+Línea problemática: Python incluso imprimirá la línea exacta de código donde se atascó.
+No te abrumes, ve directo a la última línea y luego busca el número de línea.
+6. try y except
+Qué es y para qué sirve
+Nos permite "intentar" ejecutar un código riesgoso y, si ocurre una excepción, "capturarla" para evitar que el programa se estrelle.
+Ejemplo básico
+CÓDIGO:
+try:
+    edad = int(input("Edad: "))
+    print("Tienes", edad, "años.")
+except ValueError:
+    print("Debes escribir un número entero.")
+Explicación línea por línea
+try:: Inicia el bloque seguro. Python intentará ejecutar lo que está indentado aquí.
+    edad = int(input("Edad: ")): Operación riesgosa. Si el usuario escribe "Diez", causará un ValueError.
+    print(...): Si lo anterior tuvo éxito, se imprime. Si falló, esta línea se salta completamente.
+except ValueError:: Si ocurrió específicamente un ValueError, el programa salta a este bloque.
+    print("Debes escribir..."): Mensaje amigable que reemplaza al error rojo en pantalla. El programa no se estrella.
+7. Capturar excepciones específicas
+¿Por qué especificar el error?
+Es fundamental especificar qué error esperas (ej. except ValueError:). Si simplemente escribes except:, capturarás TODO indiscriminadamente. Si tuvieras un error tipográfico en tu código (un NameError), el bloque genérico lo atraparía, imprimiría el mensaje de validación, y ocultaría tu verdadero error de programación.
+8. Varios bloques except
+Manejar múltiples escenarios
+Puedes anticipar diferentes fallas y dar una respuesta adecuada a cada una.
+CÓDIGO:
+try:
+    numero = int(input("Ingresa un divisor: "))
+    resultado = 100 / numero
+    print("Resultado:", resultado)
+except ValueError:
+    print("Error: No ingresaste un número válido.")
+except ZeroDivisionError:
+    print("Error: Matemáticamente no es posible dividir por cero.")
+9. else
+Ejecución en caso de éxito
+La cláusula else dentro del manejo de excepciones se ejecuta únicamente si el bloque try termina correctamente sin que haya ocurrido ninguna excepción.
+CÓDIGO:
+try:
+    numero = int(input("Ingresa cantidad: "))
+except ValueError:
+    print("Entrada incorrecta.")
+else:
+    print("¡Dato capturado correctamente!")
+    print("Procesando:", numero)
+10. finally
+Ejecución garantizada
+El bloque finally se ejecuta normalmente al abandonar la estructura try, tanto si ocurrió una excepción como si no. Por eso es útil para tareas de limpieza. Existen circunstancias excepcionales en las que el proceso puede terminar antes de que finally llegue a ejecutarse.
+CÓDIGO:
+try:
+    x = 1 / 1
+except ZeroDivisionError:
+    print("Fallo de división.")
+finally:
+    print("Este mensaje se imprimirá pase lo que pase.")
+11. Archivos y excepciones
+Combinación con la PARTE IX
+Al leer archivos, es vital prepararse para el caso en que el archivo no exista.
+CÓDIGO:
+try:
+    with open("datos_importantes.txt", "r", encoding="utf-8") as archivo:
+        contenido = archivo.read()
+        print("Archivo leído con éxito.")
+except FileNotFoundError:
+    print("El archivo no existe. Creando archivo por defecto...")
+    # Aquí podrías usar modo "w" para crearlo
+12. Conversiones seguras
+Asegurando tipos
+Siempre que conviertas entradas del usuario con int() o float(), debes envolverlas en un bloque try / except ValueError para evitar que usuarios malintencionados o distraídos colapsen tu sistema.
+13. Validación mediante bucles
+Volver a preguntar al usuario
+Combinamos while True con try/except y break para insistir hasta obtener un dato válido, evitando bucles infinitos.
+CÓDIGO:
+while True:
+    try:
+        edad = int(input("Ingresa tu edad en números: "))
+        break  # Solo se ejecuta si int() no falló
+    except ValueError:
+        print("Entrada inválida. Por favor, usa números enteros (ej. 25).")
+
+print(f"Edad registrada: {edad}")
+14. Validación frente a manejo de excepciones
+Diferencias
+No son exactamente lo mismo.
+Validación: Es comprobar las condiciones antes de actuar (ej. comprobar con if texto.isdigit(): antes de convertir a entero). Ojo: isdigit() no acepta el signo menos ("-5".isdigit() devuelve False) y sí acepta algunos caracteres como "²", que int() no puede convertir. Por eso, para convertir números, try/except suele ser más fiable.
+Excepciones: Es intentar la acción directamente y manejar el problema si estalla (ej. try: int(texto)).
+En Python es muy común usar excepciones para flujo normal (una filosofía conocida como "Es más fácil pedir perdón que permiso"), pero ambas herramientas son útiles.
+15. Introducción a raise
+Lanzar tus propios errores
+Con raise puedes provocar (lanzar) una excepción a propósito si los datos del usuario rompen tus reglas lógicas.
+CÓDIGO:
+def registrar_edad(edad):
+    if edad < 0:
+        raise ValueError("La edad no puede ser negativa.")
+    return f"Edad {edad} registrada."
+
+# Si llamas a registrar_edad(-5), el programa estallará con tu mensaje.
+16. Evitar except: pass
+El peligro del silencio
+Hacer esto es una práctica terrible:
+CÓDIGO:
+try:
+    resultado = 10 / 0
+except:
+    pass
+Explicación
+except: pass oculta las excepciones producidas durante la ejecución del bloque try, incluso KeyboardInterrupt (Ctrl+C) y SystemExit. No puede ocultar un error de sintaxis del propio archivo que impida ejecutar ese bloque. Sí podría capturar un SyntaxError generado durante una operación como compile(). Captura excepciones específicas y comunica el fallo.
+17. Buenas prácticas
+Capturar excepciones específicas (ej. except ValueError:).
+Mantener pequeño el bloque try: Pon dentro solo la línea riesgosa, no 50 líneas de código.
+No utilizar excepciones para ocultar errores intencionalmente.
+Mostrar mensajes útiles al usuario para que sepa cómo corregir su error.
+Registrar información: Guardar los errores reales en un archivo de log para el administrador.
+No revelar información sensible: Si falla una conexión a la base de datos, dile al usuario "Error de servidor", no imprimas información sensible sobre la base de datos a un usuario final.
+18. Errores frecuentes
+Colocar demasiado código dentro de try, lo que dificulta saber qué falló.
+Capturar todo indiscriminadamente con un except: solitario.
+Olvidar convertir input() y sorprenderse con un TypeError al sumar.
+Confundir validación de datos con excepciones.
+Continuar la ejecución asumiendo que los datos están bien, cuando el try falló y dejó una variable vacía.
+Usar raise de manera incorrecta o sin un mensaje explicativo.
+19. Ejercicios de la PARTE X
+AHORA TE TOCA A TI
+No mires las soluciones hasta intentarlo.
+★ Explorador / Básico: Pide al usuario que ingrese un número. Intenta convertirlo a flotante (float). Usa try y except ValueError para imprimir "Esto no es un decimal" si falla.
+★★ Detective / Intermedio: Tienes una lista datos = [10, 20]. Pide al usuario un índice (0, 1, 2, etc.) por input(). Usa try y except IndexError para capturar si pide un índice fuera del rango e imprimir "El índice no existe".
+★★★ Estratega / Reto: Escribe un código que pida dos números al usuario. Usa un solo bloque try, pero maneja ValueError (si no escribe números) y ZeroDivisionError (si el segundo número es 0) en bloques separados. Si todo sale bien, usa else para imprimir el resultado de la división.
+Soluciones Explicadas
+Solución ★ Explorador
+CÓDIGO:
+try:
+    numero = float(input("Ingresa un número decimal: "))
+    print("Número ingresado:", numero)
+except ValueError:
+    print("Esto no es un decimal válido.")
+Solución ★★ Detective
+CÓDIGO:
+datos = [10, 20]
+try:
+    indice = int(input("Ingresa un índice para ver: "))
+    print(datos[indice])
+except IndexError:
+    print("Error: El índice no existe en esta lista.")
+except ValueError:
+    print("Error: Ingresa un número entero.")
+Solución ★★★ Estratega
+CÓDIGO:
+try:
+    num1 = int(input("Dividendo: "))
+    num2 = int(input("Divisor: "))
+    resultado = num1 / num2
+except ValueError:
+    print("Debes ingresar únicamente números enteros.")
+except ZeroDivisionError:
+    print("No se puede dividir entre cero.")
+else:
+    print("El resultado de la división es:", resultado)
+20. Proyecto de la PARTE X: CALCULADORA ROBUSTA
+Instrucciones
+Crea un programa de calculadora interactiva que cumpla con los siguientes requisitos:
+Define funciones simples para sumar, restar, multiplicar y dividir.
+En la función de dividir, no manejes la excepción de cero. Deja que ocurra el error matemático natural.
+Crea un bucle infinito interactivo (while True).
+Pide la operación (+, -, *, /) o la palabra 'salir'.
+Pide dos números al usuario. Utiliza bloques try/except para asegurar que son números (ValueError). Si no lo son, muestra un error amigable y usa continue para volver a preguntar.
+Al realizar la división matemática, utiliza try/except ZeroDivisionError para capturar el error y mostrar un mensaje, permitiendo que la calculadora siga encendida en lugar de colapsar.
+Solución del Proyecto
+CÓDIGO:
+# 1. Definición de funciones
+def sumar(a, b): return a + b
+def restar(a, b): return a - b
+def multiplicar(a, b): return a * b
+def dividir(a, b): return a / b  # Dejamos que Python genere la excepción
+
+print("=== CALCULADORA ROBUSTA ===")
+print("Escribe 'salir' para apagar la calculadora.\n")
+
+# 2. Bucle interactivo
+while True:
+    operacion = input("Elige operación (+, -, *, /) o 'salir': ").strip()
+    
+    if operacion.lower() == "salir":
+        print("Apagando calculadora...")
+        break
+        
+    if operacion not in ["+", "-", "*", "/"]:
+        print("Operación no válida. Intenta de nuevo.\n")
+        continue
+
+    # Manejo de ValueError
+    try:
+        num1 = float(input("Primer número: "))
+        num2 = float(input("Segundo número: "))
+    except ValueError:
+        print("Error: Debes ingresar valores numéricos. Volviendo al menú.\n")
+        continue
+
+    # Manejo lógico y matemático
+    try:
+        if operacion == "+":
+            res = sumar(num1, num2)
+        elif operacion == "-":
+            res = restar(num1, num2)
+        elif operacion == "*":
+            res = multiplicar(num1, num2)
+        elif operacion == "/":
+            # Manejo de ZeroDivisionError
+            res = dividir(num1, num2)
+        
+        print(f"El resultado es: {res}\n")
+        
+    except ZeroDivisionError:
+        print("Error fatal prevenido: No se puede dividir entre cero.\n")
+21. Evaluación de la PARTE X
+Preguntas conceptuales
+1. ¿Cuál es la diferencia principal entre else y finally dentro del manejo de excepciones?
+2. ¿Por qué es una mala práctica de seguridad usar simplemente except: sin especificar el error?
+Predicción de salida
+¿Qué imprimirá el siguiente bloque?
+CÓDIGO:
+try:
+    x = 5 / "a"
+except ZeroDivisionError:
+    print("A")
+except TypeError:
+    print("B")
+else:
+    print("C")
+finally:
+    print("D")
+Solución: Imprimirá B porque dividir un número entre un string produce TypeError, y después imprimirá D porque, en este flujo normal, el bloque finally se ejecuta al finalizar la estructura try. El else no se ejecuta porque sí ocurrió una excepción.
+Identificar tipos de error
+Asocia la situación con la excepción correcta:
+a) Intentar abrir "secreto.txt" y que no esté en la carpeta. (Solución: FileNotFoundError)
+b) Buscar la clave "telefono" en un diccionario y que no exista. (Solución: KeyError)
+c) Intentar int("Gato"). (Solución: ValueError)
+d) Escribir print("Hola) sin cerrar comillas. (Solución: SyntaxError)
+
+PARTE XI — Módulos, paquetes, pip y entornos virtuales
+
+En esta undécima parte, aprenderás a organizar y expandir tus programas. Cuando tu código crece, ya no es práctico tenerlo todo en un solo archivo. Además, aprenderás a utilizar código creado por la comunidad mundial de Python para no tener que reinventar la rueda.
+1. Qué es un módulo
+Qué es y para qué sirve
+Un módulo es, sencillamente, un archivo de Python (con extensión .py) que contiene código (variables, funciones, clases) diseñado para ser reutilizado. 
+En lugar de tener un archivo programa_gigante.py con mil líneas de código, puedes separar las funciones matemáticas en calculadora.py y las funciones de texto en textos.py, y luego unirlas en tu programa principal. Esto facilita enormemente la lectura, el mantenimiento y la colaboración.
+2. import
+Qué es
+Es la instrucción fundamental para traer código de un módulo a otro archivo.
+Ejemplo y explicación
+CÓDIGO:
+import math
+resultado = math.sqrt(25)
+print(resultado)
+- import math: Busca el módulo llamado math y lo hace disponible en este archivo.
+- math.sqrt(25): Accede a la función sqrt (raíz cuadrada) que "vive" dentro del módulo math. Nota cómo usamos el nombre del módulo seguido de un punto (.) para acceder a su contenido.
+- print(resultado): Imprime el resultado, que es 5.0.
+3. from ... import ...
+Qué es y cómo se compara
+A veces no quieres importar todo el módulo, sino solo una función específica.
+CÓDIGO:
+from math import sqrt
+resultado = sqrt(25)
+print(resultado)
+Diferencia clave: Al usar from ... import ..., ya no necesitas escribir math. antes de la función. La función se importa directamente a tu "espacio de nombres" local.
+4. Alias con as
+Qué es y para qué sirve
+Puedes cambiar el nombre con el que importas un módulo para escribir menos o evitar conflictos de nombres.
+CÓDIGO:
+import statistics as stats
+datos = [10, 20, 30]
+promedio = stats.mean(datos)
+Cuándo ayuda: Cuando el módulo tiene un nombre muy largo (ej. import matplotlib.pyplot as plt).
+Cuándo perjudica: Si inventas alias poco claros (ej. import statistics as s), harás que tu código sea ilegible para otros programadores.
+5. Evitar import *
+Por qué es una mala práctica
+CÓDIGO:
+from math import *
+Esta sintaxis incorpora los nombres públicos del módulo al espacio de nombres actual; pueden ser funciones, clases o constantes. __all__, si existe, define qué nombres se exportan. Suele evitarse por tres razones:
+1. Sombreado/Colisiones: Si tú creaste una función llamada pi() y luego haces from math import *, la versión de math sobrescribirá la tuya.
+2. Legibilidad: Si alguien más lee tu código y ve la función cos(x), no sabrá si proviene de math, de numpy, o si la escribiste tú.
+3. Espacio de nombres: import * añade nombres y dificulta saber su origen. No evita cargar e inicializar el módulo; el problema principal es la claridad y las colisiones, no un supuesto ahorro de memoria.
+6. Biblioteca estándar
+Qué es
+Python viene "con las pilas incluidas". La biblioteca estándar es un conjunto de módulos que ya vienen preinstalados con Python. No necesitas descargarlos, solo importarlos.
+Ejemplos comunes:
+math: Operaciones matemáticas avanzadas.
+random: Generación de números y selecciones aleatorias.
+statistics: Funciones estadísticas (media, mediana, etc.).
+datetime: Trabajo con fechas y horas.
+pathlib: Manejo avanzado de rutas de archivos.
+7. Crear nuestro propio módulo
+Veamos cómo conectar dos archivos.
+Archivo 1: operaciones.py
+CÓDIGO:
+def sumar(a, b):
+    return a + b
+def restar(a, b):
+    return a - b
+Archivo 2: main.py (Debe estar en la misma carpeta)
+CÓDIGO:
+import operaciones
+resultado = operaciones.sumar(4, 5)
+print("La suma es:", resultado)
+Explicación
+Al ejecutar main.py, Python lee import operaciones y busca un archivo llamado operaciones.py en la misma carpeta.
+Lo carga en memoria.
+operaciones.sumar(4, 5) utiliza la función definida en el otro archivo.
+8. if __name__ == "__main__":
+Qué es y para qué sirve
+Cuando importas un módulo, Python ejecuta todo el código de ese módulo de arriba a abajo. Si operaciones.py tuviera prints o llamadas a funciones sueltas, se ejecutarían al instante de ser importado, lo cual normalmente no deseas.
+La variable mágica __name__ contiene el nombre del módulo actual. Sin embargo, cuando ejecutas un archivo directamente (ej. python main.py), Python le asigna a __name__ el valor especial __main__.
+El patrón estándar
+CÓDIGO:
+def iniciar_programa():
+    print("El programa ha iniciado.")
+if __name__ == "__main__":
+    iniciar_programa()
+Explicación: Si ejecutas este archivo directamente, la condición es verdadera y arranca el programa. Si otro archivo importa este módulo, __name__ no será __main__ (será el nombre del archivo), la condición será falsa, y el código no se ejecutará automáticamente. Es una protección.
+9. Qué es un paquete
+Módulo vs Paquete
+Módulo: Normalmente un único archivo .py.
+Paquete: Una carpeta o estructura de directorios que contiene múltiples módulos (y posiblemente otros sub-paquetes) organizados de forma lógica.
+Estructura de ejemplo
+CÓDIGO:
+mi_paquete/
+├── __init__.py
+├── calculos.py
+└── textos.py
+10. __init__.py
+Su papel en Python moderno
+Históricamente, Python requería que cualquier carpeta que actuara como paquete tuviera un archivo (generalmente vacío) llamado __init__.py. 
+En el Python moderno no es estrictamente obligatorio en todos los casos para crear paquetes simples, pero continúa siendo una convención muy común y útil. Se utiliza para inicializar el paquete, importar herramientas específicas automáticamente cuando el paquete es llamado, o señalar claramente que esa carpeta es un paquete de Python.
+11. Biblioteca estándar frente a paquete externo
+Biblioteca Estándar: (ej. math, random) Vienen instalados con Python. Solo requieres import.
+Paquete Externo: (ej. requests, pandas, flask) Son creados por la comunidad. No vienen con Python. Debes descargarlos e instalarlos desde fuentes de distribución (como PyPI) antes de poder usar import.
+12. Qué es pip
+El gestor de paquetes
+pip (Pip Installs Packages) es la herramienta principal utilizada para instalar y gestionar paquetes de software externos escritos en Python.
+Ejecución recomendada
+Ejecuta pip mediante el intérprete elegido: fuera de un entorno virtual, py -m pip en Windows o python3 -m pip en macOS/Linux. Dentro de un entorno activado, usa python -m pip. Los ejemplos siguientes con python suponen ese entorno activado; nombre_paquete es un marcador, no un paquete real que debas instalar.
+CÓDIGO:
+python -m pip install nombre_paquete
+¿Por qué? Si tienes varias versiones de Python instaladas (ej. Python 3.10 y Python 3.11), python -m pip garantiza que el paquete se instale exactamente para la versión de Python que estás invocando con el comando python.
+13. Comandos básicos de pip
+CÓDIGO:
+# Ver versión de pip
+python -m pip --version
+# Instalar un paquete
+python -m pip install requests
+# Instalar una versión específica
+python -m pip install requests==2.28.1
+# Ver paquetes instalados en tu entorno
+python -m pip list
+# Ver información de un paquete específico
+python -m pip show requests
+# Eliminar un paquete
+python -m pip uninstall requests
+14. Seguridad al instalar paquetes
+Buenas prácticas críticas
+Comprueba el nombre exacto: Existen atacantes que suben paquetes maliciosos con nombres similares a los populares (ej. requsts en lugar de requests). A esto se le llama "Typosquatting".
+Revisa la documentación: Antes de instalar, busca el paquete en pypi.org o lee su documentación oficial.
+No instales a ciegas: No ejecutes comandos de instalación de foros o tutoriales dudosos sin entender qué estás instalando.
+Aísla tus proyectos: Usa entornos virtuales (ver siguiente punto).
+15. Qué es un entorno virtual
+El problema
+Imagina que construyes el "Proyecto A" hoy usando el paquete externo django en su versión 3.0. Dentro de un año, construyes el "Proyecto B", que requiere django versión 5.0. 
+Si instalas paquetes de manera "global" en tu computadora, al actualizar django a la versión 5.0, ¡el Proyecto A dejará de funcionar!
+La solución: Aislamiento
+venv crea un entorno sobre una instalación base, con paquetes propios y una copia o enlace al ejecutable según el sistema y las opciones. No es una instalación totalmente independiente ni una barrera de seguridad. Permite separar dependencias de proyectos. Fuente: Entornos virtuales con venv
+16. Crear un entorno con venv
+Creación
+Desde la carpeta del proyecto, usa python -m venv .venv en Windows con Python Install Manager o python3 -m venv .venv en macOS/Linux. El ejemplo siguiente corresponde a Windows.
+CÓDIGO:
+python -m venv .venv
+Se crea .venv con su configuración y directorios. El punto inicial suele ocultarla en sistemas Unix, pero no implica que Windows la marque como oculta.
+17. Activar el entorno virtual
+Comandos por sistema operativo
+La activación facilita usar el entorno, pero no es obligatoria. También puedes ejecutar directamente .venv/Scripts/python.exe en Windows o .venv/bin/python en macOS/Linux.
+Windows PowerShell:
+CÓDIGO:
+.\.venv\Scripts\Activate.ps1
+Windows CMD:
+CÓDIGO:
+.venv\Scripts\activate.bat
+Linux / macOS:
+CÓDIGO:
+source .venv/bin/activate
+Cuando está activo suele aparecer (.venv). Si PowerShell impide activar el script, puedes usar directamente su python.exe. La documentación ofrece Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser: modifica la política del usuario; úsalo solo si corresponde a tu equipo y sus reglas.
+18. Desactivar
+Cuando termines de trabajar, para salir del entorno virtual y volver al Python global de tu computadora, simplemente escribe:
+CÓDIGO:
+deactivate
+19. Instalar paquetes dentro del entorno
+Comprueba el intérprete seleccionado y pip. La versión por sí sola no demuestra que estés dentro de .venv.
+CÓDIGO:
+python -c "import sys; print(sys.executable); print(sys.prefix != sys.base_prefix)"
+python -m pip --version
+Si todo es correcto, cualquier comando python -m pip install paquete guardará los archivos dentro de la carpeta .venv, no en todo tu sistema.
+20. requirements.txt
+Qué es
+Es un archivo de texto simple que lista todos los paquetes externos (y sus versiones exactas) que tu proyecto necesita para funcionar.
+Generarlo
+CÓDIGO:
+python -m pip freeze > requirements.txt
+pip freeze muestra una instantánea de los paquetes instalados en el entorno actual. El símbolo > guarda esa salida en el archivo de texto. En proyectos más complejos existen otras estrategias y herramientas para gestionar dependencias; aquí se usa freeze como método introductorio común, no como la única opción correcta.
+Instalar desde requirements
+Si le pasas tu proyecto a un compañero, él solo debe crear su propio entorno virtual y ejecutar:
+CÓDIGO:
+python -m pip install -r requirements.txt
+pip leerá el archivo y descargará automáticamente todo lo necesario.
+21. Estructura básica de un proyecto
+Una estructura típica, profesional y ordenada luce así:
+CÓDIGO:
+mi_proyecto/
+├── .venv/               # Entorno virtual (Aislado)
+├── datos/               # Carpeta para archivos txt, csv, etc.
+├── main.py              # Punto de entrada de la aplicación
+├── operaciones.py       # Módulo propio con lógica
+└── requirements.txt     # Lista de dependencias de pip
+22. Conflictos de nombres (Sombreado)
+El riesgo de nombrar mal tus archivos
+Evita llamar random.py a un archivo situado junto a tu script si este usa import random: puede ocultar el módulo estándar. No ocurre igual en todos los módulos ni modos de ejecución.
+La importación consulta la caché de módulos y los buscadores configurados. En la configuración habitual, los módulos integrados y congelados se resuelven antes de buscar por sys.path. Al ejecutar un script, su carpeta suele encabezar sys.path; con -c o en modo interactivo suele ser el directorio actual. Puedes inspeccionarlo con import sys; print(sys.path). Fuente: Módulos y búsqueda de importaciones
+Regla de oro: Nunca nombres tus archivos .py igual que las bibliotecas estándar que planeas utilizar.
+23. Errores frecuentes
+ModuleNotFoundError: Intentas importar un módulo que no existe, está mal escrito, o no está instalado en el entorno actual.
+Instalar en el Python equivocado: Olvidar activar el entorno virtual antes de usar pip, ensuciando la instalación global de tu sistema operativo.
+Archivos con el mismo nombre: Llamar a tu archivo random.py y sorprenderte porque random.randint() ya no existe (Sombreado).
+Confundir módulo con paquete: Intentar importar una carpeta vacía que no tiene estructura de paquete.
+Uso excesivo de import *: Ensucia tu código y produce errores silenciosos.
+Ejecutar comandos de terminal en Python: Escribir pip install... dentro del intérprete de Python en lugar de en la Terminal o Símbolo del Sistema.
+24. Ejercicios de la PARTE XI
+AHORA TE TOCA A TI
+★ Básico: Escribe un script corto que importe el módulo random de la biblioteca estándar y use la función random.randint(1, 10) para imprimir un número al azar entre 1 y 10.
+★★ Intermedio: Crea un archivo llamado saludos.py que contenga una función saludo_formal(nombre). Luego, en un archivo diferente llamado prueba.py, importa esa función usando from saludos import saludo_formal y ejecútala.
+★★★ Reto: Abre tu terminal. Crea un entorno virtual llamado .venv. Actívalo. Usa pip para generar un archivo requirements.txt (estará vacío o casi vacío, es normal si es un entorno nuevo). Luego, desactiva el entorno. (Este ejercicio no requiere escribir código Python, solo comandos de terminal).
+Soluciones Explicadas
+Solución ★ Básico
+CÓDIGO:
+import random
+numero_azar = random.randint(1, 10)
+print(f"El número ganador es: {numero_azar}")
+Solución ★★ Intermedio
+CÓDIGO:
+# En saludos.py
+def saludo_formal(nombre):
+    return f"Estimado/a {nombre}, reciba un cordial saludo."
+# En prueba.py
+from saludos import saludo_formal
+mensaje = saludo_formal("Ana")
+print(mensaje)
+Solución ★★★ Reto
+CÓDIGO (Terminal/Consola):
+python -m venv .venv
+# Activar (Ej. Windows CMD): .venv\Scripts\activate.bat
+python -m pip freeze > requirements.txt
+deactivate
+25. Proyecto de la PARTE XI: MI PRIMER PROYECTO MODULAR
+Instrucciones
+Vamos a estructurar un proyecto profesional básico.
+1. Crea una carpeta llamada mi_proyecto_modular.
+2. Dentro, crea un entorno virtual (.venv) y actívalo.
+3. Crea un archivo operaciones.py. Define una función calcular_area_cuadrado(lado).
+4. Crea un archivo textos.py. Define una función formatear_resultado(valor) que devuelva "El resultado calculado es: [valor]".
+5. Crea un archivo main.py.
+Usa import operaciones e import textos.
+Escribe código bajo un bloque if __name__ == "__main__": que pregunte al usuario el lado de un cuadrado, use el módulo de operaciones para calcularlo, use el de textos para formatearlo, y lo imprima.
+Solución del Proyecto
+Archivo: operaciones.py
+CÓDIGO:
+def calcular_area_cuadrado(lado):
+    return lado * lado
+Archivo: textos.py
+CÓDIGO:
+def formatear_resultado(valor):
+    return f"El resultado calculado es: {valor}"
+Archivo: main.py
+CÓDIGO:
+import operaciones
+import textos
+def iniciar():
+    print("--- CALCULADORA MODULAR ---")
+    # Captura y validación básica
+    lado_texto = input("Ingresa la longitud del lado del cuadrado: ")
+    lado = float(lado_texto)
+    
+    # Uso de módulos
+    area = operaciones.calcular_area_cuadrado(lado)
+    mensaje = textos.formatear_resultado(area)
+    
+    print(mensaje)
+# Punto de entrada seguro
+if __name__ == "__main__":
+    iniciar()
+26. Evaluación de la PARTE XI
+Preguntas conceptuales
+1. ¿Cuál es la diferencia principal entre la biblioteca estándar y un paquete externo?
+2. ¿Por qué se recomienda crear un entorno virtual para cada nuevo proyecto en lugar de instalar todo de forma global?
+3. ¿Cuál es la principal desventaja de usar from modulo import *?
+Detección de errores
+Estás en la terminal y escribes el siguiente comando, pero recibes un SyntaxError. ¿Por qué?
+CÓDIGO:
+>>> python -m pip install requests
+Solución: Los tres >>> indican que estás DENTRO del intérprete interactivo de Python. Los comandos de pip y venv se ejecutan en la línea de comandos/terminal del sistema operativo, no dentro de Python. Debes salir del intérprete primero (escribiendo exit() o quit()).
+Predicción de comportamiento
+Tienes un archivo llamado mis_calculos.py. Dentro escribes:
+CÓDIGO:
+def multiplicar_por_dos(x):
+    return x * 2
+print("Cargando módulo...")
+Si otro archivo hace import mis_calculos, ¿qué se imprimirá en la consola?
+Solución: Se imprimirá "Cargando módulo...". Al importar un módulo, todo su código a nivel global se ejecuta. Para evitar que ese mensaje se imprima al importar (pero sí permitirlo al ejecutar directamente), deberías proteger el print con un bloque if __name__ == "__main__":.
+
+PARTE XII — Programación Orientada a Objetos
+
+En esta duodécima parte, daremos el salto más importante en tu forma de pensar sobre el código. Hasta ahora, hemos usado programación estructurada (variables y funciones sueltas). La Programación Orientada a Objetos (POO) te permite agrupar datos y funciones relacionadas en una sola entidad lógica.
+1. Qué es la Programación Orientada a Objetos
+Qué es y qué problema resuelve
+La POO es un "paradigma" (una forma de pensar y estructurar el código). A medida que un programa crece, tener cientos de variables y docenas de funciones sueltas se vuelve inmanejable. 
+La POO resuelve este problema de organización agrupando los datos y el comportamiento que les corresponde dentro de "paquetes" independientes llamados objetos.
+Objetos: Representan entidades del mundo real o del sistema (ej. Usuario, Factura, Enemigo, Botón).
+Datos (Atributos): Lo que el objeto es o tiene (ej. nombre, saldo, color).
+Comportamiento (Métodos): Lo que el objeto puede hacer (ej. saludar, pagar, atacar, hacer_click).
+2. Qué es una clase
+Qué es
+Una clase define el comportamiento y los atributos de sus instancias. La analogía del molde ayuda, pero en Python la clase también es un objeto: al ejecutar class se crea un objeto clase. Persona no es una instancia ordinaria de Persona; ana = Persona(...) crea una instancia.
+Sintaxis
+CÓDIGO:
+class Persona:
+    pass
+class: Palabra reservada para definir una clase.
+Persona: Nombre de la clase. Por convención, se usa PascalCase (CadaPalabraConMayúscula).
+pass: Indica que la clase está vacía por ahora.
+3. Objeto e instancia
+Qué son
+Un "objeto" (o "instancia") es el resultado concreto de construir algo usando el plano (la clase). Si Persona es el concepto general, tú y yo somos instancias concretas de esa clase.
+Ejemplo
+CÓDIGO:
+persona1 = Persona()
+persona2 = Persona()
+Persona() (con paréntesis) le dice a Python: "Construye un nuevo objeto usando el molde Persona".
+persona1 y persona2 son dos instancias distintas en la memoria de la computadora.
+4. El método __init__
+Qué es y para qué sirve
+Es un "método mágico" especial (nota el doble guion bajo a cada lado). Se ejecuta automáticamente en el instante en que creas un nuevo objeto. Sirve para inicializar (dar valores iniciales a) los atributos de esa instancia específica.
+Ejemplo paso a paso
+CÓDIGO:
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+juan = Persona("Juan", 30)
+Explicación
+def __init__(self, nombre, edad):: Define el método inicializador que recibe datos.
+self.nombre = nombre: Guarda el argumento "Juan" dentro del atributo nombre de esta instancia específica.
+juan = Persona("Juan", 30): Crea el objeto y automáticamente envía "Juan" y 30 a __init__.
+5. El parámetro self
+Qué es
+self representa a la instancia concreta sobre la que se está trabajando.
+En un método de instancia, el primer parámetro recibe el objeto sobre el que se trabaja. Por convención se llama self; no es una palabra reservada. Al llamar objeto.metodo(), Python pasa la instancia automáticamente como primer argumento.
+6. Atributos
+Qué son y cómo usarlos
+Son las variables que viven dentro del objeto.
+CÓDIGO:
+# Acceder a un atributo
+print(juan.nombre)
+
+# Modificar un atributo
+juan.edad = 31
+print(juan.edad)
+7. Métodos
+Qué son
+Son las funciones que viven dentro del objeto y definen su comportamiento.
+CÓDIGO:
+class Persona:
+    def __init__(self, nombre):
+        self.nombre = nombre
+
+    def saludar(self):
+        print(f"Hola, soy {self.nombre}")
+
+ana = Persona("Ana")
+ana.saludar() # Imprime: Hola, soy Ana
+Atributo = Dato (ana.nombre)
+Método = Acción (ana.saludar())
+8. Estado de un objeto
+Qué es
+El "estado" es el conjunto de valores actuales de todos los atributos de un objeto en un momento dado. Los métodos son la forma correcta de modificar ese estado.
+CÓDIGO:
+class Cuenta:
+    def __init__(self, titular, saldo_inicial):
+        self.titular = titular
+        self.saldo = saldo_inicial
+    
+    def depositar(self, cantidad):
+        self.saldo += cantidad
+        print(f"Depositaste {cantidad}. Saldo nuevo: {self.saldo}")
+
+mi_cuenta = Cuenta("Carlos", 100)
+mi_cuenta.depositar(50) # Modifica el estado interno
+9. Atributos de instancia
+Como vimos, si declaras self.nombre = nombre dentro de __init__, ese atributo le pertenece exclusivamente a esa instancia. Si juan.nombre = "Juan" y ana.nombre = "Ana", no interfieren entre sí.
+10. Atributos de clase
+Si declaras una variable directamente dentro de la clase (fuera de __init__ y sin self.), pertenece a la clase entera y es compartida por todas las instancias.
+CÓDIGO:
+class Persona:
+    especie = "Humano" # Atributo de clase
+    
+    def __init__(self, nombre):
+        self.nombre = nombre # Atributo de instancia
+
+print(Persona.especie)
+11. ADVERTENCIA IMPORTANTE — ATRIBUTOS MUTABLES DE CLASE
+Debes tener extremo cuidado al usar tipos mutables (como listas o diccionarios) como atributos de clase.
+CÓDIGO PROBLEMÁTICO:
+class Perro:
+    trucos = [] # Atributo mutable de clase (¡Peligro!)
+
+    def agregar_truco(self, truco):
+        self.trucos.append(truco)
+
+fido = Perro()
+rex = Perro()
+fido.agregar_truco("Dar la pata")
+print(rex.trucos) # Imprimirá ['Dar la pata'] ¡Aunque Rex no lo aprendió!
+Por qué ocurre
+Al ser un atributo de clase, existe una única lista compartida por todas las instancias de Perro. Si Fido modifica esa lista, Rex también se ve afectado.
+La solución
+Si quieres que cada perro tenga sus propios trucos independientes, la lista debe ser un atributo de instancia:
+CÓDIGO CORRECTO:
+class Perro:
+    def __init__(self):
+        self.trucos = [] # Cada instancia tiene su propia lista independiente
+        
+    def agregar_truco(self, truco):
+        self.trucos.append(truco)
+(Nota: Los atributos mutables de clase no están prohibidos. Son muy útiles cuando realmente quieres un estado compartido intencional, como una lista general que lleve el registro de todos los usuarios creados).
+12. El método __str__
+Qué es
+Si intentas hacer print(juan), Python imprimirá algo feo como <__main__.Persona object at 0x7f...>, porque no sabe cómo convertir tu objeto complejo en texto. __str__ define exactamente qué string debe devolverse cuando alguien intente imprimir el objeto.
+CÓDIGO:
+class Libro:
+    def __init__(self, titulo, autor):
+        self.titulo = titulo
+        self.autor = autor
+        
+    def __str__(self):
+        return f"'{self.titulo}' escrito por {self.autor}"
+
+mi_libro = Libro("1984", "George Orwell")
+print(mi_libro) # Imprime: '1984' escrito por George Orwell
+13. Encapsulación introductoria
+La convención del guion bajo
+A veces un objeto tiene atributos internos que no deberían ser modificados directamente desde fuera porque podrían romper su lógica. Python no tiene privacidad estricta (no te bloquea), pero confía en una convención: si un atributo empieza con un guion bajo _, le estás diciendo a otros programadores: "Esto es de uso interno, por favor no lo modifiques directamente".
+CÓDIGO:
+class Sistema:
+    def __init__(self):
+        self._estado_interno = "Cargando" # Convención de uso interno
+14. Herencia
+Qué es
+Permite crear una nueva clase (clase hija) que toma (hereda) todos los atributos y métodos de una clase existente (clase padre), permitiéndote reutilizar código y especializar objetos.
+CÓDIGO:
+class Animal:
+    def hablar(self):
+        return "Sonido genérico"
+
+class Perro(Animal):
+    pass
+
+mi_perro = Perro()
+print(mi_perro.hablar()) # Imprime: Sonido genérico (heredado de Animal)
+15. Sobrescritura de métodos
+Si la clase hija necesita hacer algo diferente a la clase padre, simplemente defines un método con el mismo nombre y lo "sobrescribes".
+CÓDIGO:
+class Perro(Animal):
+    def hablar(self):
+        return "¡Guau!"
+
+mi_perro = Perro()
+print(mi_perro.hablar()) # Imprime: ¡Guau!
+16. super()
+Qué es y para qué sirve
+A veces no quieres sobrescribir un método completamente perdiendo todo el código original; quieres aprovechar el código del padre y agregarle más cosas. super() llama temporalmente al método de la clase padre. Es muy usado en __init__.
+CÓDIGO:
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+class Empleado(Persona):
+    def __init__(self, nombre, edad, puesto):
+        # 1. Dejamos que la clase Persona maneje nombre y edad
+        super().__init__(nombre, edad) 
+        # 2. Manejamos lo nuevo (puesto)
+        self.puesto = puesto
+17. Polimorfismo
+Qué es
+Significa "muchas formas". En la práctica, significa que puedes usar un método con el mismo nombre en objetos de diferentes clases, y cada uno responderá a su manera, sin que el programa principal deba preocuparse de qué clase exacta es cada objeto.
+CÓDIGO:
+class Gato:
+    def hablar(self): return "Miau"
+
+class Vaca:
+    def hablar(self): return "Muu"
+
+# No importa de qué clase sea el animal, sabemos que tiene un método hablar()
+animales = [Gato(), Vaca(), Perro()]
+for animal in animales:
+    print(animal.hablar())
+18. Composición
+Qué es
+Otra forma de construir objetos. En lugar de decir "Un Perro es un Animal" (Herencia), decimos "Un Auto tiene un Motor" (Composición). Consiste en que un objeto guarda a otro objeto dentro de sus atributos.
+CÓDIGO:
+class Motor:
+    def encender(self):
+        print("Motor encendido")
+
+class Auto:
+    def __init__(self):
+        self.motor = Motor() # Auto contiene un Motor
+        
+    def arrancar(self):
+        self.motor.encender()
+19. Herencia frente a Composición
+Herencia (Es un): Usa esto cuando una clase claramente es una versión especializada de otra (ej. un Empleado es una Persona).
+Composición (Tiene un): Usa esto cuando una clase está compuesta de otras piezas, o utiliza a otras (ej. un Estudiante tiene una Mochila). No abuses de la herencia; la composición suele crear código más flexible.
+20. Cuándo usar clases
+No todo programa de Python requiere programación orientada a objetos. Un script de 20 líneas para leer un archivo y sumar sus números puede vivir perfectamente con variables y funciones.
+Usa clases cuando notes que tienes:
+Grupos de datos y funciones que siempre viajan juntos.
+Necesidad de crear múltiples "instancias" de algo (múltiples enemigos, usuarios, conexiones).
+Necesidad de recordar el estado interno de algo a lo largo del tiempo.
+21. Errores frecuentes
+ERROR FRECUENTE: En un método de instancia, el primer parámetro recibe la instancia; por convención se llama self, pero no es una palabra reservada. Omitirlo puede producir TypeError al llamar al método. Escribir nombre en lugar de self.nombre puede causar NameError si nombre no está definido.
+ATRIBUTOS: Persona.nombre = "Ana" es válido y asigna un atributo a la clase. ana.nombre = "Ana" asigna un atributo a esa instancia. No son equivalentes; crea primero la instancia con los argumentos que exija su __init__.
+ERROR FRECUENTE: mi_perro.hablar obtiene el método enlazado, pero no lo ejecuta. Para llamarlo escribe mi_perro.hablar(); si devuelve un texto, usa print(mi_perro.hablar()) para mostrarlo.
+ERROR FRECUENTE: Crear listas como atributos de clase pensando que serán atributos de instancia (el problema de Fido y Rex).
+ERROR FRECUENTE: Abusar de la herencia creando jerarquías de 5 niveles de profundidad que nadie puede entender.
+ERROR FRECUENTE: Olvidar llamar a super().__init__() en una clase hija, provocando que los atributos de la clase padre nunca se creen.
+22. Ejercicios de la PARTE XII
+AHORA TE TOCA A TI
+No mires las soluciones hasta intentarlo.
+★ Explorador / Básico: Crea una clase Rectangulo. Su método __init__ debe recibir base y altura. Agrega un método calcular_area() que multiplique ambos y devuelva el resultado. Crea una instancia y prueba el método.
+★★ Detective / Intermedio: Crea una clase Bateria con un atributo carga (inicializado en 100). Agrega un método usar(cantidad) que reste a la carga, y un método __str__ que imprima "Batería: [carga]%".
+★★★ Estratega / Reto: Crea una clase padre Vehiculo con atributo marca. Crea una clase hija Moto(Vehiculo) que reciba marca y cilindrada. Usa super().__init__ correctamente.
+Soluciones Explicadas
+Solución ★ Explorador
+CÓDIGO:
+class Rectangulo:
+    def __init__(self, base, altura):
+        self.base = base
+        self.altura = altura
+        
+    def calcular_area(self):
+        return self.base * self.altura
+
+mi_rectangulo = Rectangulo(5, 10)
+print(mi_rectangulo.calcular_area()) # Imprime 50
+Solución ★★ Detective
+CÓDIGO:
+class Bateria:
+    def __init__(self):
+        self.carga = 100
+        
+    def usar(self, cantidad):
+        self.carga -= cantidad
+        if self.carga < 0:
+            self.carga = 0
+            
+    def __str__(self):
+        return f"Batería: {self.carga}%"
+
+mi_bateria = Bateria()
+mi_bateria.usar(30)
+print(mi_bateria) # Imprime Batería: 70%
+Solución ★★★ Estratega
+CÓDIGO:
+class Vehiculo:
+    def __init__(self, marca):
+        self.marca = marca
+
+class Moto(Vehiculo):
+    def __init__(self, marca, cilindrada):
+        super().__init__(marca)
+        self.cilindrada = cilindrada
+
+mi_moto = Moto("Honda", 600)
+print(mi_moto.marca, mi_moto.cilindrada)
+23. Proyecto de la PARTE XII: Sistema sencillo de Biblioteca
+Instrucciones
+1. Crea una clase Libro. Debe tener titulo, autor y un booleano disponible (iniciado en True). Usa __str__ para presentarlo amigablemente.
+2. Crea un método prestar() en Libro que, si está disponible, lo marque como False y avise del éxito. Si no, avise que ya está prestado.
+3. Crea una clase Biblioteca (Composición). Debe tener un atributo catalogo (una lista vacía).
+4. Agrega a Biblioteca un método agregar_libro(libro) que reciba un objeto Libro y lo añada a la lista.
+5. Agrega un método mostrar_disponibles() que recorra la lista e imprima los libros que tienen disponible == True.
+Solución del Proyecto
+CÓDIGO:
+class Libro:
+    def __init__(self, titulo, autor):
+        self.titulo = titulo
+        self.autor = autor
+        self.disponible = True
+        
+    def prestar(self):
+        if self.disponible:
+            self.disponible = False
+            print(f"Éxito: Se ha prestado '{self.titulo}'.")
+        else:
+            print(f"Error: '{self.titulo}' ya está prestado.")
+            
+    def __str__(self):
+        estado = "Disponible" if self.disponible else "Prestado"
+        return f"'{self.titulo}' de {self.autor} ({estado})"
+
+class Biblioteca:
+    def __init__(self):
+        self.catalogo = []
+        
+    def agregar_libro(self, libro):
+        self.catalogo.append(libro)
+        print(f"Libro '{libro.titulo}' agregado a la biblioteca.")
+        
+    def mostrar_disponibles(self):
+        print("\n--- LIBROS DISPONIBLES ---")
+        for libro in self.catalogo:
+            if libro.disponible:
+                print(libro)
+
+# PRUEBA DEL SISTEMA
+mi_biblio = Biblioteca()
+
+libro1 = Libro("El Quijote", "Miguel de Cervantes")
+libro2 = Libro("1984", "George Orwell")
+
+mi_biblio.agregar_libro(libro1)
+mi_biblio.agregar_libro(libro2)
+
+mi_biblio.mostrar_disponibles()
+
+print("\n--- PRESTANDO LIBRO ---")
+libro1.prestar()
+
+mi_biblio.mostrar_disponibles()
+24. Evaluación de la PARTE XII
+Preguntas conceptuales
+1. ¿Cuál es la diferencia entre una clase y un objeto?
+2. En la definición de un método dentro de una clase, ¿para qué sirve el parámetro self?
+3. Explica la diferencia principal entre la Herencia ("Es un") y la Composición ("Tiene un").
+Detección de errores
+¿Qué fallará al ejecutar el siguiente código?
+CÓDIGO:
+class Computadora:
+    def encender():
+        print("Encendiendo...")
+
+pc = Computadora()
+pc.encender()
+Solución: Falla con un TypeError: encender() takes 0 positional arguments but 1 was given. El método encender no tiene el parámetro self definido, pero Python siempre envía la instancia (pc) como primer argumento oculto al llamarlo. Debe ser def encender(self):.
+Predicción de salida
+¿Qué imprime el siguiente código?
+CÓDIGO:
+class Auto:
+    ruedas = 4
+
+auto1 = Auto()
+auto2 = Auto()
+Auto.ruedas = 6
+
+print(auto1.ruedas)
+Solución: Imprimirá 6. Como ruedas es un atributo de clase, al cambiarlo a través de la clase (Auto.ruedas = 6), todas las instancias que leen ese atributo reflejarán el nuevo valor compartido.
+PARTE XIII — Python Intermedio
+
+En esta decimotercera parte, aprenderás herramientas que separan a los principiantes de los programadores de nivel intermedio. Estas herramientas no añaden necesariamente nuevas capacidades a lo que ya puedes hacer, pero te permitirán escribir código mucho más elegante, conciso, rápido y "pitónico".
+1. List comprehensions (Comprensiones de listas)
+Las comprehensions son una forma concisa y elegante de crear listas nuevas basadas en colecciones existentes en una sola línea.
+La forma tradicional
+Si quieres crear una lista con los cuadrados de los números del 1 al 5, normalmente escribirías esto:
+CÓDIGO:
+cuadrados = []
+for numero in range(1, 6):
+    cuadrados.append(numero ** 2)
+print(cuadrados) # [1, 4, 9, 16, 25]
+La forma usando Comprehension
+Podemos lograr exactamente lo mismo con esta sintaxis:
+CÓDIGO:
+cuadrados = [numero ** 2 for numero in range(1, 6)]
+print(cuadrados) # [1, 4, 9, 16, 25]
+Explicación de los componentes
+Una comprensión se lee de izquierda a derecha, pero la lógica fluye así:
+for numero in range(1, 6): De dónde sacamos los datos (el bucle).
+numero ** 2: Qué le hacemos a cada dato (la expresión o transformación).
+[...]: Guarda todos los resultados en una nueva lista.
+Comprehensions con condición
+También puedes incluir un condicional if para filtrar datos mientras se crea la lista.
+CÓDIGO:
+# Obtener solo los números pares del 0 al 9
+pares = [n for n in range(10) if n % 2 == 0]
+print(pares) # [0, 2, 4, 6, 8]
+Buena Práctica: Las comprehensions son excelentes, pero no abuses de ellas. Si tu comprensión ocupa más de dos líneas o tiene condicionales anidados complejos, vuelve a usar un bucle for tradicional. El objetivo principal es la legibilidad.
+2. Dictionary comprehensions
+Puedes aplicar el mismo concepto para crear diccionarios. Observa cómo usamos {} y los dos puntos :.
+CÓDIGO:
+# Crear un diccionario donde la clave es el número y el valor es su cuadrado
+cuadrados_dict = {n: n ** 2 for n in range(1, 6)}
+print(cuadrados_dict) # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+3. Set comprehensions
+Igual que los diccionarios, pero solo con valores. Resulta muy útil porque un set elimina los duplicados de forma natural.
+CÓDIGO:
+# Aunque haya muchos números, el conjunto solo guardará valores únicos
+restos = {n % 3 for n in range(10)}
+print(restos) # {0, 1, 2}
+4. Unpacking (Desempaquetado)
+El desempaquetado permite asignar los elementos de una colección a variables individuales de forma directa y elegante.
+Desempaquetado básico
+CÓDIGO:
+# En lugar de:
+# datos = ["Ana", 20]
+# nombre = datos[0]
+# edad = datos[1]
+
+# Hacemos esto:
+nombre, edad = ["Ana", 20]
+print(nombre) # Ana
+Intercambio de variables
+En otros lenguajes necesitas una variable temporal. En Python el desempaquetado lo hace directamente:
+CÓDIGO:
+a = 10
+b = 20
+a, b = b, a # Ahora a es 20 y b es 10
+Desempaquetado avanzado con asterisco (*)
+Puedes atrapar "el resto" de los elementos en una lista usando *.
+CÓDIGO:
+primero, *resto = [1, 2, 3, 4]
+print(primero) # 1
+print(resto)   # [2, 3, 4]
+5. enumerate()
+Cuando recorres una lista, muchas veces necesitas conocer tanto el elemento como su índice (posición).
+La forma antigua (poco elegante)
+CÓDIGO:
+nombres = ["Ana", "Luis", "Carlos"]
+for indice in range(len(nombres)):
+    print(indice, nombres[indice])
+La forma moderna y clara con enumerate
+enumerate devuelve automáticamente pares de (índice, elemento).
+CÓDIGO:
+for indice, nombre in enumerate(nombres):
+    print(f"Posición {indice}: {nombre}")
+6. zip()
+zip te permite recorrer múltiples colecciones en paralelo como si fueran un cierre o cremallera.
+CÓDIGO:
+nombres = ["Ana", "Luis"]
+edades = [20, 25]
+
+for nombre, edad in zip(nombres, edades):
+    print(nombre, "tiene", edad, "años")
+Nota: Si los iterables tienen longitudes diferentes, zip se detendrá automáticamente cuando se agote el más corto. Los elementos restantes del iterable más largo se ignorarán.
+7. sorted() frente a .sort()
+Este es un error extremadamente común.
+.sort()
+Es un método de las listas. Modifica la lista original (la ordena in-place) y devuelve None.
+CÓDIGO:
+lista = [3, 1, 2]
+resultado = lista.sort() # Modifica la lista
+print(lista)     # [1, 2, 3]
+print(resultado) # None (¡No intentes guardar el resultado de .sort()!)
+sorted()
+Es una función incorporada. NO modifica la colección original, sino que devuelve una nueva lista ordenada. Funciona no solo con listas, sino con cualquier iterable (tuplas, strings).
+CÓDIGO:
+lista = [3, 1, 2]
+nueva_lista = sorted(lista)
+print(lista)       # [3, 1, 2] (Intacta)
+print(nueva_lista) # [1, 2, 3] (Ordenada)
+8. min(), max() y sum()
+Funciones incorporadas muy útiles para trabajar con colecciones numéricas rápidamente.
+CÓDIGO:
+notas = [8.5, 9.0, 7.5, 10.0]
+print(min(notas)) # 7.5
+print(max(notas)) # 10.0
+print(sum(notas)) # 35.0
+9. any() y all()
+Reciben una colección de booleanos (o expresiones) y evalúan:
+all(): Devuelve True solo si TODOS son verdaderos.
+any(): Devuelve True si AL MENOS UNO es verdadero.
+CÓDIGO:
+resultados = [True, True, False, True]
+print(all(resultados)) # False (hay un False)
+print(any(resultados)) # True (hay varios True)
+10. Funciones lambda
+Las funciones lambda son funciones "anónimas" (sin nombre) y pequeñas que se escriben en una sola línea. No se usan con def ni tienen la palabra return explícita (el retorno es automático).
+CÓDIGO:
+# Función normal
+def doble_normal(x):
+    return x * 2
+
+# Función lambda
+doble = lambda x: x * 2
+
+print(doble(5)) # Imprime 10
+Aclaración importante: Las lambdas NO reemplazan a def. De hecho, si necesitas asignarle un nombre a la función (como hicimos arriba doble = lambda...), es mucho mejor usar def. Las lambdas brillan cuando necesitas pasar una función matemática rápida como argumento a otra función, sin tomarte la molestia de definirla formalmente en otra parte.
+11. map()
+map toma una función y una colección, y le aplica esa función a cada elemento de la colección uno por uno. Resulta muy útil si la combinas con una función lambda.
+CÓDIGO:
+numeros = [1, 2, 3, 4]
+# Aplicamos la lambda a cada número de la lista
+dobles = list(map(lambda n: n * 2, numeros))
+print(dobles) # [2, 4, 6, 8]
+(Nota: En Python 3, map no devuelve una lista directamente, sino un "objeto map", por lo que a menudo lo envolvemos en list() para ver los resultados de golpe).
+12. Comparación OBLIGATORIA: map() frente a comprehension
+En el punto 1 y 11 hicimos exactamente lo mismo. ¿Cuál deberías usar?
+Usando map con lambda
+CÓDIGO:
+dobles = list(map(lambda n: n * 2, numeros))
+Usando List Comprehension
+CÓDIGO:
+dobles = [n * 2 for n in numeros]
+¿Cuál es mejor?
+Ambas son completamente válidas. No existe una regla universal.
+1. Comprehension: Suele ser más legible para la mayoría de los programadores de Python, especialmente cuando la transformación matemática es simple y única.
+2. map(): Resulta muy natural y limpio si ya tienes definida una función que hace el trabajo. Por ejemplo, textos_limpios = list(map(limpiar_texto, textos_sucios)) suele leerse mejor que una comprensión.
+La elección depende de la claridad en tu contexto específico y de las convenciones de tu equipo de trabajo.
+13. filter()
+Es el hermano de map. Evalúa una función sobre una colección, pero en lugar de transformar el dato, solo deja pasar aquellos elementos donde la función devuelva True.
+CÓDIGO:
+numeros = [1, 2, 3, 4, 5, 6]
+pares = list(filter(lambda n: n % 2 == 0, numeros))
+print(pares) # [2, 4, 6]
+También puedes hacer esto con comprensiones: pares = [n for n in numeros if n % 2 == 0]. La elección sigue los mismos principios explicados en el punto anterior.
+14. Iterable
+Un "iterable" es simplemente cualquier objeto en Python capaz de devolver sus miembros uno a la vez. Dicho de forma simple, es cualquier cosa que puedas recorrer con un bucle for.
+Listas [1, 2]
+Tuplas (1, 2)
+Strings "Hola"
+Diccionarios {"a": 1}
+Todos ellos son iterables.
+15. Iterador
+Un iterable permite obtener un iterador con iter(). Un iterador entrega elementos con next() y se agota con StopIteration. Una lista es iterable, pero no es por sí misma un iterador. El bucle for obtiene un iterador y solicita elementos hasta que este se agota.
+CÓDIGO:
+numeros = [10, 20, 30]
+# Obtenemos un iterador del iterable; la lista no se transforma
+iterador = iter(numeros)
+
+print(next(iterador)) # 10
+print(next(iterador)) # 20
+Si intentas hacer next() cuando ya no quedan elementos, Python lanzará una excepción especial llamada StopIteration (esto es exactamente lo que el bucle for detecta internamente para saber cuándo detenerse).
+16. Generadores
+Los generadores son funciones especiales que, en lugar de devolver todos sus datos de golpe y cerrar, pausan su ejecución, devuelven un solo valor, y recuerdan exactamente dónde se quedaron.
+Se construyen usando la palabra yield en lugar de return.
+CÓDIGO:
+def contar():
+    yield 1
+    yield 2
+    yield 3
+
+# Llamar a la función no la ejecuta, sino que crea un generador
+generador = contar()
+
+print(next(generador)) # Imprime 1 y se pausa
+print(next(generador)) # Despierta, imprime 2 y se pausa
+Diferencia clave: return vs yield
+return: Termina la llamada actual y devuelve un valor; no destruye la definición de la función.
+yield: Devuelve un valor, pero "congela" la función para continuar después desde ese mismo punto.
+17. Expresiones generadoras
+Se escriben exactamente igual que una list comprehension, pero usando paréntesis () en lugar de corchetes [].
+CÓDIGO:
+cuadrados_generador = (n ** 2 for n in range(10))
+Diferencia conceptual: Una list comprehension calcula los 10 resultados de golpe y los guarda en la memoria. Una expresión generadora crea un objeto que sabe cómo calcularlos y solo lo hará uno por uno a medida que se lo pidas en un bucle for. Ahorran muchísima memoria en colecciones gigantes.
+18. *args
+A veces no sabes cuántos argumentos enviará el usuario a tu función. *args le dice a Python que empaquete todos los argumentos posicionales adicionales en una Tupla.
+CÓDIGO:
+def sumar(*numeros):
+    print(type(numeros)) # Imprime <class 'tuple'>
+    return sum(numeros)
+
+print(sumar(1, 2))       # 3
+print(sumar(1, 2, 3, 4)) # 10
+Aclaración: La palabra args es solo una convención comunitaria. Lo verdaderamente importante es el asterisco *. Podrías llamarlo *datos.
+19. **kwargs
+**kwargs (Keyword Arguments) es similar, pero empaqueta argumentos que fueron pasados con un nombre explícito, y los convierte internamente en un Diccionario.
+CÓDIGO:
+def mostrar_datos(**datos):
+    print(type(datos)) # Imprime <class 'dict'>
+    for clave, valor in datos.items():
+        print(clave, ":", valor)
+
+mostrar_datos(nombre="Ana", edad=20, rol="Admin")
+Aclaración: Igual que antes, kwargs es solo una fuerte convención. El doble asterisco ** es lo que activa el empaquetado de diccionario.
+20. Desempaquetado al llamar funciones
+Puedes hacer el proceso inverso. Si tienes una función que pide múltiples argumentos y tú tienes esos datos guardados en una colección, puedes usar * o ** en la llamada a la función para desempaquetarlos automáticamente.
+CÓDIGO:
+def restar(a, b):
+    return a - b
+
+numeros = [10, 4]
+# *numeros extrae el 10 y el 4 de la lista antes de llamar a la función
+resultado = restar(*numeros) 
+print(resultado) # 6
+
+# Desempaquetando un diccionario
+datos_dict = {"a": 20, "b": 5}
+resultado_dict = restar(**datos_dict)
+21. Funciones como objetos
+En Python, todo es un objeto, incluidas las funciones. Esto significa que puedes guardar una función completa dentro de una variable y pasarla de un lugar a otro.
+CÓDIGO:
+def saludar():
+    return "Hola a todos"
+
+# Guardamos la función en sí, nota que NO usamos paréntesis
+mi_funcion = saludar 
+
+# Ahora la variable actúa como la función
+print(mi_funcion())
+22. Introducción a LEGB
+El ámbito (Scope) determina qué variables puede "ver" Python en cada momento. Python resuelve la búsqueda de variables en este orden estricto (LEGB):
+1. L (Local): Variables creadas dentro de la función actual.
+2. E (Enclosing): Nombres en ámbitos de funciones envolventes, cuando hay funciones anidadas.
+3. G (Global): Nombres del módulo donde se define la función.
+4. B (Built-in): Nombres incorporados, como las funciones print y len; no son palabras reservadas.
+23. nonlocal
+Normalmente, una función anidada (una función definida dentro de otra) puede leer las variables de su función envolvente, pero no modificarlas. nonlocal soluciona esto.
+CÓDIGO:
+def exterior():
+    mensaje = "Hola"
+    
+    def interior():
+        nonlocal mensaje # Le dice a Python: "Voy a modificar la variable de arriba"
+        mensaje = "Adiós"
+        
+    interior()
+    print(mensaje)
+
+exterior() # Imprimirá "Adiós" en lugar de "Hola"
+24. Docstrings
+Son strings multilínea """ que se colocan inmediatamente debajo de la definición de una función o clase para documentar oficial y formalmente qué hace.
+No es un simple comentario #. Las herramientas profesionales y los editores (IDE) los leen automáticamente para mostrarte ayuda.
+CÓDIGO:
+def sumar(a, b):
+    """
+    Suma dos números y devuelve el resultado.
+    Parámetros:
+    a (int, float): El primer número.
+    b (int, float): El segundo número.
+    """
+    return a + b
+25. Type hints (Anotaciones de tipo)
+Python es de tipado dinámico, pero desde la versión 3.5 permite "insinuar" (hint) qué tipo de datos espera una función y qué devolverá.
+CÓDIGO:
+def multiplicar(a: int, b: int) -> int:
+    return a * b
+ADVERTENCIA FUNDAMENTAL: las anotaciones de tipo no obligan por sí mismas al intérprete de Python a rechazar otros tipos. Si llamas a multiplicar("Hola", 2), Python intentará ejecutar la operación. Los type hints sirven como metadatos para documentación, editores y analizadores estáticos como mypy, y ayudan a detectar incompatibilidades antes de ejecutar el programa.
+26. Operador ternario
+Es una forma condensada de escribir un simple bloque if / else en una sola línea.
+CÓDIGO:
+edad = 20
+# ValorVerdadero if Condicion else ValorFalso
+estado = "adulto" if edad >= 18 else "menor"
+Recomendación: Úsalo solo cuando la lógica sea tan breve que mantenga la claridad. Para decisiones complejas, vuelve al if/else tradicional.
+27. is frente a ==
+== (Igualdad): Compara si los valores guardados dentro de dos objetos son iguales.
+is (Identidad): Compara si dos referencias apuntan exactamente al mismo objeto físico en la memoria del ordenador.
+CÓDIGO:
+lista_a = [1, 2]
+lista_b = [1, 2]
+
+print(lista_a == lista_b) # True (Sus valores son los mismos)
+print(lista_a is lista_b) # False (Son dos listas diferentes en memoria)
+El uso más habitual y correcto de is en Python es para comparar contra el objeto único None.
+CÓDIGO:
+if resultado is None:
+    print("No hay resultado")
+28. Referencias y copias
+En Python, asignar listas no crea copias automáticas, sino nuevas "etiquetas" apuntando al mismo objeto.
+CÓDIGO:
+a = [1, 2, 3]
+b = a        # Ambos apuntan a la misma lista
+b[0] = 99
+print(a)     # Imprimirá [99, 2, 3] porque 'a' y 'b' son lo mismo.
+Para solucionar esto, necesitas hacer una copia superficial (shallow copy).
+CÓDIGO:
+a = [1, 2, 3]
+b = a.copy() # Ahora b es una lista nueva
+b[0] = 99
+print(a)     # [1, 2, 3] (Intacta)
+29. Errores frecuentes
+Comprehension inmanejable: Crear una línea de 150 caracteres con 3 bucles anidados en lugar de código claro.
+Creer que .sort() devuelve la lista: Escribir mis_datos = datos.sort() dejará mis_datos con valor None.
+Confundir is con ==: Usar if nombre is "Ana":. Funciona a veces por coincidencias del intérprete, pero provocará fallos misteriosos. Usa siempre == para valores.
+Consumir un iterador: Un iterador o generador se "agota" tras ser recorrido. Si intentas recorrerlo por segunda vez, estará vacío.
+Confundir return y yield: Creer que yield finalizará la función o que un return mantendrá el estado del generador.
+Uso innecesario de lambda: Intentar resolver toda la arquitectura de un programa forzando lambdas en lugar de usar def claras y legibles.
+Confundir *args y **kwargs: Tratar de atrapar argumentos con nombre x=5 usando *args causará un error.
+Creer que los type hints blindan tu código: Confiarse y no validar entradas del usuario asumiendo que Python lanzará un TypeError si envían texto en un argumento int.
+30. Ejercicios de la PARTE XIII
+AHORA TE TOCA A TI
+No mires las soluciones hasta intentarlo.
+★ Explorador / Básico: Tienes una lista textos = ["hola", "mundo"]. Usa una list comprehension para crear una nueva lista donde cada palabra esté en mayúsculas (upper()).
+★★ Detective / Intermedio: Tienes nombres = ["Ana", "Luis"] y edades = [20, 25]. Usa un bucle for, zip() y f-strings para imprimir "Ana tiene 20" y "Luis tiene 25".
+★★★ Estratega / Reto: Crea una función usando def llamada promedio que acepte una cantidad desconocida de calificaciones numéricas (usa *args). La función debe devolver la suma (sum()) dividida por la longitud (len()).
+Soluciones Explicadas
+Solución ★ Explorador
+CÓDIGO:
+textos = ["hola", "mundo"]
+mayusculas = [palabra.upper() for palabra in textos]
+print(mayusculas)
+Solución ★★ Detective
+CÓDIGO:
+nombres = ["Ana", "Luis"]
+edades = [20, 25]
+
+for nombre, edad in zip(nombres, edades):
+    print(f"{nombre} tiene {edad}")
+Solución ★★★ Estratega
+CÓDIGO:
+def promedio(*calificaciones):
+    if len(calificaciones) == 0:
+        return 0
+    return sum(calificaciones) / len(calificaciones)
+
+print(promedio(10, 8, 9)) # 9.0
+31. Proyecto de la PARTE XIII: Analizador de Calificaciones
+Instrucciones
+Vamos a construir un analizador de rendimiento escolar combinando herramientas intermedias.
+1. Define una lista de diccionarios con nombres de estudiantes y sus calificaciones.
+2. Usa una función con type hints que reciba esa lista y calcule lo siguiente:
+Usa una list comprehension para extraer solo las notas.
+Usa min(), max() y sum() sobre la lista extraída para obtener estadísticas.
+Usa una list comprehension con condicional para obtener las notas aprobatorias (>= 7).
+3. Muestra los resultados de forma ordenada.
+4. Usa sorted() o .sort() y enumerate() en otra parte del código para mostrar el listado general en orden de mayor a menor.
+Solución del Proyecto
+CÓDIGO:
+# Base de datos simplificada
+estudiantes = [
+    {"nombre": "Carlos", "nota": 6.5},
+    {"nombre": "Ana", "nota": 9.2},
+    {"nombre": "Luis", "nota": 8.0},
+    {"nombre": "María", "nota": 7.5}
+]
+
+def analizar_rendimiento(datos: list) -> dict:
+    """Extrae estadísticas básicas de un grupo de estudiantes."""
+    # List comprehension simple
+    notas_general = [est["nota"] for est in datos]
+    
+    # List comprehension con filtro
+    aprobados = [nota for nota in notas_general if nota >= 7.0]
+    
+    # Matemáticas básicas
+    maxima = max(notas_general)
+    minima = min(notas_general)
+    promedio = sum(notas_general) / len(notas_general)
+    
+    # Retornamos todo organizado en un diccionario
+    return {
+        "max": maxima,
+        "min": minima,
+        "prom": promedio,
+        "total_aprobados": len(aprobados)
+    }
+
+# --- EJECUCIÓN DEL ANÁLISIS ---
+print("--- ANÁLISIS ACADÉMICO ---")
+estadisticas = analizar_rendimiento(estudiantes)
+print(f"Nota Máxima: {estadisticas['max']}")
+print(f"Nota Mínima: {estadisticas['min']}")
+print(f"Promedio Grupo: {estadisticas['prom']:.2f}")
+print(f"Alumnos Aprobados: {estadisticas['total_aprobados']}")
+
+# --- CLASIFICACIÓN USANDO LAMBDA Y SORTED ---
+print("\n--- CLASIFICACIÓN ---")
+# sorted() devuelve una lista nueva. La lambda le dice que ordene fijándose solo en la "nota"
+clasificacion = sorted(estudiantes, key=lambda x: x["nota"], reverse=True)
+
+# enumerate() nos da la posición
+for posicion, est in enumerate(clasificacion):
+    # Sumamos 1 a posición porque empieza en 0
+    print(f"Lugar {posicion + 1}: {est['nombre']} - {est['nota']}")
+32. Evaluación de la PARTE XIII
+Preguntas conceptuales
+1. Nombra dos herramientas que creen listas nuevas. Ejemplos: comprensiones de listas y sorted(). map() y filter() devuelven iteradores; usa list(...) si necesitas una lista.
+2. En una función, ¿qué diferencia práctica existe entre usar return y usar yield?
+3. ¿Para qué utilizarías zip()?
+Detección de errores y buenas prácticas
+Encuentra el error de concepto en este código.
+CÓDIGO:
+def calcular(a: int, b: int):
+    return a + b
+
+resultado = calcular("Manzana", "Pera")
+Solución: El código puede ejecutarse y concatenar los strings aunque la función esté anotada con int. Las anotaciones expresan la intención de tipos y permiten que herramientas de análisis estático detecten la incompatibilidad, pero no imponen por sí mismas una validación automática en tiempo de ejecución.
+Predicción de salida
+¿Qué imprimirá el siguiente código?
+CÓDIGO:
+lista_original = [1, 5, 2]
+lista_ordenada = lista_original.sort()
+print(lista_ordenada)
+Solución: Imprimirá None. El método .sort() modifica la lista original "in-place" y no devuelve la lista ordenada. Si querías guardar una lista nueva, debiste usar sorted(lista_original).
+
+PARTE XIV — Python Avanzado
+Sección avanzada y opcional para quien inicia. Requiere dominar funciones, colecciones, archivos, excepciones, módulos, clases e iteradores. Aborda arquitectura de Python, diseño, persistencia y concurrencia. Los temas solo introducidos aquí necesitarán práctica adicional; no se consideran dominados por haberlos leído.
+1. Funciones avanzadas: Anidadas y Closures
+Qué son y para qué sirven
+Las funciones anidadas son funciones definidas dentro de otras funciones. Un "closure" (cierre) ocurre cuando una función anidada recuerda y tiene acceso a las variables de su función padre, incluso después de que la función padre haya terminado de ejecutarse. Sirven para ocultar lógica interna y para crear "fábricas" de funciones con estado capturado.
+CÓDIGO:
+def multiplicador(factor):
+    def funcion_interna(numero):
+        return numero * factor # Captura la variable "factor"
+    return funcion_interna
+
+duplicar = multiplicador(2)
+print(duplicar(5)) # Imprime 10
+Explicación línea por línea
+def multiplicador(factor):: Función externa que recibe un argumento.
+def funcion_interna(numero):: Función anidada que realiza el trabajo.
+return numero * factor: Usa numero (su propio parámetro) y factor (del ámbito superior).
+return funcion_interna: La función externa devuelve la función interna en sí misma, sin ejecutarla (sin paréntesis).
+duplicar = multiplicador(2): Crea una función que siempre multiplicará por 2.
+2. Decoradores
+Qué son y para qué sirven
+Un decorador es una función que recibe otra función, le añade un comportamiento extra, y devuelve la función modificada. Se usan extensamente en frameworks (como Flask o Django) para verificar permisos, registrar logs o medir tiempos, sin modificar el código original de la función.
+Sintaxis y Ejemplo
+CÓDIGO:
+import functools
+
+def mi_decorador(funcion):
+    @functools.wraps(funcion) # Buena práctica: conserva el nombre original de la función
+    def envoltura(*args, **kwargs):
+        print("Antes de ejecutar la función.")
+        resultado = funcion(*args, **kwargs)
+        print("Después de ejecutar la función.")
+        return resultado
+    return envoltura
+
+@mi_decorador
+def saludar(nombre):
+    print(f"Hola, {nombre}")
+
+saludar("Ana")
+Cuándo usarlos
+BUENA PRÁCTICA: Usa decoradores cuando tengas lógica transversal que se repite en muchas funciones (ej. verificar si el usuario inició sesión). Evítalos si añaden complejidad innecesaria a un script simple de 10 líneas.
+3. POO Avanzada: @property, @classmethod y @staticmethod
+Qué son
+Son decoradores integrados que modifican el comportamiento de los métodos en las clases.
+@property: Permite acceder a un método como si fuera un atributo. Es útil para calcular valores al vuelo o usar "setters" para validar datos antes de guardarlos.
+@classmethod: Recibe la clase (cls) como primer argumento, no la instancia. Sirve para crear métodos de fábrica (ej. crear un usuario desde un archivo).
+@staticmethod: No recibe ni la instancia ni la clase. Es una función normal que, por organización, se coloca dentro de una clase porque está relacionada con ella.
+Ejemplo de @property
+CÓDIGO:
+class Producto:
+    def __init__(self, precio):
+        self._precio = precio
+
+    @property
+    def precio(self):
+        return self._precio
+
+    @precio.setter
+    def precio(self, valor):
+        if valor < 0:
+            raise ValueError("El precio no puede ser negativo")
+        self._precio = valor
+4. Métodos especiales (Dunder methods)
+Qué son
+Son métodos con doble guion bajo (Double Under). Permiten que tus objetos interactúen con las funciones integradas de Python (como +, ==, len(), print()).
+__init__: Constructor.
+__str__: Representación legible para el usuario final (usada por print).
+__repr__: Representación técnica exacta para los desarrolladores.
+__len__: Permite usar len(objeto).
+__eq__: Permite comparar dos objetos con ==.
+CÓDIGO:
+class Caja:
+    def __init__(self, elementos):
+        self.elementos = elementos
+    def __len__(self):
+        return len(self.elementos)
+    def __eq__(self, otro):
+        return self.elementos == otro.elementos
+
+c1 = Caja([1, 2])
+print(len(c1)) # 2
+5. Dataclasses
+Qué son
+A partir de Python 3.7, @dataclass puede generar automáticamente métodos repetitivos como __init__, __repr__ y __eq__ a partir de los campos declarados en la clase.
+CÓDIGO:
+from dataclasses import dataclass
+
+@dataclass
+class Usuario:
+    nombre: str
+    edad: int
+    activo: bool = True
+
+u1 = Usuario("Ana", 25)
+print(u1) # Usuario(nombre='Ana', edad=25, activo=True)
+6. Enum
+Qué es
+Permite crear un conjunto cerrado de valores permitidos, evitando errores tipográficos ("Activo" vs "activo").
+CÓDIGO:
+from enum import Enum
+
+class Estado(Enum):
+    PENDIENTE = 1
+    COMPLETADO = 2
+
+estado_actual = Estado.PENDIENTE
+7. Context Managers (Gestores de contexto)
+Qué son
+La instrucción with usa context managers. Un objeto debe tener métodos __enter__ (qué hacer al abrir) y __exit__ (qué hacer al cerrar, incluso si hay errores) para funcionar con with. El módulo contextlib permite crear gestores usando generadores.
+8. Generadores avanzados
+yield y yield from
+yield pausa la función y devuelve un valor. yield from permite a un generador delegar parte de su trabajo a otro generador, simplificando el código. Son vitales para ahorrar memoria en colecciones gigantescas, ya que calculan un elemento a la vez.
+9. itertools y functools
+Qué son
+itertools: Herramientas para iteradores. Ej. combinar listas, contar infinitamente.
+functools: Herramientas para funciones.
+reduce: Reduce una lista a un solo valor aplicando una función acumulativa.
+partial: Pre-configura argumentos de una función.
+lru_cache: Guarda en memoria el resultado de llamadas costosas a funciones para acelerar ejecuciones repetidas.
+10. Mutabilidad, referencias y copias
+Conceptos críticos
+Referencia compartida: a = [1, 2]; b = a (Ambos apuntan a la misma lista física).
+Copia superficial (Shallow copy): import copy; b = copy.copy(a). Crea una nueva lista externa, pero si hay listas adentro, esas siguen compartidas.
+Copia profunda: copy.deepcopy(a) copia también las listas, diccionarios y objetos que hay dentro. En los casos habituales, cambiar la copia ya no afecta al original. Hay excepciones: las funciones y las clases no se duplican (se comparten) y objetos como los archivos abiertos no se pueden copiar. Fuente: Copia superficial y profunda
+11. Argumentos mutables predeterminados
+El problema clásico
+CÓDIGO:
+# PELIGROSO
+def agregar(elemento, lista=[]):
+    lista.append(elemento)
+    return lista
+Explicación
+La lista vacía se crea solo una vez cuando se define la función. Llamados sucesivos sin proporcionar una lista compartirán y modificarán esa misma lista.
+Solución habitual
+CÓDIGO:
+def agregar(elemento, lista=None):
+    if lista is None:
+        lista = []
+    lista.append(elemento)
+    return lista
+12. Typing avanzado
+Evolución de Type Hints
+Optional[str] (o str | None en Python moderno): Puede ser string o nulo.
+Union[int, float] (o int | float): Puede ser uno u otro.
+Genéricos: Variables de tipo (TypeVar) para funciones que pueden trabajar con listas de cualquier tipo consistente.
+BUENA PRÁCTICA: Los type hints NO validan los tipos durante la ejecución, solo ayudan a tu IDE (como VS Code) a advertirte de errores lógicos y mejoran la documentación.
+13. Clases Abstractas (ABC)
+Qué son
+Obligan a que las clases hijas implementen métodos específicos.
+CÓDIGO:
+from abc import ABC, abstractmethod
+
+class EmpleadoBase(ABC):
+    @abstractmethod
+    def calcular_sueldo(self):
+        pass
+BUENA PRÁCTICA: Usa interfaces/ABC cuando necesitas garantizar una estructura estricta. Usa composición si solo necesitas reutilizar herramientas de forma flexible.
+14. Composición frente a Herencia
+Comparación
+No hay un ganador universal. Herencia modela jerarquías rígidas ("Un Coche es un Vehículo"). Composición modela capacidades modulares ("Un Coche usa un Motor"). Prefiere composición para evitar árboles de herencia confusos y profundos.
+15. Logging
+Diagnóstico profesional
+Dejar print() en código de producción es de principiantes. El módulo logging permite guardar registros ordenados y con niveles de gravedad: DEBUG, INFO, WARNING, ERROR, CRITICAL.
+CÓDIGO:
+import logging
+logging.basicConfig(level=logging.INFO)
+logging.warning("El disco está casi lleno.")
+16. Depuración y assert
+Herramientas de desarrollo
+breakpoint(): Pausa el programa en esa línea exacta y te abre una consola interactiva para inspeccionar variables en tiempo real.
+assert condición, "Mensaje": Comprueba una condición interna durante el desarrollo. Si la condición es falsa, se lanza AssertionError.
+Advertencia: no uses assert para validar entradas externas ni como control de seguridad. Cuando Python se ejecuta con optimización (-O), las sentencias assert se eliminan; por eso no deben sostener reglas de negocio, validación de usuarios ni controles de seguridad.
+17. Pruebas Unitarias (unittest)
+Introducción
+El módulo integrado unittest te permite escribir código que prueba automáticamente tu código, garantizando que futuras modificaciones no rompan lo que ya funciona.
+18. Organización profesional de proyectos
+Un proyecto serio moderno luce así:
+CÓDIGO:
+mi_proyecto/
+├── src/
+│   └── paquete_principal/
+│       ├── __init__.py
+│       └── logica.py
+├── tests/
+│   └── test_logica.py
+├── pyproject.toml
+└── README.md
+pyproject.toml es el archivo moderno estándar para configurar las dependencias, metadatos y herramientas de tu proyecto, reemplazando a antiguos métodos como setup.py.
+19. JSON
+Lectura y escritura segura
+JSON es el formato rey para intercambiar datos en la web.
+CÓDIGO:
+import json
+datos = {"nombre": "José", "rol": "admin"}
+
+with open("datos.json", "w", encoding="utf-8") as f:
+    json.dump(datos, f, indent=4, ensure_ascii=False)
+Explicación clave de ensure_ascii
+ensure_ascii=True (el valor por defecto) escapa caracteres como la 'é' guardando \u00e9. No corrompe los datos, pero es ilegible para humanos. Poner ensure_ascii=False asegura que el archivo JSON resultante muestre los acentos literalmente (siempre que uses encoding="utf-8").
+20. CSV
+Lectura y escritura
+Usa el módulo csv para manipular archivos de valores separados por comas de forma segura, manejando correctamente celdas que contienen comas internas.
+21. Expresiones Regulares (re)
+Búsqueda de patrones
+Las regex permiten encontrar texto que coincide con un patrón complejo (ej. un correo electrónico o un número de tarjeta) en lugar de palabras exactas. Usamos import re con funciones como re.search() y re.findall().
+22. Concurrencia, Asyncio y el GIL
+Conceptos de múltiples tareas
+Concurrencia: Gestionar varias tareas haciendo progresos de forma intercalada (no necesariamente en el mismo milisegundo exacto).
+Paralelismo: Ejecutar varias tareas al mismo instante físico (requiere múltiples núcleos en la CPU).
+Multiprocessing: Crea procesos separados. Ideal para tareas pesadas de CPU (cálculos matemáticos).
+Threading: Usa hilos ligeros.
+Asyncio (async/await): La forma moderna de concurrencia para tareas lentas basadas en I/O (descargar archivos, consultas a bases de datos).
+async y await
+CÓDIGO:
+import asyncio
+
+async def tarea():
+    print("Iniciando...")
+    await asyncio.sleep(1) # Pausa que permite al sistema hacer otras cosas
+    print("Terminado.")
+
+# Ejecución en script normal:
+# if __name__ == "__main__":
+#     asyncio.run(tarea())
+
+# Ejecución en Jupyter Notebooks:
+# await tarea()
+ACLARACIÓN CRÍTICA: asyncio.run() administra un bucle de eventos para ejecutar un programa asíncrono y no puede llamarse cuando ya existe otro event loop ejecutándose en el mismo hilo. Por eso, en scripts .py suele ser una entrada adecuada, mientras que en entornos interactivos que ya mantienen un event loop —como ocurre habitualmente en Jupyter— puede usarse await a nivel superior cuando el entorno lo admite. No son formas universalmente intercambiables. Para ejecutar varias tareas concurrentes puede utilizarse asyncio.gather() cuando sea apropiado.
+El GIL (Global Interpreter Lock)
+En las compilaciones tradicionales de CPython, el GIL limita la ejecución simultánea de bytecode de Python por varios hilos. Desde Python 3.13 existen compilaciones de CPython con modo free-threaded, donde el GIL puede estar deshabilitado. Por eso, el efecto del multithreading depende de la versión, la compilación, el tipo de carga y las bibliotecas utilizadas; no debe resumirse como una regla universal de que los hilos nunca aceleran trabajo de CPU.
+23. Rendimiento y Big-O
+timeit: Módulo para medir microsegundos de ejecución. No promuevas microoptimizaciones prematuras ("Premature optimization is the root of all evil"). Escribe código legible primero.
+Big-O: Concepto para razonar cómo se comporta tu código si los datos crecen de 10 a 1 millón. (Buscar en un diccionario es casi inmediato; buscar en una lista gigante es lento).
+24. Ejercicios de la PARTE XIV
+AHORA TE TOCA A TI
+★ Explorador: Convierte una clase simple de usuario en una @dataclass.
+★★ Detective: Crea un decorador @tiempo_ejecucion usando time para imprimir cuánto tardó una función. Úsalo sobre una función lenta.
+★★★ Estratega: Crea una función que tenga el "error de la lista predeterminada" (lista=[]), y luego corrígelo.
+Soluciones Explicadas
+Solución ★ Explorador
+CÓDIGO:
+from dataclasses import dataclass
+@dataclass
+class Usuario:
+    nombre: str
+    id: int
+Solución ★★ Detective
+CÓDIGO:
+import time, functools
+
+def tiempo_ejecucion(func):
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        inicio = time.perf_counter()
+        res = func(*args, **kwargs)
+        fin = time.perf_counter()
+        print(f"La función tardó {fin - inicio} seg.")
+        return res
+    return wrapper
+
+@tiempo_ejecucion
+def proceso_lento():
+    time.sleep(1)
+Solución ★★★ Estratega
+CÓDIGO:
+# Incorrecto: def config(item, lista=[])
+def config(item, lista=None):
+    if lista is None:
+        lista = []
+    lista.append(item)
+    return lista
+25. Proyecto de la PARTE XIV: GESTOR MODULAR DE TAREAS
+Instrucciones
+Crea un sistema que integre Clases Avanzadas, JSON, Type Hints y Logging.
+Solución del Proyecto
+CÓDIGO:
+import json
+import logging
+from dataclasses import dataclass, asdict
+from typing import List
+
+# Configurar Logging
+logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
+
+@dataclass
+class Tarea:
+    id: int
+    descripcion: str
+    completada: bool = False
+
+class GestorTareas:
+    def __init__(self, archivo: str):
+        self.archivo = archivo
+        self.tareas: List[Tarea] = []
+        self._cargar()
+
+    def _cargar(self):
+        try:
+            with open(self.archivo, "r", encoding="utf-8") as f:
+                datos = json.load(f)
+                self.tareas = [Tarea(**d) for d in datos]
+        except FileNotFoundError:
+            logging.warning("Archivo no encontrado. Se creará uno nuevo.")
+
+    def guardar(self):
+        with open(self.archivo, "w", encoding="utf-8") as f:
+            json.dump([asdict(t) for t in self.tareas], f, indent=4, ensure_ascii=False)
+        logging.info("Tareas guardadas correctamente.")
+
+    def agregar(self, descripcion: str):
+        nueva_id = len(self.tareas) + 1
+        self.tareas.append(Tarea(nueva_id, descripcion))
+        logging.info(f"Tarea agregada: {descripcion}")
+        self.guardar()
+
+if __name__ == "__main__":
+    gestor = GestorTareas("mis_tareas.json")
+    gestor.agregar("Estudiar Python Avanzado")
+26. Evaluación de la PARTE XIV
+Preguntas conceptuales
+1. ¿Por qué ensure_ascii=False es útil al hacer json.dump de textos en español?
+2. ¿Por qué puede fallar asyncio.run() en un entorno interactivo como Jupyter cuando ya existe un event loop activo en el mismo hilo?
+3. ¿Cuál es el riesgo crítico de def funcion(lista=[]):?
+Respuestas Rápidas
+1. Para evitar que las vocales acentuadas y la ñ se conviertan en caracteres escapados (ej. \u00f1).
+2. Porque asyncio.run() no puede ejecutarse cuando ya hay otro event loop activo en el mismo hilo. En entornos interactivos que admiten top-level await, puede usarse await directamente.
+3. La lista se inicializa una sola vez. Las llamadas futuras a la función modificarán la misma lista compartida en memoria, causando comportamientos impredecibles.
+
+
+PARTE XV — Python aplicado a ciberseguridad defensiva
+Sección avanzada y opcional. Continúa cuando domines las bases y los requisitos de cada ejercicio. Usaremos Python para procesar registros y archivos y automatizar tareas defensivas, con datos simulados y recursos locales o expresamente autorizados. Esta parte no adelanta la secuencia de tus clases.
+Recordatorio ético: Jamás utilices estas herramientas en sistemas, redes o archivos sin autorización explícita y por escrito.
+1. Python en un flujo defensivo y Linux
+Python actúa como un puente entre la lógica de monitoreo y el sistema operativo. Permite leer miles de líneas de registros (logs), hacer comprobaciones criptográficas e informar anomalías. Aunque Python funciona en Windows y macOS, en entornos de servidores y defensa cibernética, el conocimiento de integración con Linux es invaluable.
+2. Inventario de archivos con pathlib
+El primer paso en defensa es saber qué tienes. Usamos pathlib para recorrer nuestras carpetas locales.
+Path.iterdir(): recorre únicamente los elementos hijos inmediatos de una carpeta. Al no descender de forma recursiva, normalmente realiza menos trabajo que un recorrido completo; la seguridad depende de la ruta seleccionada y de lo que el programa haga con cada elemento.
+Path.rglob("*"): Itera de forma recursiva adentrándose en todas las subcarpetas.
+Advertencia de rendimiento: rglob() recorre subdirectorios de forma recursiva, por lo que en árboles grandes puede consumir mucho tiempo y procesar una enorme cantidad de entradas. No debe aplicarse indiscriminadamente sobre la raíz del sistema. Desde Python 3.13, glob() y rglob() suprimen cualquier OSError producido al escanear, incluido PermissionError (antes solo en muchos casos, no en todos); aun así, un recorrido masivo no es una buena práctica.
+3. Integridad de archivos (SHA-256)
+Concepto
+Un hash criptográfico funciona como una huella digital del contenido. Un cambio pequeño en el archivo normalmente produce un hash muy diferente. Hashing no es cifrado: no está diseñado para disponer de una operación inversa práctica que recupere el archivo original. En defensa, que dos contenidos tengan el mismo hash aporta una evidencia muy fuerte de igualdad, pero no demuestra por sí solo que el archivo sea seguro o malicioso. El código siguiente lee el archivo en bloques de 4096 bytes para no cargarlo entero en memoria; desde Python 3.11, hashlib.file_digest(f, "sha256") hace lo mismo en una sola llamada.
+CÓDIGO:
+import hashlib
+from pathlib import Path
+
+def calcular_sha256(ruta_archivo):
+    hash_sha256 = hashlib.sha256()
+    with open(ruta_archivo, "rb") as f: # rb = Read Binary
+        for bloque in iter(lambda: f.read(4096), b""):
+            hash_sha256.update(bloque)
+    return hash_sha256.hexdigest()
+4. Análisis de Logs y Regex
+Los logs son los diarios del sistema. Con Python, podemos filtrar líneas irrelevantes, buscar patrones de IP con expresiones regulares (regex) y encontrar anomalías. Usaremos el módulo integrado re. Ojo: el patrón sencillo de abajo también acepta valores imposibles como 999.1.1.1; para validar una IP, pásala a ipaddress.ip_address(), que lanza ValueError si no es válida (sección 6).
+CÓDIGO:
+import re
+# Regex simple para detectar una IP (Formato básico educativo)
+patron_ip = re.compile(r'\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}')
+linea_log = "Error de conexión desde 192.168.1.15 a las 10:00"
+
+coincidencias = patron_ip.findall(linea_log)
+print("IP detectada:", coincidencias)
+5. Reglas de detección y Falsos Positivos
+Una regla simple podría ser: "Si un usuario falla la contraseña 5 veces en 1 minuto, alertar".
+Es fundamental comprender la diferencia: Detección ≠ Confirmación de incidente.
+Falso Positivo: El sistema alerta de un ataque, pero era solo un usuario legítimo que olvidó su clave. (Ruido).
+Falso Negativo: Ocurre un ataque real, pero las reglas de Python no lo detectaron. (Peligro).
+6. Direcciones IP (ipaddress) y DNS
+IPs
+El módulo ipaddress permite clasificar IPs y verificar si pertenecen a redes locales privadas o globales. No lo usaremos para escanear, sino para analizar datos.
+CÓDIGO:
+import ipaddress
+ip = ipaddress.ip_address('192.168.1.5')
+print("¿Es privada?:", ip.is_private) # True
+DNS
+DNS traduce nombres (ej. miservidor.com) a direcciones IP. Comprender los registros DNS es vital para entender con quién se comunica nuestro sistema. Usamos socket.gethostbyname("localhost") para resolver localmente en scripts de auditoría. Ojo: gethostbyname() solo devuelve direcciones IPv4; para IPv4 e IPv6, la documentación oficial recomienda socket.getaddrinfo().
+7. Sockets seguros en Localhost
+Los sockets permiten la comunicación por red. En ejercicios educativos, siempre apuntaremos a 127.0.0.1 o localhost (la computadora propia). Nunca programes escaneos de puertos ni conexiones a sistemas ajenos no autorizados.
+8. Correlación de eventos con JSON, CSV y datetime
+El poder de Python en defensa radica en la Correlación. Consiste en unir un registro de "login" en un archivo CSV con un registro de "modificación de archivo" en un JSON, cruzándolos por "Usuario" o "Hora" (datetime).
+9. Indicadores de Compromiso (IOCs)
+Un IOC es una pista (una IP sospechosa, un nombre de archivo extraño, un hash malicioso). Buscar un IOC en un sistema requiere contexto. Encontrar el nombre de un archivo sospechoso en una carpeta temporal es una alerta, pero encontrarlo en la documentación del equipo de ciberseguridad es normal.
+10. Auditoría Local y Reportes
+Las auditorías implican scripts locales que leen metadatos de archivos (extensiones, tamaños masivos, fechas inusuales) y generan resúmenes. Los reportes suelen consolidarse exportando diccionarios a JSON o CSV.
+11. Entorno, Validación, y Mínimo Privilegio
+Variables de Entorno: Nunca guardes credenciales de bases de datos o tokens API directamente en el archivo .py. Usa import os y lee desde el sistema: os.getenv("MI_TOKEN").
+Validación y Seguridad de Rutas: Si tu script acepta el nombre de un archivo para auditarlo, debes asegurarte de que el usuario no ingrese secuencias como ../../etc/passwd. Asegura el alcance de tu script al laboratorio local. Una forma de comprobarlo: ruta = (CARPETA_LABORATORIO / nombre).resolve() y luego ruta.is_relative_to(CARPETA_LABORATORIO.resolve()). Primero va resolve(), porque elimina los ".."; is_relative_to() (Python 3.9+) solo compara el texto de las rutas.
+Mínimo Privilegio: Evita ejecutar scripts de auditoría con el usuario root o Administrador si solo necesitas permisos de lectura sobre tu carpeta de usuario.
+12. Copias de seguridad (shutil) y el Ciclo Defensivo
+El módulo shutil permite hacer copias locales de respaldo. shutil.copy2() copia el contenido e intenta conservar metadatos como permisos y fechas de modificación; la documentación advierte que no copia todos los metadatos (por ejemplo, el propietario y las ACL).
+El ciclo del "Blue Team" (los defensores) se resume aquí en cuatro pasos. Es una versión simplificada: el marco oficial NIST CSF 2.0 (2024) usa seis funciones (Gobernar, Identificar, Proteger, Detectar, Responder y Recuperar).
+1. Prevenir.
+2. Detectar (Aquí brilla Python analizando logs).
+3. Responder (Python aislando un archivo o generando un reporte).
+4. Recuperar.
+13. Ejercicios de la PARTE XV
+AHORA TE TOCA A TI
+★ Explorador: Usa ipaddress para verificar si 8.8.8.8 es una IP privada o global.
+★★ Detective: Escribe una expresión regular simple para encontrar el patrón "Fallo de autenticación" en una frase.
+★★★ Estratega: Usa pathlib y iterdir() para imprimir todos los archivos .txt en tu carpeta actual.
+Soluciones Explicadas
+Solución ★ Explorador
+CÓDIGO:
+import ipaddress
+ip = ipaddress.ip_address("8.8.8.8")
+print(ip.is_global) # True
+Solución ★★ Detective
+CÓDIGO:
+import re
+log = "INFO: Fallo de autenticación para usuario local"
+if re.search(r"Fallo de autenticación", log):
+    print("Alerta detectada.")
+Solución ★★★ Estratega
+CÓDIGO:
+from pathlib import Path
+for f in Path(".").iterdir():
+    if f.is_file() and f.suffix == ".txt":
+        print(f.name)
+14. Proyecto Integrador Final: CENTRO DE ANÁLISIS DEFENSIVO LOCAL
+Instrucciones
+Crearemos un script modular y seguro que audite la integridad de los archivos de una carpeta de laboratorio simulada y analice un log ficticio. Todo local y seguro.
+Solución del Proyecto
+CÓDIGO:
+import hashlib
+import json
+import re
+import logging
+from pathlib import Path
+from dataclasses import dataclass, asdict
+from typing import List
+
+# 1. Configuración Segura y Logging
+logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
+CARPETA_LABORATORIO = Path("./laboratorio_local")
+CARPETA_LABORATORIO.mkdir(exist_ok=True)
+
+# Dataset Ficticio para pruebas
+log_ficticio = [
+    "10:00 - User1 - Login exitoso",
+    "10:05 - User2 - Fallo de autenticacion",
+    "10:06 - User2 - Fallo de autenticacion"
+]
+
+@dataclass
+class Alerta:
+    tipo: str
+    detalles: str
+
+class CentroDefensivo:
+    def __init__(self):
+        self.alertas: List[Alerta] = []
+
+    def verificar_integridad_laboratorio(self):
+        """Calcula el hash de los archivos INMEDIATOS en el laboratorio (No recursivo)."""
+        logging.info("Iniciando auditoría de integridad local...")
+        for archivo in CARPETA_LABORATORIO.iterdir():
+            if archivo.is_file():
+                h = hashlib.sha256()
+                with open(archivo, "rb") as f:
+                    for bloque in iter(lambda: f.read(4096), b""):
+                        h.update(bloque)
+                logging.info(f"[{archivo.name}] SHA-256: {h.hexdigest()}")
+
+    def analizar_logs_simulados(self):
+        """Busca patrones sospechosos en el dataset de logs ficticios."""
+        logging.info("Analizando logs...")
+        patron_fallo = re.compile(r"Fallo de autenticacion")
+        
+        for linea in log_ficticio:
+            if patron_fallo.search(linea):
+                alerta = Alerta("Intento Fallido", linea)
+                self.alertas.append(alerta)
+                logging.warning(f"Alerta generada: {linea}")
+
+    def exportar_reporte(self):
+        """Exporta las alertas correlacionadas a un archivo JSON seguro."""
+        ruta_reporte = Path("./reporte_auditoria.json")
+        with open(ruta_reporte, "w", encoding="utf-8") as f:
+            json.dump([asdict(a) for a in self.alertas], f, indent=4, ensure_ascii=False)
+        logging.info(f"Reporte exportado exitosamente a {ruta_reporte}")
+
+if __name__ == "__main__":
+    centro = CentroDefensivo()
+    
+    # Escribir un archivo temporal de prueba en el laboratorio
+    archivo_prueba = CARPETA_LABORATORIO / "prueba_integridad.txt"
+    archivo_prueba.write_text("Datos confidenciales ficticios", encoding="utf-8")
+    
+    centro.verificar_integridad_laboratorio()
+    centro.analizar_logs_simulados()
+    centro.exportar_reporte()
+15. Evaluación de la PARTE XV e Integradora
+Preguntas conceptuales
+1. En un script de auditoría, ¿por qué preferirías iterdir() en lugar de rglob("*") en un directorio grande?
+2. Si un archivo .txt y un archivo .exe producen exactamente el mismo hash SHA-256, ¿qué significa desde la perspectiva de la integridad de los datos?
+3. ¿Por qué conviene abrir un archivo JSON de texto con una codificación explícita compatible —habitualmente UTF-8— cuando se usa ensure_ascii=False con caracteres no ASCII?
+Respuestas Rápidas
+1. Porque rglob("*") recorre subdirectorios de forma recursiva y puede visitar muchísimas más entradas que iterdir(). Su coste crece con la cantidad de archivos y carpetas que debe examinar; no es correcto describirlo automáticamente como "exponencial".
+2. Significa un evento de "colisión" (extremadamente improbable con SHA-256) o, más comúnmente, que ambos archivos tienen exactamente el mismo contenido binario interno a nivel de bits, a pesar de tener nombres o extensiones diferentes.
+3. Con ensure_ascii=False los caracteres no ASCII se escriben literalmente, por lo que el archivo debe abrirse con una codificación capaz de representarlos. UTF-8 es la opción habitual y portable. Si se usa una codificación que no admite algún carácter, puede producirse UnicodeEncodeError; no debe afirmarse que omitir UTF-8 corrompa necesariamente los datos.
+
+FUENTES OFICIALES DE LAS CORRECCIONES
+Referencias oficiales utilizadas para comprobar las correcciones técnicas del manual. Las fuentes con las que se preparó el contenido original están en la sección siguiente.
+1. Instalación de Python en Windows
+2. Uso de Python en macOS
+3. Tipos incorporados, bool y operadores
+4. Modelo de datos y referencias
+5. Tuplas y estructuras de datos
+6. Errores y excepciones
+7. Representación de punto flotante
+8. Lectura, escritura y cierre de archivos
+9. Rutas con pathlib
+10. PEP 686: modo UTF-8 predeterminado
+11. Módulos y búsqueda de importaciones
+12. Entornos virtuales con venv
+13. Clases, ámbitos e iteradores
+14. Copia superficial y profunda
+15. Medición de intervalos con time
+16. Funciones incorporadas: max()
+17. Resúmenes criptográficos con hashlib
+18. Direcciones IP con ipaddress
+19. Expresiones regulares con re
+20. Resolución de nombres con socket
+21. Copia de archivos con shutil
+22. NIST Cybersecurity Framework 2.0
+VIDEOS Y MATERIALES CONSULTADOS
+Fuentes con las que se preparó el contenido del manual. Se reunieron y analizaron en un cuaderno de NotebookLM; los títulos, canales y enlaces se comprobaron el 7 de octubre de 2026.
+Videos de YouTube
+1. Curso COMPLETO de PYTHON desde CERO para PRINCIPIANTES — MoureDev by Brais Moure. Temas: instalación, variables, operadores, strings, listas, tuplas, sets, diccionarios, condicionales, bucles, funciones, clases, excepciones y módulos (Partes I a VIII, X, XI y XII).
+2. Python desde cero en una hora para principiantes! — HolaMundo. Temas: instalación en Windows y VS Code, primer programa, variables, strings, if, len() y while (Partes I, II, IV, V, VI y VIII).
+Nota: el curso de MoureDev usa Python 3.10; la sintaxis básica que enseña sigue siendo válida en Python 3.14. El video de HolaMundo instala Python en Windows con el instalador tradicional y la casilla «Add python.exe to PATH». Desde Python 3.14, la documentación oficial recomienda Python Install Manager (comando py): sigue los pasos de la Parte I.
+Documentación y materiales escritos
+1. El tutorial de Python (documentación oficial en español) — Python Software Foundation.
+2. Estructuras de datos, capítulo 5 del tutorial oficial — Python Software Foundation.
+3. PEP 8: guía de estilo para el código Python — Guido van Rossum, Barry Warsaw y Alyssa Coghlan. El cuaderno usó la traducción al español de Recursos Python.
+4. Programación Orientada a Objetos — El Libro de Python.
+5. Cómo instalar Python en Windows, macOS y Linux — Jeremy Holcombe, Kinsta (actualizado el 1 de octubre de 2025). Recomienda el instalador tradicional con «Añadir Python al PATH»; para Windows, sigue la Parte I.
+6. Aprenda a pensar como un programador con Python — Allen Downey, Jeffrey Elkner y Chris Meyers. Green Tea Press, 2002. Es anterior a Python 3 (2008) y sus ejemplos usan Python 2; este manual usa Python 3.
+
+FIN DEL MANUAL MAESTRO DE PYTHON (EDICIÓN 2026)
+El conocimiento es poder. Úsalo para construir y defender.
+

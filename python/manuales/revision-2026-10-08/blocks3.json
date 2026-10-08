@@ -1,0 +1,1526 @@
+[
+  {
+    "id": 1,
+    "start": 8400,
+    "end": 8509,
+    "code": "# Este programa saluda y muestra un número\nprint(\"Hola, explorador\")\nprint(2026)\nprint(\"Año:\", 2026)\n"
+  },
+  {
+    "id": 2,
+    "start": 10182,
+    "end": 10214,
+    "code": "nombre_variable = valor\n"
+  },
+  {
+    "id": 3,
+    "start": 10244,
+    "end": 10333,
+    "code": "jugador = \"Mario\"\nvidas = 3\nprint(jugador)\n# Reasignación\nvidas = 2\nprint(vidas)\n"
+  },
+  {
+    "id": 4,
+    "start": 11734,
+    "end": 11895,
+    "code": "nombre = \"Ana\"        # str\nedad = 20           # int\nestatura = 1.65     # float\nes_estudiante = True  # bool\nprint(type(nombre))\nprint(type(estatura))\n"
+  },
+  {
+    "id": 5,
+    "start": 12542,
+    "end": 12620,
+    "code": "mensaje = \"Hola\"\nlongitud = len(mensaje)\nprint(longitud)  # Imprime 4\n"
+  },
+  {
+    "id": 6,
+    "start": 13241,
+    "end": 13360,
+    "code": "texto_numero = \"15\"\nnumero_real = int(texto_numero)\nresultado = numero_real + 5\nprint(resultado)  # Imprime 20\n"
+  },
+  {
+    "id": 7,
+    "start": 13785,
+    "end": 13960,
+    "code": "edad_texto = input(\"¿Cuál es tu edad? \")\nedad_numero = int(edad_texto)\n# Todo en una sola línea (más común):\nedad = int(input(\"¿Cuál es tu edad? \"))\nprint(type(edad))\n"
+  },
+  {
+    "id": 8,
+    "start": 14380,
+    "end": 14573,
+    "code": "nombre = input(\"¿Cómo te llamas? \")\nanio_nacimiento = int(input(\"¿En qué año naciste? \"))\nedad_aprox = 2026 - anio_nacimiento\nprint(\"Hola\", nombre, \"tu edad aproximada es\", edad_aprox)\n"
+  },
+  {
+    "id": 9,
+    "start": 15037,
+    "end": 15090,
+    "code": "print(\"Tu Nombre\")\n# Mi edad es 25\nprint(25)\n"
+  },
+  {
+    "id": 10,
+    "start": 15132,
+    "end": 15532,
+    "code": "# Solicitar datos\nnombre = input(\"Ingresa tu nombre: \")\nanio = int(input(\"Ingresa tu año de nacimiento: \"))\nestatura = float(input(\"Ingresa tu estatura en metros (ej. 1.75): \"))\n# Calcular edad\nedad = 2026 - anio\n# Mostrar ficha\nprint(\"--- FICHA PERSONAL ---\")\nprint(\"Nombre:\", nombre)\nprint(\"Edad aproximada:\", edad, \"años\")\nprint(\"Estatura:\", estatura, \"m\")\nprint(\"----------------------\")\n"
+  },
+  {
+    "id": 11,
+    "start": 15752,
+    "end": 15833,
+    "code": "precio = input(\"Precio del producto: \")\ntotal = precio + 10\nprint(total)\n"
+  },
+  {
+    "id": 12,
+    "start": 16005,
+    "end": 16035,
+    "code": "a = 5\na = 10\nprint(a)\n"
+  },
+  {
+    "id": 13,
+    "start": 16808,
+    "end": 16980,
+    "code": "a = 10\nb = 3\nprint(\"Suma:\", a + b)\nprint(\"División normal:\", a / b)\nprint(\"División entera:\", a // b)\nprint(\"Módulo o residuo:\", a % b)\nprint(\"Exponente:\", a ** b)\n"
+  },
+  {
+    "id": 14,
+    "start": 18149,
+    "end": 18279,
+    "code": "puntos = 10\npuntos += 5   # Equivale a: puntos = puntos + 5\npuntos -= 2   # Equivale a: puntos = puntos - 2\nprint(puntos)\n"
+  },
+  {
+    "id": 15,
+    "start": 19216,
+    "end": 19390,
+    "code": "edad = 18\nprint(\"¿Es adulto?:\", edad >= 18)\nprint(\"¿Es un niño?:\", edad < 12)\nprint(\"¿Tiene exactamente 18?:\", edad == 18)\nprint(\"¿Es diferente de 20?:\", edad != 20)\n"
+  },
+  {
+    "id": 16,
+    "start": 20103,
+    "end": 20249,
+    "code": "tiene_identificacion = True\nedad = 20\npuede_entrar = (edad >= 18) and tiene_identificacion\nprint(\"¿Puede entrar al club?:\", puede_entrar)\n"
+  },
+  {
+    "id": 17,
+    "start": 20978,
+    "end": 21039,
+    "code": "resultado = (5 + 2) * 3\n# Aquí el resultado será 21.\n"
+  },
+  {
+    "id": 18,
+    "start": 21787,
+    "end": 21833,
+    "code": "numero = 15\nnumero += 5\nprint(numero)\n"
+  },
+  {
+    "id": 19,
+    "start": 21942,
+    "end": 22060,
+    "code": "usuario = input(\"Ingresa tu nombre: \")\nes_admin = (usuario == \"Admin\")\nprint(\"¿Es administrador?:\", es_admin)\n"
+  },
+  {
+    "id": 20,
+    "start": 22234,
+    "end": 22391,
+    "code": "cuenta_texto = input(\"¿De cuánto es la cuenta?: \")\ncuenta = float(cuenta_texto)\npropina = cuenta * 0.15\nprint(\"Deberías dejar de propina:\", propina)\n"
+  },
+  {
+    "id": 21,
+    "start": 23659,
+    "end": 23779,
+    "code": "edad = 20\nif edad >= 18:\n    print(\"Eres mayor de edad.\")\n    print(\"Puedes pasar.\")\nprint(\"Fin del programa.\")\n"
+  },
+  {
+    "id": 22,
+    "start": 24775,
+    "end": 25021,
+    "code": "semaforo = \"amarillo\"\n\nif semaforo == \"verde\":\n    print(\"Puedes avanzar.\")\nelif semaforo == \"amarillo\":\n    print(\"Precaución, frena.\")\nelif semaforo == \"rojo\":\n    print(\"Detente completamente.\")\nelse:\n    print(\"Color no reconocido.\")\n"
+  },
+  {
+    "id": 23,
+    "start": 25601,
+    "end": 25816,
+    "code": "edad = 25\ntiene_licencia = True\nesta_ebrio = False\n\nif edad >= 18 and tiene_licencia and not esta_ebrio:\n    print(\"Puedes conducir el vehículo.\")\nelse:\n    print(\"No cumples los requisitos para conducir.\")\n"
+  },
+  {
+    "id": 24,
+    "start": 26212,
+    "end": 26471,
+    "code": "usuario = \"admin\"\ncontrasena = \"1234\"\n\nif usuario == \"admin\":\n    print(\"Usuario reconocido.\")\n    if contrasena == \"1234\":\n        print(\"Acceso concedido.\")\n    else:\n        print(\"Contraseña incorrecta.\")\nelse:\n    print(\"Usuario no encontrado.\")\n"
+  },
+  {
+    "id": 25,
+    "start": 26860,
+    "end": 27047,
+    "code": "respuesta = input(\"¿Deseas continuar? (si/no): \")\nif respuesta == \"si\" or respuesta == \"SI\" or respuesta == \"Si\":\n    print(\"Continuando...\")\nelse:\n    print(\"Proceso detenido.\")\n"
+  },
+  {
+    "id": 26,
+    "start": 28414,
+    "end": 28777,
+    "code": "edad_texto = input(\"Ingresa tu edad: \")\nedad = int(edad_texto)\n\nif edad < 0 or edad > 120:\n    print(\"Edad inválida. Intenta de nuevo.\")\nelif edad < 18:\n    print(\"Acceso denegado. Eres menor de edad.\")\nelif edad <= 20:  # Si llegó aquí, ya tiene 18 o más\n    print(\"Acceso permitido. Pulsera estándar.\")\nelse:\n    print(\"Acceso permitido. Pulsera VIP.\")\n"
+  },
+  {
+    "id": 27,
+    "start": 28799,
+    "end": 28928,
+    "code": "numero = -5\nif numero > 0:\n    print(\"Es positivo\")\nelif numero < 0:\n    print(\"Es negativo\")\nelse:\n    print(\"Es cero\")\n"
+  },
+  {
+    "id": 28,
+    "start": 28950,
+    "end": 29124,
+    "code": "clave = input(\"Ingresa contraseña: \")\nif len(clave) == 0:\n    print(\"No ingresaste nada\")\nelif clave == \"secreta123\":\n    print(\"Acceso\")\nelse:\n    print(\"Denegado\")\n"
+  },
+  {
+    "id": 29,
+    "start": 29147,
+    "end": 29288,
+    "code": "numero = int(input(\"Ingresa un número: \"))\nif numero % 2 == 0:\n    print(\"El número es par.\")\nelse:\n    print(\"El número es impar.\")\n"
+  },
+  {
+    "id": 30,
+    "start": 29764,
+    "end": 29837,
+    "code": "clima = \"lluvia\"\nif clima = \"lluvia\"\n    print(\"Lleva paraguas\")\n"
+  },
+  {
+    "id": 31,
+    "start": 30012,
+    "end": 30100,
+    "code": "x = 10\nif x > 5:\n    print(\"A\")\nelif x > 8:\n    print(\"B\")\nelse:\n    print(\"C\")\n"
+  },
+  {
+    "id": 32,
+    "start": 30849,
+    "end": 30968,
+    "code": "vacia = []\nfrutas = [\"manzana\", \"banana\", \"cereza\"]\nedades = [20, 25, 30, 35]\nmixta = [\"Juan\", 28, True, 1.75]\n"
+  },
+  {
+    "id": 33,
+    "start": 31207,
+    "end": 31321,
+    "code": "colores = [\"rojo\", \"verde\", \"azul\", \"amarillo\"]\nprint(colores[0])   # rojo\nprint(colores[-1])  # amarillo\n"
+  },
+  {
+    "id": 34,
+    "start": 31468,
+    "end": 31570,
+    "code": "juegos = [\"Zelda\", \"Mario\", \"Halo\"]\njuegos[1] = \"Sonic\"\nprint(juegos)\nprint(\"Halo\" in juegos)\n"
+  },
+  {
+    "id": 35,
+    "start": 32221,
+    "end": 32385,
+    "code": "letras = [\"A\", \"B\", \"C\"]\nletras.append(\"D\")\nletras.insert(1, \"X\")\nletras.remove(\"C\")\neliminada = letras.pop()\nprint(letras)\nprint(\"Longitud:\", len(letras))\n"
+  },
+  {
+    "id": 36,
+    "start": 32940,
+    "end": 33047,
+    "code": "coordenadas = (10.5, -4.2)\nprint(coordenadas[0])\n# coordenadas[0] = 11.0  # ESTO CAUSARÍA UN ERROR\n"
+  },
+  {
+    "id": 37,
+    "start": 33199,
+    "end": 33255,
+    "code": "tupla_sola = (\"único\",)\nno_es_tupla = (\"único\")\n"
+  },
+  {
+    "id": 38,
+    "start": 33737,
+    "end": 33815,
+    "code": "usuario = {\n    \"nombre\": \"Ana\",\n    \"edad\": 28,\n    \"rol\": \"admin\"\n}\n"
+  },
+  {
+    "id": 39,
+    "start": 33852,
+    "end": 33992,
+    "code": "print(usuario[\"nombre\"])  # Acceso\nusuario[\"edad\"] = 29      # Modificación\nusuario[\"pais\"] = \"México\" # Nueva clave\nprint(usuario)\n"
+  },
+  {
+    "id": 40,
+    "start": 34259,
+    "end": 34402,
+    "code": "# Usando el diccionario 'usuario' anterior\nprint(usuario.get(\"telefono\", \"No registrado\"))\ndel usuario[\"rol\"] # Elimina la clave 'rol'\n"
+  },
+  {
+    "id": 41,
+    "start": 34917,
+    "end": 35017,
+    "code": "numeros = {1, 2, 3, 3, 3, 4}\nprint(numeros)  # Imprime {1, 2, 3, 4} (duplicados eliminados)\n"
+  },
+  {
+    "id": 42,
+    "start": 35037,
+    "end": 35173,
+    "code": "numeros.add(5)\nnumeros.remove(2)  # Da error si no existe\nnumeros.discard(10) # Igual que remove, pero NO da error si no existe\n"
+  },
+  {
+    "id": 43,
+    "start": 35193,
+    "end": 35424,
+    "code": "set_a = {1, 2, 3}\nset_b = {3, 4, 5}\nprint(\"Unión:\", set_a | set_b)          # Todo: {1, 2, 3, 4, 5}\nprint(\"Intersección:\", set_a & set_b)   # Comunes: {3}\nprint(\"Diferencia:\", set_a - set_b)     # En A pero no en B: {1, 2}\n"
+  },
+  {
+    "id": 44,
+    "start": 36510,
+    "end": 36815,
+    "code": "datos = [\"A\", \"B\", \"C\", \"D\", \"E\"]\nprint(datos[0])    # \"A\" (Índice 0)\nprint(datos[-1])   # \"E\" (Último elemento)\nprint(datos[1:4])  # [\"B\", \"C\", \"D\"] (Del 1 al 3)\nprint(datos[:3])   # [\"A\", \"B\", \"C\"] (Desde el principio hasta el 2)\nprint(datos[2:])   # [\"C\", \"D\", \"E\"] (Desde el 2 hasta el final)\n"
+  },
+  {
+    "id": 45,
+    "start": 36932,
+    "end": 37299,
+    "code": "# Lista de listas (Matriz)\nmatriz = [[1, 2], [3, 4]]\nprint(matriz[0][1])  # Accede a la primera lista, segundo elemento: 2\n# Lista de diccionarios\nusuarios = [{\"nombre\": \"Ana\"}, {\"nombre\": \"Luis\"}]\nprint(usuarios[1][\"nombre\"]) # Luis\n# Diccionario con listas\ncurso = {\"materia\": \"Python\", \"alumnos\": [\"Ana\", \"Juan\", \"Pedro\"]}\nprint(curso[\"alumnos\"][0]) # Ana\n"
+  },
+  {
+    "id": 46,
+    "start": 38507,
+    "end": 38655,
+    "code": "peliculas = [\"Matrix\", \"Gladiador\", \"Inception\"]\npeliculas.append(\"Alien\")\nprint(peliculas[1]) # Imprime Gladiador (índice 1 es el segundo)\n"
+  },
+  {
+    "id": 47,
+    "start": 38677,
+    "end": 38835,
+    "code": "personaje = {}\npersonaje[\"nombre\"] = \"Arthur\"\npersonaje[\"vida\"] = 100\npersonaje[\"armas\"] = [\"Espada\", \"Arco\"]\npersonaje[\"vida\"] = 80\nprint(personaje)\n"
+  },
+  {
+    "id": 48,
+    "start": 38858,
+    "end": 39022,
+    "code": "a = [1, 2, 2, 3]\nb = [3, 4, 4, 5]\n# Convertir a conjuntos\nset_a = set(a)\nset_b = set(b)\n# Intersección\ncomunes = set_a & set_b\nprint(comunes) # Imprime {3}\n"
+  },
+  {
+    "id": 49,
+    "start": 39508,
+    "end": 39872,
+    "code": "# Creamos la lista y agregamos los diccionarios directamente\nescuela = [\n    {\"nombre\": \"Carlos\", \"edad\": 15, \"curso\": \"Matemáticas\"},\n    {\"nombre\": \"Sofía\", \"edad\": 16, \"curso\": \"Historia\"}\n]\n# Accedemos al segundo estudiante (índice 1) y luego a su clave \"nombre\"\nnombre_segundo = escuela[1][\"nombre\"]\nprint(\"El segundo estudiante es:\", nombre_segundo)\n"
+  },
+  {
+    "id": 50,
+    "start": 40468,
+    "end": 40532,
+    "code": "nombres = [\"Ana\", \"Juan\", \"Pedro\"]\nnombres[3] = \"María\"\n"
+  },
+  {
+    "id": 51,
+    "start": 41922,
+    "end": 42007,
+    "code": "nombres = [\"Ana\", \"Luis\", \"Carlos\"]\nfor nombre in nombres:\n    print(nombre)\n"
+  },
+  {
+    "id": 52,
+    "start": 42509,
+    "end": 42631,
+    "code": "palabra = \"Python\"\nfor letra in palabra:\n    print(letra)\n# Imprimirá P, luego y, luego t... en líneas separadas.\n"
+  },
+  {
+    "id": 53,
+    "start": 43171,
+    "end": 43237,
+    "code": "for numero in range(1, 6):\n    print(\"Contando:\", numero)\n"
+  },
+  {
+    "id": 54,
+    "start": 43562,
+    "end": 43642,
+    "code": "contador = 1\nwhile contador <= 5:\n    print(contador)\n    contador += 1\n"
+  },
+  {
+    "id": 55,
+    "start": 44288,
+    "end": 44454,
+    "code": "# Incorrecto (Infinito):\n# x = 1\n# while x > 0:\n#     print(x)\n# Correcto:\nx = 1\nwhile x < 5:\n    print(x)\n    x += 1 # La condición eventualmente será falsa\n"
+  },
+  {
+    "id": 56,
+    "start": 44674,
+    "end": 44844,
+    "code": "for num in range(1, 10):\n    if num == 5:\n        print(\"Encontramos el 5. Deteniendo.\")\n        break\n    print(num)\n# Imprimirá 1, 2, 3, 4 y luego se detendrá.\n"
+  },
+  {
+    "id": 57,
+    "start": 45120,
+    "end": 45263,
+    "code": "for num in range(1, 6):\n    if num == 3:\n        continue # El 3 se salta\n    print(num)\n# Imprimirá 1, 2, 4, 5 (nota que falta el 3).\n"
+  },
+  {
+    "id": 58,
+    "start": 45370,
+    "end": 45512,
+    "code": "numeros = [10, 15, 20, 25, 30]\nfor n in numeros:\n    if n % 2 == 0:\n        print(n, \"es par\")\n    else:\n        print(n, \"es impar\")\n"
+  },
+  {
+    "id": 59,
+    "start": 45670,
+    "end": 45781,
+    "code": "for fila in range(3):\n    for columna in range(3):\n        print(\"Fila:\", fila, \"- Columna:\", columna)\n"
+  },
+  {
+    "id": 60,
+    "start": 47079,
+    "end": 47168,
+    "code": "for i in range(1, 11):\n    resultado = 7 * i\n    print(\"7 x\", i, \"=\", resultado)\n"
+  },
+  {
+    "id": 61,
+    "start": 47190,
+    "end": 47338,
+    "code": "suma_total = 0\ncontador = 1\nwhile contador <= 50:\n    suma_total += contador\n    contador += 1\nprint(\"La suma del 1 al 50 es:\", suma_total)\n"
+  },
+  {
+    "id": 62,
+    "start": 47445,
+    "end": 47578,
+    "code": "palabras = [\"sol\", \"luna\", \"estrella\", \"meteorito\"]\nfor palabra in palabras:\n    if len(palabra) > 5:\n        print(palabra)\n"
+  },
+  {
+    "id": 63,
+    "start": 48004,
+    "end": 48417,
+    "code": "limite = int(input(\"Ingresa un número límite: \"))\ncantidad_pares = 0\nsuma_pares = 0\nfor numero in range(1, limite + 1):\n    if numero % 2 != 0:\n        continue # Si es impar, lo saltamos\n    \n    # Si llega aquí, es par\n    cantidad_pares += 1\n    suma_pares += numero\nprint(\"--- RESULTADOS ---\")\nprint(\"Total de números pares encontrados:\", cantidad_pares)\nprint(\"Suma de todos los pares:\", suma_pares)\n"
+  },
+  {
+    "id": 64,
+    "start": 48644,
+    "end": 48685,
+    "code": "x = 10\nwhile x > 0:\n    print(x)\n"
+  },
+  {
+    "id": 65,
+    "start": 48806,
+    "end": 48873,
+    "code": "for i in range(3):\n    print(\"A\")\n    break\n    print(\"B\")\n"
+  },
+  {
+    "id": 66,
+    "start": 50218,
+    "end": 50354,
+    "code": "# 1. Definir la función\ndef saludar():\n    print(\"¡Hola, bienvenido al sistema!\")\n\n# 2. Llamar a la función\nsaludar()\nsaludar()\n"
+  },
+  {
+    "id": 67,
+    "start": 51308,
+    "end": 51486,
+    "code": "# 'nombre' es el PARÁMETRO\ndef saludar_usuario(nombre):\n    print(\"Hola\", nombre)\n\n# \"Ana\" y \"Carlos\" son los ARGUMENTOS\nsaludar_usuario(\"Ana\")\nsaludar_usuario(\"Carlos\")\n"
+  },
+  {
+    "id": 68,
+    "start": 51739,
+    "end": 51854,
+    "code": "def sumar_imprimir(a, b):\n    resultado = a + b\n    print(\"La suma es:\", resultado)\n\nsumar_imprimir(10, 5)\n"
+  },
+  {
+    "id": 69,
+    "start": 52353,
+    "end": 52466,
+    "code": "def sumar(a, b):\n    return a + b\n\nresultado = sumar(5, 3)\nprint(\"El resultado devuelto es:\", resultado)\n"
+  },
+  {
+    "id": 70,
+    "start": 52904,
+    "end": 53072,
+    "code": "def verificar_edad(edad):\n    if edad >= 18:\n        return \"Mayor de edad\"\n    else:\n        return \"Menor de edad\"\n\nestado = verificar_edad(20)\nprint(estado)\n"
+  },
+  {
+    "id": 71,
+    "start": 53108,
+    "end": 53231,
+    "code": "def contar_hasta(limite):\n    for i in range(1, limite + 1):\n        print(i)\n\ncontar_hasta(3) # Imprimirá 1, 2, 3\n"
+  },
+  {
+    "id": 72,
+    "start": 53302,
+    "end": 53522,
+    "code": "def sumar_lista(numeros):\n    total = 0\n    for num in numeros:\n        total += num\n    return total\n\nmis_notas = [10, 8, 9]\npromedio = sumar_lista(mis_notas) / len(mis_notas)\nprint(\"Tu promedio es:\", promedio)\n"
+  },
+  {
+    "id": 73,
+    "start": 53674,
+    "end": 53844,
+    "code": "def saludar(nombre=\"Usuario\"):\n    print(\"Hola,\", nombre)\n\nsaludar(\"Ana\") # Imprime: Hola, Ana\nsaludar()      # Imprime: Hola, Usuario (usa el valor por defecto)\n"
+  },
+  {
+    "id": 74,
+    "start": 54037,
+    "end": 54201,
+    "code": "def presentar(nombre, edad):\n    print(nombre, \"tiene\", edad, \"años\")\n\n# Usando argumentos por nombre, el orden no importa\npresentar(edad=20, nombre=\"Ana\")\n"
+  },
+  {
+    "id": 75,
+    "start": 56407,
+    "end": 56503,
+    "code": "def multiplicar(a, b):\n    return a * b\n\nresultado = multiplicar(4, 5)\nprint(resultado)\n"
+  },
+  {
+    "id": 76,
+    "start": 56525,
+    "end": 56681,
+    "code": "def es_par(numero):\n    if numero % 2 == 0:\n        return True\n    else:\n        return False\n# Forma más corta (Avanzada): return numero % 2 == 0\n"
+  },
+  {
+    "id": 77,
+    "start": 56704,
+    "end": 57009,
+    "code": "def encontrar_maximo(lista):\n    maximo_actual = lista[0] # Asumimos que el primero es el mayor\n    for numero in lista:\n        if numero > maximo_actual:\n            maximo_actual = numero\n    return maximo_actual\n\nmi_lista = [10, 45, 2, 89, 3]\nprint(\"El mayor es:\", encontrar_maximo(mi_lista))\n"
+  },
+  {
+    "id": 78,
+    "start": 57995,
+    "end": 59040,
+    "code": "# --- 1. DEFINICIÓN DE FUNCIONES ---\ndef sumar(a, b):\n    return a + b\n\ndef restar(a, b):\n    return a - b\n\ndef multiplicar(a, b):\n    return a * b\n\ndef dividir(a, b):\n    if b == 0:\n        return \"Error: División por cero.\"\n    return a / b\n\n# --- 2. ENTRADAS DEL USUARIO ---\nprint(\"=== CALCULADORA MAESTRA ===\")\nnum1 = float(input(\"Ingresa el primer número: \"))\nnum2 = float(input(\"Ingresa el segundo número: \"))\n\nprint(\"\\nOperaciones disponibles:\")\nprint(\"1. Sumar\")\nprint(\"2. Restar\")\nprint(\"3. Multiplicar\")\nprint(\"4. Dividir\")\nopcion = input(\"Elige una opción (1/2/3/4): \")\n\n# --- 3. LÓGICA DE DECISIÓN Y LLAMADAS A FUNCIONES ---\nif opcion == \"1\":\n    resultado = sumar(num1, num2)\n    print(\"Resultado:\", resultado)\nelif opcion == \"2\":\n    resultado = restar(num1, num2)\n    print(\"Resultado:\", resultado)\nelif opcion == \"3\":\n    resultado = multiplicar(num1, num2)\n    print(\"Resultado:\", resultado)\nelif opcion == \"4\":\n    resultado = dividir(num1, num2)\n    print(\"Resultado:\", resultado)\nelse:\n    print(\"Opción no válida.\")\n"
+  },
+  {
+    "id": 79,
+    "start": 59353,
+    "end": 59451,
+    "code": "def calcular_doble(x):\n    doble = x * 2\n\nmi_numero = calcular_doble(10)\nprint(mi_numero)\n"
+  },
+  {
+    "id": 80,
+    "start": 59662,
+    "end": 59769,
+    "code": "def saludo(nombre=\"Anónimo\"):\n    return \"Hola \" + nombre\n\nprint(saludo(\"Carlos\"))\nprint(saludo())\n"
+  },
+  {
+    "id": 81,
+    "start": 60442,
+    "end": 60501,
+    "code": "mensaje = \"Python\"\nprint(\"mensaje\")\nprint(mensaje)\n"
+  },
+  {
+    "id": 82,
+    "start": 60932,
+    "end": 60957,
+    "code": "texto_vacio = \"\"\n"
+  },
+  {
+    "id": 83,
+    "start": 61168,
+    "end": 61226,
+    "code": "texto = \"Python\"\nprint(texto[0])\nprint(texto[-1])\n"
+  },
+  {
+    "id": 84,
+    "start": 61839,
+    "end": 61922,
+    "code": "saludo = \"Hola, mundo\"\nlongitud = len(saludo)\nprint(longitud) # Imprime 11\n"
+  },
+  {
+    "id": 85,
+    "start": 62154,
+    "end": 62255,
+    "code": "texto = \"Programacion\"\nprint(texto[0:3])\nprint(texto[:3])\nprint(texto[2:])\nprint(texto[::2])\n"
+  },
+  {
+    "id": 86,
+    "start": 62876,
+    "end": 62955,
+    "code": "palabra = \"Gato\"\n# palabra[0] = \"P\"  # ESTO CAUSA UN ERROR (TypeError)\n"
+  },
+  {
+    "id": 87,
+    "start": 62990,
+    "end": 63070,
+    "code": "palabra_nueva = \"P\" + palabra[1:]\nprint(palabra_nueva) # Imprime \"Pato\"\n"
+  },
+  {
+    "id": 88,
+    "start": 63163,
+    "end": 63271,
+    "code": "nombre = \"Ana\"\napellido = \"García\"\nnombre_completo = nombre + \" \" + apellido\nprint(nombre_completo)\n"
+  },
+  {
+    "id": 89,
+    "start": 63382,
+    "end": 63446,
+    "code": "eco = \"Hola \" * 3\nprint(eco) # Imprime: Hola Hola Hola \n"
+  },
+  {
+    "id": 90,
+    "start": 63579,
+    "end": 63668,
+    "code": "print(\"Py\" in \"Python\") # Imprime True\nprint(\"java\" in \"Python\") # Imprime False\n"
+  },
+  {
+    "id": 91,
+    "start": 63934,
+    "end": 64343,
+    "code": "mensaje = \"  hola MUNDO  \"\nprint(mensaje.lower())      # \"  hola mundo  \" (Todo minúsculas)\nprint(mensaje.upper())      # \"  HOLA MUNDO  \" (Todo mayúsculas)\nprint(mensaje.capitalize()) # \"  hola mundo  \": el primer carácter es un espacio\nprint(mensaje.title())      # \"  Hola Mundo  \" (Mayúscula inicial de cada palabra)\nprint(mensaje.strip())      # \"hola MUNDO\" (Elimina espacios al inicio y final)\n"
+  },
+  {
+    "id": 92,
+    "start": 64364,
+    "end": 64750,
+    "code": "texto = \"Python es genial\"\nprint(texto.replace(\"genial\", \"poderoso\")) # \"Python es poderoso\"\nprint(texto.startswith(\"Py\")) # True (¿Empieza con \"Py\"?)\nprint(texto.endswith(\"al\"))   # True (¿Termina con \"al\"?)\nprint(texto.find(\"es\"))       # 7 (Devuelve el índice donde empieza \"es\". -1 si no lo encuentra)\nprint(texto.count(\"n\"))       # 2 (Cuenta cuántas veces aparece la \"n\")\n"
+  },
+  {
+    "id": 93,
+    "start": 64929,
+    "end": 65050,
+    "code": "frase = \"Python es muy útil\"\npalabras = frase.split()\nprint(palabras) # Imprime: ['Python', 'es', 'muy', 'útil']\n"
+  },
+  {
+    "id": 94,
+    "start": 65210,
+    "end": 65355,
+    "code": "palabras = [\"Python\", \"es\", \"útil\"]\nfrase = \" \".join(palabras) # Usa un espacio \" \" como conector\nprint(frase) # Imprime: Python es útil\n"
+  },
+  {
+    "id": 95,
+    "start": 65761,
+    "end": 65843,
+    "code": "nombre = \"Ana\"\nedad = 20\nprint(f\"Me llamo {nombre} y tengo {edad} años.\")\n"
+  },
+  {
+    "id": 96,
+    "start": 66149,
+    "end": 66227,
+    "code": "precio = 100\nprint(f\"El total con impuestos es: {precio * 1.16:.2f}\")\n"
+  },
+  {
+    "id": 97,
+    "start": 66551,
+    "end": 66645,
+    "code": "print(\"Línea 1\\nLínea 2\")\nprint(\"Él dijo: \\\"Hola\\\"\")\nprint(\"Ruta:\\\\Carpeta\\\\Archivo\")\n"
+  },
+  {
+    "id": 98,
+    "start": 66827,
+    "end": 66904,
+    "code": "texto = \"\"\"Primera línea\nSegunda línea\nTercera línea\"\"\"\nprint(texto)\n"
+  },
+  {
+    "id": 99,
+    "start": 67063,
+    "end": 67181,
+    "code": "numero_texto = \"50\"\nnumero_real = int(numero_texto)\n# Si intentas int(\"Hola\"), Python arrojará un ValueError.\n"
+  },
+  {
+    "id": 100,
+    "start": 67290,
+    "end": 67450,
+    "code": "# Quita espacios accidentales y convierte a minúsculas para evaluar fácilmente\nrespuesta = input(\"¿Aceptas las condiciones? (si/no): \").strip().lower()\n"
+  },
+  {
+    "id": 101,
+    "start": 67478,
+    "end": 67621,
+    "code": "archivo = \"documento.pdf\"\nif archivo.endswith(\".pdf\"):\n    print(\"Es un archivo PDF válido.\")\nelse:\n    print(\"Formato no soportado.\")\n"
+  },
+  {
+    "id": 102,
+    "start": 67642,
+    "end": 67789,
+    "code": "vocales = 0\nfor letra in \"Murcielago\":\n    if letra.lower() in \"aeiou\":\n        vocales += 1\nprint(f\"La palabra tiene {vocales} vocales.\")\n"
+  },
+  {
+    "id": 103,
+    "start": 67813,
+    "end": 68036,
+    "code": "def censurar_palabra(texto, palabra_prohibida):\n    censura = \"*\" * len(palabra_prohibida)\n    return texto.replace(palabra_prohibida, censura)\nresultado = censurar_palabra(\"Este secreto es muy secreto\", \"secreto\")\n"
+  },
+  {
+    "id": 104,
+    "start": 69434,
+    "end": 69529,
+    "code": "frase = \"Python es divertido\"\nfrase_mayusculas = frase.upper()\nprint(frase_mayusculas)\n"
+  },
+  {
+    "id": 105,
+    "start": 69552,
+    "end": 69722,
+    "code": "nombre_completo = input(\"Ingresa tu nombre completo: \")\npartes = nombre_completo.split()\nprimer_nombre = partes[0]\nprint(f\"Tu primer nombre es {primer_nombre}.\")\n"
+  },
+  {
+    "id": 106,
+    "start": 69740,
+    "end": 69930,
+    "code": "palabra = input(\"Ingresa una palabra: \").lower().strip()\npalabra_invertida = palabra[::-1]\nes_palindromo = palabra == palabra_invertida\nprint(f\"¿Es un palíndromo?: {es_palindromo}\")\n"
+  },
+  {
+    "id": 107,
+    "start": 70450,
+    "end": 71236,
+    "code": "# 1. Entradas del usuario\nfrase = input(\"Ingresa una frase larga: \")\nletra_buscar = input(\"Ingresa una letra para contar: \")\n# 2. Procesamiento\ntotal_caracteres = len(frase)\npalabras = frase.split()\ntotal_palabras = len(palabras)\nmayusculas = frase.upper()\nminusculas = frase.lower()\ncantidad_letra = frase.lower().count(letra_buscar.lower())\ncontiene_python = \"python\" in frase.lower()\n# 3. Salida de resultados\nprint(\"\\n--- ANALIZADOR DE TEXTO ---\")\nprint(f\"Total de caracteres: {total_caracteres}\")\nprint(f\"Total de palabras: {total_palabras}\")\nprint(f\"En mayúsculas: {mayusculas}\")\nprint(f\"En minúsculas: {minusculas}\")\nprint(f\"La letra '{letra_buscar}' aparece {cantidad_letra} veces.\")\nprint(f\"¿Menciona a Python?: {contiene_python}\")\nprint(\"---------------------------\")\n"
+  },
+  {
+    "id": 108,
+    "start": 71445,
+    "end": 71517,
+    "code": "codigo = \"A1-B2-C3\"\npartes = codigo.split(\"-\")\nprint(partes[1])\n"
+  },
+  {
+    "id": 109,
+    "start": 71648,
+    "end": 71704,
+    "code": "mensaje = \"Hola\"\nmensaje.upper()\nprint(mensaje)\n"
+  },
+  {
+    "id": 110,
+    "start": 72943,
+    "end": 73002,
+    "code": "archivo = open(\"datos.txt\", \"r\", encoding=\"utf-8\")\n"
+  },
+  {
+    "id": 111,
+    "start": 73549,
+    "end": 73668,
+    "code": "archivo = open(\"datos.txt\", \"r\", encoding=\"utf-8\")\ncontenido = archivo.read()\nprint(contenido)\narchivo.close()\n"
+  },
+  {
+    "id": 112,
+    "start": 73864,
+    "end": 74021,
+    "code": "archivo = open(\"datos.txt\", \"r\", encoding=\"utf-8\")\nlinea1 = archivo.readline()\nlinea2 = archivo.readline()\nprint(\"Línea 1:\", linea1)\narchivo.close()\n"
+  },
+  {
+    "id": 113,
+    "start": 74211,
+    "end": 74359,
+    "code": "archivo = open(\"datos.txt\", \"r\", encoding=\"utf-8\")\nlineas = archivo.readlines()\nprint(lineas[0]) # Imprime la primera línea\narchivo.close()\n"
+  },
+  {
+    "id": 114,
+    "start": 74972,
+    "end": 75140,
+    "code": "with open(\"datos.txt\", \"r\", encoding=\"utf-8\") as archivo:\n    contenido = archivo.read()\n    print(contenido)\n# Aquí el archivo ya está cerrado automáticamente\n"
+  },
+  {
+    "id": 115,
+    "start": 75931,
+    "end": 76071,
+    "code": "with open(\"notas.txt\", \"w\", encoding=\"utf-8\") as archivo:\n    archivo.write(\"Primera línea\\n\")\n    archivo.write(\"Segunda línea\\n\")\n"
+  },
+  {
+    "id": 116,
+    "start": 76107,
+    "end": 76225,
+    "code": "with open(\"notas.txt\", \"a\", encoding=\"utf-8\") as archivo:\n    archivo.write(\"Esta línea se añade al final\\n\")\n"
+  },
+  {
+    "id": 117,
+    "start": 76687,
+    "end": 76808,
+    "code": "with open(\"datos.txt\", \"r\", encoding=\"utf-8\") as archivo:\n    for linea in archivo:\n        print(linea.strip())\n"
+  },
+  {
+    "id": 118,
+    "start": 77082,
+    "end": 77301,
+    "code": "nombres = []\nwith open(\"nombres.txt\", \"r\", encoding=\"utf-8\") as archivo:\n    for linea in archivo:\n        nombre_limpio = linea.strip()\n        nombres.append(nombre_limpio)\nprint(\"Nombres cargados:\", nombres)\n"
+  },
+  {
+    "id": 119,
+    "start": 77351,
+    "end": 77542,
+    "code": "nuevo_usuario = input(\"Ingresa tu nombre: \")\nwith open(\"usuarios.txt\", \"a\", encoding=\"utf-8\") as archivo:\n    archivo.write(nuevo_usuario + \"\\n\")\nprint(\"Usuario guardado con éxito.\")\n"
+  },
+  {
+    "id": 120,
+    "start": 79230,
+    "end": 79506,
+    "code": "from pathlib import Path\nruta = Path(\"datos.txt\")  # Relativa al directorio de trabajo\n# En un archivo .py, para ubicarlo junto al script:\nruta_junto_al_script = Path(__file__).resolve().parent / \"datos.txt\"\n# __file__ normalmente no existe en una consola o notebook.\n"
+  },
+  {
+    "id": 121,
+    "start": 79613,
+    "end": 79808,
+    "code": "from pathlib import Path\nruta = Path(\"mi_archivo.txt\")\nif ruta.exists():\n    with open(ruta, \"r\", encoding=\"utf-8\") as f:\n        print(f.read())\nelse:\n    print(\"El archivo no existe.\")\n"
+  },
+  {
+    "id": 122,
+    "start": 79873,
+    "end": 80009,
+    "code": "from pathlib import Path\ncarpeta = Path(\"mis_datos\")\ncarpeta.mkdir(exist_ok=True) # Lo crea si no existe, si existe no da error\n"
+  },
+  {
+    "id": 123,
+    "start": 80201,
+    "end": 80361,
+    "code": "from pathlib import Path\ncarpeta_actual = Path(\".\") # El punto significa \"carpeta actual\"\nfor elemento in carpeta_actual.iterdir():\n    print(elemento)\n"
+  },
+  {
+    "id": 124,
+    "start": 82079,
+    "end": 82202,
+    "code": "with open(\"registro.txt\", \"w\", encoding=\"utf-8\") as archivo:\n    archivo.write(\"Aprendiendo a guardar archivos\\n\")\n"
+  },
+  {
+    "id": 125,
+    "start": 82225,
+    "end": 82381,
+    "code": "pelicula = input(\"Ingresa tu película favorita: \")\nwith open(\"peliculas.txt\", \"a\", encoding=\"utf-8\") as archivo:\n    archivo.write(pelicula + \"\\n\")\n"
+  },
+  {
+    "id": 126,
+    "start": 82399,
+    "end": 82653,
+    "code": "from pathlib import Path\nif Path(\"peliculas.txt\").exists():\n    with open(\"peliculas.txt\", \"r\", encoding=\"utf-8\") as archivo:\n        for linea in archivo:\n            print(\"- \" + linea.strip())\nelse:\n    print(\"Aún no has guardado películas.\")\n"
+  },
+  {
+    "id": 127,
+    "start": 83132,
+    "end": 84052,
+    "code": "from pathlib import Path\narchivo_agenda = Path(\"agenda.txt\")\nwhile True:\n    print(\"\\n--- AGENDA DE CONTACTOS ---\")\n    print(\"1. Añadir contacto\")\n    print(\"2. Ver contactos\")\n    print(\"3. Salir\")\n    opcion = input(\"Elige una opción: \")\n    if opcion == \"1\":\n        nombre = input(\"Nombre: \")\n        telefono = input(\"Teléfono: \")\n        with open(archivo_agenda, \"a\", encoding=\"utf-8\") as f:\n            f.write(f\"{nombre} - {telefono}\\n\")\n        print(\"¡Contacto guardado!\")\n    elif opcion == \"2\":\n        print(\"\\n--- TUS CONTACTOS ---\")\n        if archivo_agenda.exists():\n            with open(archivo_agenda, \"r\", encoding=\"utf-8\") as f:\n                for linea in f:\n                    print(\"•\", linea.strip())\n        else:\n            print(\"La agenda está vacía.\")\n    elif opcion == \"3\":\n        print(\"Saliendo de la agenda...\")\n        break\n    else:\n        print(\"Opción inválida.\")\n"
+  },
+  {
+    "id": 128,
+    "start": 84412,
+    "end": 84491,
+    "code": "with open(\"log.txt\", \"a\") as file:\n    file.write(\"Usuario conectado\")\n"
+  },
+  {
+    "id": 129,
+    "start": 85057,
+    "end": 85138,
+    "code": "with open(\"test.txt\", \"w\", encoding=\"utf-8\") as f:\n    f.write(\"Hola\\n\")\n"
+  },
+  {
+    "id": 130,
+    "start": 87805,
+    "end": 87903,
+    "code": "precio = 100\ndescuento = 20\ntotal = precio - descuento / 100\nprint(\"El total es:\", total)\n"
+  },
+  {
+    "id": 131,
+    "start": 89031,
+    "end": 89176,
+    "code": "try:\n    edad = int(input(\"Edad: \"))\n    print(\"Tienes\", edad, \"años.\")\nexcept ValueError:\n    print(\"Debes escribir un número entero.\")\n"
+  },
+  {
+    "id": 132,
+    "start": 90226,
+    "end": 90516,
+    "code": "try:\n    numero = int(input(\"Ingresa un divisor: \"))\n    resultado = 100 / numero\n    print(\"Resultado:\", resultado)\nexcept ValueError:\n    print(\"Error: No ingresaste un número válido.\")\nexcept ZeroDivisionError:\n    print(\"Error: Matemáticamente no es posible dividir por cero.\")\n"
+  },
+  {
+    "id": 133,
+    "start": 90703,
+    "end": 90897,
+    "code": "try:\n    numero = int(input(\"Ingresa cantidad: \"))\nexcept ValueError:\n    print(\"Entrada incorrecta.\")\nelse:\n    print(\"¡Dato capturado correctamente!\")\n    print(\"Procesando:\", numero)\n"
+  },
+  {
+    "id": 134,
+    "start": 91204,
+    "end": 91355,
+    "code": "try:\n    x = 1 / 1\nexcept ZeroDivisionError:\n    print(\"Fallo de división.\")\nfinally:\n    print(\"Este mensaje se imprimirá pase lo que pase.\")\n"
+  },
+  {
+    "id": 135,
+    "start": 91490,
+    "end": 91792,
+    "code": "try:\n    with open(\"datos_importantes.txt\", \"r\", encoding=\"utf-8\") as archivo:\n        contenido = archivo.read()\n        print(\"Archivo leído con éxito.\")\nexcept FileNotFoundError:\n    print(\"El archivo no existe. Creando archivo por defecto...\")\n    # Aquí podrías usar modo \"w\" para crearlo\n"
+  },
+  {
+    "id": 136,
+    "start": 92207,
+    "end": 92479,
+    "code": "while True:\n    try:\n        edad = int(input(\"Ingresa tu edad en números: \"))\n        break  # Solo se ejecuta si int() no falló\n    except ValueError:\n        print(\"Entrada inválida. Por favor, usa números enteros (ej. 25).\")\n\nprint(f\"Edad registrada: {edad}\")\n"
+  },
+  {
+    "id": 137,
+    "start": 93335,
+    "end": 93556,
+    "code": "def registrar_edad(edad):\n    if edad < 0:\n        raise ValueError(\"La edad no puede ser negativa.\")\n    return f\"Edad {edad} registrada.\"\n\n# Si llamas a registrar_edad(-5), el programa estallará con tu mensaje.\n"
+  },
+  {
+    "id": 138,
+    "start": 93641,
+    "end": 93694,
+    "code": "try:\n    resultado = 10 / 0\nexcept:\n    pass\n"
+  },
+  {
+    "id": 139,
+    "start": 95915,
+    "end": 96086,
+    "code": "try:\n    numero = float(input(\"Ingresa un número decimal: \"))\n    print(\"Número ingresado:\", numero)\nexcept ValueError:\n    print(\"Esto no es un decimal válido.\")\n"
+  },
+  {
+    "id": 140,
+    "start": 96108,
+    "end": 96358,
+    "code": "datos = [10, 20]\ntry:\n    indice = int(input(\"Ingresa un índice para ver: \"))\n    print(datos[indice])\nexcept IndexError:\n    print(\"Error: El índice no existe en esta lista.\")\nexcept ValueError:\n    print(\"Error: Ingresa un número entero.\")\n"
+  },
+  {
+    "id": 141,
+    "start": 96381,
+    "end": 96702,
+    "code": "try:\n    num1 = int(input(\"Dividendo: \"))\n    num2 = int(input(\"Divisor: \"))\n    resultado = num1 / num2\nexcept ValueError:\n    print(\"Debes ingresar únicamente números enteros.\")\nexcept ZeroDivisionError:\n    print(\"No se puede dividir entre cero.\")\nelse:\n    print(\"El resultado de la división es:\", resultado)\n"
+  },
+  {
+    "id": 142,
+    "start": 97512,
+    "end": 98926,
+    "code": "# 1. Definición de funciones\ndef sumar(a, b): return a + b\ndef restar(a, b): return a - b\ndef multiplicar(a, b): return a * b\ndef dividir(a, b): return a / b  # Dejamos que Python genere la excepción\n\nprint(\"=== CALCULADORA ROBUSTA ===\")\nprint(\"Escribe 'salir' para apagar la calculadora.\\n\")\n\n# 2. Bucle interactivo\nwhile True:\n    operacion = input(\"Elige operación (+, -, *, /) o 'salir': \").strip()\n    \n    if operacion.lower() == \"salir\":\n        print(\"Apagando calculadora...\")\n        break\n        \n    if operacion not in [\"+\", \"-\", \"*\", \"/\"]:\n        print(\"Operación no válida. Intenta de nuevo.\\n\")\n        continue\n\n    # Manejo de ValueError\n    try:\n        num1 = float(input(\"Primer número: \"))\n        num2 = float(input(\"Segundo número: \"))\n    except ValueError:\n        print(\"Error: Debes ingresar valores numéricos. Volviendo al menú.\\n\")\n        continue\n\n    # Manejo lógico y matemático\n    try:\n        if operacion == \"+\":\n            res = sumar(num1, num2)\n        elif operacion == \"-\":\n            res = restar(num1, num2)\n        elif operacion == \"*\":\n            res = multiplicar(num1, num2)\n        elif operacion == \"/\":\n            # Manejo de ZeroDivisionError\n            res = dividir(num1, num2)\n        \n        print(f\"El resultado es: {res}\\n\")\n        \n    except ZeroDivisionError:\n        print(\"Error fatal prevenido: No se puede dividir entre cero.\\n\")\n"
+  },
+  {
+    "id": 143,
+    "start": 99223,
+    "end": 99371,
+    "code": "try:\n    x = 5 / \"a\"\nexcept ZeroDivisionError:\n    print(\"A\")\nexcept TypeError:\n    print(\"B\")\nelse:\n    print(\"C\")\nfinally:\n    print(\"D\")\n"
+  },
+  {
+    "id": 144,
+    "start": 100916,
+    "end": 100979,
+    "code": "import math\nresultado = math.sqrt(25)\nprint(resultado)\n"
+  },
+  {
+    "id": 145,
+    "start": 101425,
+    "end": 101493,
+    "code": "from math import sqrt\nresultado = sqrt(25)\nprint(resultado)\n"
+  },
+  {
+    "id": 146,
+    "start": 101807,
+    "end": 101892,
+    "code": "import statistics as stats\ndatos = [10, 20, 30]\npromedio = stats.mean(datos)\n"
+  },
+  {
+    "id": 147,
+    "start": 102173,
+    "end": 102200,
+    "code": "from math import *\n"
+  },
+  {
+    "id": 148,
+    "start": 103354,
+    "end": 103431,
+    "code": "def sumar(a, b):\n    return a + b\ndef restar(a, b):\n    return a - b\n"
+  },
+  {
+    "id": 149,
+    "start": 103483,
+    "end": 103578,
+    "code": "import operaciones\nresultado = operaciones.sumar(4, 5)\nprint(\"La suma es:\", resultado)\n"
+  },
+  {
+    "id": 150,
+    "start": 104298,
+    "end": 104418,
+    "code": "def iniciar_programa():\n    print(\"El programa ha iniciado.\")\nif __name__ == \"__main__\":\n    iniciar_programa()\n"
+  },
+  {
+    "id": 151,
+    "start": 104949,
+    "end": 105015,
+    "code": "mi_paquete/\n├── __init__.py\n├── calculos.py\n└── textos.py\n"
+  },
+  {
+    "id": 152,
+    "start": 106393,
+    "end": 106438,
+    "code": "python -m pip install nombre_paquete\n"
+  },
+  {
+    "id": 153,
+    "start": 106688,
+    "end": 107052,
+    "code": "# Ver versión de pip\npython -m pip --version\n# Instalar un paquete\npython -m pip install requests\n# Instalar una versión específica\npython -m pip install requests==2.28.1\n# Ver paquetes instalados en tu entorno\npython -m pip list\n# Ver información de un paquete específico\npython -m pip show requests\n# Eliminar un paquete\npython -m pip uninstall requests\n"
+  },
+  {
+    "id": 154,
+    "start": 108480,
+    "end": 108509,
+    "code": "python -m venv .venv\n"
+  },
+  {
+    "id": 155,
+    "start": 108915,
+    "end": 108952,
+    "code": ".\\.venv\\Scripts\\Activate.ps1\n"
+  },
+  {
+    "id": 156,
+    "start": 108965,
+    "end": 109000,
+    "code": ".venv\\Scripts\\activate.bat\n"
+  },
+  {
+    "id": 157,
+    "start": 109015,
+    "end": 109049,
+    "code": "source .venv/bin/activate\n"
+  },
+  {
+    "id": 158,
+    "start": 109493,
+    "end": 109512,
+    "code": "deactivate\n"
+  },
+  {
+    "id": 159,
+    "start": 109660,
+    "end": 109776,
+    "code": "python -c \"import sys; print(sys.executable); print(sys.prefix != sys.base_prefix)\"\npython -m pip --version\n"
+  },
+  {
+    "id": 160,
+    "start": 110091,
+    "end": 110139,
+    "code": "python -m pip freeze > requirements.txt\n"
+  },
+  {
+    "id": 161,
+    "start": 110586,
+    "end": 110636,
+    "code": "python -m pip install -r requirements.txt\n"
+  },
+  {
+    "id": 162,
+    "start": 110798,
+    "end": 111105,
+    "code": "mi_proyecto/\n├── .venv/               # Entorno virtual (Aislado)\n├── datos/               # Carpeta para archivos txt, csv, etc.\n├── main.py              # Punto de entrada de la aplicación\n├── operaciones.py       # Módulo propio con lógica\n└── requirements.txt     # Lista de dependencias de pip\n"
+  },
+  {
+    "id": 163,
+    "start": 113395,
+    "end": 113499,
+    "code": "import random\nnumero_azar = random.randint(1, 10)\nprint(f\"El número ganador es: {numero_azar}\")\n"
+  },
+  {
+    "id": 164,
+    "start": 113522,
+    "end": 113729,
+    "code": "# En saludos.py\ndef saludo_formal(nombre):\n    return f\"Estimado/a {nombre}, reciba un cordial saludo.\"\n# En prueba.py\nfrom saludos import saludo_formal\nmensaje = saludo_formal(\"Ana\")\nprint(mensaje)\n"
+  },
+  {
+    "id": 165,
+    "start": 114653,
+    "end": 114718,
+    "code": "def calcular_area_cuadrado(lado):\n    return lado * lado\n"
+  },
+  {
+    "id": 166,
+    "start": 114737,
+    "end": 114826,
+    "code": "def formatear_resultado(valor):\n    return f\"El resultado calculado es: {valor}\"\n"
+  },
+  {
+    "id": 167,
+    "start": 114843,
+    "end": 115289,
+    "code": "import operaciones\nimport textos\ndef iniciar():\n    print(\"--- CALCULADORA MODULAR ---\")\n    # Captura y validación básica\n    lado_texto = input(\"Ingresa la longitud del lado del cuadrado: \")\n    lado = float(lado_texto)\n    \n    # Uso de módulos\n    area = operaciones.calcular_area_cuadrado(lado)\n    mensaje = textos.formatear_resultado(area)\n    \n    print(mensaje)\n# Punto de entrada seguro\nif __name__ == \"__main__\":\n    iniciar()\n"
+  },
+  {
+    "id": 168,
+    "start": 115728,
+    "end": 115771,
+    "code": ">>> python -m pip install requests\n"
+  },
+  {
+    "id": 169,
+    "start": 116128,
+    "end": 116209,
+    "code": "def multiplicar_por_dos(x):\n    return x * 2\nprint(\"Cargando módulo...\")\n"
+  },
+  {
+    "id": 170,
+    "start": 117918,
+    "end": 117950,
+    "code": "class Persona:\n    pass\n"
+  },
+  {
+    "id": 171,
+    "start": 118358,
+    "end": 118408,
+    "code": "persona1 = Persona()\npersona2 = Persona()\n"
+  },
+  {
+    "id": 172,
+    "start": 118889,
+    "end": 119032,
+    "code": "class Persona:\n    def __init__(self, nombre, edad):\n        self.nombre = nombre\n        self.edad = edad\n\njuan = Persona(\"Juan\", 30)\n"
+  },
+  {
+    "id": 173,
+    "start": 119822,
+    "end": 119930,
+    "code": "# Acceder a un atributo\nprint(juan.nombre)\n\n# Modificar un atributo\njuan.edad = 31\nprint(juan.edad)\n"
+  },
+  {
+    "id": 174,
+    "start": 120024,
+    "end": 120235,
+    "code": "class Persona:\n    def __init__(self, nombre):\n        self.nombre = nombre\n\n    def saludar(self):\n        print(f\"Hola, soy {self.nombre}\")\n\nana = Persona(\"Ana\")\nana.saludar() # Imprime: Hola, soy Ana\n"
+  },
+  {
+    "id": 175,
+    "start": 120488,
+    "end": 120851,
+    "code": "class Cuenta:\n    def __init__(self, titular, saldo_inicial):\n        self.titular = titular\n        self.saldo = saldo_inicial\n    \n    def depositar(self, cantidad):\n        self.saldo += cantidad\n        print(f\"Depositaste {cantidad}. Saldo nuevo: {self.saldo}\")\n\nmi_cuenta = Cuenta(\"Carlos\", 100)\nmi_cuenta.depositar(50) # Modifica el estado interno\n"
+  },
+  {
+    "id": 176,
+    "start": 121254,
+    "end": 121434,
+    "code": "class Persona:\n    especie = \"Humano\" # Atributo de clase\n    \n    def __init__(self, nombre):\n        self.nombre = nombre # Atributo de instancia\n\nprint(Persona.especie)\n"
+  },
+  {
+    "id": 177,
+    "start": 122894,
+    "end": 123204,
+    "code": "class Libro:\n    def __init__(self, titulo, autor):\n        self.titulo = titulo\n        self.autor = autor\n        \n    def __str__(self):\n        return f\"'{self.titulo}' escrito por {self.autor}\"\n\nmi_libro = Libro(\"1984\", \"George Orwell\")\nprint(mi_libro) # Imprime: '1984' escrito por George Orwell\n"
+  },
+  {
+    "id": 178,
+    "start": 123634,
+    "end": 123751,
+    "code": "class Sistema:\n    def __init__(self):\n        self._estado_interno = \"Cargando\" # Convención de uso interno\n"
+  },
+  {
+    "id": 179,
+    "start": 123956,
+    "end": 124157,
+    "code": "class Animal:\n    def hablar(self):\n        return \"Sonido genérico\"\n\nclass Perro(Animal):\n    pass\n\nmi_perro = Perro()\nprint(mi_perro.hablar()) # Imprime: Sonido genérico (heredado de Animal)\n"
+  },
+  {
+    "id": 180,
+    "start": 124322,
+    "end": 124460,
+    "code": "class Perro(Animal):\n    def hablar(self):\n        return \"¡Guau!\"\n\nmi_perro = Perro()\nprint(mi_perro.hablar()) # Imprime: ¡Guau!\n"
+  },
+  {
+    "id": 181,
+    "start": 124732,
+    "end": 125092,
+    "code": "class Persona:\n    def __init__(self, nombre, edad):\n        self.nombre = nombre\n        self.edad = edad\n\nclass Empleado(Persona):\n    def __init__(self, nombre, edad, puesto):\n        # 1. Dejamos que la clase Persona maneje nombre y edad\n        super().__init__(nombre, edad) \n        # 2. Manejamos lo nuevo (puesto)\n        self.puesto = puesto\n"
+  },
+  {
+    "id": 182,
+    "start": 125366,
+    "end": 125637,
+    "code": "class Gato:\n    def hablar(self): return \"Miau\"\n\nclass Vaca:\n    def hablar(self): return \"Muu\"\n\n# No importa de qué clase sea el animal, sabemos que tiene un método hablar()\nanimales = [Gato(), Vaca(), Perro()]\nfor animal in animales:\n    print(animal.hablar())\n"
+  },
+  {
+    "id": 183,
+    "start": 125867,
+    "end": 126099,
+    "code": "class Motor:\n    def encender(self):\n        print(\"Motor encendido\")\n\nclass Auto:\n    def __init__(self):\n        self.motor = Motor() # Auto contiene un Motor\n        \n    def arrancar(self):\n        self.motor.encender()\n"
+  },
+  {
+    "id": 184,
+    "start": 128766,
+    "end": 129046,
+    "code": "class Rectangulo:\n    def __init__(self, base, altura):\n        self.base = base\n        self.altura = altura\n        \n    def calcular_area(self):\n        return self.base * self.altura\n\nmi_rectangulo = Rectangulo(5, 10)\nprint(mi_rectangulo.calcular_area()) # Imprime 50\n"
+  },
+  {
+    "id": 185,
+    "start": 129068,
+    "end": 129426,
+    "code": "class Bateria:\n    def __init__(self):\n        self.carga = 100\n        \n    def usar(self, cantidad):\n        self.carga -= cantidad\n        if self.carga < 0:\n            self.carga = 0\n            \n    def __str__(self):\n        return f\"Batería: {self.carga}%\"\n\nmi_bateria = Bateria()\nmi_bateria.usar(30)\nprint(mi_bateria) # Imprime Batería: 70%\n"
+  },
+  {
+    "id": 186,
+    "start": 129449,
+    "end": 129737,
+    "code": "class Vehiculo:\n    def __init__(self, marca):\n        self.marca = marca\n\nclass Moto(Vehiculo):\n    def __init__(self, marca, cilindrada):\n        super().__init__(marca)\n        self.cilindrada = cilindrada\n\nmi_moto = Moto(\"Honda\", 600)\nprint(mi_moto.marca, mi_moto.cilindrada)\n"
+  },
+  {
+    "id": 187,
+    "start": 130424,
+    "end": 131697,
+    "code": "class Libro:\n    def __init__(self, titulo, autor):\n        self.titulo = titulo\n        self.autor = autor\n        self.disponible = True\n        \n    def prestar(self):\n        if self.disponible:\n            self.disponible = False\n            print(f\"Éxito: Se ha prestado '{self.titulo}'.\")\n        else:\n            print(f\"Error: '{self.titulo}' ya está prestado.\")\n            \n    def __str__(self):\n        estado = \"Disponible\" if self.disponible else \"Prestado\"\n        return f\"'{self.titulo}' de {self.autor} ({estado})\"\n\nclass Biblioteca:\n    def __init__(self):\n        self.catalogo = []\n        \n    def agregar_libro(self, libro):\n        self.catalogo.append(libro)\n        print(f\"Libro '{libro.titulo}' agregado a la biblioteca.\")\n        \n    def mostrar_disponibles(self):\n        print(\"\\n--- LIBROS DISPONIBLES ---\")\n        for libro in self.catalogo:\n            if libro.disponible:\n                print(libro)\n\n# PRUEBA DEL SISTEMA\nmi_biblio = Biblioteca()\n\nlibro1 = Libro(\"El Quijote\", \"Miguel de Cervantes\")\nlibro2 = Libro(\"1984\", \"George Orwell\")\n\nmi_biblio.agregar_libro(libro1)\nmi_biblio.agregar_libro(libro2)\n\nmi_biblio.mostrar_disponibles()\n\nprint(\"\\n--- PRESTANDO LIBRO ---\")\nlibro1.prestar()\n\nmi_biblio.mostrar_disponibles()\n"
+  },
+  {
+    "id": 188,
+    "start": 132056,
+    "end": 132169,
+    "code": "class Computadora:\n    def encender():\n        print(\"Encendiendo...\")\n\npc = Computadora()\npc.encender()\n"
+  },
+  {
+    "id": 189,
+    "start": 132487,
+    "end": 132590,
+    "code": "class Auto:\n    ruedas = 4\n\nauto1 = Auto()\nauto2 = Auto()\nAuto.ruedas = 6\n\nprint(auto1.ruedas)\n"
+  },
+  {
+    "id": 190,
+    "start": 133417,
+    "end": 133539,
+    "code": "cuadrados = []\nfor numero in range(1, 6):\n    cuadrados.append(numero ** 2)\nprint(cuadrados) # [1, 4, 9, 16, 25]\n"
+  },
+  {
+    "id": 191,
+    "start": 133625,
+    "end": 133723,
+    "code": "cuadrados = [numero ** 2 for numero in range(1, 6)]\nprint(cuadrados) # [1, 4, 9, 16, 25]\n"
+  },
+  {
+    "id": 192,
+    "start": 134138,
+    "end": 134267,
+    "code": "# Obtener solo los números pares del 0 al 9\npares = [n for n in range(10) if n % 2 == 0]\nprint(pares) # [0, 2, 4, 6, 8]\n"
+  },
+  {
+    "id": 193,
+    "start": 134639,
+    "end": 134832,
+    "code": "# Crear un diccionario donde la clave es el número y el valor es su cuadrado\ncuadrados_dict = {n: n ** 2 for n in range(1, 6)}\nprint(cuadrados_dict) # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}\n"
+  },
+  {
+    "id": 194,
+    "start": 134978,
+    "end": 135120,
+    "code": "# Aunque haya muchos números, el conjunto solo guardará valores únicos\nrestos = {n % 3 for n in range(10)}\nprint(restos) # {0, 1, 2}\n"
+  },
+  {
+    "id": 195,
+    "start": 135292,
+    "end": 135440,
+    "code": "# En lugar de:\n# datos = [\"Ana\", 20]\n# nombre = datos[0]\n# edad = datos[1]\n\n# Hacemos esto:\nnombre, edad = [\"Ana\", 20]\nprint(nombre) # Ana\n"
+  },
+  {
+    "id": 196,
+    "start": 135568,
+    "end": 135629,
+    "code": "a = 10\nb = 20\na, b = b, a # Ahora a es 20 y b es 10\n"
+  },
+  {
+    "id": 197,
+    "start": 135738,
+    "end": 135824,
+    "code": "primero, *resto = [1, 2, 3, 4]\nprint(primero) # 1\nprint(resto)   # [2, 3, 4]\n"
+  },
+  {
+    "id": 198,
+    "start": 135976,
+    "end": 136091,
+    "code": "nombres = [\"Ana\", \"Luis\", \"Carlos\"]\nfor indice in range(len(nombres)):\n    print(indice, nombres[indice])\n"
+  },
+  {
+    "id": 199,
+    "start": 136195,
+    "end": 136288,
+    "code": "for indice, nombre in enumerate(nombres):\n    print(f\"Posición {indice}: {nombre}\")\n"
+  },
+  {
+    "id": 200,
+    "start": 136395,
+    "end": 136532,
+    "code": "nombres = [\"Ana\", \"Luis\"]\nedades = [20, 25]\n\nfor nombre, edad in zip(nombres, edades):\n    print(nombre, \"tiene\", edad, \"años\")\n"
+  },
+  {
+    "id": 201,
+    "start": 136878,
+    "end": 137051,
+    "code": "lista = [3, 1, 2]\nresultado = lista.sort() # Modifica la lista\nprint(lista)     # [1, 2, 3]\nprint(resultado) # None (¡No intentes guardar el resultado de .sort()!)\n"
+  },
+  {
+    "id": 202,
+    "start": 137244,
+    "end": 137382,
+    "code": "lista = [3, 1, 2]\nnueva_lista = sorted(lista)\nprint(lista)       # [3, 1, 2] (Intacta)\nprint(nueva_lista) # [1, 2, 3] (Ordenada)\n"
+  },
+  {
+    "id": 203,
+    "start": 137494,
+    "end": 137607,
+    "code": "notas = [8.5, 9.0, 7.5, 10.0]\nprint(min(notas)) # 7.5\nprint(max(notas)) # 10.0\nprint(sum(notas)) # 35.0\n"
+  },
+  {
+    "id": 204,
+    "start": 137789,
+    "end": 137931,
+    "code": "resultados = [True, True, False, True]\nprint(all(resultados)) # False (hay un False)\nprint(any(resultados)) # True (hay varios True)\n"
+  },
+  {
+    "id": 205,
+    "start": 138143,
+    "end": 138279,
+    "code": "# Función normal\ndef doble_normal(x):\n    return x * 2\n\n# Función lambda\ndoble = lambda x: x * 2\n\nprint(doble(5)) # Imprime 10\n"
+  },
+  {
+    "id": 206,
+    "start": 138799,
+    "end": 138953,
+    "code": "numeros = [1, 2, 3, 4]\n# Aplicamos la lambda a cada número de la lista\ndobles = list(map(lambda n: n * 2, numeros))\nprint(dobles) # [2, 4, 6, 8]\n"
+  },
+  {
+    "id": 207,
+    "start": 139265,
+    "end": 139319,
+    "code": "dobles = list(map(lambda n: n * 2, numeros))\n"
+  },
+  {
+    "id": 208,
+    "start": 139346,
+    "end": 139389,
+    "code": "dobles = [n * 2 for n in numeros]\n"
+  },
+  {
+    "id": 209,
+    "start": 140119,
+    "end": 140234,
+    "code": "numeros = [1, 2, 3, 4, 5, 6]\npares = list(filter(lambda n: n % 2 == 0, numeros))\nprint(pares) # [2, 4, 6]\n"
+  },
+  {
+    "id": 210,
+    "start": 140957,
+    "end": 141133,
+    "code": "numeros = [10, 20, 30]\n# Obtenemos un iterador del iterable; la lista no se transforma\niterador = iter(numeros)\n\nprint(next(iterador)) # 10\nprint(next(iterador)) # 20\n"
+  },
+  {
+    "id": 211,
+    "start": 141607,
+    "end": 141856,
+    "code": "def contar():\n    yield 1\n    yield 2\n    yield 3\n\n# Llamar a la función no la ejecuta, sino que crea un generador\ngenerador = contar()\n\nprint(next(generador)) # Imprime 1 y se pausa\nprint(next(generador)) # Despierta, imprime 2 y se pausa\n"
+  },
+  {
+    "id": 212,
+    "start": 142223,
+    "end": 142282,
+    "code": "cuadrados_generador = (n ** 2 for n in range(10))\n"
+  },
+  {
+    "id": 213,
+    "start": 142754,
+    "end": 142919,
+    "code": "def sumar(*numeros):\n    print(type(numeros)) # Imprime <class 'tuple'>\n    return sum(numeros)\n\nprint(sumar(1, 2))       # 3\nprint(sumar(1, 2, 3, 4)) # 10\n"
+  },
+  {
+    "id": 214,
+    "start": 143229,
+    "end": 143437,
+    "code": "def mostrar_datos(**datos):\n    print(type(datos)) # Imprime <class 'dict'>\n    for clave, valor in datos.items():\n        print(clave, \":\", valor)\n\nmostrar_datos(nombre=\"Ana\", edad=20, rol=\"Admin\")\n"
+  },
+  {
+    "id": 215,
+    "start": 143835,
+    "end": 144124,
+    "code": "def restar(a, b):\n    return a - b\n\nnumeros = [10, 4]\n# *numeros extrae el 10 y el 4 de la lista antes de llamar a la función\nresultado = restar(*numeros) \nprint(resultado) # 6\n\n# Desempaquetando un diccionario\ndatos_dict = {\"a\": 20, \"b\": 5}\nresultado_dict = restar(**datos_dict)\n"
+  },
+  {
+    "id": 216,
+    "start": 144315,
+    "end": 144511,
+    "code": "def saludar():\n    return \"Hola a todos\"\n\n# Guardamos la función en sí, nota que NO usamos paréntesis\nmi_funcion = saludar \n\n# Ahora la variable actúa como la función\nprint(mi_funcion())\n"
+  },
+  {
+    "id": 217,
+    "start": 145184,
+    "end": 145460,
+    "code": "def exterior():\n    mensaje = \"Hola\"\n    \n    def interior():\n        nonlocal mensaje # Le dice a Python: \"Voy a modificar la variable de arriba\"\n        mensaje = \"Adiós\"\n        \n    interior()\n    print(mensaje)\n\nexterior() # Imprimirá \"Adiós\" en lugar de \"Hola\"\n"
+  },
+  {
+    "id": 218,
+    "start": 145757,
+    "end": 145955,
+    "code": "def sumar(a, b):\n    \"\"\"\n    Suma dos números y devuelve el resultado.\n    Parámetros:\n    a (int, float): El primer número.\n    b (int, float): El segundo número.\n    \"\"\"\n    return a + b\n"
+  },
+  {
+    "id": 219,
+    "start": 146129,
+    "end": 146195,
+    "code": "def multiplicar(a: int, b: int) -> int:\n    return a * b\n"
+  },
+  {
+    "id": 220,
+    "start": 146670,
+    "end": 146780,
+    "code": "edad = 20\n# ValorVerdadero if Condicion else ValorFalso\nestado = \"adulto\" if edad >= 18 else \"menor\"\n"
+  },
+  {
+    "id": 221,
+    "start": 147139,
+    "end": 147318,
+    "code": "lista_a = [1, 2]\nlista_b = [1, 2]\n\nprint(lista_a == lista_b) # True (Sus valores son los mismos)\nprint(lista_a is lista_b) # False (Son dos listas diferentes en memoria)\n"
+  },
+  {
+    "id": 222,
+    "start": 147412,
+    "end": 147473,
+    "code": "if resultado is None:\n    print(\"No hay resultado\")\n"
+  },
+  {
+    "id": 223,
+    "start": 147604,
+    "end": 147750,
+    "code": "a = [1, 2, 3]\nb = a        # Ambos apuntan a la misma lista\nb[0] = 99\nprint(a)     # Imprimirá [99, 2, 3] porque 'a' y 'b' son lo mismo.\n"
+  },
+  {
+    "id": 224,
+    "start": 147827,
+    "end": 147937,
+    "code": "a = [1, 2, 3]\nb = a.copy() # Ahora b es una lista nueva\nb[0] = 99\nprint(a)     # [1, 2, 3] (Intacta)\n"
+  },
+  {
+    "id": 225,
+    "start": 149682,
+    "end": 149789,
+    "code": "textos = [\"hola\", \"mundo\"]\nmayusculas = [palabra.upper() for palabra in textos]\nprint(mayusculas)\n"
+  },
+  {
+    "id": 226,
+    "start": 149812,
+    "end": 149944,
+    "code": "nombres = [\"Ana\", \"Luis\"]\nedades = [20, 25]\n\nfor nombre, edad in zip(nombres, edades):\n    print(f\"{nombre} tiene {edad}\")\n"
+  },
+  {
+    "id": 227,
+    "start": 149968,
+    "end": 150144,
+    "code": "def promedio(*calificaciones):\n    if len(calificaciones) == 0:\n        return 0\n    return sum(calificaciones) / len(calificaciones)\n\nprint(promedio(10, 8, 9)) # 9.0\n"
+  },
+  {
+    "id": 228,
+    "start": 150885,
+    "end": 152502,
+    "code": "# Base de datos simplificada\nestudiantes = [\n    {\"nombre\": \"Carlos\", \"nota\": 6.5},\n    {\"nombre\": \"Ana\", \"nota\": 9.2},\n    {\"nombre\": \"Luis\", \"nota\": 8.0},\n    {\"nombre\": \"María\", \"nota\": 7.5}\n]\n\ndef analizar_rendimiento(datos: list) -> dict:\n    \"\"\"Extrae estadísticas básicas de un grupo de estudiantes.\"\"\"\n    # List comprehension simple\n    notas_general = [est[\"nota\"] for est in datos]\n    \n    # List comprehension con filtro\n    aprobados = [nota for nota in notas_general if nota >= 7.0]\n    \n    # Matemáticas básicas\n    maxima = max(notas_general)\n    minima = min(notas_general)\n    promedio = sum(notas_general) / len(notas_general)\n    \n    # Retornamos todo organizado en un diccionario\n    return {\n        \"max\": maxima,\n        \"min\": minima,\n        \"prom\": promedio,\n        \"total_aprobados\": len(aprobados)\n    }\n\n# --- EJECUCIÓN DEL ANÁLISIS ---\nprint(\"--- ANÁLISIS ACADÉMICO ---\")\nestadisticas = analizar_rendimiento(estudiantes)\nprint(f\"Nota Máxima: {estadisticas['max']}\")\nprint(f\"Nota Mínima: {estadisticas['min']}\")\nprint(f\"Promedio Grupo: {estadisticas['prom']:.2f}\")\nprint(f\"Alumnos Aprobados: {estadisticas['total_aprobados']}\")\n\n# --- CLASIFICACIÓN USANDO LAMBDA Y SORTED ---\nprint(\"\\n--- CLASIFICACIÓN ---\")\n# sorted() devuelve una lista nueva. La lambda le dice que ordene fijándose solo en la \"nota\"\nclasificacion = sorted(estudiantes, key=lambda x: x[\"nota\"], reverse=True)\n\n# enumerate() nos da la posición\nfor posicion, est in enumerate(clasificacion):\n    # Sumamos 1 a posición porque empieza en 0\n    print(f\"Lugar {posicion + 1}: {est['nombre']} - {est['nota']}\")\n"
+  },
+  {
+    "id": 229,
+    "start": 152895,
+    "end": 152992,
+    "code": "def calcular(a: int, b: int):\n    return a + b\n\nresultado = calcular(\"Manzana\", \"Pera\")\n"
+  },
+  {
+    "id": 230,
+    "start": 153358,
+    "end": 153455,
+    "code": "lista_original = [1, 5, 2]\nlista_ordenada = lista_original.sort()\nprint(lista_ordenada)\n"
+  },
+  {
+    "id": 231,
+    "start": 154420,
+    "end": 154639,
+    "code": "def multiplicador(factor):\n    def funcion_interna(numero):\n        return numero * factor # Captura la variable \"factor\"\n    return funcion_interna\n\nduplicar = multiplicador(2)\nprint(duplicar(5)) # Imprime 10\n"
+  },
+  {
+    "id": 232,
+    "start": 155434,
+    "end": 155882,
+    "code": "import functools\n\ndef mi_decorador(funcion):\n    @functools.wraps(funcion) # Buena práctica: conserva el nombre original de la función\n    def envoltura(*args, **kwargs):\n        print(\"Antes de ejecutar la función.\")\n        resultado = funcion(*args, **kwargs)\n        print(\"Después de ejecutar la función.\")\n        return resultado\n    return envoltura\n\n@mi_decorador\ndef saludar(nombre):\n    print(f\"Hola, {nombre}\")\n\nsaludar(\"Ana\")\n"
+  },
+  {
+    "id": 233,
+    "start": 156771,
+    "end": 157087,
+    "code": "class Producto:\n    def __init__(self, precio):\n        self._precio = precio\n\n    @property\n    def precio(self):\n        return self._precio\n\n    @precio.setter\n    def precio(self, valor):\n        if valor < 0:\n            raise ValueError(\"El precio no puede ser negativo\")\n        self._precio = valor\n"
+  },
+  {
+    "id": 234,
+    "start": 157532,
+    "end": 157795,
+    "code": "class Caja:\n    def __init__(self, elementos):\n        self.elementos = elementos\n    def __len__(self):\n        return len(self.elementos)\n    def __eq__(self, otro):\n        return self.elementos == otro.elementos\n\nc1 = Caja([1, 2])\nprint(len(c1)) # 2\n"
+  },
+  {
+    "id": 235,
+    "start": 157984,
+    "end": 158189,
+    "code": "from dataclasses import dataclass\n\n@dataclass\nclass Usuario:\n    nombre: str\n    edad: int\n    activo: bool = True\n\nu1 = Usuario(\"Ana\", 25)\nprint(u1) # Usuario(nombre='Ana', edad=25, activo=True)\n"
+  },
+  {
+    "id": 236,
+    "start": 158316,
+    "end": 158439,
+    "code": "from enum import Enum\n\nclass Estado(Enum):\n    PENDIENTE = 1\n    COMPLETADO = 2\n\nestado_actual = Estado.PENDIENTE\n"
+  },
+  {
+    "id": 237,
+    "start": 160108,
+    "end": 160206,
+    "code": "# PELIGROSO\ndef agregar(elemento, lista=[]):\n    lista.append(elemento)\n    return lista\n"
+  },
+  {
+    "id": 238,
+    "start": 160391,
+    "end": 160520,
+    "code": "def agregar(elemento, lista=None):\n    if lista is None:\n        lista = []\n    lista.append(elemento)\n    return lista\n"
+  },
+  {
+    "id": 239,
+    "start": 161081,
+    "end": 161216,
+    "code": "from abc import ABC, abstractmethod\n\nclass EmpleadoBase(ABC):\n    @abstractmethod\n    def calcular_sueldo(self):\n        pass\n"
+  },
+  {
+    "id": 240,
+    "start": 161879,
+    "end": 161988,
+    "code": "import logging\nlogging.basicConfig(level=logging.INFO)\nlogging.warning(\"El disco está casi lleno.\")\n"
+  },
+  {
+    "id": 241,
+    "start": 162860,
+    "end": 163031,
+    "code": "mi_proyecto/\n├── src/\n│   └── paquete_principal/\n│       ├── __init__.py\n│       └── logica.py\n├── tests/\n│   └── test_logica.py\n├── pyproject.toml\n└── README.md\n"
+  },
+  {
+    "id": 242,
+    "start": 163294,
+    "end": 163466,
+    "code": "import json\ndatos = {\"nombre\": \"José\", \"rol\": \"admin\"}\n\nwith open(\"datos.json\", \"w\", encoding=\"utf-8\") as f:\n    json.dump(datos, f, indent=4, ensure_ascii=False)\n"
+  },
+  {
+    "id": 243,
+    "start": 164804,
+    "end": 165112,
+    "code": "import asyncio\n\nasync def tarea():\n    print(\"Iniciando...\")\n    await asyncio.sleep(1) # Pausa que permite al sistema hacer otras cosas\n    print(\"Terminado.\")\n\n# Ejecución en script normal:\n# if __name__ == \"__main__\":\n#     asyncio.run(tarea())\n\n# Ejecución en Jupyter Notebooks:\n# await tarea()\n"
+  },
+  {
+    "id": 244,
+    "start": 166951,
+    "end": 167048,
+    "code": "from dataclasses import dataclass\n@dataclass\nclass Usuario:\n    nombre: str\n    id: int\n"
+  },
+  {
+    "id": 245,
+    "start": 167071,
+    "end": 167451,
+    "code": "import time, functools\n\ndef tiempo_ejecucion(func):\n    @functools.wraps(func)\n    def wrapper(*args, **kwargs):\n        inicio = time.perf_counter()\n        res = func(*args, **kwargs)\n        fin = time.perf_counter()\n        print(f\"La función tardó {fin - inicio} seg.\")\n        return res\n    return wrapper\n\n@tiempo_ejecucion\ndef proceso_lento():\n    time.sleep(1)\n"
+  },
+  {
+    "id": 246,
+    "start": 167475,
+    "end": 167636,
+    "code": "# Incorrecto: def config(item, lista=[])\ndef config(item, lista=None):\n    if lista is None:\n        lista = []\n    lista.append(item)\n    return lista\n"
+  },
+  {
+    "id": 247,
+    "start": 167802,
+    "end": 169114,
+    "code": "import json\nimport logging\nfrom dataclasses import dataclass, asdict\nfrom typing import List\n\n# Configurar Logging\nlogging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')\n\n@dataclass\nclass Tarea:\n    id: int\n    descripcion: str\n    completada: bool = False\n\nclass GestorTareas:\n    def __init__(self, archivo: str):\n        self.archivo = archivo\n        self.tareas: List[Tarea] = []\n        self._cargar()\n\n    def _cargar(self):\n        try:\n            with open(self.archivo, \"r\", encoding=\"utf-8\") as f:\n                datos = json.load(f)\n                self.tareas = [Tarea(**d) for d in datos]\n        except FileNotFoundError:\n            logging.warning(\"Archivo no encontrado. Se creará uno nuevo.\")\n\n    def guardar(self):\n        with open(self.archivo, \"w\", encoding=\"utf-8\") as f:\n            json.dump([asdict(t) for t in self.tareas], f, indent=4, ensure_ascii=False)\n        logging.info(\"Tareas guardadas correctamente.\")\n\n    def agregar(self, descripcion: str):\n        nueva_id = len(self.tareas) + 1\n        self.tareas.append(Tarea(nueva_id, descripcion))\n        logging.info(f\"Tarea agregada: {descripcion}\")\n        self.guardar()\n\nif __name__ == \"__main__\":\n    gestor = GestorTareas(\"mis_tareas.json\")\n    gestor.agregar(\"Estudiar Python Avanzado\")\n"
+  },
+  {
+    "id": 248,
+    "start": 172382,
+    "end": 172690,
+    "code": "import hashlib\nfrom pathlib import Path\n\ndef calcular_sha256(ruta_archivo):\n    hash_sha256 = hashlib.sha256()\n    with open(ruta_archivo, \"rb\") as f: # rb = Read Binary\n        for bloque in iter(lambda: f.read(4096), b\"\"):\n            hash_sha256.update(bloque)\n    return hash_sha256.hexdigest()\n"
+  },
+  {
+    "id": 249,
+    "start": 173105,
+    "end": 173396,
+    "code": "import re\n# Regex simple para detectar una IP (Formato básico educativo)\npatron_ip = re.compile(r'\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}')\nlinea_log = \"Error de conexión desde 192.168.1.15 a las 10:00\"\n\ncoincidencias = patron_ip.findall(linea_log)\nprint(\"IP detectada:\", coincidencias)\n"
+  },
+  {
+    "id": 250,
+    "start": 174022,
+    "end": 174134,
+    "code": "import ipaddress\nip = ipaddress.ip_address('192.168.1.5')\nprint(\"¿Es privada?:\", ip.is_private) # True\n"
+  },
+  {
+    "id": 251,
+    "start": 177539,
+    "end": 177629,
+    "code": "import ipaddress\nip = ipaddress.ip_address(\"8.8.8.8\")\nprint(ip.is_global) # True\n"
+  },
+  {
+    "id": 252,
+    "start": 177652,
+    "end": 177804,
+    "code": "import re\nlog = \"INFO: Fallo de autenticación para usuario local\"\nif re.search(r\"Fallo de autenticación\", log):\n    print(\"Alerta detectada.\")\n"
+  },
+  {
+    "id": 253,
+    "start": 177828,
+    "end": 177957,
+    "code": "from pathlib import Path\nfor f in Path(\".\").iterdir():\n    if f.is_file() and f.suffix == \".txt\":\n        print(f.name)\n"
+  },
+  {
+    "id": 254,
+    "start": 178225,
+    "end": 180721,
+    "code": "import hashlib\nimport json\nimport re\nimport logging\nfrom pathlib import Path\nfrom dataclasses import dataclass, asdict\nfrom typing import List\n\n# 1. Configuración Segura y Logging\nlogging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')\nCARPETA_LABORATORIO = Path(\"./laboratorio_local\")\nCARPETA_LABORATORIO.mkdir(exist_ok=True)\n\n# Dataset Ficticio para pruebas\nlog_ficticio = [\n    \"10:00 - User1 - Login exitoso\",\n    \"10:05 - User2 - Fallo de autenticacion\",\n    \"10:06 - User2 - Fallo de autenticacion\"\n]\n\n@dataclass\nclass Alerta:\n    tipo: str\n    detalles: str\n\nclass CentroDefensivo:\n    def __init__(self):\n        self.alertas: List[Alerta] = []\n\n    def verificar_integridad_laboratorio(self):\n        \"\"\"Calcula el hash de los archivos INMEDIATOS en el laboratorio (No recursivo).\"\"\"\n        logging.info(\"Iniciando auditoría de integridad local...\")\n        for archivo in CARPETA_LABORATORIO.iterdir():\n            if archivo.is_file():\n                h = hashlib.sha256()\n                with open(archivo, \"rb\") as f:\n                    for bloque in iter(lambda: f.read(4096), b\"\"):\n                        h.update(bloque)\n                logging.info(f\"[{archivo.name}] SHA-256: {h.hexdigest()}\")\n\n    def analizar_logs_simulados(self):\n        \"\"\"Busca patrones sospechosos en el dataset de logs ficticios.\"\"\"\n        logging.info(\"Analizando logs...\")\n        patron_fallo = re.compile(r\"Fallo de autenticacion\")\n        \n        for linea in log_ficticio:\n            if patron_fallo.search(linea):\n                alerta = Alerta(\"Intento Fallido\", linea)\n                self.alertas.append(alerta)\n                logging.warning(f\"Alerta generada: {linea}\")\n\n    def exportar_reporte(self):\n        \"\"\"Exporta las alertas correlacionadas a un archivo JSON seguro.\"\"\"\n        ruta_reporte = Path(\"./reporte_auditoria.json\")\n        with open(ruta_reporte, \"w\", encoding=\"utf-8\") as f:\n            json.dump([asdict(a) for a in self.alertas], f, indent=4, ensure_ascii=False)\n        logging.info(f\"Reporte exportado exitosamente a {ruta_reporte}\")\n\nif __name__ == \"__main__\":\n    centro = CentroDefensivo()\n    \n    # Escribir un archivo temporal de prueba en el laboratorio\n    archivo_prueba = CARPETA_LABORATORIO / \"prueba_integridad.txt\"\n    archivo_prueba.write_text(\"Datos confidenciales ficticios\", encoding=\"utf-8\")\n    \n    centro.verificar_integridad_laboratorio()\n    centro.analizar_logs_simulados()\n    centro.exportar_reporte()\n"
+  }
+]

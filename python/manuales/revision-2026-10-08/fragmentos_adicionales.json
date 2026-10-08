@@ -1,0 +1,78 @@
+[
+  {
+    "start": 2022,
+    "text": "# Esto es un comentario\n"
+  },
+  {
+    "start": 2046,
+    "text": "print(\"¡Hola, mundo!\")\n"
+  },
+  {
+    "start": 4925,
+    "text": "print(\"Iniciando mi viaje en Python\")\n"
+  },
+  {
+    "start": 121617,
+    "text": "class Perro:\n"
+  },
+  {
+    "start": 121630,
+    "text": "    trucos = [] # Atributo mutable de clase (¡Peligro!)\n"
+  },
+  {
+    "start": 121686,
+    "text": "\n"
+  },
+  {
+    "start": 121687,
+    "text": "    def agregar_truco(self, truco):\n"
+  },
+  {
+    "start": 121723,
+    "text": "        self.trucos.append(truco)\n"
+  },
+  {
+    "start": 121757,
+    "text": "\n"
+  },
+  {
+    "start": 121758,
+    "text": "fido = Perro()\n"
+  },
+  {
+    "start": 121773,
+    "text": "rex = Perro()\n"
+  },
+  {
+    "start": 121787,
+    "text": "fido.agregar_truco(\"Dar la pata\")\n"
+  },
+  {
+    "start": 121821,
+    "text": "print(rex.trucos) # Imprimirá ['Dar la pata'] ¡Aunque Rex no lo aprendió!\n"
+  },
+  {
+    "start": 122204,
+    "text": "class Perro:\n"
+  },
+  {
+    "start": 122217,
+    "text": "    def __init__(self):\n"
+  },
+  {
+    "start": 122241,
+    "text": "        self.trucos = [] # Cada instancia tiene su propia lista independiente\n"
+  },
+  {
+    "start": 122319,
+    "text": "        \n"
+  },
+  {
+    "start": 122328,
+    "text": "    def agregar_truco(self, truco):\n"
+  },
+  {
+    "start": 122364,
+    "text": "        self.trucos.append(truco)\n"
+  }
+]
