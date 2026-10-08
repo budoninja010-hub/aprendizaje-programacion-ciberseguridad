@@ -1130,7 +1130,7 @@ Estado: EN APRENDIZAJE / PRACTICADO
 Fuentes principales verificadas:
 
 - iproute2 upstream (repositorio original de `ip` y `ss`): https://git.kernel.org/pub/scm/network/iproute2/iproute2.git/
-- iproute2 upstream (árbol alternativo de consulta): https://github.com/iproute2/iproute2
+- iproute2 (espejo de publicación, no repositorio principal): https://github.com/iproute2/iproute2
 - Las páginas HTML de man7 siguientes se conservan como referencias de consulta, no como repositorio upstream.
 - RFC Editor / IETF — RFC 1918, *Address Allocation for Private Internets*:
   https://www.rfc-editor.org/rfc/rfc1918.html
