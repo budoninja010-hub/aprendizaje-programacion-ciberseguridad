@@ -359,6 +359,50 @@ Nunca prepares ni publiques:
 
 GitHub advierte explícitamente que no debes añadir, confirmar ni subir información sensible a un repositorio remoto.
 
+### Si el secreto YA fue confirmado o publicado
+
+Añadir el archivo a `.gitignore` o borrar el secreto en un commit nuevo **no invalida una credencial que ya fue expuesta**.
+
+GitHub recomienda tratar una credencial filtrada como comprometida. El orden defensivo es:
+
+```text
+1. detener nuevos pushes o cambios innecesarios
+2. identificar qué credencial fue expuesta y qué servicio la emitió
+3. revocar o rotar la credencial con su proveedor
+4. actualizar de forma segura los sistemas legítimos que dependían de ella
+5. retirar el secreto del código y del working tree
+6. decidir si hace falta sanear el historial del repositorio
+7. coordinar la limpieza de clones, forks o ramas afectadas si corresponde
+8. revisar por qué ocurrió y añadir prevención
+```
+
+La prioridad es **invalidar la credencial**, no “hacer desaparecer el texto” primero.
+
+GitHub señala que reescribir historial puede tener efectos secundarios importantes:
+
+- cambia hashes de commits;
+- puede afectar ramas y pull requests;
+- otros clones pueden volver a introducir el secreto;
+- requiere coordinación con colaboradores;
+- un secreto puede seguir existiendo en forks, clones o referencias históricas.
+
+Por eso este módulo **no enseña una receta automática de force-push o reescritura de historial**. Si realmente ocurre una exposición, primero se revoca/rota la credencial y después se sigue la documentación oficial de GitHub para la limpieza apropiada.
+
+### Push protection y secret scanning
+
+GitHub puede detectar ciertos secretos y bloquear un push mediante **push protection**.
+
+Si un push es bloqueado por un secreto real:
+
+```text
+no lo fuerces ni lo ignores por comodidad
+→ retira el secreto
+→ revoca/rota si ya pudo quedar expuesto
+→ vuelve a revisar el commit
+```
+
+Push protection es una capa preventiva; no reemplaza tu propia revisión.
+
 ## 28. Crear `.gitignore` de práctica
 
 ```bash
@@ -695,6 +739,16 @@ Un repositorio privado reduce exposición pública, pero no convierte las creden
 
 Los secretos deben gestionarse con mecanismos específicos.
 
+Si un secreto real ya llegó al repositorio:
+
+```text
+repositorio privado ≠ credencial segura
+borrar en el commit siguiente ≠ credencial revocada
+.gitignore ≠ limpieza del historial
+```
+
+La primera acción de seguridad es invalidar o rotar la credencial con el proveedor correspondiente.
+
 ## 52. Práctica A — estado y primer commit
 
 Dentro de `~/linux-lab/modulo-33-git`:
@@ -786,7 +840,8 @@ Responde antes de cualquier push:
 | `git add .` sin revisar | puedes preparar archivos inesperados | `status`/`diff` y archivos concretos |
 | commit sin `diff --staged` | no sabes exactamente qué entra | revisar staged antes |
 | subir `.env` | posible exposición de secretos | ignorar y gestionar secretos fuera de Git |
-| creer que `.gitignore` elimina un archivo ya rastreado | no afecta automáticamente a tracked | corregir el seguimiento conscientemente |
+| creer que borrar el secreto en un commit nuevo lo invalida | la credencial puede seguir activa y existir en historial | revocar/rotar primero; después limpiar código/historial |
+| creer que `.gitignore` elimina un archivo ya rastreado | no afecta automáticamente a tracked ni borra historial | corregir seguimiento y evaluar saneamiento histórico |
 | confundir commit con push | son etapas distintas | commit local, push remoto |
 | asumir que `origin` es correcto | puede apuntar a otro destino | `git remote -v` |
 | usar `git restore archivo` sin revisar | puede descartar cambios | `status` + `diff` primero |
@@ -836,6 +891,14 @@ Esos nombres pueden indicar secretos o credenciales.
 
 No deben subirse.
 
+Si una credencial real ya hubiera sido confirmada o publicada, el procedimiento cambia:
+
+```text
+detener → revocar/rotar → retirar del código → evaluar limpieza de historial
+```
+
+No intentes “solucionarlo” únicamente agregando el archivo a `.gitignore`.
+
 ## 60. Detección de error 3
 
 Analiza:
@@ -884,13 +947,16 @@ Debe:
 6. ¿debes revisar `git diff --staged` antes del commit? A) Sí B) No
 7. ¿`.gitignore` afecta automáticamente archivos ya rastreados? A) Sí B) No
 8. ¿un token debe subirse si el repositorio es privado? A) Sí B) No
-9. ¿`git restore --staged` puede sacar un archivo del staging? A) Sí B) No
-10. ¿`git restore archivo` puede descartar cambios del working tree? A) Sí B) No
-11. ¿`origin` garantiza que el remoto sea GitHub correcto? A) Sí B) No
-12. ¿debes revisar `git remote -v` antes de un push importante? A) Sí B) No
-13. ¿los commits pequeños facilitan revisión? A) Sí B) No
-14. ¿Git reemplaza todos los tipos de backup? A) Sí B) No
-15. ¿este módulo sustituye el itinerario completo de Git/GitHub? A) Sí B) No
+9. Si una credencial real ya fue publicada, ¿la primera prioridad es revocarla o rotarla? A) Sí B) No
+10. ¿añadir un secreto ya publicado a `.gitignore` invalida esa credencial? A) Sí B) No
+11. ¿reescribir historial puede afectar commits, ramas, PRs y clones? A) Sí B) No
+12. ¿`git restore --staged` puede sacar un archivo del staging? A) Sí B) No
+13. ¿`git restore archivo` puede descartar cambios del working tree? A) Sí B) No
+14. ¿`origin` garantiza que el remoto sea GitHub correcto? A) Sí B) No
+15. ¿debes revisar `git remote -v` antes de un push importante? A) Sí B) No
+16. ¿los commits pequeños facilitan revisión? A) Sí B) No
+17. ¿Git reemplaza todos los tipos de backup? A) Sí B) No
+18. ¿este módulo sustituye el itinerario completo de Git/GitHub? A) Sí B) No
 
 ## 63. Registro de aprendizaje
 
@@ -910,6 +976,9 @@ Staging area significa:
 `git restore --staged` sirve para:
 ¿por qué reviso el remoto antes de push?:
 Regla de secretos:
+Si un secreto ya fue publicado, primero debo:
+¿Por qué `.gitignore` no resuelve una exposición pasada?:
+¿Por qué reescribir historial requiere coordinación?:
 Algo que todavía confundo:
 Estado: EN APRENDIZAJE / PRACTICADO
 ```
@@ -925,8 +994,10 @@ Para considerar este módulo **DOMINADO** deberás poder en más de una práctic
 5. revisar staged antes de commit;
 6. crear un commit claro sin copiar el mensaje;
 7. detectar un archivo que no debe subirse;
-8. verificar rama y remoto antes de push;
-9. explicar por qué un repositorio privado tampoco debe contener secretos.
+8. explicar qué hacer si una credencial real ya fue expuesta;
+9. distinguir revocar/rotar una credencial de limpiar historial Git;
+10. verificar rama y remoto antes de push;
+11. explicar por qué un repositorio privado tampoco debe contener secretos.
 
 ## 65. Enlace al itinerario específico de Git
 
@@ -961,6 +1032,9 @@ Fuentes principales:
 - Git — `.gitignore`: https://git-scm.com/docs/gitignore
 - GitHub Docs — Adding locally hosted code to GitHub: https://docs.github.com/en/migrations/importing-source-code/using-the-command-line-to-import-source-code/adding-locally-hosted-code-to-github
 - GitHub Docs — Personal access tokens: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+- GitHub Docs — Removing sensitive data from a repository: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository
+- GitHub Docs — Remediating a leaked secret: https://docs.github.com/en/code-security/tutorials/remediate-leaked-secrets/remediating-a-leaked-secret
+- GitHub Docs — Push protection: https://docs.github.com/en/code-security/concepts/secret-security/push-protection
 
 Puntos verificados documentalmente:
 
@@ -971,6 +1045,9 @@ Puntos verificados documentalmente:
 - `git restore` sobre el working tree puede reemplazar contenido local;
 - `.gitignore` especifica archivos intencionalmente no rastreados y no afecta automáticamente archivos ya rastreados;
 - GitHub advierte que nunca deben añadirse, confirmarse o subirse contraseñas, API keys u otra información sensible;
+- si una credencial real ya fue expuesta, GitHub recomienda revocarla o rotarla como primera medida; retirar texto del repositorio no invalida por sí solo la credencial;
+- reescribir historial puede cambiar hashes, afectar colaboradores y permitir recontaminación desde clones o ramas antiguas, por lo que requiere coordinación;
+- push protection puede bloquear pushes que contienen secretos compatibles con sus detectores, pero no sustituye la revisión humana;
 - un repositorio local puede conectarse a GitHub mediante un remoto y posteriormente publicarse con `git push` tras autenticación.
 
 Se posponen al itinerario específico:
