@@ -126,7 +126,7 @@ No todas las direcciones IPv4 tienen el mismo propósito.
 
 ## 7. Rangos privados IPv4
 
-Tres rangos privados importantes definidos para redes internas son:
+RFC 1918 reserva tres bloques de direcciones IPv4 para redes privadas:
 
 ```text
 10.0.0.0/8
@@ -134,9 +134,15 @@ Tres rangos privados importantes definidos para redes internas son:
 192.168.0.0/16
 ```
 
-No son directamente enrutable como direcciones públicas en Internet.
+Estas direcciones **no son globalmente únicas**. Pueden enrutarse dentro de una red privada —o entre redes que hayan acordado coordinar ese espacio—, pero la información de enrutamiento de estos bloques no debe propagarse por el Internet público.
 
-Una dirección privada no debe confundirse con la dirección pública que pueda utilizar un router mediante NAT.
+Por eso no debes interpretar «privada» como «imposible de enrutar». La diferencia principal es el **ámbito**: una dirección RFC 1918 tiene significado dentro de la red privada que la utiliza, no como dirección pública global.
+
+Para que un equipo con una dirección privada acceda a servicios externos, una red puede utilizar un gateway y mecanismos como NAT, según su diseño. NAT es un tema posterior y no es una propiedad obligatoria de RFC 1918.
+
+Referencia primaria: RFC 1918 — *Address Allocation for Private Internets* (RFC Editor/IETF).
+
+Una dirección privada no debe confundirse con la dirección pública que pueda utilizar un router o gateway para comunicarse hacia otras redes.
 
 ## 8. IPv6
 
@@ -1123,6 +1129,8 @@ Estado: EN APRENDIZAJE / PRACTICADO
 
 Fuentes principales verificadas:
 
+- RFC Editor / IETF — RFC 1918, *Address Allocation for Private Internets*:
+  https://www.rfc-editor.org/rfc/rfc1918.html
 - iproute2 — `ip(8)`:
   https://man7.org/linux/man-pages/man8/ip.8.html
 - iproute2 — `ip-address(8)`:
