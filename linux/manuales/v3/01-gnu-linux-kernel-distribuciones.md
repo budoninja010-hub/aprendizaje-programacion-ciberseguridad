@@ -261,3 +261,19 @@ Estado: EN APRENDIZAJE / PRACTICADO
 Antes de compartir o guardar la ficha, omite nombres personales, rutas que identifiquen personas, nombres privados de equipos, direcciones de red y cualquier secreto. No copies automáticamente toda la salida de tu terminal. El tutor revisará la ficha antes de conservarla en GitHub con un nombre nuevo, sin sobrescribir ejercicios previos.
 
 **Estado de esta lección:** revisada documentalmente. Las consultas específicas de Linux y la práctica en la distribución del estudiante deben validarse en ese entorno; no se presentan como ejecutadas en su equipo.
+
+## Anexo editorial — Criterios de evaluación y fuentes
+
+**Qué se conserva:** todas las explicaciones, prácticas y preguntas originales de esta entrega.
+
+**Evaluación formativa:** el estudiante debe explicar los conceptos con sus palabras, ejecutar una práctica segura en su propio entorno cuando corresponda, interpretar la salida y reconocer al menos un error sin copiar la solución. Una respuesta correcta aislada no acredita dominio.
+
+**Registro:** EN APRENDIZAJE / PRACTICADO / DOMINADO (solo tras varias evidencias revisadas). La revisión documental del texto no equivale a práctica realizada.
+
+**Fuentes primarias para contrastar esta lección:**
+- GNU Bash Reference Manual: https://www.gnu.org/software/bash/manual/
+- GNU Coreutils Manual: https://www.gnu.org/software/coreutils/manual/
+- Debian Reference: https://www.debian.org/doc/manuals/debian-reference/
+- Linux kernel documentation: https://docs.kernel.org/
+
+Las fuentes se consultan según el tema tratado; no se presume que todos los enlaces respalden cada afirmación del módulo.
