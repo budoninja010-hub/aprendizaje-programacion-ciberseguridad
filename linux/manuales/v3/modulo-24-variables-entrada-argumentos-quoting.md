@@ -431,9 +431,16 @@ read -r nombre
 printf 'Hola, %s\n' "$nombre"
 ```
 
-`read` recibe una línea.
+`read` lee una línea, pero normalmente la divide según `IFS`. Con un solo nombre de variable puede eliminar espacios iniciales y finales.
 
-`-r` evita que las barras invertidas se interpreten como escapes por `read`.
+`-r` evita que las barras invertidas se interpreten como escapes por `read`, **pero no desactiva la separación por `IFS`**. Para conservar los espacios de una línea completa, utiliza:
+
+```bash
+IFS= read -r linea
+printf '%s\n' "$linea"
+```
+
+`IFS=` aplica el valor vacío solo a esa invocación de `read`.
 
 Para aprendizaje general preferiremos:
 
@@ -450,7 +457,7 @@ read -r -p 'Escribe tu nombre: ' nombre
 printf 'Hola, %s\n' "$nombre"
 ```
 
-`-p` muestra un prompt antes de leer.
+`-p` muestra el mensaje **solo cuando la entrada procede de una terminal**; si se redirige la entrada desde un archivo o una tubería, no debe esperarse ese prompt.
 
 Es una opción de Bash; no debes asumir que todos los shells POSIX tienen exactamente la misma opción.
 
