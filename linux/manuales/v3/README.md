@@ -1,3 +1,18 @@
+# Estado actual — Auditoría transversal v3 completada
+
+Los **35 módulos** del núcleo están redactados. La auditoría documental transversal completa del 8 de octubre de 2026 está disponible en [03 — Auditoría transversal completa v3](03-auditoria-transversal-completa-v3-2026-10-08.md).
+
+**Dictamen:** APTO CON CORRECCIONES IMPORTANTES. No se detectaron errores críticos que obliguen a detener el estudio, pero antes de congelar una edición consolidada deben corregirse los hallazgos de prioridad alta: RFC1918 (M19), estado `100` de `dnf check-update` (M15/M35), `Persistent=true` (M30), endurecimiento de extracción `tar` no confiable (M31) y respuesta ante secretos ya expuestos en Git/GitHub (M33).
+
+La auditoría [02 — Registro de auditoría y fuentes](02-auditoria-fuentes.md) se conserva como **registro histórico de la primera entrega**; no representa ya el estado completo del núcleo.
+
+Las prácticas en el Linux del estudiante siguen pendientes de ejecutar y validar. Redacción completa no equivale a dominio demostrado.
+
+**Siguiente fase:** aplicar correcciones de prioridad alta en commits pequeños, luego fuentes upstream y homogeneización editorial, y finalmente realizar una auditoría post-corrección.
+
+---
+
+## Registro histórico — Núcleo v3 completo y entregas anteriores
 # Estado actual — Núcleo v3 completo: 35 de 35 módulos
 
 Los **Módulos 1–35** del Manual Maestro de Linux y Shell Scripting — Edición 2026 v3 están redactados y revisados documentalmente. Las prácticas en el Linux del estudiante siguen pendientes de ejecutar, explicar y validar durante las clases.
