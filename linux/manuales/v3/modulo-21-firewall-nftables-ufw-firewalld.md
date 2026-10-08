@@ -916,6 +916,10 @@ Estado: EN APRENDIZAJE / PRACTICADO
 
 Fuentes principales verificadas para esta edición:
 
+- Netfilter/nftables (proyecto original): https://www.netfilter.org/projects/nftables/index.html
+- nftables (documentación del proyecto): https://wiki.nftables.org/
+- firewalld (documentación original): https://firewalld.org/documentation/
+- UFW se documenta con las fuentes oficiales de Ubuntu que siguen.
 - Ubuntu Security — Firewall:
   https://documentation.ubuntu.com/security/security-features/network/firewall/
 - Ubuntu Server — Firewall / UFW:
