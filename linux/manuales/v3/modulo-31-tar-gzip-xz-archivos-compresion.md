@@ -386,18 +386,55 @@ Por eso la extracción requiere más precauciones.
 
 Antes de extraer:
 
-1. identifica el archivo;
+1. identifica el archivo y su procedencia;
 2. lista su contenido;
-3. revisa rutas y tipos;
-4. crea un directorio nuevo y vacío;
-5. extrae allí;
-6. revisa el resultado antes de mover archivos a otro lugar.
+3. revisa rutas y tipos de miembros;
+4. recuerda que **listar no certifica que el archivo sea seguro**;
+5. crea un directorio nuevo y vacío;
+6. asegúrate de que ese directorio y su directorio padre no puedan ser modificados por usuarios no confiables;
+7. extrae un archivo no confiable **por separado**, sin mezclarlo con otros archivos no confiables;
+8. revisa diagnósticos y estado de salida de `tar`;
+9. inspecciona el resultado, incluidos enlaces y permisos, antes de mover o ejecutar nada.
 
-GNU tar recomienda extraer archivos no confiables en un directorio vacío y controlado.
+GNU tar recomienda extraer archivos no confiables en un directorio vacío y controlado cuyo directorio y padre sean accesibles únicamente por usuarios de confianza.
+
+### Listar ayuda, pero no prueba seguridad
+
+```bash
+tar -tvf archivo.tar
+```
+
+permite observar nombres y tipos de miembros, pero no demuestra por sí solo que la extracción sea segura.
+
+Un archivo puede contener, entre otras cosas:
+
+- enlaces simbólicos;
+- permisos inesperados;
+- rutas diseñadas para causar conflictos;
+- archivos ejecutables;
+- estructuras que solo muestran su efecto real al extraerse.
+
+Por eso:
+
+```text
+listar → inspeccionar
+extraer aislado → observar resultado real
+ejecutar contenido → decisión separada
+```
+
+### Un directorio distinto por cada archivo no confiable
+
+GNU tar advierte que dos archivos no confiables no deben extraerse secuencialmente en el mismo árbol de trabajo. Un archivo extraído primero podría dejar enlaces u otra estructura que cambie el efecto de la extracción posterior.
+
+Regla del manual:
+
+> **un archivo no confiable → un directorio vacío y aislado propio**
+
+En nuestras prácticas normales usamos archivos creados por nosotros mismos. No necesitamos descargar contenido externo para aprender esta regla.
 
 ## 32. Crear destino vacío
 
-Para nuestra práctica:
+Para nuestra práctica **con un archivo creado por nosotros**:
 
 ```bash
 mkdir -p extraccion-segura
@@ -410,6 +447,8 @@ ls -la extraccion-segura
 ```
 
 Debe estar vacío salvo `.` y `..`.
+
+Si el archivo fuera realmente no confiable, además del directorio vacío tendrías que confirmar que usuarios no confiables no puedan modificar ese directorio ni su padre mientras ocurre la extracción. Esa verificación de permisos se estudia aquí como concepto; no necesitamos practicarla con contenido externo.
 
 ## 33. Extraer con `-C`
 
@@ -524,6 +563,19 @@ no sirve solo para ver nombres; también ayuda a reconocer tipos de miembros.
 
 Con archivos externos, inspecciona enlaces antes de confiar en el resultado extraído.
 
+**Importante:** revisar la lista no elimina todos los riesgos asociados a enlaces. GNU tar advierte que, durante extracción en un árbol que otros usuarios puedan modificar, un directorio podría cambiar por un enlace simbólico y alterar el destino efectivo de escritura.
+
+La defensa principal no es “mirar mejor la lista”, sino combinar:
+
+```text
+directorio vacío
++ padre controlado por usuarios de confianza
++ una extracción aislada por archivo no confiable
++ revisión posterior
+```
+
+No extraigas material no confiable como administrador si no existe una necesidad concreta y un entorno preparado para ello.
+
 ## 41. Seleccionar un miembro concreto
 
 Después de listar el nombre exacto, puedes extraer un miembro específico.
@@ -615,8 +667,10 @@ Esto es un fallo **controlado** de aprendizaje.
 | Error | Problema | Corrección |
 |---|---|---|
 | creer que tar comprime por sí solo en todos los casos | archivar y comprimir son conceptos distintos | identifica tar + compresor |
-| extraer antes de listar | no sabes qué se escribirá | usa `tar -t...` primero |
-| extraer en tu directorio personal | puede mezclar/sobrescribir archivos | usa carpeta vacía |
+| extraer antes de listar | no sabes qué se intentará escribir | usa `tar -t...` primero |
+| creer que listar certifica seguridad | la lista no revela todas las consecuencias posibles | inspecciona, pero extrae aislado y revisa después |
+| extraer en tu directorio personal | puede mezclar/sobrescribir archivos | usa carpeta vacía y controlada |
+| reutilizar la misma carpeta para varios archivos no confiables | una extracción anterior puede afectar la siguiente | usa un directorio aislado distinto por archivo |
 | usar gzip/xz sin saber que modifican entrada | puedes perder el original | usa `-k` durante aprendizaje |
 | asumir extensión = formato real | nombres pueden engañar | inspecciona y prueba |
 | usar `-P` por copiar un ejemplo | desactiva protecciones de nombres | no usar sin motivo y archivo confiable |
@@ -645,9 +699,13 @@ Flujo recomendado:
 
 ```text
 tar -tzf descarga.tar.gz
-crear carpeta nueva/vacía
-extraer dentro de ella
-revisar resultado
+recordar que listar no certifica seguridad
+crear carpeta nueva/vacía y controlada
+usar una carpeta distinta para cada archivo no confiable
+extraer sin opciones de alto riesgo
+revisar diagnósticos y estado de salida
+inspeccionar enlaces, permisos y contenido
+no ejecutar automáticamente nada extraído
 ```
 
 ## 51. Detección de error 2
@@ -689,13 +747,15 @@ y, si decides extraer, hacerlo en un destino controlado sin `-P`.
 1. identifica el archivo y su procedencia;
 2. conserva el original cuando estés aprendiendo;
 3. lista el contenido de archivos tar;
-4. verifica integridad cuando la herramienta lo permita;
-5. crea un destino nuevo/vacío;
-6. evita sobrescrituras;
-7. no uses opciones peligrosas por copiar recetas;
-8. revisa el resultado;
-9. no ejecutes contenido automáticamente;
-10. conserva estados y diagnósticos si automatizas el proceso.
+4. recuerda que listar no certifica seguridad;
+5. verifica integridad cuando la herramienta lo permita;
+6. crea un destino nuevo, vacío y controlado;
+7. usa un destino distinto por cada archivo no confiable;
+8. evita sobrescrituras;
+9. no uses opciones peligrosas por copiar recetas;
+10. revisa diagnósticos y estado de salida;
+11. inspecciona enlaces, permisos y contenido extraído;
+12. no ejecutes contenido automáticamente.
 
 ## 54. Práctica independiente
 
@@ -726,10 +786,13 @@ Crea un script `empaquetar_practica.sh` que:
 9. ¿`gzip -t` comprueba integridad? A) Sí B) No
 10. ¿`xz -t` comprueba integridad? A) Sí B) No
 11. ¿es mejor extraer un archivo no confiable en una carpeta vacía? A) Sí B) No
-12. ¿`--keep-old-files` evita reemplazar archivos existentes? A) Sí B) No
-13. ¿`--one-top-level` ayuda frente a tarbombs? A) Sí B) No
-14. ¿`-P/--absolute-names` debe usarse por defecto? A) Sí B) No
-15. ¿una extensión garantiza completamente el formato real? A) Sí B) No
+12. ¿listar con `tar -t...` demuestra por sí solo que el archivo sea seguro? A) Sí B) No
+13. ¿conviene extraer dos archivos no confiables distintos en el mismo directorio? A) Sí B) No
+14. ¿el directorio de extracción y su padre deben estar protegidos frente a modificaciones de usuarios no confiables? A) Sí B) No
+15. ¿`--keep-old-files` evita reemplazar archivos existentes? A) Sí B) No
+16. ¿`--one-top-level` ayuda frente a tarbombs? A) Sí B) No
+17. ¿`-P/--absolute-names` debe usarse por defecto? A) Sí B) No
+18. ¿una extensión garantiza completamente el formato real? A) Sí B) No
 
 ## 56. Registro de aprendizaje
 
@@ -747,6 +810,9 @@ Comprimir significa:
 `gzip -t` sirve para:
 `xz -t` sirve para:
 ¿por qué extraigo en carpeta vacía?:
+¿por qué listar no certifica seguridad?:
+¿por qué uso una carpeta distinta por archivo no confiable?:
+¿por qué también importa proteger el directorio padre?:
 `--keep-old-files` hace:
 `--one-top-level` ayuda a:
 ¿por qué evitamos `-P`?:
@@ -763,9 +829,10 @@ Para considerar este módulo **DOMINADO** deberás poder en más de una ocasión
 3. crear un `.tar.gz` y un `.tar.xz`;
 4. conservar originales al practicar con gzip y xz;
 5. verificar un `.gz` y un `.xz`;
-6. inspeccionar antes de extraer;
-7. extraer a una carpeta vacía sin sobrescribir originales;
-8. identificar por qué `-P` o `--overwrite` requieren especial precaución.
+6. explicar por qué inspeccionar no equivale a certificar seguridad;
+7. extraer a una carpeta vacía y controlada sin sobrescribir originales;
+8. explicar por qué archivos no confiables distintos deben aislarse en destinos separados;
+9. identificar por qué `-P` o `--overwrite` requieren especial precaución.
 
 ## 58. Fuentes y límites
 
@@ -782,8 +849,11 @@ Puntos verificados documentalmente:
 - GNU tar separa operaciones de creación (`--create`), listado (`--list`) y extracción (`--extract`);
 - `--keep-old-files` impide reemplazar archivos existentes y trata el conflicto como error;
 - `--one-top-level` crea un directorio superior durante extracción y puede proteger frente a tarbombs;
-- GNU tar recomienda extraer archivos no confiables en un directorio vacío y controlado;
-- GNU tar desaconseja opciones de riesgo como `--absolute-names`, `--overwrite`, `--recursive-unlink` y `--remove-files` salvo comprensión explícita;
+- GNU tar recomienda extraer archivos no confiables en un directorio vacío; ese directorio y su padre deben ser accesibles solo para usuarios de confianza;
+- GNU tar recomienda extraer archivos no confiables distintos de forma independiente, en directorios vacíos diferentes;
+- listar miembros ayuda a inspeccionar, pero no certifica que la extracción sea segura;
+- GNU tar recomienda prestar atención a diagnósticos y estado de salida;
+- GNU tar desaconseja opciones de riesgo como `--absolute-names`, `--dereference`, `--overwrite`, `--recursive-unlink` y `--remove-files` salvo comprensión explícita;
 - GNU gzip 1.14 documenta compresión y descompresión de archivos y dispone de `--keep` y `--test`;
 - XZ Utils documenta `-k/--keep`, `-d/--decompress`, `-l/--list` y `-t/--test`;
 - xz utiliza por defecto el formato `.xz` y recomienda `xz -d`/`xz -dc` en scripts en lugar de depender de alias como `unxz` o `xzcat`.
