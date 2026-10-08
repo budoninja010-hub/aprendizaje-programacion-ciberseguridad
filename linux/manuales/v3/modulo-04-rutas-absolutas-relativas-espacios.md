@@ -253,3 +253,19 @@ Puedes enviar una respuesta breve al chat: qué entendiste de las rutas, un ejem
 Revisión documental: sintaxis de ejemplos, separación de argumentos, expansión de tilde, destinos del árbol y coherencia con M1–M3. Las referencias GNU se consultaron mediante documentación oficial indexada; la resolución de rutas se contrastó con Linux man-pages. La práctica en el Linux del estudiante sigue pendiente. No se afirma validación de ejecuciones reales.
 
 Siguiente módulo por redactar: **Módulo 5 — Árbol de archivos y FHS; /etc, /usr, /var, /tmp, /proc, /sys y enlaces**.
+
+## Anexo editorial — Criterios de evaluación y fuentes
+
+**Qué se conserva:** todas las explicaciones, prácticas y preguntas originales de esta entrega.
+
+**Evaluación formativa:** el estudiante debe explicar los conceptos con sus palabras, ejecutar una práctica segura en su propio entorno cuando corresponda, interpretar la salida y reconocer al menos un error sin copiar la solución. Una respuesta correcta aislada no acredita dominio.
+
+**Registro:** EN APRENDIZAJE / PRACTICADO / DOMINADO (solo tras varias evidencias revisadas). La revisión documental del texto no equivale a práctica realizada.
+
+**Fuentes primarias para contrastar esta lección:**
+- GNU Bash Reference Manual: https://www.gnu.org/software/bash/manual/
+- GNU Coreutils Manual: https://www.gnu.org/software/coreutils/manual/
+- Debian Reference: https://www.debian.org/doc/manuals/debian-reference/
+- Linux kernel documentation: https://docs.kernel.org/
+
+Las fuentes se consultan según el tema tratado; no se presume que todos los enlaces respalden cada afirmación del módulo.
