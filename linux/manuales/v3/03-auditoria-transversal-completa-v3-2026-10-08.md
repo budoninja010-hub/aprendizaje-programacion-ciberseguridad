@@ -410,7 +410,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 ### Prioridad 2 — robustez y trazabilidad
 
 6. ~~M27 broken symlink/nullglob.~~ ✅ Corregido.
-7. sustituir fuentes espejo por upstream en M19/M21/M30/M34/M35 cuando corresponda.
+7. ~~sustituir fuentes espejo por upstream en M19/M21/M30/M34/M35 cuando corresponda.~~ ✅ Referencias upstream añadidas; queda pendiente comprobar enlace por enlace en auditoría post-corrección.
 8. ~~añadir definición breve de load average en M13.~~ ✅ Corregido.
 9. ~~precisión textual de estados no-cero en M25.~~ ✅ Corregido.
 
