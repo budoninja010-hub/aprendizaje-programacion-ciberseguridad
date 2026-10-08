@@ -1,3 +1,18 @@
+# Estado actual — Vigesimonovena entrega de v3
+
+Módulos 1–29 redactados y revisados documentalmente. Módulos 30–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 29 — Manejo de errores, `trap`, `mktemp`, límites de `set -e`/`set -u` y ShellCheck](modulo-29-manejo-errores-trap-mktemp-shellcheck.md).
+
+Esta entrega introduce validación explícita de errores, stderr, `trap ... EXIT`, creación segura de temporales con `mktemp`, límites de `set -e`, semántica de `set -u`, `pipefail`, validación con `bash -n` y análisis estático con ShellCheck. Se documenta que `set -euo pipefail` no es una receta universal y que `mktemp -u` no debe usarse como patrón para crear después un archivo.
+
+La v2 y los Módulos 1–28 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 30 — Automatización con `cron` y temporizadores de systemd**.
+
+---
+
+## Registro histórico — Vigesimoctava entrega y anteriores
 # Estado actual — Vigesimoctava entrega de v3
 
 Módulos 1–28 redactados y revisados documentalmente. Módulos 29–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
