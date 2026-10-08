@@ -33,3 +33,13 @@
 - **M35:** mini evaluación consecutiva 1–17. Hay otras listas numeradas anteriores en el módulo; la numeración reiniciada en una sección diferente no es un defecto.
 
 **Resultado de este alcance:** no se identificó un nuevo error de numeración en las cinco mini evaluaciones revisadas. El análisis no valida automáticamente la corrección de las respuestas ni las evaluaciones de los otros treinta módulos.
+
+## Tercera pasada — comprobación directa de fuentes originales (2026-10-08)
+
+Se abrieron y consultaron las páginas originales de: espejo público de iproute2 (GitHub), proyecto Netfilter/nftables, repositorio Cronie, repositorio util-linux, sitio AIDE y archivo upstream `systemd.timer.xml`. Las seis referencias fueron accesibles durante la consulta. **Esto no equivale a verificar todos los enlaces del manual ni cada afirmación técnica.**
+
+**Hallazgos y correcciones:**
+- M19: el propio repositorio GitHub de iproute2 se presenta como espejo de solo publicación; se corrigió la etiqueta para distinguirlo del repositorio principal en kernel.org. Commit `f7c4e00e73138755ed98aac6570de74fbe00948a`.
+- M21: la URL `https://wiki.nftables.org/` aparecía dos veces en la bibliografía; se retiró la repetición. Commit `48982c1cc34e82ff202088ff4b985af5401675f3`.
+
+**Pendiente:** revisión fuente-afirmación en cada módulo, enlaces restantes y validación técnica de ejercicios.
