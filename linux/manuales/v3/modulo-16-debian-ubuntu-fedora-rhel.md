@@ -433,7 +433,7 @@ No copies un nombre de servicio sin verificarlo.
 | Alto nivel | APT | APT | DNF | DNF |
 | Bajo nivel | dpkg | dpkg | RPM | RPM |
 | Ciclo | stable/testing/unstable | LTS/interim | rápido | empresarial de largo ciclo |
-| Seguridad MAC destacada | verificar configuración | AppArmor documentado por defecto | SELinux | SELinux |
+| Seguridad MAC destacada | AppArmor habilitado por defecto desde Debian 10; verificar estado real | AppArmor documentado por defecto | SELinux | SELinux |
 | Firewall | verificar entorno | UFW documentado por Ubuntu | firewalld/nftables según entorno | firewalld/nftables |
 | Soporte comercial principal | no como producto empresarial único | Canonical | comunidad/proveedores diversos | Red Hat |
 | Variante image-based destacada | no es el foco de esta tabla | no es el foco | Silverblue/CoreOS | existen tecnologías empresariales, fuera de este módulo |
