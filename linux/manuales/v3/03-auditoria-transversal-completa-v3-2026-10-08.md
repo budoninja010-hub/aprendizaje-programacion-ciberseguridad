@@ -184,7 +184,7 @@ M31 ya hace algo correcto y valioso: listar primero y extraer en una carpeta vac
 
 **Fuente primaria:** GNU tar, capítulo *Reliability and Security*.
 
-**Estado:** pendiente de endurecimiento textual en M31.
+**Estado:** ✅ corregido en M31 mediante commit `f7d3ac44c716737a180e08ba9e72c4f60a553019`.
 
 ### A05 — M33: falta el procedimiento inmediato si un secreto YA fue expuesto
 
@@ -391,7 +391,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 | 28 | 🟢 Correcto | Ámbito dinámico y `return` bien tratados |
 | 29 | 🟢 Correcto | `set -e`, `pipefail`, `mktemp` y ShellCheck bien delimitados |
 | 30 | 🟢 Corrección A03 aplicada | `Persistent=true` precisado con fuente upstream de systemd; mejora upstream de Cronie aún pendiente |
-| 31 | 🟠 Endurecimiento importante | Añadir límites de inspección y aislamiento de extracción |
+| 31 | 🟢 Corrección A04 aplicada | Extracción no confiable endurecida: listar no certifica seguridad, aislamiento por archivo y directorio/padre controlados |
 | 32 | 🟢 Correcto | `rsync --delete` solo dry-run; restauración incluida |
 | 33 | 🟠 Corrección importante | Añadir revocación/rotación tras secreto expuesto |
 | 34 | 🟡 Correcto con mejora de fuentes | Upstream util-linux como referencia principal |
@@ -404,7 +404,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 1. ~~M19 RFC1918.~~ ✅ Corregido.
 2. ~~M15/M35 estado `100` de DNF.~~ ✅ Corregido.
 3. ~~M30 `Persistent=true`.~~ ✅ Corregido.
-4. M31 seguridad de tar no confiable.
+4. ~~M31 seguridad de tar no confiable.~~ ✅ Corregido.
 5. M33 secreto ya expuesto.
 
 ### Prioridad 2 — robustez y trazabilidad
