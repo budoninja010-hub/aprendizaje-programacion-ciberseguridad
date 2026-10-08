@@ -910,6 +910,9 @@ Para considerar este módulo **DOMINADO** deberás poder en más de una práctic
 
 Fuentes principales:
 
+- util-linux upstream (código fuente y manuales de `lsblk`, `findmnt`, `mount`, `fstab`): https://github.com/util-linux/util-linux
+- util-linux upstream (documentación del proyecto): https://www.kernel.org/pub/linux/utils/util-linux/
+- Las páginas man7 siguientes se mantienen como copias HTML prácticas, no como fuente upstream.
 - util-linux — `lsblk(8)`: https://man7.org/linux/man-pages/man8/lsblk.8.html
 - util-linux — `findmnt(8)`: https://man7.org/linux/man-pages/man8/findmnt.8.html
 - util-linux — `mount(8)`: https://man7.org/linux/man-pages/man8/mount.8.html
