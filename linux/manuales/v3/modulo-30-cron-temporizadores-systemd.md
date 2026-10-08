@@ -527,7 +527,35 @@ Estos intervalos no expresan una hora civil como `18:30`; expresan tiempo relati
 
 ## 37. `Persistent=true`
 
-Para timers basados en `OnCalendar=`, `Persistent=true` permite recordar una activación perdida mientras el timer estaba inactivo y disparar la unidad al reactivarse cuando corresponda.
+Para timers basados en `OnCalendar=`, `Persistent=true` guarda en disco cuándo fue activado por última vez el servicio asociado.
+
+Cuando el timer vuelve a activarse, systemd comprueba si **habría vencido al menos una vez** durante el tiempo en que estuvo inactivo. Si es así, dispara la unidad inmediatamente, sujeto también a retrasos como `RandomizedDelaySec=`.
+
+Esto sirve para recuperar una ejecución perdida, por ejemplo después de que el equipo haya estado apagado.
+
+Pero hay una precisión importante:
+
+```text
+Persistent=true ≠ cola de todas las ejecuciones perdidas
+```
+
+Si un trabajo diario habría vencido cinco veces mientras el timer estuvo inactivo, no debes asumir que systemd ejecutará cinco veces el servicio al volver. La documentación upstream establece que basta con que hubiera debido dispararse **al menos una vez** para generar la activación de recuperación.
+
+Además, `Persistent=true` solo tiene efecto sobre timers configurados con `OnCalendar=`; no convierte automáticamente los timers monotónicos en persistentes.
+
+### Apagado/inactividad y suspensión no son exactamente lo mismo
+
+Los timers de calendario usan el reloj de tiempo real. Si el sistema entra en suspensión o hibernación, ese reloj sigue avanzando. Cuando el sistema reanuda, los eventos de calendario que vencieron durante la suspensión pueden procesarse entonces.
+
+La documentación de systemd también aclara que, si el mismo timer de calendario venció varias veces durante una suspensión continua, eso produce **una sola activación del servicio** al reanudarse.
+
+Por tanto:
+
+```text
+apagado/inactividad + Persistent=true → recuperación al activar el timer
+suspensión + OnCalendar=              → recuperación al reanudar
+múltiples vencimientos perdidos       → no asumir una ejecución por cada vencimiento
+```
 
 Esto ofrece una diferencia importante frente al cron tradicional para equipos que pueden permanecer apagados.
 
@@ -754,7 +782,7 @@ Por eso nuestra unidad ejecuta un **script Bash ya probado** y deja redireccione
 | modelo | tabla de horarios | unidades `.timer` + servicio |
 | calendario | cinco campos en crontab | `OnCalendar=` |
 | intervalos relativos | limitado/depende del diseño | directivas monotónicas |
-| tarea perdida con equipo apagado | normalmente no se recupera sola | `Persistent=true` puede recuperar `OnCalendar` perdido |
+| tarea perdida con equipo apagado | normalmente no se recupera sola | `Persistent=true` puede recuperar que hubo al menos una activación `OnCalendar` perdida; no reproduce necesariamente cada vencimiento |
 | consulta | `crontab -l` | `systemctl list-timers` |
 | logs | depende de implementación/configuración | journal de la unidad cuando aplica |
 | entorno | cron suele ser reducido | entorno de unidad systemd |
@@ -794,6 +822,8 @@ Puede ser apropiado en sistemas systemd cuando necesitas:
 | interpretar `*/N` como intervalo universal | opera dentro del campo | analiza cada campo |
 | olvidar la regla DOM/DOW de Cronie | puedes ejecutar más días de los esperados | verifica el calendario |
 | asumir que cron recupera tareas perdidas | puede no ejecutarlas después | considera diseño apropiado/anacron/systemd |
+| asumir que `Persistent=true` reproduce todas las ejecuciones omitidas | puede haber una sola activación de recuperación | interprétalo como detección de al menos un vencimiento perdido |
+| confundir apagado con suspensión | systemd trata esos escenarios de forma distinta | distingue inactividad del timer y suspensión del sistema |
 | crear timer sin probar service | dificulta diagnóstico | inicia el service manualmente |
 | usar `enable --now` solo para probar | deja persistencia innecesaria | usa `start` en práctica temporal |
 | escribir shell directamente en `ExecStart=` | systemd no es un shell | llama a un script |
@@ -899,8 +929,10 @@ Debe:
 12. ¿`OnCalendar=` usa expresiones de calendario? A) Sí B) No
 13. ¿`systemd-analyze calendar` puede validar una expresión antes de instalar el timer? A) Sí B) No
 14. ¿`Persistent=true` aplica a recuperación de activaciones `OnCalendar` perdidas? A) Sí B) No
-15. ¿`systemctl --user start` y `enable` significan exactamente lo mismo? A) Sí B) No
-16. ¿`ExecStart=` debe tratarse como una línea de Bash interactiva? A) Sí B) No
+15. Si un timer habría vencido cinco veces mientras estuvo inactivo, ¿`Persistent=true` obliga a ejecutar cinco veces el servicio al volver? A) Sí B) No
+16. Si un timer `OnCalendar=` vence varias veces durante una suspensión continua, ¿debes asumir varias activaciones al reanudar? A) Sí B) No
+17. ¿`systemctl --user start` y `enable` significan exactamente lo mismo? A) Sí B) No
+18. ¿`ExecStart=` debe tratarse como una línea de Bash interactiva? A) Sí B) No
 
 ## 62. Registro de aprendizaje
 
@@ -918,6 +950,8 @@ Una unidad `.service` sirve para:
 `OnCalendar=` significa:
 `OnActiveSec=` significa:
 `Persistent=true` sirve para:
+¿reproduce todas las ejecuciones perdidas?:
+Diferencia entre apagado/inactividad y suspensión para timers de calendario:
 `AccuracySec=` afecta:
 `systemctl --user list-timers` muestra:
 Diferencia entre `start` y `enable`:
@@ -945,8 +979,8 @@ Fuentes principales:
 
 - Cronie `crontab(5)`: https://man7.org/linux/man-pages/man5/crontab.5.html
 - Cronie `crond(8)`: https://man7.org/linux/man-pages/man8/crond.8.html
-- systemd `systemd.timer(5)`: https://man7.org/linux/man-pages/man5/systemd.timer.5.html
-- systemd `systemd.time(7)`: https://man7.org/linux/man-pages/man7/systemd.time.7.html
+- systemd upstream — `systemd.timer(5)`: https://github.com/systemd/systemd/blob/main/man/systemd.timer.xml
+- systemd upstream — `systemd.time(7)`: https://github.com/systemd/systemd/blob/main/man/systemd.time.xml
 - systemd `systemd-analyze(1)`: https://man7.org/linux/man-pages/man1/systemd-analyze.1.html
 - systemd `systemctl(1)`: https://man7.org/linux/man-pages/man1/systemctl.1.html
 - Red Hat Enterprise Linux 10 — systemd unit files: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_systemd_unit_files_to_customize_and_optimize_your_system/
@@ -958,7 +992,8 @@ Puntos verificados documentalmente:
 - `%` posee significado especial en la parte de comando de Cronie;
 - cuando día del mes y día de semana están ambos restringidos, Cronie ejecuta si coincide cualquiera de ellos;
 - `systemd.timer` admite `OnCalendar=` y temporizadores monotónicos como `OnActiveSec=` y `OnUnitActiveSec=`;
-- `Persistent=true` puede recuperar activaciones perdidas de timers `OnCalendar=`;
+- `Persistent=true` solo afecta timers `OnCalendar=` y, al activarse el timer, dispara el servicio si habría vencido al menos una vez mientras estuvo inactivo; no debe interpretarse como una cola que reproduce todos los vencimientos perdidos;
+- los timers `OnCalendar=` que vencen durante suspensión se procesan al reanudar; varios vencimientos durante una suspensión continua producen una sola activación del servicio;
 - `AccuracySec=` tiene un valor predeterminado documentado de un minuto;
 - `systemd-analyze calendar` analiza y normaliza la misma sintaxis utilizada por `OnCalendar=`;
 - `systemctl list-timers` muestra temporizadores y sus próximas/últimas activaciones.
