@@ -2,13 +2,13 @@
 
 Los **35 módulos** del núcleo están redactados. La auditoría documental transversal completa del 8 de octubre de 2026 está disponible en [03 — Auditoría transversal completa v3](03-auditoria-transversal-completa-v3-2026-10-08.md).
 
-**Dictamen:** APTO CON CORRECCIONES IMPORTANTES. No se detectaron errores críticos que obliguen a detener el estudio, pero antes de congelar una edición consolidada deben corregirse los hallazgos de prioridad alta: RFC1918 (M19), estado `100` de `dnf check-update` (M15/M35), `Persistent=true` (M30), endurecimiento de extracción `tar` no confiable (M31) y respuesta ante secretos ya expuestos en Git/GitHub (M33).
+**Dictamen:** APTO CON CORRECCIONES IMPORTANTES. No se detectaron errores críticos que obliguen a detener el estudio. Ya están corregidos RFC1918 (M19) y los estados `0/100/1` de `dnf check-update` (M15/M35). Antes de congelar una edición consolidada quedan pendientes `Persistent=true` (M30), endurecimiento de extracción `tar` no confiable (M31) y respuesta ante secretos ya expuestos en Git/GitHub (M33).
 
 La auditoría [02 — Registro de auditoría y fuentes](02-auditoria-fuentes.md) se conserva como **registro histórico de la primera entrega**; no representa ya el estado completo del núcleo.
 
 Las prácticas en el Linux del estudiante siguen pendientes de ejecutar y validar. Redacción completa no equivale a dominio demostrado.
 
-**Progreso de correcciones de prioridad alta:** 1/5 aplicada. A01 (RFC1918 en M19) corregida. Pendientes: estado `100` de `dnf check-update` (M15/M35), `Persistent=true` (M30), endurecimiento de extracción `tar` no confiable (M31) y respuesta ante secretos ya expuestos en Git/GitHub (M33).
+**Progreso de correcciones de prioridad alta:** 2/5 aplicadas. A01 (RFC1918 en M19) y A02 (estados `0/100/1` de `dnf check-update` en M15/M35) corregidas. Pendientes: `Persistent=true` (M30), endurecimiento de extracción `tar` no confiable (M31) y respuesta ante secretos ya expuestos en Git/GitHub (M33).
 
 **Siguiente fase:** continuar con A02 en commits pequeños, luego fuentes upstream y homogeneización editorial, y finalmente realizar una auditoría post-corrección.
 
