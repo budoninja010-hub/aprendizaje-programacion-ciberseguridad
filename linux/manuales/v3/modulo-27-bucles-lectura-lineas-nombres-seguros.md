@@ -217,6 +217,27 @@ for archivo in ./*.txt; do
 done
 ```
 
+### Precisión: enlaces simbólicos rotos
+
+`[[ -e $archivo ]]` es falso para un enlace simbólico cuyo destino ya no existe. Si quieres **incluir los nombres de enlaces simbólicos rotos**, utiliza:
+
+```bash
+for archivo in ./*.txt; do
+    [[ -e $archivo || -L $archivo ]] || continue
+    printf '%s\n' "$archivo"
+done
+```
+
+- `-e` comprueba que la ruta resuelva a un objeto existente.
+- `-L` comprueba si la ruta es un enlace simbólico, aunque su destino no exista.
+- `|| continue` evita procesar el patrón literal cuando no hubo coincidencias.
+
+Si tu objetivo es trabajar **solo con archivos regulares accesibles**, usa `[[ -f $archivo ]]` en lugar de afirmar que `-e` incluye todos los nombres. El filtro adecuado depende de la tarea.
+
+### Alternativa avanzada: `nullglob`
+
+En Bash, `shopt -s nullglob` hace que un patrón sin coincidencias se expanda a cero palabras, en lugar de quedar literal. Esta opción modifica el comportamiento de expansión en la shell actual; no la actives indiscriminadamente en scripts existentes. La dejamos como alternativa conceptual y conservamos el filtro explícito en las prácticas básicas.
+
 ## 13. `continue`
 
 `continue` salta el resto de la iteración actual y pasa a la siguiente.
@@ -772,7 +793,8 @@ Predice la salida antes de ejecutar.
 | `break` donde querías omitir una sola vuelta | termina todo el bucle | usa `continue` |
 | `continue` donde querías terminar | solo salta a la siguiente iteración | usa `break` |
 | alimentar un `while` con tubería y esperar variables fuera | puede ejecutarse en subshell | usa redirección cuando aplique |
-| asumir que `*.txt` sin coincidencias desaparece | por defecto puede quedar literal | comprueba `[[ -e $archivo ]]` o estudia `nullglob` |
+| asumir que `*.txt` sin coincidencias desaparece | por defecto puede quedar literal | filtra el patrón literal o estudia `nullglob` |
+| suponer que `-e` incluye enlaces simbólicos rotos | `-e` es falso si el destino no existe | si necesitas incluirlos, combina `-e` con `-L` |
 | usar un bucle para cambios destructivos masivos | amplifica errores | prueba solo con acciones seguras y revisables |
 
 ## 49. Detección de error 1
@@ -881,6 +903,8 @@ Debe:
 13. ¿`./*.txt` puede permanecer literal si no hay coincidencias con la configuración predeterminada? A) Sí B) No
 14. ¿las variables cambiadas en un bucle alimentado por una tubería siempre persisten fuera? A) Sí B) No
 15. ¿debes usar bucles destructivos para aprender esta parte? A) Sí B) No
+16. ¿`-e` es verdadero para un enlace simbólico roto? A) Sí B) No
+17. ¿`-L` puede reconocer un enlace simbólico roto? A) Sí B) No
 
 ## 54. Registro de aprendizaje
 
@@ -898,6 +922,8 @@ Un bucle sirve para:
 ¿por qué prefiero `done < archivo` a una tubería innecesaria?:
 ¿qué puede provocar un bucle infinito?:
 Forma segura inicial de recorrer .txt:
+¿Por qué `-e` puede omitir un enlace simbólico roto?:
+¿Cuándo usaría `-L`?:
 Algo que todavía confundo:
 Estado: EN APRENDIZAJE / PRACTICADO
 ```
