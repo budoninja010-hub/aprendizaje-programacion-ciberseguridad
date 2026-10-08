@@ -62,7 +62,7 @@ cat
 
 Si ejecutas `cat` sin indicar un archivo, puede leer desde la entrada estándar y mostrar lo recibido.
 
-Para terminar una entrada interactiva de este tipo suele usarse una señal de fin de archivo desde la terminal, por ejemplo `Ctrl+D` en Bash/terminales tipo Unix.
+Para terminar una entrada interactiva de este tipo suele indicarse el fin de la entrada (EOF) con `Ctrl+D` en una terminal tipo Unix. **Ctrl+D no es una señal**: en las condiciones habituales de lectura desde la terminal, permite que el programa reciba fin de archivo.
 
 No necesitamos practicar esto todavía si te resulta confuso; lo importante es entender que un programa puede leer datos sin que provengan necesariamente de un archivo.
 
@@ -655,7 +655,8 @@ Fuentes principales:
   https://www.gnu.org/software/bash/manual/html_node/Redirections.html
 - GNU Bash Reference Manual — Shell Operation:
   https://www.gnu.org/software/bash/manual/html_node/Shell-Operation.html
-- POSIX / shell conventions for standard file descriptors are reflected in Bash documentation and Unix process semantics.
+- The Open Group — POSIX Shell Command Language, sección Redirection:
+  https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html#tag_19_07
 
 Esta lección cubre solo los fundamentos. Se posponen:
 
