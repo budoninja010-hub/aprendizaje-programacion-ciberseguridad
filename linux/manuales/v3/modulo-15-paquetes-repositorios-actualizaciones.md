@@ -845,15 +845,19 @@ Sin modificar el sistema:
    - A) No hay actualizaciones disponibles.
    - B) La instalación falló.
 
-10. ¿Debes añadir repositorios de terceros sin verificar su origen?
+10. Si `dnf check-update` devuelve `1`, ¿qué significa?
+   - A) Ocurrió un error.
+   - B) Hay actualizaciones disponibles.
+
+11. ¿Debes añadir repositorios de terceros sin verificar su origen?
    - A) Sí.
    - B) No.
 
-11. ¿Es recomendable ejecutar directamente código remoto con `curl ... | bash` sin revisión?
+12. ¿Es recomendable ejecutar directamente código remoto con `curl ... | bash` sin revisión?
    - A) Sí.
    - B) No.
 
-12. ¿Una actualización de paquetes equivale siempre a migrar de versión mayor de la distribución?
+13. ¿Una actualización de paquetes equivale siempre a migrar de versión mayor de la distribución?
    - A) Sí.
    - B) No.
 
@@ -872,6 +876,10 @@ RPM se relaciona con:
 apt update hace:
 apt upgrade hace:
 dnf check-update hace:
+Estado 0 de dnf check-update significa:
+Estado 100 de dnf check-update significa:
+Estado 1 de dnf check-update significa:
+¿Por qué no debo tratar todo estado no-cero como error sin leer la documentación del comando?:
 ¿Por qué no debo instalar desde un repositorio desconocido?:
 Algo que todavía confundo:
 Estado: EN APRENDIZAJE / PRACTICADO
