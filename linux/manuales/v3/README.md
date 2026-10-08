@@ -1,3 +1,18 @@
+# Estado actual — Trigésima tercera entrega de v3
+
+Módulos 1–33 redactados y revisados documentalmente. Módulos 34–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 33 — Git y GitHub para scripts; puente al itinerario específico de Git](modulo-33-git-github-para-scripts.md).
+
+Esta entrega formaliza la autonomía del estudiante para conservar scripts: working tree, staging area, `git status`, `git diff`, `git add`, `git diff --staged`, commits pequeños, `.gitignore`, revisión de secretos, `git restore --staged`, remotos, ramas y `git push`. Se mantiene separado del itinerario completo de Git/GitHub para evitar duplicación.
+
+La v2 y los Módulos 1–32 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 34 — Almacenamiento: `lsblk`, `df`, `du`; montaje y `fstab`**.
+
+---
+
+## Registro histórico — Trigésima segunda entrega y anteriores
 # Estado actual — Trigésima segunda entrega de v3
 
 Módulos 1–32 redactados y revisados documentalmente. Módulos 33–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
