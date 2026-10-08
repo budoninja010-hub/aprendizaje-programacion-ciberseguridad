@@ -1,0 +1,722 @@
+[
+  {
+    "paragraph": 3,
+    "old": "Edición 2026",
+    "new": "Edición 2026 — En revisión",
+    "reason": "Identificar el estado real de la copia",
+    "source": "",
+    "start": 79,
+    "end": 91
+  },
+  {
+    "paragraph": 28,
+    "old": "Nota de fuentes: Esta sección se basa en la introducción oficial de Python.org y documentación técnica sobre entornos de desarrollo.",
+    "new": "Fuentes oficiales de esta revisión: instalación en Windows, https://docs.python.org/3.14/using/windows.html ; macOS, https://docs.python.org/3.14/using/mac.html ; intérprete y errores, https://docs.python.org/3.14/tutorial/errors.html . Esta copia conserva las 15 partes originales y contiene correcciones verificadas; aún requiere revisión visual final. Los marcadores de formato de las partes XIII–XV están pendientes de identificación.",
+    "reason": "Estado y bibliografía concreta",
+    "source": "",
+    "start": 908,
+    "end": 1040
+  },
+  {
+    "paragraph": 31,
+    "old": "Python es un lenguaje de programación de propósito general, diseñado para ser fácil de leer y escribir. Funciona mediante un \"intérprete\", que es un programa que lee tu código línea por línea y lo traduce al lenguaje que la computadora entiende en tiempo real.",
+    "new": "Python es un lenguaje de programación de propósito general, diseñado para ser fácil de leer y escribir. Su intérprete ejecuta el programa. En CPython, al ejecutar un archivo .py, primero se analiza su sintaxis y se compila a instrucciones internas (bytecode); después se ejecutan. Un error de sintaxis en ese archivo puede impedir que se ejecute incluso su primera instrucción. En la consola interactiva se procesan entradas o bloques, no necesariamente un archivo completo.",
+    "reason": "Corregir el modelo de ejecución",
+    "source": "https://docs.python.org/3.14/tutorial/errors.html",
+    "start": 1086,
+    "end": 1346
+  },
+  {
+    "paragraph": 46,
+    "old": "ERROR FRECUENTE: Olvidar instalar el intérprete: Tu computadora no entiende Python de fábrica. Debes descargar el intérprete de Python.org.",
+    "new": "ERROR FRECUENTE: Intentar ejecutar Python sin comprobar su instalación. Algunos sistemas ya lo incluyen; verifica la versión antes de instalar otro intérprete.",
+    "reason": "Evitar generalización sobre instalación",
+    "source": "",
+    "start": 2260,
+    "end": 2399
+  },
+  {
+    "paragraph": 51,
+    "old": "Descarga la última versión para tu sistema operativo.",
+    "new": "Elige una versión estable de Python 3 compatible con tu equipo; no una versión preliminar. Este manual usa la documentación de Python 3.14 como referencia.",
+    "reason": "Fijar referencia sin afirmar última versión",
+    "source": "",
+    "start": 2599,
+    "end": 2652
+  },
+  {
+    "paragraph": 52,
+    "old": "IMPORTANTE (Windows): Al instalar, asegúrate de marcar la casilla \"Add Python to PATH\". Esto permite usar Python desde cualquier parte de tu sistema.",
+    "new": "Windows: instala Python Install Manager desde python.org/downloads o Microsoft Store. Abre una terminal nueva y ejecuta py install 3.14; comprueba con py -V:3.14 --version. La casilla «Add Python to PATH» pertenece al instalador tradicional, obsoleto desde 3.14 y previsto para dejar de distribuirse en 3.16. Si ya tienes Python funcionando, no necesitas desinstalarlo. En macOS instala la versión estable desde python.org y verifica python3 --version. En Linux comprueba python3 --version; si falta, sigue la instalación de tu distribución.",
+    "reason": "Actualizar y separar instalación por plataforma",
+    "source": "https://docs.python.org/3.14/using/windows.html",
+    "start": 2653,
+    "end": 2802
+  },
+  {
+    "paragraph": 56,
+    "old": "★ Nivel 1 — Principiante: Instala Python en tu equipo y asegúrate de marcar \"Add to PATH\". Abre tu Terminal (Símbolo del sistema en Windows o Terminal en Mac) y escribe python --version. ¿Qué aparece en la pantalla?",
+    "new": "★ Nivel 1 — Principiante: Comprueba tu instalación. En Windows escribe py --version; en macOS/Linux, python3 --version. Anota la versión que aparece. Si el comando no se reconoce, revisa la instalación antes de continuar.",
+    "reason": "Comprobación por plataforma",
+    "source": "https://docs.python.org/3.14/using/windows.html",
+    "start": 2959,
+    "end": 3174
+  },
+  {
+    "paragraph": 60,
+    "old": "¿Cuál es el error más común al instalar Python en Windows?",
+    "new": "¿Qué comando usarías en tu sistema para comprobar que Python está disponible?",
+    "reason": "Actualizar evaluación de instalación",
+    "source": "",
+    "start": 3272,
+    "end": 3330
+  },
+  {
+    "paragraph": 62,
+    "old": "Has aprendido que Python necesita un traductor (el intérprete) para funcionar y que requiere un editor para escribir el código. El sistema debe saber dónde está Python (el PATH).",
+    "new": "Has aprendido para qué sirve el intérprete, cómo comprobar su instalación y que puedes escribir archivos .py con un editor. El comando disponible depende del sistema y del entorno que uses.",
+    "reason": "Resumen coherente",
+    "source": "",
+    "start": 3343,
+    "end": 3521
+  },
+  {
+    "paragraph": 69,
+    "old": "Comando en la terminal para ejecutar un archivo:",
+    "new": "Comandos de terminal: Windows usa py nombre_del_archivo.py; macOS/Linux usa python3 nombre_del_archivo.py. Si has activado un entorno virtual, usa python nombre_del_archivo.py.",
+    "reason": "Comandos por plataforma",
+    "source": "",
+    "start": 3865,
+    "end": 3913
+  },
+  {
+    "paragraph": 70,
+    "old": "python nombre_del_archivo.py",
+    "new": "py nombre_del_archivo.py",
+    "reason": "Ejemplo Windows coherente",
+    "source": "",
+    "start": 3914,
+    "end": 3942
+  },
+  {
+    "paragraph": 78,
+    "old": "Un científico de datos escribe un script llamado analisis.py para procesar millones de registros. Para arrancar el proceso, simplemente abre la terminal y teclea python analisis.py.",
+    "new": "Un científico de datos guarda su programa en analisis.py. Desde su carpeta lo ejecuta con py analisis.py en Windows o python3 analisis.py en macOS/Linux.",
+    "reason": "Ejemplo de ejecución por plataforma",
+    "source": "",
+    "start": 4319,
+    "end": 4500
+  },
+  {
+    "paragraph": 81,
+    "old": "ERROR FRECUENTE: No encontrar el archivo: Si en la terminal escribes python saludo.py pero estás en una carpeta diferente a donde guardaste el archivo, la terminal dirá que no lo encuentra. Debes navegar con la terminal hasta la carpeta correcta usando el comando cd.",
+    "new": "ERROR FRECUENTE: No encontrar el archivo. Si ejecutas py saludo.py (Windows) o python3 saludo.py (macOS/Linux) desde otra carpeta, Python puede no encontrarlo. Usa cd para entrar en la carpeta donde lo guardaste, o pasa la ruta completa del archivo entre comillas si contiene espacios.",
+    "reason": "Rutas de ejecución precisas",
+    "source": "",
+    "start": 4672,
+    "end": 4939
+  },
+  {
+    "paragraph": 88,
+    "old": "Escribe cd Desktop (o cd Escritorio en español).",
+    "new": "Escribe cd seguido de la ruta real de la carpeta donde guardaste el archivo, entre comillas si contiene espacios. No supongas que siempre se llama Desktop o Escritorio: puede estar traducida o redirigida a OneDrive.",
+    "reason": "No inventar ruta del Escritorio",
+    "source": "",
+    "start": 5153,
+    "end": 5201
+  },
+  {
+    "paragraph": 89,
+    "old": "Escribe python mi_primer_script.py y presiona Enter.",
+    "new": "Escribe py mi_primer_script.py en Windows o python3 mi_primer_script.py en macOS/Linux y presiona Enter.",
+    "reason": "Ejercicio coherente",
+    "source": "",
+    "start": 5202,
+    "end": 5254
+  },
+  {
+    "paragraph": 100,
+    "old": "Repaso: Python se ejecuta línea a línea a través de su intérprete. La herramienta principal para enviar mensajes a la pantalla es print(). El código se escribe en un IDE y se lanza en una Terminal.",
+    "new": "Repaso: Al ejecutar un archivo, CPython analiza su sintaxis antes de ejecutar sus instrucciones. print() muestra información. Escribe el código en un editor, guárdalo y ejecútalo con el comando correspondiente a tu sistema.",
+    "reason": "Eliminar contradicción sobre ejecución",
+    "source": "",
+    "start": 6108,
+    "end": 6305
+  },
+  {
+    "paragraph": 135,
+    "old": "Una variable es como una \"caja\" con una etiqueta donde guardamos datos. Sirven para recordar información y usarla o modificarla más adelante en el programa.",
+    "new": "Una variable es un nombre asociado a un objeto, como una etiqueta que permite encontrar un dato. Asignar otro valor cambia esa asociación; no modifica necesariamente el objeto anterior.",
+    "reason": "Modelo de nombres y objetos",
+    "source": "https://docs.python.org/3.14/reference/datamodel.html",
+    "start": 8802,
+    "end": 8958
+  },
+  {
+    "paragraph": 148,
+    "old": "- 'jugador = \"Mario\"': \"jugador\" es el nombre de la variable, \"=\" asigna el valor, '\"Mario\"' es la cadena de texto guardada en la caja.",
+    "new": "- jugador = \"Mario\": jugador es el nombre; = lo asocia con el objeto de texto \"Mario\".",
+    "reason": "Coherencia con modelo de variables",
+    "source": "",
+    "start": 9161,
+    "end": 9296
+  },
+  {
+    "paragraph": 151,
+    "old": "- 'vidas = 2': Reasigna el valor de \"vidas\". El 3 se destruye y ahora guarda un 2.",
+    "new": "- vidas = 2: El nombre vidas pasa a referirse al entero 2. Esto no significa que el objeto 3 se destruya: puede seguir existiendo y tener otras referencias.",
+    "reason": "Reasignación no implica destrucción",
+    "source": "https://docs.python.org/3.14/reference/datamodel.html",
+    "start": 9435,
+    "end": 9517
+  },
+  {
+    "paragraph": 194,
+    "old": "Usamos las funciones int(), float(), str() y bool().",
+    "new": "Usamos int(), float(), str() y bool(). bool() comprueba el valor de verdad: bool(0) y bool(\"\") producen False; bool(1) y bool(\"False\") producen True. La cadena \"False\" no está vacía: bool() no interpreta su palabra como el booleano False.",
+    "reason": "Explicar bool sin adelantar estructuras",
+    "source": "https://docs.python.org/3.14/library/stdtypes.html",
+    "start": 11762,
+    "end": 11814
+  },
+  {
+    "paragraph": 227,
+    "old": "★★★ Estratega / Reto: Escribe un programa que solicite al usuario su nombre, su año de nacimiento y su estatura en metros. Calcula su edad actual (asumiendo año 2026) y muestra una ficha organizada usando múltiples print().",
+    "new": "★★★ Estratega / Reto: Solicita nombre, año de nacimiento y estatura en metros. Calcula la edad aproximada como 2026 menos el año de nacimiento y muestra la ficha con print(). Sin conocer el día y mes de nacimiento, no puedes asegurar si ya cumplió años.",
+    "reason": "Distinguir edad aproximada de exacta",
+    "source": "",
+    "start": 13232,
+    "end": 13455
+  },
+  {
+    "paragraph": 247,
+    "old": "print(\"Edad:\", edad, \"años\")",
+    "new": "print(\"Edad aproximada:\", edad, \"años\")",
+    "reason": "Salida coherente con datos disponibles",
+    "source": "",
+    "start": 13985,
+    "end": 14013
+  },
+  {
+    "paragraph": 267,
+    "old": "Solución: Imprime 10, porque la variable fue reasignada y el 5 se pierde.",
+    "new": "Solución: Imprime 10, porque a fue reasignada y ahora se refiere a 10, no a 5.",
+    "reason": "Reasignación precisa",
+    "source": "",
+    "start": 14583,
+    "end": 14656
+  },
+  {
+    "paragraph": 280,
+    "old": "- División entera: // (ignora los decimales)",
+    "new": "- División entera: // (redondea el cociente hacia abajo, hacia menos infinito).",
+    "reason": "Corregir división con negativos",
+    "source": "https://docs.python.org/3.14/library/stdtypes.html",
+    "start": 15156,
+    "end": 15200
+  },
+  {
+    "paragraph": 296,
+    "old": "- 'print(\"División entera:\", a // b)': Divide 10 entre 3, pero se queda solo con el número entero. Muestra 3.",
+    "new": "- print(\"División entera:\", a // b): 10 // 3 muestra 3. Con negativos, -10 // 3 da -4, no -3: el resultado se redondea hacia abajo. Si ambos operandos son int, devuelve int; 10.0 // 3 devuelve 3.0 (float).",
+    "reason": "Contraejemplo y tipo del resultado",
+    "source": "https://docs.python.org/3.14/library/stdtypes.html",
+    "start": 15719,
+    "end": 15828
+  },
+  {
+    "paragraph": 500,
+    "old": "★ Explorador / Básico: Crea una variable con un número. Usa if y else para imprimir si el número es positivo o negativo.",
+    "new": "★ Explorador / Básico: Crea una variable con un número. Usa if, elif y else para distinguir tres casos: positivo, negativo y cero. Comprueba tu solución con -5, 0 y 5.",
+    "reason": "Incluir cero en ejercicio",
+    "source": "",
+    "start": 26112,
+    "end": 26232
+  },
+  {
+    "paragraph": 520,
+    "old": "if numero >= 0:",
+    "new": "if numero > 0:",
+    "reason": "Clasificación de signo",
+    "source": "",
+    "start": 27199,
+    "end": 27214
+  },
+  {
+    "paragraph": 521,
+    "old": "    print(\"Es positivo o cero\")",
+    "new": "    print(\"Es positivo\")\nelif numero < 0:\n    print(\"Es negativo\")",
+    "reason": "Clasificación de signo",
+    "source": "",
+    "start": 27215,
+    "end": 27246
+  },
+  {
+    "paragraph": 523,
+    "old": "    print(\"Es negativo\")",
+    "new": "    print(\"Es cero\")",
+    "reason": "Clasificación completa con if/elif/else",
+    "source": "",
+    "start": 27253,
+    "end": 27277
+  },
+  {
+    "paragraph": 618,
+    "old": "Son similares a las listas, pero son inmutables (NO se pueden modificar una vez creadas). Sirven para proteger datos que no deberían cambiar, como coordenadas GPS o configuraciones fijas.",
+    "new": "Las tuplas son secuencias inmutables: no puedes reemplazar, añadir ni quitar sus posiciones. Sin embargo, si contienen una lista, esa lista sí puede cambiar. Sirven para agrupar datos cuya estructura se mantendrá fija.",
+    "reason": "Matizar inmutabilidad",
+    "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+    "start": 30856,
+    "end": 31043
+  },
+  {
+    "paragraph": 620,
+    "old": "Se crean usando paréntesis ().",
+    "new": "Normalmente la coma crea la tupla: t = 1, 2 equivale a t = (1, 2). Los paréntesis agrupan y a veces son necesarios por la sintaxis. La tupla vacía se escribe ().",
+    "reason": "Sintaxis de tupla",
+    "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+    "start": 31053,
+    "end": 31083
+  },
+  {
+    "paragraph": 626,
+    "old": "Para crear una tupla de un solo elemento, DEBES poner una coma al final. De lo contrario, Python lo tratará como una variable normal entre paréntesis.",
+    "new": "Una tupla de un elemento necesita coma: (\"único\",). En cambio, (\"único\") es una cadena str entre paréntesis; no es una tupla.",
+    "reason": "Tipo real de un elemento",
+    "source": "https://docs.python.org/3.14/tutorial/datastructures.html",
+    "start": 31217,
+    "end": 31367
+  },
+  {
+    "paragraph": 1117,
+    "old": "- Variable Local: Si creas una variable dentro de una función, solo existe allí. Cuando la función termina, la variable se destruye.",
+    "new": "- Variable local: Su nombre pertenece al ámbito de la función y normalmente no se accede a él desde fuera. Al terminar la llamada no se destruyen necesariamente sus objetos: otros objetos, valores devueltos o funciones internas pueden conservar referencias.",
+    "reason": "Alcance frente a vida del objeto",
+    "source": "https://docs.python.org/3.14/tutorial/classes.html",
+    "start": 52484,
+    "end": 52616
+  },
+  {
+    "paragraph": 1118,
+    "old": "- Variable Global: Si creas una variable fuera de cualquier función, todo el programa puede verla.",
+    "new": "- Variable global: Su nombre se define en el ámbito del módulo. No queda disponible automáticamente en todos los módulos de un programa.",
+    "reason": "Alcance global por módulo",
+    "source": "https://docs.python.org/3.14/tutorial/classes.html",
+    "start": 52617,
+    "end": 52715
+  },
+  {
+    "paragraph": 1333,
+    "old": "print(mensaje.capitalize()) # \"  hola mundo  \" (Solo la primera letra en mayúscula)",
+    "new": "print(mensaje.capitalize()) # \"  hola mundo  \": el primer carácter es un espacio",
+    "reason": "Comentario capitalize correcto",
+    "source": "https://docs.python.org/3.14/library/stdtypes.html",
+    "start": 62015,
+    "end": 62098
+  },
+  {
+    "paragraph": 1371,
+    "old": "Las llaves `{}` evalúan código real de Python.",
+    "new": "Las llaves evalúan expresiones. Los float representan muchos decimales de forma aproximada: con precio = 100, precio * 1.16 produce 115.99999999999999. El formato :.2f muestra 116.00, pero no cambia la precisión interna del cálculo. Fuente: https://docs.python.org/3.14/tutorial/floatingpoint.html",
+    "reason": "Explicar float y presentación",
+    "source": "https://docs.python.org/3.14/tutorial/floatingpoint.html",
+    "start": 63806,
+    "end": 63852
+  },
+  {
+    "paragraph": 1374,
+    "old": "print(f\"El total con impuestos es: {precio * 1.16}\")",
+    "new": "print(f\"El total con impuestos es: {precio * 1.16:.2f}\")",
+    "reason": "Mostrar dos decimales",
+    "source": "",
+    "start": 63874,
+    "end": 63926
+  },
+  {
+    "paragraph": 1556,
+    "old": "Cuando usas open(), el sistema operativo \"bloquea\" el archivo. Si olvidas usar archivo.close(), los datos podrían corromperse, no guardarse correctamente o impedir que otros programas accedan a él.",
+    "new": "Cerrar un archivo libera recursos y vacía los datos pendientes del búfer. Si no se cierra correctamente, parte de lo escrito podría no guardarse. No implica que todo archivo abierto esté bloqueado por el sistema operativo. Usa with open(...) para cerrarlo incluso si se produce una excepción.",
+    "reason": "Razón correcta de cierre",
+    "source": "https://docs.python.org/3.14/tutorial/inputoutput.html",
+    "start": 72163,
+    "end": 72360
+  },
+  {
+    "paragraph": 1589,
+    "old": "Si usas \"w\" 10 veces, el archivo siempre tendrá 1 línea (la última). Si usas \"a\" 10 veces, el archivo tendrá 10 líneas.",
+    "new": "Cada apertura en modo \"w\" trunca el archivo existente. Si lo abres diez veces y escribes una línea cada vez, al final queda la última. Si lo abres una sola vez y llamas diez veces a write() con un salto de línea, puedes guardar diez líneas. El modo \"a\" añade contenido al final.",
+    "reason": "Distinguir apertura de escritura",
+    "source": "https://docs.python.org/3.14/tutorial/inputoutput.html",
+    "start": 73924,
+    "end": 74043
+  },
+  {
+    "paragraph": 1618,
+    "old": "Sin encoding=\"utf-8\", Python usa la codificación por defecto del sistema operativo (en Windows suele ser cp1252). Si escribes \"Camión\" o \"Niña\", al leerlo después podría verse como \"CamiÃ³n\" o arrojar un error. UTF-8 es el estándar universal.",
+    "new": "Indica encoding=\"utf-8\" al leer y escribir archivos de texto UTF-8. En Python 3.14 la codificación predeterminada depende de la configuración regional y del modo UTF-8; no siempre es cp1252 en Windows. PEP 686 establece el modo UTF-8 predeterminado desde Python 3.15, con opciones para desactivarlo. Leer un archivo con una codificación distinta de la usada al escribirlo puede producir errores o texto incorrecto. Fuente: https://peps.python.org/pep-0686/",
+    "reason": "Versión y configuración de UTF-8",
+    "source": "https://peps.python.org/pep-0686/",
+    "start": 75107,
+    "end": 75349
+  },
+  {
+    "paragraph": 1620,
+    "old": "Una ruta relativa indica dónde está el archivo en relación a donde estás ejecutando el script.",
+    "new": "Una ruta relativa se interpreta desde el directorio de trabajo actual, que puedes consultar con Path.cwd() tras importar Path. Puede ser distinto de la carpeta donde está el script.",
+    "reason": "CWD frente a script",
+    "source": "https://docs.python.org/3.14/library/pathlib.html",
+    "start": 75370,
+    "end": 75464
+  },
+  {
+    "paragraph": 1621,
+    "old": "- \"datos.txt\": El archivo está en la misma carpeta que el script.",
+    "new": "- \"datos.txt\": Busca el archivo dentro del directorio de trabajo actual.",
+    "reason": "Ruta relativa correcta",
+    "source": "https://docs.python.org/3.14/library/pathlib.html",
+    "start": 75465,
+    "end": 75530
+  },
+  {
+    "paragraph": 1622,
+    "old": "- \"carpeta/datos.txt\": El archivo está dentro de una subcarpeta llamada \"carpeta\".",
+    "new": "- \"carpeta/datos.txt\": Busca dentro de carpeta, una subcarpeta del directorio de trabajo actual.",
+    "reason": "Ruta relativa correcta",
+    "source": "https://docs.python.org/3.14/library/pathlib.html",
+    "start": 75531,
+    "end": 75613
+  },
+  {
+    "paragraph": 1625,
+    "old": "- Ejemplo en Windows: \"C:/Usuarios/Juan/Escritorio/datos.txt\"",
+    "new": "- Ejemplo ilustrativo en Windows: \"C:/Users/Juan/Desktop/datos.txt\". Sustituye usuario y carpetas por los reales; el Escritorio puede estar redirigido.",
+    "reason": "Ruta Windows ilustrativa",
+    "source": "",
+    "start": 75716,
+    "end": 75777
+  },
+  {
+    "paragraph": 1626,
+    "old": "- Ejemplo en Mac/Linux: \"/home/juan/escritorio/datos.txt\"",
+    "new": "- Ejemplo ilustrativo en macOS: \"/Users/juan/Desktop/datos.txt\". En Linux: \"/home/juan/datos.txt\". Ninguna de estas rutas garantiza que exista en tu equipo.",
+    "reason": "Separar sistemas",
+    "source": "",
+    "start": 75778,
+    "end": 75835
+  },
+  {
+    "paragraph": 1627,
+    "old": "La diferencia: La relativa funciona en cualquier computadora que tenga la misma estructura de carpetas. La absoluta solo funciona en tu máquina.",
+    "new": "Una ruta absoluta identifica una ubicación desde la raíz; una relativa depende del directorio de trabajo. Su portabilidad depende de la estructura y configuración: una ruta absoluta también podría existir en otro equipo.",
+    "reason": "Evitar absoluto falso",
+    "source": "",
+    "start": 75836,
+    "end": 75980
+  },
+  {
+    "paragraph": 1634,
+    "old": "ruta = Path(\"datos.txt\")",
+    "new": "ruta = Path(\"datos.txt\")  # Relativa al directorio de trabajo\n# En un archivo .py, para ubicarlo junto al script:\nruta_junto_al_script = Path(__file__).resolve().parent / \"datos.txt\"\n# __file__ normalmente no existe en una consola o notebook.",
+    "reason": "Ejemplo pathlib y limitación",
+    "source": "https://docs.python.org/3.14/library/pathlib.html",
+    "start": 76197,
+    "end": 76221
+  },
+  {
+    "paragraph": 1791,
+    "old": "Aquí no habrá ningún TypeError ni SyntaxError. Pero el resultado será 99.8 en lugar de 80.0. Por la jerarquía de operadores, Python primero dividió 20 / 100 y luego lo restó a 100. La lógica no representa el cálculo pretendido. La solución era usar paréntesis: (precio - descuento) / 100 o replantear la fórmula.",
+    "new": "El código no genera TypeError ni SyntaxError, pero calcula 99.8 en vez de 80.0. Primero divide 20 / 100 y resta 0.2 a 100. Corrección: total = precio * (1 - descuento / 100). Así, 20 / 100 = 0.2; 1 - 0.2 = 0.8; 100 * 0.8 = 80.0. La fórmula (precio - descuento) / 100 también sería incorrecta: produciría 0.8.",
+    "reason": "Corrección matemática comprobable",
+    "source": "",
+    "start": 84631,
+    "end": 84943
+  },
+  {
+    "paragraph": 1902,
+    "old": "Silenciarás TODOS los errores (sintaxis, valores, divisiones, teclado). El programa continuará en un estado inestable y roto, y no tendrás idea de qué salió mal. En su lugar, usa un except específico e imprime o registra (log) el mensaje correspondiente.",
+    "new": "except: pass oculta las excepciones producidas durante la ejecución del bloque try, incluso KeyboardInterrupt (Ctrl+C) y SystemExit. No puede ocultar un error de sintaxis del propio archivo que impida ejecutar ese bloque. Sí podría capturar un SyntaxError generado durante una operación como compile(). Captura excepciones específicas y comunica el fallo.",
+    "reason": "Precisar excepciones capturables",
+    "source": "https://docs.python.org/3.14/tutorial/errors.html",
+    "start": 90217,
+    "end": 90471
+  },
+  {
+    "paragraph": 1968,
+    "old": "def dividir(a, b): return a / b  # Dejamos que Python arroje el error naturally",
+    "new": "def dividir(a, b): return a / b  # Dejamos que Python genere la excepción",
+    "reason": "Idioma",
+    "source": "",
+    "start": 94056,
+    "end": 94135
+  },
+  {
+    "paragraph": 1973,
+    "old": "# 3. Bucle interactivo",
+    "new": "# 2. Bucle interactivo",
+    "reason": "Numeración consecutiva",
+    "source": "",
+    "start": 94230,
+    "end": 94252
+  },
+  {
+    "paragraph": 2076,
+    "old": "3. Memoria: Importas decenas de herramientas que no vas a utilizar.",
+    "new": "3. Espacio de nombres: import * añade nombres y dificulta saber su origen. No evita cargar e inicializar el módulo; el problema principal es la claridad y las colisiones, no un supuesto ahorro de memoria.",
+    "reason": "Corregir razón contra import *",
+    "source": "https://docs.python.org/3.14/tutorial/modules.html",
+    "start": 99010,
+    "end": 99077
+  },
+  {
+    "paragraph": 2135,
+    "old": "Aunque muchos tutoriales te dirán que simplemente escribas pip install... en tu terminal, la forma más segura y profesional es usar:",
+    "new": "Ejecuta pip mediante el intérprete elegido: fuera de un entorno virtual, py -m pip en Windows o python3 -m pip en macOS/Linux. Dentro de un entorno activado, usa python -m pip. Los ejemplos siguientes con python suponen ese entorno activado; nombre_paquete es un marcador, no un paquete real que debas instalar.",
+    "reason": "Contexto de comandos pip",
+    "source": "https://docs.python.org/3.14/library/venv.html",
+    "start": 102360,
+    "end": 102492
+  },
+  {
+    "paragraph": 2164,
+    "old": "Un entorno virtual es una carpeta independiente dentro de tu proyecto que contiene su propia copia de Python y su propio espacio para instalar paquetes con pip. Así, el Proyecto A y el Proyecto B nunca entran en conflicto.",
+    "new": "venv crea un entorno sobre una instalación base, con paquetes propios y una copia o enlace al ejecutable según el sistema y las opciones. No es una instalación totalmente independiente ni una barrera de seguridad. Permite separar dependencias de proyectos. Fuente: https://docs.python.org/3.14/library/venv.html",
+    "reason": "Modelo venv",
+    "source": "https://docs.python.org/3.14/library/venv.html",
+    "start": 104070,
+    "end": 104292
+  },
+  {
+    "paragraph": 2167,
+    "old": "Ve a la carpeta de tu proyecto en la Terminal y ejecuta:",
+    "new": "Desde la carpeta del proyecto, usa python -m venv .venv en Windows con Python Install Manager o python3 -m venv .venv en macOS/Linux. El ejemplo siguiente corresponde a Windows.",
+    "reason": "Comandos venv",
+    "source": "https://docs.python.org/3.14/library/venv.html",
+    "start": 104332,
+    "end": 104388
+  },
+  {
+    "paragraph": 2170,
+    "old": "Esto crea una carpeta oculta llamada .venv (puedes llamarla como quieras, pero .venv es un estándar moderno) que contiene un Python aislado.",
+    "new": "Se crea .venv con su configuración y directorios. El punto inicial suele ocultarla en sistemas Unix, pero no implica que Windows la marque como oculta.",
+    "reason": "Nombre y visibilidad",
+    "source": "",
+    "start": 104418,
+    "end": 104558
+  },
+  {
+    "paragraph": 2173,
+    "old": "Para \"entrar\" al entorno, debes activarlo. El comando varía según tu sistema:",
+    "new": "La activación facilita usar el entorno, pero no es obligatoria. También puedes ejecutar directamente .venv/Scripts/python.exe en Windows o .venv/bin/python en macOS/Linux.",
+    "reason": "Activación opcional",
+    "source": "https://docs.python.org/3.14/library/venv.html",
+    "start": 104621,
+    "end": 104698
+  },
+  {
+    "paragraph": 2183,
+    "old": "Cuando el entorno está activo, normalmente verás (.venv) al inicio de la línea de comandos en tu terminal.",
+    "new": "Cuando está activo suele aparecer (.venv). Si PowerShell impide activar el script, puedes usar directamente su python.exe. La documentación ofrece Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser: modifica la política del usuario; úsalo solo si corresponde a tu equipo y sus reglas.",
+    "reason": "Alternativa sin cambiar política y opción documentada",
+    "source": "https://docs.python.org/3.14/library/venv.html",
+    "start": 104853,
+    "end": 104959
+  },
+  {
+    "paragraph": 2189,
+    "old": "Una vez activado el entorno (¡muy importante!), comprueba que estás usando el Python aislado:",
+    "new": "Comprueba el intérprete seleccionado y pip. La versión por sí sola no demuestra que estés dentro de .venv.",
+    "reason": "Verificación de entorno",
+    "source": "",
+    "start": 105161,
+    "end": 105254
+  },
+  {
+    "paragraph": 2191,
+    "old": "python --version",
+    "new": "python -c \"import sys; print(sys.executable); print(sys.prefix != sys.base_prefix)\"",
+    "reason": "Verificar entorno real",
+    "source": "https://docs.python.org/3.14/library/venv.html",
+    "start": 105263,
+    "end": 105279
+  },
+  {
+    "paragraph": 2217,
+    "old": "Si creas un archivo llamado math.py o random.py en tu proyecto, y dentro de tu código escribes import math, Python siempre buscará primero en tu carpeta actual. ",
+    "new": "Evita llamar random.py a un archivo situado junto a tu script si este usa import random: puede ocultar el módulo estándar. No ocurre igual en todos los módulos ni modos de ejecución.",
+    "reason": "Sombreado controlado",
+    "source": "https://docs.python.org/3.14/tutorial/modules.html",
+    "start": 106709,
+    "end": 106870
+  },
+  {
+    "paragraph": 2218,
+    "old": "Encontrará tu archivo en lugar de la biblioteca estándar oficial. Esto provocará que tu código se rompa con errores extraños de \"atributo no encontrado\".",
+    "new": "La importación consulta la caché de módulos y los buscadores configurados. En la configuración habitual, los módulos integrados y congelados se resuelven antes de buscar por sys.path. Al ejecutar un script, su carpeta suele encabezar sys.path; con -c o en modo interactivo suele ser el directorio actual. Puedes inspeccionarlo con import sys; print(sys.path). Fuente: https://docs.python.org/3.14/tutorial/modules.html",
+    "reason": "Orden de búsqueda sin absolutos",
+    "source": "https://docs.python.org/3.14/tutorial/modules.html",
+    "start": 106871,
+    "end": 107024
+  },
+  {
+    "paragraph": 2259,
+    "old": "4. Crea un archivo textos.py. Define una función formatear_resultado(valor) que devuelva \"El resultado calculated es: [valor]\".",
+    "new": "4. Crea un archivo textos.py. Define una función formatear_resultado(valor) que devuelva \"El resultado calculado es: [valor]\".",
+    "reason": "Idioma",
+    "source": "",
+    "start": 109462,
+    "end": 109589
+  },
+  {
+    "paragraph": 2321,
+    "old": "Una clase es el molde, plano o plantilla a partir del cual se crean los objetos. Define qué atributos y métodos tendrán los objetos que se fabriquen con ella, pero la clase en sí misma no es un objeto concreto (igual que el plano de una casa no es una casa).",
+    "new": "Una clase define el comportamiento y los atributos de sus instancias. La analogía del molde ayuda, pero en Python la clase también es un objeto: al ejecutar class se crea un objeto clase. Persona no es una instancia ordinaria de Persona; ana = Persona(...) crea una instancia.",
+    "reason": "Clase como objeto",
+    "source": "https://docs.python.org/3.14/tutorial/classes.html",
+    "start": 112883,
+    "end": 113141
+  },
+  {
+    "paragraph": 2473,
+    "old": "        print(\"¡Guau!\")",
+    "new": "        return \"¡Guau!\"",
+    "reason": "Unificar contrato de hablar",
+    "source": "",
+    "start": 119599,
+    "end": 119622
+  },
+  {
+    "paragraph": 2476,
+    "old": "mi_perro.hablar() # Imprime: ¡Guau!",
+    "new": "print(mi_perro.hablar()) # Imprime: ¡Guau!",
+    "reason": "Actualizar llamada tras return",
+    "source": "",
+    "start": 119643,
+    "end": 119678
+  },
+  {
+    "paragraph": 2530,
+    "old": "ERROR FRECUENTE: Olvidar self en la declaración de un método o al acceder a un atributo dentro de la clase (NameError: name 'nombre' is not defined).",
+    "new": "ERROR FRECUENTE: En un método de instancia, el primer parámetro recibe la instancia; por convención se llama self, pero no es una palabra reservada. Omitirlo puede producir TypeError al llamar al método. Escribir nombre en lugar de self.nombre puede causar NameError si nombre no está definido.",
+    "reason": "Separar self, TypeError y NameError",
+    "source": "https://docs.python.org/3.14/tutorial/classes.html",
+    "start": 122180,
+    "end": 122329
+  },
+  {
+    "paragraph": 2531,
+    "old": "ERROR FRECUENTE: Confundir la Clase (el molde) con la Instancia (el objeto). Persona.nombre = \"Ana\" es incorrecto; debe ser ana = Persona(), luego ana.nombre = \"Ana\".",
+    "new": "ATRIBUTOS: Persona.nombre = \"Ana\" es válido y asigna un atributo a la clase. ana.nombre = \"Ana\" asigna un atributo a esa instancia. No son equivalentes; crea primero la instancia con los argumentos que exija su __init__.",
+    "reason": "Clase frente a instancia",
+    "source": "https://docs.python.org/3.14/tutorial/classes.html",
+    "start": 122330,
+    "end": 122496
+  },
+  {
+    "paragraph": 2532,
+    "old": "ERROR FRECUENTE: Olvidar los paréntesis al llamar a un método: mi_perro.hablar no hace nada, devuelve la referencia de memoria. Debe ser mi_perro.hablar().",
+    "new": "ERROR FRECUENTE: mi_perro.hablar obtiene el método enlazado, pero no lo ejecuta. Para llamarlo escribe mi_perro.hablar(); si devuelve un texto, usa print(mi_perro.hablar()) para mostrarlo.",
+    "reason": "Método enlazado y ejecución",
+    "source": "",
+    "start": 122497,
+    "end": 122652
+  },
+  {
+    "paragraph": 2832,
+    "old": "Aunque usamos iterables a diario, Python internamente los maneja como \"Iteradores\". Un iterador es un objeto que sabe en qué punto de la colección se encuentra y recuerda cómo devolver el \"siguiente\" elemento usando la función next().",
+    "new": "Un iterable permite obtener un iterador con iter(). Un iterador entrega elementos con next() y se agota con StopIteration. Una lista es iterable, pero no es por sí misma un iterador. El bucle for obtiene un iterador y solicita elementos hasta que este se agota.",
+    "reason": "Iterable frente a iterador",
+    "source": "https://docs.python.org/3.14/tutorial/classes.html",
+    "start": 135682,
+    "end": 135916
+  },
+  {
+    "paragraph": 2835,
+    "old": "# Convertimos el iterable en un iterador explícito",
+    "new": "# Obtenemos un iterador del iterable; la lista no se transforma",
+    "reason": "Precisar iter()",
+    "source": "",
+    "start": 135949,
+    "end": 135999
+  },
+  {
+    "paragraph": 2856,
+    "old": "return: Devuelve un valor y destruye/termina la función inmediatamente.",
+    "new": "return: Termina la llamada actual y devuelve un valor; no destruye la definición de la función.",
+    "reason": "No confundir llamada con objeto función",
+    "source": "",
+    "start": 136838,
+    "end": 136909
+  },
+  {
+    "paragraph": 2911,
+    "old": "2. E (Enclosing): Variables en la función \"envolvente\" o padre (si hay funciones anidades).",
+    "new": "2. E (Enclosing): Nombres en ámbitos de funciones envolventes, cuando hay funciones anidadas.",
+    "reason": "Ortografía y alcance",
+    "source": "",
+    "start": 139670,
+    "end": 139761
+  },
+  {
+    "paragraph": 2912,
+    "old": "3. G (Global): Variables creadas fuera de todas las funciones (en el archivo principal).",
+    "new": "3. G (Global): Nombres del módulo donde se define la función.",
+    "reason": "Global no solo archivo principal",
+    "source": "",
+    "start": 139762,
+    "end": 139850
+  },
+  {
+    "paragraph": 2913,
+    "old": "4. B (Built-in): Palabras predefinidas por Python (ej. print, len).",
+    "new": "4. B (Built-in): Nombres incorporados, como las funciones print y len; no son palabras reservadas.",
+    "reason": "Terminología",
+    "source": "",
+    "start": 139851,
+    "end": 139918
+  },
+  {
+    "paragraph": 3218,
+    "old": "Copia profunda (Deep copy): b = copy.deepcopy(a). Clona la lista y TODO lo que contenga adentro. Independencia total.",
+    "new": "Copia profunda: copy.deepcopy(a) copia recursivamente los componentes que corresponda copiar. Un registro memo conserva relaciones compartidas y evita ciclos; algunas clases personalizan la copia y ciertos objetos no se duplican. No garantiza independencia total para cualquier objeto. Fuente: https://docs.python.org/3.14/library/copy.html",
+    "reason": "Límites deepcopy",
+    "source": "https://docs.python.org/3.14/library/copy.html",
+    "start": 154532,
+    "end": 154649
+  },
+  {
+    "paragraph": 3095,
+    "old": "En esta decimocuarta parte, consolidarás tu transición de programador intermedio a avanzado. Exploraremos conceptos profundos de la arquitectura de Python, patrones de diseño modernos, persistencia de datos y concurrencia.",
+    "new": "Sección avanzada y opcional para quien inicia. Requiere dominar funciones, colecciones, archivos, excepciones, módulos, clases e iteradores. Aborda arquitectura de Python, diseño, persistencia y concurrencia. Los temas solo introducidos aquí necesitarán práctica adicional; no se consideran dominados por haberlos leído.",
+    "reason": "Graduar expectativas sin quitar contenido",
+    "source": "",
+    "start": 148591,
+    "end": 148813
+  },
+  {
+    "paragraph": 3425,
+    "old": "En esta parte culminante, usaremos lo aprendido con un propósito profesional y ético: la defensa. Python es ampliamente utilizado en ciberseguridad para procesar datos, automatizar tareas y trabajar con registros y archivos. Esta sección es estrictamente educativa y defensiva. Todo ejercicio se realizará con datos simulados y recursos locales o expresamente autorizados.",
+    "new": "Sección avanzada y opcional. Continúa cuando domines las bases y los requisitos de cada ejercicio. Usaremos Python para procesar registros y archivos y automatizar tareas defensivas, con datos simulados y recursos locales o expresamente autorizados. Esta parte no adelanta la secuencia de tus clases.",
+    "reason": "Progresión y alcance defensivo",
+    "source": "",
+    "start": 164554,
+    "end": 164926
+  },
+  {
+    "paragraph": 3348,
+    "old": "        inicio = time.time()",
+    "new": "        inicio = time.perf_counter()",
+    "reason": "Medir intervalos",
+    "source": "https://docs.python.org/3.14/library/time.html",
+    "start": 161795,
+    "end": 161823
+  },
+  {
+    "paragraph": 3350,
+    "old": "        fin = time.time()",
+    "new": "        fin = time.perf_counter()",
+    "reason": "Medir intervalos",
+    "source": "https://docs.python.org/3.14/library/time.html",
+    "start": 161860,
+    "end": 161885
+  }
+]
