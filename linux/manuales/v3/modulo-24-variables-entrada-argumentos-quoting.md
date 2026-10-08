@@ -804,19 +804,27 @@ No todas las herramientas usan `--`, así que debes consultar documentación.
 ## 40. Preparar el laboratorio
 
 ```bash
-cd ~/linux-lab/modulo-23-bash
+cd ~/linux-lab
 pwd
 ```
 
-Crea una nueva carpeta si deseas separar:
+**Si `cd` falla, detente.** Comprueba que la ruta mostrada por `pwd` sea tu laboratorio antes de crear nada.
+
+Primero comprueba si el nombre está ocupado:
 
 ```bash
-mkdir -p ../modulo-24-bash-datos
-cd ../modulo-24-bash-datos
+ls -ld ./modulo-24-bash-datos
+```
+
+Si el resultado indica que no existe, crea la carpeta desde `~/linux-lab` y entra en ella:
+
+```bash
+mkdir ./modulo-24-bash-datos
+cd ./modulo-24-bash-datos
 pwd
 ```
 
-`mkdir -p` aquí solo crea el directorio si falta; no borra contenido existente.
+Si la carpeta ya existe, **no la sobrescribas ni la recrees**; inspecciona su contenido antes de continuar. Detente ante cualquier error.
 
 ## 41. Práctica A — variable simple
 
