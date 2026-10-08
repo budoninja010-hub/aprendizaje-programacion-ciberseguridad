@@ -1,3 +1,18 @@
+# Estado actual — Vigesimoctava entrega de v3
+
+Módulos 1–28 redactados y revisados documentalmente. Módulos 29–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 28 — Funciones, parámetros y ámbito en Bash](modulo-28-funciones-parametros-ambito.md).
+
+Esta entrega introduce definición y llamada de funciones, parámetros posicionales temporales, `"$@"`, validación de argumentos, `local`, ámbito dinámico, `return`, diferencia entre estados y datos, uso de stdout/stderr, captura con sustitución de comandos y composición de funciones pequeñas. Se advierte sobre efectos laterales de variables globales y sobre el uso de funciones dentro de subshells.
+
+La v2 y los Módulos 1–27 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 29 — Manejo de errores, `trap`, `mktemp`, límites de `set -e`/`set -u` y ShellCheck**.
+
+---
+
+## Registro histórico — Vigesimoséptima entrega y anteriores
 # Estado actual — Vigesimoséptima entrega de v3
 
 Módulos 1–27 redactados y revisados documentalmente. Módulos 28–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
