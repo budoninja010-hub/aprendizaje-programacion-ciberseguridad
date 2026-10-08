@@ -2,13 +2,13 @@
 
 Los **35 módulos** del núcleo están redactados. La auditoría documental transversal completa del 8 de octubre de 2026 está disponible en [03 — Auditoría transversal completa v3](03-auditoria-transversal-completa-v3-2026-10-08.md).
 
-**Dictamen:** APTO CON CORRECCIONES IMPORTANTES. No se detectaron errores críticos que obliguen a detener el estudio. Ya están corregidos RFC1918 (M19), los estados `0/100/1` de `dnf check-update` (M15/M35) y la semántica de `Persistent=true` (M30). Antes de congelar una edición consolidada quedan pendientes el endurecimiento de extracción `tar` no confiable (M31) y la respuesta ante secretos ya expuestos en Git/GitHub (M33).
+**Dictamen:** APTO CON CORRECCIONES IMPORTANTES. No se detectaron errores críticos que obliguen a detener el estudio. Ya están corregidos RFC1918 (M19), los estados `0/100/1` de `dnf check-update` (M15/M35), la semántica de `Persistent=true` (M30) y el endurecimiento de extracción `tar` no confiable (M31). Antes de congelar una edición consolidada queda pendiente la respuesta ante secretos ya expuestos en Git/GitHub (M33).
 
 La auditoría [02 — Registro de auditoría y fuentes](02-auditoria-fuentes.md) se conserva como **registro histórico de la primera entrega**; no representa ya el estado completo del núcleo.
 
 Las prácticas en el Linux del estudiante siguen pendientes de ejecutar y validar. Redacción completa no equivale a dominio demostrado.
 
-**Progreso de correcciones de prioridad alta:** 3/5 aplicadas. A01 (RFC1918 en M19), A02 (estados `0/100/1` de `dnf check-update` en M15/M35) y A03 (`Persistent=true` en M30) corregidas. Pendientes: endurecimiento de extracción `tar` no confiable (M31) y respuesta ante secretos ya expuestos en Git/GitHub (M33).
+**Progreso de correcciones de prioridad alta:** 4/5 aplicadas. A01 (RFC1918 en M19), A02 (estados `0/100/1` de `dnf check-update` en M15/M35), A03 (`Persistent=true` en M30) y A04 (extracción `tar` no confiable en M31) corregidas. Pendiente: respuesta ante secretos ya expuestos en Git/GitHub (M33).
 
 **Siguiente fase:** continuar con A02 en commits pequeños, luego fuentes upstream y homogeneización editorial, y finalmente realizar una auditoría post-corrección.
 
