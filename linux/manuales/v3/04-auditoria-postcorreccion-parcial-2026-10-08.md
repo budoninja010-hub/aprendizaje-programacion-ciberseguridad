@@ -23,3 +23,13 @@
 6. Continuar la auditoría transversal del resto de módulos.
 
 **Revisión documental ≠ ejecución práctica ≠ dominio del estudiante.**
+
+## Segunda pasada — consistencia de evaluaciones
+
+- **M13:** preguntas consecutivas 1–12 tras el commit correctivo `88711406`.
+- **M25:** mini evaluación consecutiva 1–14; la pregunta 11 comienza con «Por defecto» y debe incluirse al contar, aunque no comience con «¿».
+- **M27:** mini evaluación consecutiva 1–17; se mantienen las preguntas nuevas sobre `-e` y `-L`.
+- **M30:** mini evaluación consecutiva 1–18; la pregunta 7 empieza «si DOM...» y debe incluirse al contar.
+- **M35:** mini evaluación consecutiva 1–17. Hay otras listas numeradas anteriores en el módulo; la numeración reiniciada en una sección diferente no es un defecto.
+
+**Resultado de este alcance:** no se identificó un nuevo error de numeración en las cinco mini evaluaciones revisadas. El análisis no valida automáticamente la corrección de las respuestas ni las evaluaciones de los otros treinta módulos.
