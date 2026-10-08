@@ -235,11 +235,11 @@ A fecha de 8 de octubre de 2026...
 
 y no transformar esas frases en afirmaciones atemporales durante maquetación.
 
-### M04 — M13: añadir una definición breve de load average
+### M04 — M13: añadir una definición breve de load average ✅ CORREGIDO
 
 M13 evita diagnosticar por un único número, lo cual es correcto.
 
-**Mejora pedagógica:** añadir que, en Linux, la carga media incluye tareas ejecutables/running y tareas en estado no interrumpible (habitualmente asociadas a espera de I/O), promediadas en 1, 5 y 15 minutos. Evita que el alumno la confunda con porcentaje de CPU.
+**Mejora pedagógica aplicada:** el Módulo 13 ahora explica que, en Linux, la carga media incluye tareas en estado `R` y tareas en estado `D`, promediadas en 1, 5 y 15 minutos, y distingue explícitamente `load average` de `%CPU`. Commit: `3562d9cf291cb2e20f0b14a21f3fc2fe26c5509b`.
 
 ### M05 — M25: reforzar que el significado numérico es específico de cada programa
 
@@ -373,7 +373,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 | 10 | 🟢 Correcto | Mantener tratamiento seguro de nombres |
 | 11 | 🟢 Correcto | Sin corrección técnica prioritaria |
 | 12 | 🟢 Correcto | `umask` y ACL bien diferenciados |
-| 13 | 🟡 Mejora pedagógica | Definir load average para evitar confusión con CPU% |
+| 13 | 🟢 Mejora M04 aplicada | `load average` definido con estados R/D, intervalos 1/5/15 y diferencia frente a CPU% |
 | 14 | 🟢 Correcto | Mantener SIGTERM antes de SIGKILL |
 | 15 | 🟢 Corrección A02 aplicada | `dnf check-update` documentado como 0/100/1 y enlazado conceptualmente con M25 |
 | 16 | 🟡 Correcto con mantenimiento temporal | Conservar fecha en versiones actuales |
@@ -411,7 +411,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 
 6. M27 broken symlink/nullglob.
 7. sustituir fuentes espejo por upstream en M19/M21/M30/M34/M35 cuando corresponda.
-8. añadir definición breve de load average en M13.
+8. ~~añadir definición breve de load average en M13.~~ ✅ Corregido.
 9. precisión textual de estados no-cero en M25.
 
 ### Prioridad 3 — consolidación editorial
