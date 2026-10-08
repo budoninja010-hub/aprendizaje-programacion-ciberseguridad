@@ -739,7 +739,7 @@ No uses `sudo`, `kill`, `pkill`, `killall` ni cambios de prioridad.
    - A) Sí.
    - B) No.
 
-9. ¿VSZ equivale siempre a RAM física realmente ocupada?
+12. ¿VSZ equivale siempre a RAM física realmente ocupada?
    - A) Sí.
    - B) No.
 
@@ -753,6 +753,9 @@ PID significa:
 PPID significa:
 ps sirve para:
 top sirve para:
+load average significa:
+Sus intervalos son:
+¿Por qué no equivale a %CPU?:
 htop es:
 STAT representa:
 Un estado S puede significar:
