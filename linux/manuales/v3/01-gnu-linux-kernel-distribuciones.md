@@ -133,9 +133,9 @@ cat /etc/os-release
 - `/etc/os-release` es una ruta absoluta: empieza por `/`, la raíz del árbol de archivos.
 - Busca `PRETTY_NAME`, un nombre legible del sistema; `ID` identifica la distribución y `VERSION_ID`, cuando existe, su versión.
 
-No ejecutes como órdenes las líneas que aparecen en la salida. Solo léelas. En un contenedor, esos datos describen su entorno de usuarios; no bastan para deducir la distribución del equipo anfitrión. [Especificación de os-release, fuente del proyecto systemd](https://github.com/systemd/systemd/blob/main/man/os-release.xml).
+No ejecutes como órdenes las líneas que aparecen en la salida. Solo léelas. En un contenedor, esos datos describen su entorno de usuarios; no bastan para deducir la distribución del equipo anfitrión. [Especificación oficial de os-release](https://www.freedesktop.org/software/systemd/man/latest/os-release.html).
 
-Si el archivo no existe, no lo crees ni lo descargues: registra el error. La práctica deberá adaptarse al entorno. Su presencia tampoco prueba por sí sola que systemd esté actuando como gestor del sistema.
+Si `/etc/os-release` no existe, consulta la ruta alternativa oficial `/usr/lib/os-release` (solo lectura). No crees ni descargues estos archivos: registra el resultado. La práctica deberá adaptarse al entorno. Su presencia tampoco prueba por sí sola que systemd esté actuando como gestor del sistema.
 
 **Ejercicio corto:** indica qué orden usarías para conocer la distribución y cuál para consultar el núcleo. Explica por qué son dos consultas diferentes.
 
