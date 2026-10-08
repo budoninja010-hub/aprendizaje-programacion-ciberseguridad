@@ -482,14 +482,10 @@ whoami
 Luego, si puedes escribirlo manualmente sin copiar datos privados innecesarios:
 
 ```bash
-grep '^TU_USUARIO:' /etc/passwd
+getent passwd "$(id -un)"
 ```
 
-Sustituye `TU_USUARIO` por tu nombre real de usuario.
-
-El patrón empieza con `^`, que aquí significa “inicio de línea” dentro de una expresión regular de grep.
-
-No estudiaremos regex todavía en profundidad.
+`id -un` obtiene el nombre de usuario actual; `getent passwd` consulta la base de cuentas mediante NSS, que también puede integrar servicios de directorio como LDAP o SSSD. Buscar solo en `/etc/passwd` con `grep` no permite concluir que una cuenta no existe si la búsqueda queda vacía.
 
 Si la línea aparece, no la publiques completa. Úsala solo para reconocer la relación entre nombre de cuenta y registro del sistema.
 
