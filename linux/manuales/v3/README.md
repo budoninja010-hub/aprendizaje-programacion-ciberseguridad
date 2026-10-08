@@ -10,7 +10,9 @@ Las prácticas en el Linux del estudiante siguen pendientes de ejecutar y valida
 
 **Progreso de correcciones de prioridad alta:** ✅ **5/5 aplicadas.** A01–A05 están corregidas y registradas en commits separados.
 
-**Siguiente fase:** aplicar mejoras de prioridad media (M13, M25, M27 y trazabilidad upstream en M19/M21/M30/M34/M35), después homogeneización editorial y finalmente auditoría post-corrección.
+**Progreso de mejoras de prioridad media:** M13 (`load average`) ✅ corregido. Pendientes: M25 (precisión de estados no-cero), M27 (globbing y symlink roto) y trazabilidad upstream en M19/M21/M30/M34/M35.
+
+**Siguiente fase:** continuar con M25, después M27 y las mejoras de trazabilidad upstream; luego homogeneización editorial y auditoría post-corrección.
 
 ---
 
