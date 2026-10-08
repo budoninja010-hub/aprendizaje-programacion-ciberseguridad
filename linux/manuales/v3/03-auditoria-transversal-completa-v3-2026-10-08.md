@@ -202,7 +202,7 @@ M33 correctamente enseña que `.gitignore` no afecta automáticamente archivos y
 
 ## 7. Hallazgos de prioridad MEDIA
 
-### M01 — M27: patrón de glob y enlaces simbólicos rotos
+### M01 — M27: patrón de glob y enlaces simbólicos rotos ✅ CORREGIDO
 
 El patrón:
 
@@ -387,7 +387,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 | 24 | 🟢 Correcto | Quoting y `"$@"` correctamente explicados |
 | 25 | 🟢 Mejora M05 aplicada | Estados no cero diferenciados de errores operativos |
 | 26 | 🟢 Correcto | `[ ]`, `[[ ]]`, patrones y aritmética correctos |
-| 27 | 🟡 Mejora de robustez | Aclarar broken symlink/nullglob |
+| 27 | 🟢 Mejora M01 aplicada | Aclarado -e frente a -L y nullglob |
 | 28 | 🟢 Correcto | Ámbito dinámico y `return` bien tratados |
 | 29 | 🟢 Correcto | `set -e`, `pipefail`, `mktemp` y ShellCheck bien delimitados |
 | 30 | 🟢 Corrección A03 aplicada | `Persistent=true` precisado con fuente upstream de systemd; mejora upstream de Cronie aún pendiente |
@@ -409,7 +409,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 
 ### Prioridad 2 — robustez y trazabilidad
 
-6. M27 broken symlink/nullglob.
+6. ~~M27 broken symlink/nullglob.~~ ✅ Corregido.
 7. sustituir fuentes espejo por upstream en M19/M21/M30/M34/M35 cuando corresponda.
 8. ~~añadir definición breve de load average en M13.~~ ✅ Corregido.
 9. ~~precisión textual de estados no-cero en M25.~~ ✅ Corregido.
