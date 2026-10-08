@@ -43,3 +43,21 @@ Se abrieron y consultaron las páginas originales de: espejo público de iproute
 - M21: la URL `https://wiki.nftables.org/` aparecía dos veces en la bibliografía; se retiró la repetición. Commit `48982c1cc34e82ff202088ff4b985af5401675f3`.
 
 **Pendiente:** revisión fuente-afirmación en cada módulo, enlaces restantes y validación técnica de ejercicios.
+
+## Cuarta pasada — matriz afirmación–fuente M19 y M21
+
+**Alcance:** comparación del contenido actual de M19 y M21 con las referencias primarias ya registradas. Esta matriz es una comprobación de trazabilidad documental; no sustituye una prueba de ejecución ni una nueva lectura en línea de cada sección de las fuentes.
+
+| Módulo y afirmación | Fuente original aplicable | Evaluación |
+|---|---|---|
+| M19 §7: bloques privados `10/8`, `172.16/12`, `192.168/16` y ausencia de unicidad global | RFC 1918, secciones 3 y 4: https://www.rfc-editor.org/rfc/rfc1918 | Coherente con la fuente normativa |
+| M19 §7: las direcciones privadas pueden enrutarse internamente; NAT no forma parte obligatoria de RFC 1918 | RFC 1918: https://www.rfc-editor.org/rfc/rfc1918 | Coherente; NAT es un mecanismo adicional, no un requisito del RFC |
+| M19 §§11–14: `ip link`, `ip address`, `-br` | iproute2 upstream: https://git.kernel.org/pub/scm/network/iproute2/iproute2.git/ y páginas `ip(8)`/`ip-address(8)` | Referencias pertinentes; comprobar opciones por versión instalada |
+| M19 §§19–20: rutas y coincidencia de prefijos | iproute2 `ip-route(8)`: https://man7.org/linux/man-pages/man8/ip-route.8.html | Explicación introductoria válida; se posponen policy routing y métricas |
+| M21 §§4–7: Netfilter, nftables, familias `ip`, `ip6`, `inet` | Netfilter: https://www.netfilter.org/projects/nftables/index.html y https://wiki.nftables.org/ | Referencias pertinentes para los conceptos |
+| M21 §§13–16: UFW como interfaz de administración y comportamiento inicial documentado para Ubuntu | Ubuntu Security: https://documentation.ubuntu.com/security/security-features/network/firewall/ | Afirmación acotada a Ubuntu; no extender a otras distribuciones |
+| M21 §§17–21: zonas, servicios y diferencias runtime/permanent | firewalld: https://firewalld.org/documentation/ y RHEL 10: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/configuring_firewalls_and_packet_filters/ | Referencias pertinentes; los cambios runtime y permanent se mantienen solo conceptuales |
+
+**Resultado provisional:** no se detectó contradicción técnica evidente en las afirmaciones examinadas. No se declara que cada enlace específico o cada versión se haya comprobado exhaustivamente. Las prácticas continúan siendo locales, de consulta y sin cambios de configuración.
+
+**Siguiente revisión:** contraste puntual de M30 y M34, más revisión de las afirmaciones de versión de M16 y M32.
