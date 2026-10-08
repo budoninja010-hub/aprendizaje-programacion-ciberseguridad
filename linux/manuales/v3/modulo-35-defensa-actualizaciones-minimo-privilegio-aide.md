@@ -176,6 +176,24 @@ Puede contactar repositorios configurados.
 
 En esta práctica **no instalamos nada**.
 
+Recuerda la semántica específica documentada por DNF:
+
+```text
+0   → no hay actualizaciones disponibles
+100 → hay actualizaciones disponibles
+1   → ocurrió un error
+```
+
+Esto importa especialmente en un script defensivo. No debes escribir una regla genérica del tipo:
+
+```text
+si estado != 0 → error
+```
+
+para `dnf check-update`, porque interpretarías incorrectamente el estado `100`.
+
+Este punto conecta con el **Módulo 25 — Códigos de salida** y con el **Módulo 15 — Paquetes, repositorios y actualizaciones**: el significado de un código debe consultarse en la documentación de la herramienta concreta.
+
 ## 12. Consultar avisos de seguridad
 
 En RHEL 10 puede usarse:
@@ -951,18 +969,20 @@ y confirma que no hay información sensible.
 1. ¿mínimo privilegio significa usar root siempre? A) Sí B) No
 2. ¿`sudo -l` consulta tus autorizaciones? A) Sí B) No
 3. ¿`dnf check-update` instala automáticamente paquetes? A) Sí B) No
-4. ¿aplicar actualizaciones puede afectar kernel o servicios? A) Sí B) No
-5. ¿`systemctl --failed` sirve para revisar unidades fallidas? A) Sí B) No
-6. ¿una advertencia del journal prueba por sí sola un ataque? A) Sí B) No
-7. ¿`ss -lntup` puede ayudar a inventariar listeners locales? A) Sí B) No
-8. ¿un hash distinto demuestra quién cambió el archivo? A) Sí B) No
-9. ¿AIDE usa una base de referencia? A) Sí B) No
-10. ¿AIDE impide todos los cambios? A) Sí B) No
-11. ¿cambios legítimos pueden generar diferencias en AIDE? A) Sí B) No
-12. ¿debes actualizar la baseline sin investigar una alerta? A) Sí B) No
-13. ¿AIDE reemplaza un sistema de backups? A) Sí B) No
-14. ¿la evidencia debe sanitizarse antes de GitHub? A) Sí B) No
-15. ¿una defensa responsable incluye recuperación? A) Sí B) No
+4. ¿un estado `100` de `dnf check-update` significa que hay actualizaciones disponibles? A) Sí B) No
+5. ¿un estado `1` de `dnf check-update` representa un error? A) Sí B) No
+6. ¿aplicar actualizaciones puede afectar kernel o servicios? A) Sí B) No
+7. ¿`systemctl --failed` sirve para revisar unidades fallidas? A) Sí B) No
+8. ¿una advertencia del journal prueba por sí sola un ataque? A) Sí B) No
+9. ¿`ss -lntup` puede ayudar a inventariar listeners locales? A) Sí B) No
+10. ¿un hash distinto demuestra quién cambió el archivo? A) Sí B) No
+11. ¿AIDE usa una base de referencia? A) Sí B) No
+12. ¿AIDE impide todos los cambios? A) Sí B) No
+13. ¿cambios legítimos pueden generar diferencias en AIDE? A) Sí B) No
+14. ¿debes actualizar la baseline sin investigar una alerta? A) Sí B) No
+15. ¿AIDE reemplaza un sistema de backups? A) Sí B) No
+16. ¿la evidencia debe sanitizarse antes de GitHub? A) Sí B) No
+17. ¿una defensa responsable incluye recuperación? A) Sí B) No
 
 ## 70. Registro de aprendizaje
 
@@ -970,6 +990,10 @@ y confirma que no hay información sensible.
 Mínimo privilegio significa:
 `sudo -l` sirve para:
 `dnf check-update` sirve para:
+Estado 0 de `dnf check-update` significa:
+Estado 100 de `dnf check-update` significa:
+Estado 1 de `dnf check-update` significa:
+¿Por qué no debo tratar todo estado no-cero como error?:
 `systemctl --failed` sirve para:
 `journalctl` sirve para:
 `ss -lntup` sirve para:
@@ -1008,6 +1032,7 @@ Fuentes principales:
 - Red Hat Enterprise Linux 10 — Security hardening: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/security_hardening/
 - RHEL 10 — Checking integrity with AIDE: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/pdf/security_hardening/index
 - RHEL 10 — Managing sudo access: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/security_hardening/managing-sudo-access
+- DNF Project — Command Reference, `check-update`: https://dnf.readthedocs.io/en/latest/command_ref.html#check-update-command
 - RHEL 10 — Managing software with DNF: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/managing_software_with_the_dnf_tool/updating-rhel-content
 - RHEL 10 — Managing and monitoring security updates: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/risk_reduction_and_recovery_operations/managing-and-monitoring-security-updates
 - systemd — `systemctl`, `journalctl`: https://www.freedesktop.org/software/systemd/man/latest/
@@ -1017,7 +1042,7 @@ Fuentes principales:
 Puntos verificados documentalmente:
 
 - RHEL 10 recomienda gestionar `sudo` para permitir tareas administrativas específicas sin iniciar sesión directamente como root;
-- `dnf check-update` lista actualizaciones disponibles y RHEL permite consultar advisories de seguridad con `dnf updateinfo`;
+- `dnf check-update` lista actualizaciones disponibles; DNF documenta estado `0` si no hay actualizaciones, `100` si hay actualizaciones y `1` si ocurre un error; RHEL permite consultar advisories de seguridad con `dnf updateinfo`;
 - `dnf upgrade --security` instala actualizaciones de seguridad y por tanto es una operación modificadora, no una consulta;
 - AIDE crea una base de datos de archivos y luego compara el estado actual para detectar diferencias;
 - RHEL documenta `aide --init` para inicializar la base y `aide --check` para realizar comprobaciones;
