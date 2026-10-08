@@ -977,6 +977,9 @@ Para considerar este módulo **DOMINADO** deberás poder en más de una ocasión
 
 Fuentes principales:
 
+- Cronie upstream (código y manuales del proyecto): https://github.com/cronie-crond/cronie
+- systemd upstream (código y manuales): https://github.com/systemd/systemd/tree/main/man
+- Las páginas man7 siguientes son copias consultables de manuales; para contrastar cambios de versión, revisar upstream.
 - Cronie `crontab(5)`: https://man7.org/linux/man-pages/man5/crontab.5.html
 - Cronie `crond(8)`: https://man7.org/linux/man-pages/man8/crond.8.html
 - systemd upstream — `systemd.timer(5)`: https://github.com/systemd/systemd/blob/main/man/systemd.timer.xml
