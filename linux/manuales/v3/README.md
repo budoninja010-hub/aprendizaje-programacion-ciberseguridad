@@ -12,7 +12,7 @@ Las prácticas en el Linux del estudiante siguen pendientes de ejecutar y valida
 
 **Progreso de mejoras de prioridad media:** M13 (`load average`) ✅ corregido. M25 (precisión de estados no-cero) ✅ corregido. M27 (globbing y symlink roto) ✅ corregido. Trazabilidad upstream añadida en M19/M21/M30/M34/M35; pendiente validación de enlaces en auditoría post-corrección.
 
-**Siguiente fase:** homogeneización editorial y auditoría post-corrección, incluida verificación de enlaces upstream.
+**Homogeneización editorial M1–M4:** anexo de criterios de evaluación, estado de dominio y fuentes primarias incorporado en cuatro commits; se preservan contenidos originales. **Siguiente fase:** auditoría post-corrección, incluida verificación de enlaces upstream y revisión de redundancias editoriales.
 
 ---
 
