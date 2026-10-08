@@ -9,7 +9,7 @@ Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Vigesimoqui
 Al terminar este módulo podrás:
 
 - explicar qué es un código o estado de salida;
-- interpretar `0` como éxito y un valor distinto de `0` como fallo para la lógica de Bash;
+- interpretar `0` como éxito y un valor distinto de `0` como condición no exitosa para la lógica de Bash, sin asumir que siempre indica un error operativo;
 - consultar inmediatamente el último estado con `$?`;
 - guardar un estado antes de ejecutar otra orden;
 - diferenciar `;`, `&&` y `||`;
@@ -30,14 +30,14 @@ Cuando una orden termina comunica a la shell un número llamado **estado de sali
 
 ```text
 0       → éxito
-1–255   → algún tipo de fallo o condición no exitosa
+1–255   → estado no exitoso para las decisiones de Bash; significado específico según el programa
 ```
 
 Para empezar no necesitas memorizar todos los números. La pregunta principal es: **¿la orden terminó con éxito o no?**
 
 ## 3. Por qué 0 significa éxito
 
-Bash dispone de una forma general de representar éxito: `0`. Los valores distintos de cero pueden representar diferentes fallos o condiciones no exitosas.
+Bash dispone de una forma general de representar éxito: `0`. Los valores distintos de cero hacen que Bash tome la rama «no exitosa», pero pueden representar errores, ausencia de coincidencias, resultados especiales u otras condiciones documentadas por cada herramienta.
 
 No interpretes automáticamente `1`, `2`, `3`, etc. con un significado universal. Muchos programas documentan sus propios códigos.
 
@@ -224,6 +224,15 @@ Si escribes `exit` sin número, Bash utiliza el estado de la última orden ejecu
 ## 16. No inventes significados universales
 
 Un programa puede documentar códigos diferentes a otro. Para códigos específicos, consulta la documentación del programa que los genera.
+
+**Dos niveles de interpretación:**
+
+1. **Bash:** `0` permite continuar por `&&`; un estado no cero permite continuar por `||`.
+2. **Programa:** el significado real del número depende de su contrato documentado.
+
+Por ejemplo, `dnf check-update` documenta `0` si no hay actualizaciones, `100` si las hay y `1` cuando ocurre un error. Así, `100` activa la rama de `||` aunque no signifique un error operativo. Esta distinción se desarrolla también en los Módulos 15 y 35.
+
+**Ejercicio de interpretación:** si `dnf check-update` devuelve `100`, responde por separado: ¿qué rama elegiría Bash en `orden && A || B`? ¿Qué significa `100` para DNF? No ejecutes DNF para contestar.
 
 ## 17. Estados especiales 126 y 127
 
@@ -466,6 +475,7 @@ Si `cd` falla, el script termina. Si tiene éxito, continúa.
 | Usar `||` como si terminara el script | Puede ejecutar una alternativa y continuar | Usa `exit` cuando corresponda |
 | Memorizar `A && B || C` como `if/else` | `C` puede ejecutarse si `B` falla | Usa `if` cuando lo estudies |
 | Interpretar texto visible como estado | Son conceptos separados | Consulta el código de salida |
+| Tratar todo estado no cero como error operativo | Algunos programas usan estados especiales esperados | Consulta la documentación del comando y separa semántica de Bash de semántica del programa |
 | Encadenar cambios de alto impacto | Reduce oportunidades de revisar | Mantén pasos controlados |
 | Asumir que una tubería refleja todos los fallos | Por defecto usa la última orden | Estudiaremos `pipefail` en el Módulo 29 |
 
@@ -511,13 +521,17 @@ No se considerará dominado solo porque funcione: también debes explicar por qu
 10. ¿`A && B || C` es siempre equivalente a `if/else`? A) Sí B) No
 11. Por defecto, ¿qué orden determina el estado de una tubería? A) Primera B) Última
 12. ¿debes consultar la documentación para interpretar códigos específicos? A) Sí B) No
+13. Si `dnf check-update` devuelve `100`, ¿significa necesariamente un error? A) Sí B) No
+14. ¿un estado `100` hace que Bash considere exitosa la condición de `&&`? A) Sí B) No
 
 ## 42. Registro de aprendizaje
 
 ```text
 Un código de salida es:
 0 significa:
-Un valor no-cero significa en general:
+Un valor no-cero significa para el control de flujo de Bash:
+¿Por qué no siempre equivale a un error operativo?:
+¿Qué significa 100 para dnf check-update?:
 $? contiene:
 ¿Por qué debo guardar $? inmediatamente?:
 ; significa:
@@ -546,6 +560,7 @@ El Módulo 26 añadirá `if`, `test`, `[ ]`, `[[ ]]`, `case` y aritmética.
 
 Fuentes principales:
 
+- DNF Project — check-update: https://dnf.readthedocs.io/en/latest/command_ref.html#check-update-command
 - GNU Bash Reference Manual — Exit Status: https://www.gnu.org/software/bash/manual/html_node/Exit-Status.html
 - GNU Bash Reference Manual — Lists of Commands: https://www.gnu.org/software/bash/manual/html_node/Lists.html
 - GNU Bash Reference Manual — Pipelines: https://www.gnu.org/software/bash/manual/html_node/Pipelines.html
