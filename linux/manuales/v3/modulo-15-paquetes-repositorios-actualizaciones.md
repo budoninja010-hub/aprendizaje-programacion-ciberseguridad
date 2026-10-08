@@ -406,7 +406,31 @@ dnf check-update
 
 para comprobar actualizaciones disponibles.
 
-Esta operación consulta metadatos y puede devolver un estado de salida especial cuando existen actualizaciones.
+Esta operación **consulta** actualizaciones; no las instala.
+
+La documentación oficial de DNF define estos estados de salida para `check-update`:
+
+```text
+0   → no hay actualizaciones disponibles
+100 → hay actualizaciones disponibles
+1   → ocurrió un error
+```
+
+Por tanto, en este comando específico:
+
+```text
+estado distinto de 0 ≠ necesariamente error
+```
+
+El valor `100` es un resultado esperado cuando DNF encuentra actualizaciones. Esto conecta directamente con el **Módulo 25 — Códigos de salida**: siempre debes interpretar un estado según la documentación del programa que lo produjo.
+
+Ejemplo de observación:
+
+```bash
+dnf check-update
+estado=$?
+printf 'Estado de dnf check-update: %s\n' "$estado"
+```
 
 No confundas “hay actualizaciones disponibles” con “ya fueron instaladas”.
 
@@ -813,15 +837,23 @@ Sin modificar el sistema:
    - A) Sí.
    - B) No.
 
-8. ¿Debes añadir repositorios de terceros sin verificar su origen?
+8. Si `dnf check-update` devuelve `100`, ¿significa necesariamente un error?
+   - A) Sí.
+   - B) No; significa que hay actualizaciones disponibles.
+
+9. Si `dnf check-update` devuelve `0`, ¿qué significa?
+   - A) No hay actualizaciones disponibles.
+   - B) La instalación falló.
+
+10. ¿Debes añadir repositorios de terceros sin verificar su origen?
    - A) Sí.
    - B) No.
 
-9. ¿Es recomendable ejecutar directamente código remoto con `curl ... | bash` sin revisión?
+11. ¿Es recomendable ejecutar directamente código remoto con `curl ... | bash` sin revisión?
    - A) Sí.
    - B) No.
 
-10. ¿Una actualización de paquetes equivale siempre a migrar de versión mayor de la distribución?
+12. ¿Una actualización de paquetes equivale siempre a migrar de versión mayor de la distribución?
    - A) Sí.
    - B) No.
 
@@ -853,6 +885,8 @@ Fuentes principales verificadas para esta edición:
   https://ubuntu.com/server/docs/how-to/software/package-management/
 - Debian — APT User's Guide y manuales de usuario:
   https://www.debian.org/doc/user-manuals
+- DNF Project — Command Reference, `check-update`:
+  https://dnf.readthedocs.io/en/latest/command_ref.html#check-update-command
 - Red Hat Enterprise Linux 10 — Managing software with the DNF tool:
   https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/managing_software_with_the_dnf_tool/index
 - Red Hat Enterprise Linux 10 — DNF commands list:
