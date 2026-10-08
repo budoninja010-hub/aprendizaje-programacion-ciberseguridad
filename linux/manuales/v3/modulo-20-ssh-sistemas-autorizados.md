@@ -165,6 +165,8 @@ Primero compara la fingerprint con una fuente confiable, por ejemplo:
 - administrador autorizado;
 - inventario de infraestructura confiable.
 
+**Procedimiento en un servidor propio o autorizado:** desde su consola confiable, el administrador puede consultar la huella de la clave pública del host con `ssh-keygen -l -f /etc/ssh/ssh_host_ed25519_key.pub`. En el cliente, compara visualmente la huella mostrada por SSH con la obtenida desde esa consola o canal independiente. No copies claves privadas ni aceptes huellas sin verificar.
+
 Una fingerprint desconocida no debe aceptarse solo porque “es la primera vez”.
 
 ## 10. known_hosts
@@ -175,7 +177,7 @@ OpenSSH mantiene identificaciones de hosts conocidos normalmente en:
 ~/.ssh/known_hosts
 ```
 
-Cuando un host ya conocido presenta una clave distinta, el cliente puede advertirlo.
+Cuando un host ya conocido presenta una clave distinta, el cliente puede advertirlo y, por seguridad, OpenSSH deshabilita la autenticación por contraseña ante una clave de host cambiada.
 
 Eso no significa automáticamente un ataque; también puede ocurrir tras:
 
@@ -346,7 +348,7 @@ chmod 777
 
 sobre `~/.ssh` o claves.
 
-Los permisos exactos deben seguir las expectativas del cliente y la política del sistema.
+Como referencia habitual de OpenSSH: `~/.ssh` debe estar restringido al propietario (modo `700`); las claves privadas y `~/.ssh/config` pueden mantenerse en modo `600`. `authorized_keys` también debe estar protegido frente a escritura ajena. Comprueba los permisos con `ls -ld ~/.ssh` y `ls -l ~/.ssh/config` cuando existan. No cambies permisos de archivos reales sin comprender primero M12 y las políticas del equipo.
 
 ## 21. Generar una clave de laboratorio — opcional
 
@@ -460,9 +462,11 @@ y, si usas systemd:
 
 ```bash
 systemctl status ssh.service
+systemctl status ssh.socket
+systemctl status sshd.service
 ```
 
-o el nombre real que exista en tu distribución.
+Comprueba **solo la unidad que exista**: Ubuntu reciente puede activar OpenSSH mediante `ssh.socket`, mientras que RHEL suele utilizar `sshd.service`. Una unidad `ssh.service` inactiva no demuestra por sí sola que el servidor esté apagado. Contrasta con la escucha de puertos mediante `ss -lnt`.
 
 **No instales ni habilites un servidor SSH solo para completar este módulo.**
 
