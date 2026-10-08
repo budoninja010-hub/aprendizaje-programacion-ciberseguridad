@@ -325,18 +325,48 @@ La cabecera de `top` puede mostrar información como:
 
 El formato y etiquetas pueden variar entre versiones.
 
-No conviertas un solo número alto observado durante un instante en un diagnóstico.
+### Qué significa `load average`
 
-Para diagnosticar rendimiento hay que considerar:
+En Linux, los tres valores de carga promedio representan promedios de **1, 5 y 15 minutos**.
 
-- duración;
-- carga;
-- número de CPU;
-- memoria;
+La documentación de `/proc/loadavg` los describe a partir del número de tareas que están:
+
+- en estado `R`: ejecutándose o listas para ejecutarse;
+- en estado `D`: espera no interrumpible, normalmente asociada a I/O.
+
+Ejemplo conceptual:
+
+```text
+load average: 0.40, 0.25, 0.20
+              └─1m   └─5m   └─15m
+```
+
+Esto **no es un porcentaje de CPU**.
+
+```text
+load average ≠ %CPU
+```
+
+Un valor de carga tampoco puede interpretarse correctamente sin contexto. Debes considerar, entre otras cosas:
+
+- cuántas CPU lógicas tiene el sistema;
+- cuánto tiempo dura la carga;
+- si existen tareas en espera no interrumpible;
+- uso de memoria;
 - I/O;
 - contexto de la aplicación.
 
-Ese análisis queda fuera de esta introducción.
+Por ejemplo, una carga de `4.0` no significa automáticamente «400 % de CPU» ni demuestra por sí sola que exista un problema.
+
+También evita una simplificación opuesta:
+
+> «load average solo cuenta procesos usando CPU».
+
+En Linux puede incluir tareas en estado `D`, por lo que una carga elevada puede estar relacionada con espera de I/O y no únicamente con trabajo activo de CPU.
+
+No conviertas un solo número alto observado durante un instante en un diagnóstico.
+
+El diagnóstico de rendimiento en profundidad queda fuera de esta introducción.
 
 ## 19. Ordenar en top
 
@@ -624,6 +654,8 @@ El Módulo 14 enseñará señales con un proceso creado expresamente para labora
 | Memorizas un PID | Los PID cambian y pueden reutilizarse | Consulta el PID actual |
 | Crees que `S` significa fallo | Muchos procesos esperan normalmente | Interpreta estado según contexto |
 | Lees VSZ como RAM real exacta | Memoria virtual y residente son métricas distintas | Usa contexto; no simplifiques |
+| Confundes load average con %CPU | Son métricas diferentes | Interpreta carga como tareas R/D promediadas en 1, 5 y 15 min |
+| Crees que load average solo refleja CPU | También puede incluir tareas en espera no interrumpible | Considera I/O y estado D |
 | Terminas procesos desconocidos | Puedes afectar servicios o datos | Solo observa en este módulo |
 | Usas `sudo top` | Privilegios innecesarios | Ejecuta como usuario normal |
 | Instalas `htop` solo por la práctica | Es opcional | Omite si no está disponible |
@@ -695,6 +727,18 @@ No uses `sudo`, `kill`, `pkill`, `killall` ni cambios de prioridad.
    - A) Sí.
    - B) No.
 
+9. ¿`load average` es lo mismo que porcentaje de CPU?
+   - A) Sí.
+   - B) No.
+
+10. ¿los tres valores de load average representan aproximadamente 1, 5 y 15 minutos?
+   - A) Sí.
+   - B) No.
+
+11. ¿en Linux la carga puede incluir tareas en estado `D` además de tareas `R`?
+   - A) Sí.
+   - B) No.
+
 9. ¿VSZ equivale siempre a RAM física realmente ocupada?
    - A) Sí.
    - B) No.
@@ -725,12 +769,23 @@ Fuentes principales:
 
 - procps-ng / `ps(1)`:
   https://man7.org/linux/man-pages/man1/ps.1.html
-- procps-ng / `top(1)`:
-  https://man7.org/linux/man-pages/man1/top.1.html
+- procps-ng upstream — `top(1)`:
+  https://gitlab.com/procps-ng/procps/-/blob/master/man/top.1
+- Linux man-pages project — `proc_loadavg(5)`:
+  https://www.kernel.org/pub/linux/docs/man-pages/book/man-pages-6.17.pdf
+- Linux kernel documentation — `/proc` filesystem:
+  https://docs.kernel.org/filesystems/proc.html
 - Linux man-pages — `proc(5)`:
   https://man7.org/linux/man-pages/man5/proc.5.html
 - htop:
   https://htop.dev/
+
+Puntos verificados documentalmente:
+
+- `top` muestra la carga media del sistema para 1, 5 y 15 minutos;
+- `/proc/loadavg` define sus tres primeros campos a partir de tareas en cola de ejecución (estado `R`) o en espera no interrumpible de I/O (estado `D`) promediadas en 1, 5 y 15 minutos;
+- `load average` no es un porcentaje de CPU;
+- una carga elevada requiere contexto de CPU, duración, I/O, memoria y aplicación antes de diagnosticar un problema.
 
 Se posponen:
 
