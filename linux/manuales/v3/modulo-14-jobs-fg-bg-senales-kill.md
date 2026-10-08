@@ -126,7 +126,7 @@ puedes pulsar:
 Ctrl+Z
 ```
 
-La shell normalmente envía una señal de suspensión al trabajo y recupera el prompt.
+El **controlador de terminal** envía **SIGTSTP** al grupo de procesos en primer plano cuando pulsas `Ctrl+Z`; después, la shell recupera el prompt. **SIGTSTP** puede gestionarse por el programa, a diferencia de **SIGSTOP**, que no puede capturarse ni ignorarse.
 
 Después:
 
@@ -204,7 +204,8 @@ Ejemplos comunes:
 SIGINT  → interrupción
 SIGTERM → solicitud de terminación
 SIGKILL → terminación forzada por el kernel
-SIGSTOP → detener
+SIGSTOP → detener (no se puede capturar ni ignorar)
+SIGTSTP → suspensión desde el teclado (Ctrl+Z)
 SIGCONT → continuar
 ```
 
