@@ -1,3 +1,18 @@
+# Estado actual — Trigésima cuarta entrega de v3
+
+Módulos 1–34 redactados y revisados documentalmente. Módulo 35 pendiente. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
+
+**Nueva lección:** [Módulo 34 — Almacenamiento: `lsblk`, `df`, `du`, montaje y `fstab`](modulo-34-almacenamiento-lsblk-df-du-montaje-fstab.md).
+
+Esta entrega separa dispositivos de bloque, sistemas de archivos y puntos de montaje; introduce `lsblk`, `lsblk --fs`, `findmnt`, `df`, `du`, lectura de los seis campos de `fstab`, UUID y opciones básicas. La práctica de `fstab` usa una tabla independiente validada con `findmnt --verify --tab-file`; no se monta ningún disco real ni se modifica `/etc/fstab`.
+
+La v2 y los Módulos 1–33 se conservan intactos.
+
+Siguiente paso editorial: **Módulo 35 — Defensa, actualizaciones, mínimo privilegio, auditoría y AIDE**.
+
+---
+
+## Registro histórico — Trigésima tercera entrega y anteriores
 # Estado actual — Trigésima tercera entrega de v3
 
 Módulos 1–33 redactados y revisados documentalmente. Módulos 34–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
