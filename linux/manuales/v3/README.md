@@ -8,7 +8,9 @@ La auditoría [02 — Registro de auditoría y fuentes](02-auditoria-fuentes.md)
 
 Las prácticas en el Linux del estudiante siguen pendientes de ejecutar y validar. Redacción completa no equivale a dominio demostrado.
 
-**Siguiente fase:** aplicar correcciones de prioridad alta en commits pequeños, luego fuentes upstream y homogeneización editorial, y finalmente realizar una auditoría post-corrección.
+**Progreso de correcciones de prioridad alta:** 1/5 aplicada. A01 (RFC1918 en M19) corregida. Pendientes: estado `100` de `dnf check-update` (M15/M35), `Persistent=true` (M30), endurecimiento de extracción `tar` no confiable (M31) y respuesta ante secretos ya expuestos en Git/GitHub (M33).
+
+**Siguiente fase:** continuar con A02 en commits pequeños, luego fuentes upstream y homogeneización editorial, y finalmente realizar una auditoría post-corrección.
 
 ---
 
