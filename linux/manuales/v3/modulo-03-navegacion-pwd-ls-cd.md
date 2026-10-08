@@ -230,3 +230,19 @@ Esta entrega tiene revisión documental de sintaxis, orden pedagógico, fuentes,
 Las referencias están enlazadas junto a sus explicaciones: GNU Coreutils para `ls` y la utilidad externa `pwd`; GNU Bash para las órdenes internas. Coreutils 9.11 sigue siendo la referencia editorial, sin exigir esa versión instalada.
 
 Siguiente módulo por redactar: **Módulo 4 — Rutas absolutas y relativas; ~, ., .. y nombres con espacios**.
+
+## Anexo editorial — Criterios de evaluación y fuentes
+
+**Qué se conserva:** todas las explicaciones, prácticas y preguntas originales de esta entrega.
+
+**Evaluación formativa:** el estudiante debe explicar los conceptos con sus palabras, ejecutar una práctica segura en su propio entorno cuando corresponda, interpretar la salida y reconocer al menos un error sin copiar la solución. Una respuesta correcta aislada no acredita dominio.
+
+**Registro:** EN APRENDIZAJE / PRACTICADO / DOMINADO (solo tras varias evidencias revisadas). La revisión documental del texto no equivale a práctica realizada.
+
+**Fuentes primarias para contrastar esta lección:**
+- GNU Bash Reference Manual: https://www.gnu.org/software/bash/manual/
+- GNU Coreutils Manual: https://www.gnu.org/software/coreutils/manual/
+- Debian Reference: https://www.debian.org/doc/manuals/debian-reference/
+- Linux kernel documentation: https://docs.kernel.org/
+
+Las fuentes se consultan según el tema tratado; no se presume que todos los enlaces respalden cada afirmación del módulo.
