@@ -350,6 +350,8 @@ dnf upgrade
 dnf remove
 ```
 
+**Nota sobre versiones:** RHEL 10 documenta DNF, mientras que Fedora 41 y posteriores emplean DNF5. La documentación de DNF5 denomina `check-upgrade` a la comprobación de actualizaciones; no presupongas que `check-update` es un alias compatible en todas las instalaciones. Antes de aplicar ejemplos, identifica la versión con `dnf --version` y consulta la ayuda de tu distribución. Referencia: [DNF5 check-upgrade](https://dnf5.readthedocs.io/en/latest/commands/check-upgrade.8.html).
+
 ## 18. dnf search
 
 Consulta:
