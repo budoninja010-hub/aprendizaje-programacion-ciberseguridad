@@ -107,11 +107,12 @@ En octubre de 2026, la versión oficial más reciente publicada por el proyecto 
 ## 7. Preparar el laboratorio
 
 ```bash
-cd ~/linux-lab
-mkdir -p modulo-32-rsync/origen
-mkdir -p modulo-32-rsync/destino
-mkdir -p modulo-32-rsync/restauracion
-cd modulo-32-rsync
+test -d ~/linux-lab && \
+cd ~/linux-lab && \
+mkdir -p modulo-32-rsync/origen && \
+mkdir -p modulo-32-rsync/destino && \
+mkdir -p modulo-32-rsync/restauracion && \
+cd modulo-32-rsync && pwd
 pwd
 ```
 
