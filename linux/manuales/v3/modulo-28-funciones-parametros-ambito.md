@@ -686,12 +686,10 @@ Para terminar un script ejecutado normalmente se usa `exit`.
 ## 40. Preparar el laboratorio
 
 ```bash
-cd ~/linux-lab
-pwd
-ls
-mkdir -p modulo-28-funciones
-cd modulo-28-funciones
-pwd
+test -d ~/linux-lab && \
+cd ~/linux-lab && \
+mkdir -p modulo-28-funciones && \
+cd modulo-28-funciones && pwd
 ```
 
 Etiqueta: **creación en laboratorio**.
