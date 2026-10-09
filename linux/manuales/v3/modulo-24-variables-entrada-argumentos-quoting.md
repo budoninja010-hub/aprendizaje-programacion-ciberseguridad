@@ -120,7 +120,7 @@ edad2
 nombre_usuario
 ```
 
-Ejemplos no recomendados/invalidables como nombre simple:
+Ejemplos no válidos como nombres simples de variables:
 
 ```text
 2edad
