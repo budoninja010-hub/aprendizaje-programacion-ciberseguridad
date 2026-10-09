@@ -286,9 +286,10 @@ Existen herramientas complementarias como `anacron` para ciertos trabajos perió
 ## 21. Preparar el script seguro de laboratorio
 
 ```bash
-cd ~/linux-lab
-mkdir -p modulo-30-automatizacion
-cd modulo-30-automatizacion
+test -d ~/linux-lab && \
+cd ~/linux-lab && \
+mkdir -p modulo-30-automatizacion && \
+cd modulo-30-automatizacion && pwd
 pwd
 ```
 
