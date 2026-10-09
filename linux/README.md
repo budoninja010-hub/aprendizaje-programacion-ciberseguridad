@@ -13,13 +13,18 @@ Orden recomendado en la v3:
 
 1. [Índice y arquitectura](manuales/v3/00-indice-arquitectura.md)
 2. [Módulo 1 — GNU, Linux, kernel y distribuciones](manuales/v3/01-gnu-linux-kernel-distribuciones.md)
-3. Módulos 2 a 35 en orden numérico (`modulo-02-…` a `modulo-35-…`).
+3. Módulos 2 a 35 en orden: cada módulo enlaza al anterior y al siguiente.
 
-Los archivos `02-`, `03-` y `04-` de `v3/` son registros de auditoría, no lecciones.
+Los archivos `02-` a `05-` de `v3/` son registros de auditoría e historial, no lecciones.
+
+## Progreso
+
+Marca lo que ya practicaste en [PROGRESO.md](PROGRESO.md).
 
 ## Organización
 
-- `manuales/`: manuales completos y sus versiones.
+- [`manuales/`](manuales/README.md): manuales completos y sus versiones.
+- [`PROGRESO.md`](PROGRESO.md): práctica y dominio por módulo.
 - `comandos/` (prevista): comandos básicos y ejemplos propios.
 - `bash/` (prevista): scripts de Bash creados durante el aprendizaje.
 - `laboratorios/` (prevista): prácticas realizadas en entornos propios o autorizados.

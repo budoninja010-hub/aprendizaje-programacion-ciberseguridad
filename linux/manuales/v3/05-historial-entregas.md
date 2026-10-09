@@ -1,4 +1,10 @@
-# Estado editorial vigente — 8 de octubre de 2026
+# Historial de entregas — Manual v3
+
+Registro cronológico del estado editorial de cada entrega, de la más reciente a la más antigua. Se conserva sin cambios de contenido; solo se bajó un nivel cada título para que el documento tenga un único título principal.
+
+Para estudiar, usa el [índice del manual](README.md).
+
+## Estado editorial vigente — 8 de octubre de 2026
 
 **Núcleo:** 35 módulos disponibles en `linux/manuales/v3/`, incluido [Módulo 23](modulo-23-primer-script-bash-shebang.md). **La Entrega 24 de Google Drive es una instantánea histórica**, no representa el núcleo vigente y omitía el Módulo 23 en su compilación.
 
@@ -10,7 +16,7 @@
 
 ---
 
-# Estado actual — Auditoría transversal v3 completada
+## Estado actual — Auditoría transversal v3 completada
 
 Los **35 módulos** del núcleo están redactados. La auditoría documental transversal completa del 8 de octubre de 2026 está disponible en [03 — Auditoría transversal completa v3](03-auditoria-transversal-completa-v3-2026-10-08.md).
 
@@ -28,8 +34,8 @@ Las prácticas en el Linux del estudiante siguen pendientes de ejecutar y valida
 
 ---
 
-## Registro histórico — Núcleo v3 completo y entregas anteriores
-# Estado actual — Núcleo v3 completo: 35 de 35 módulos
+### Registro histórico — Núcleo v3 completo y entregas anteriores
+## Estado actual — Núcleo v3 completo: 35 de 35 módulos
 
 Los **Módulos 1–35** del Manual Maestro de Linux y Shell Scripting — Edición 2026 v3 están redactados y revisados documentalmente. Las prácticas en el Linux del estudiante siguen pendientes de ejecutar, explicar y validar durante las clases.
 
@@ -43,8 +49,8 @@ La v2 y los Módulos 1–34 se conservan intactos.
 
 ---
 
-## Registro histórico — Trigésima cuarta entrega y anteriores
-# Estado actual — Trigésima cuarta entrega de v3
+### Registro histórico — Trigésima cuarta entrega y anteriores
+## Estado actual — Trigésima cuarta entrega de v3
 
 Módulos 1–34 redactados y revisados documentalmente. Módulo 35 pendiente. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -58,8 +64,8 @@ Siguiente paso editorial: **Módulo 35 — Defensa, actualizaciones, mínimo pri
 
 ---
 
-## Registro histórico — Trigésima tercera entrega y anteriores
-# Estado actual — Trigésima tercera entrega de v3
+### Registro histórico — Trigésima tercera entrega y anteriores
+## Estado actual — Trigésima tercera entrega de v3
 
 Módulos 1–33 redactados y revisados documentalmente. Módulos 34–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -73,8 +79,8 @@ Siguiente paso editorial: **Módulo 34 — Almacenamiento: `lsblk`, `df`, `du`; 
 
 ---
 
-## Registro histórico — Trigésima segunda entrega y anteriores
-# Estado actual — Trigésima segunda entrega de v3
+### Registro histórico — Trigésima segunda entrega y anteriores
+## Estado actual — Trigésima segunda entrega de v3
 
 Módulos 1–32 redactados y revisados documentalmente. Módulos 33–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -88,8 +94,8 @@ Siguiente paso editorial: **Módulo 33 — Git y GitHub para scripts; enlace al 
 
 ---
 
-## Registro histórico — Trigésima primera entrega y anteriores
-# Estado actual — Trigésima primera entrega de v3
+### Registro histórico — Trigésima primera entrega y anteriores
+## Estado actual — Trigésima primera entrega de v3
 
 Módulos 1–31 redactados y revisados documentalmente. Módulos 32–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -103,8 +109,8 @@ Siguiente paso editorial: **Módulo 32 — Copias y restauración con `rsync`**.
 
 ---
 
-## Registro histórico — Trigésima entrega y anteriores
-# Estado actual — Trigésima entrega de v3
+### Registro histórico — Trigésima entrega y anteriores
+## Estado actual — Trigésima entrega de v3
 
 Módulos 1–30 redactados y revisados documentalmente. Módulos 31–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -118,8 +124,8 @@ Siguiente paso editorial: **Módulo 31 — Archivos y compresión con `tar`, `gz
 
 ---
 
-## Registro histórico — Vigesimonovena entrega y anteriores
-# Estado actual — Vigesimonovena entrega de v3
+### Registro histórico — Vigesimonovena entrega y anteriores
+## Estado actual — Vigesimonovena entrega de v3
 
 Módulos 1–29 redactados y revisados documentalmente. Módulos 30–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -133,8 +139,8 @@ Siguiente paso editorial: **Módulo 30 — Automatización con `cron` y temporiz
 
 ---
 
-## Registro histórico — Vigesimoctava entrega y anteriores
-# Estado actual — Vigesimoctava entrega de v3
+### Registro histórico — Vigesimoctava entrega y anteriores
+## Estado actual — Vigesimoctava entrega de v3
 
 Módulos 1–28 redactados y revisados documentalmente. Módulos 29–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -148,8 +154,8 @@ Siguiente paso editorial: **Módulo 29 — Manejo de errores, `trap`, `mktemp`, 
 
 ---
 
-## Registro histórico — Vigesimoséptima entrega y anteriores
-# Estado actual — Vigesimoséptima entrega de v3
+### Registro histórico — Vigesimoséptima entrega y anteriores
+## Estado actual — Vigesimoséptima entrega de v3
 
 Módulos 1–27 redactados y revisados documentalmente. Módulos 28–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -163,8 +169,8 @@ Siguiente paso editorial: **Módulo 28 — Funciones, parámetros y ámbito en B
 
 ---
 
-## Registro histórico — Vigesimosexta entrega y anteriores
-# Estado actual — Vigesimosexta entrega de v3
+### Registro histórico — Vigesimosexta entrega y anteriores
+## Estado actual — Vigesimosexta entrega de v3
 
 Módulos 1–26 redactados y revisados documentalmente. Módulos 27–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -178,8 +184,8 @@ Siguiente paso editorial: **Módulo 27 — Bucles, lectura de líneas y nombres 
 
 ---
 
-## Registro histórico — Vigesimoquinta entrega y anteriores
-# Estado actual — Vigesimoquinta entrega de v3
+### Registro histórico — Vigesimoquinta entrega y anteriores
+## Estado actual — Vigesimoquinta entrega de v3
 
 Módulos 1–25 redactados y revisados documentalmente. Módulos 26–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -193,8 +199,8 @@ Siguiente paso editorial: **Módulo 26 — Decisiones con `if`, `test`, `[ ]`, `
 
 ---
 
-## Registro histórico — Vigesimocuarta entrega y anteriores
-# Estado actual — Vigesimocuarta entrega de v3
+### Registro histórico — Vigesimocuarta entrega y anteriores
+## Estado actual — Vigesimocuarta entrega de v3
 
 Módulos 1–24 redactados y revisados documentalmente. Módulos 25–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -208,9 +214,9 @@ Siguiente paso editorial: **Módulo 25 — Códigos de salida y composición con
 
 ---
 
-## Registro histórico — Vigesimotercera entrega y anteriores
+### Registro histórico — Vigesimotercera entrega y anteriores
 
-# Estado actual — Vigesimotercera entrega de v3
+## Estado actual — Vigesimotercera entrega de v3
 
 Módulos 1–23 redactados y revisados documentalmente. Módulos 24–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -224,9 +230,9 @@ Siguiente paso editorial: **Módulo 24 — Variables, entrada, argumentos, expan
 
 ---
 
-## Registro histórico — Vigesimosegunda entrega y anteriores
+### Registro histórico — Vigesimosegunda entrega y anteriores
 
-# Estado actual — Vigesimosegunda entrega de v3
+## Estado actual — Vigesimosegunda entrega de v3
 
 Módulos 1–22 redactados y revisados documentalmente. Módulos 23–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -240,9 +246,9 @@ Siguiente paso editorial: **Módulo 23 — Primer script Bash y shebang**.
 
 ---
 
-## Registro histórico — Vigesimoprimera entrega y anteriores
+### Registro histórico — Vigesimoprimera entrega y anteriores
 
-# Estado actual — Vigesimoprimera entrega de v3
+## Estado actual — Vigesimoprimera entrega de v3
 
 Módulos 1–21 redactados y revisados documentalmente. Módulos 22–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -256,9 +262,9 @@ Siguiente paso editorial: **Módulo 22 — vi/Vim: edición segura de archivos d
 
 ---
 
-## Registro histórico — Vigesimoprimera entrega y anteriores
+### Registro histórico — Vigesimoprimera entrega y anteriores
 
-# Revisión pedagógica — Módulo 20
+## Revisión pedagógica — Módulo 20
 
 El Módulo 20 fue revisado para dejar explícito que el itinerario sí incluirá aprendizaje de técnicas ofensivas relacionadas con autenticación SSH, pero únicamente en laboratorios propios, CTF o sistemas expresamente autorizados. La revisión incorpora el enfoque mecanismo de fallo → evidencia → detección → mitigación y evita convertir el material en una receta contra sistemas reales sin permiso.
 
@@ -266,7 +272,7 @@ El estado general permanece en Módulos 1–20 redactados. El siguiente módulo 
 
 ---
 
-# Estado actual — Vigésima entrega de v3
+## Estado actual — Vigésima entrega de v3
 
 Módulos 1–20 redactados y revisados documentalmente. Módulos 21–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -280,9 +286,9 @@ Siguiente paso editorial: **Módulo 21 — Firewall: nftables, UFW y firewalld s
 
 ---
 
-## Registro histórico — Decimonovena entrega y anteriores
+### Registro histórico — Decimonovena entrega y anteriores
 
-# Estado actual — Decimonovena entrega de v3
+## Estado actual — Decimonovena entrega de v3
 
 Módulos 1–19 redactados y revisados documentalmente. Módulos 20–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -296,9 +302,9 @@ Siguiente paso editorial: **Módulo 20 — SSH en sistemas propios o expresament
 
 ---
 
-## Registro histórico — Decimoctava entrega y anteriores
+### Registro histórico — Decimoctava entrega y anteriores
 
-# Estado actual — Decimoctava entrega de v3
+## Estado actual — Decimoctava entrega de v3
 
 Módulos 1–18 redactados y revisados documentalmente. Módulos 19–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -312,9 +318,9 @@ Siguiente paso editorial: **Módulo 19 — Redes básicas: IP, DNS, rutas, ip y 
 
 ---
 
-## Registro histórico — Decimoséptima entrega y anteriores
+### Registro histórico — Decimoséptima entrega y anteriores
 
-# Estado actual — Decimoséptima entrega de v3
+## Estado actual — Decimoséptima entrega de v3
 
 Módulos 1–17 redactados y revisados documentalmente. Módulos 18–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -328,9 +334,9 @@ Siguiente paso editorial: **Módulo 18 — Logs y diagnóstico inicial con journ
 
 ---
 
-## Registro histórico — Decimosexta entrega y anteriores
+### Registro histórico — Decimosexta entrega y anteriores
 
-# Estado actual — Decimosexta entrega de v3
+## Estado actual — Decimosexta entrega de v3
 
 Módulos 1–16 redactados y revisados documentalmente. Módulos 17–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -344,9 +350,9 @@ Siguiente paso editorial: **Módulo 17 — systemd, unidades y servicios; otros 
 
 ---
 
-## Registro histórico — Decimoquinta entrega y anteriores
+### Registro histórico — Decimoquinta entrega y anteriores
 
-# Estado actual — Decimoquinta entrega de v3
+## Estado actual — Decimoquinta entrega de v3
 
 Módulos 1–15 redactados y revisados documentalmente. Módulos 16–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -360,9 +366,9 @@ Siguiente paso editorial: **Módulo 16 — Diferencias Debian, Ubuntu, Fedora y 
 
 ---
 
-## Registro histórico — Decimocuarta entrega y anteriores
+### Registro histórico — Decimocuarta entrega y anteriores
 
-# Estado actual — Decimocuarta entrega de v3
+## Estado actual — Decimocuarta entrega de v3
 
 Módulos 1–14 redactados y revisados documentalmente. Módulos 15–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -376,9 +382,9 @@ Siguiente paso editorial: **Módulo 15 — Paquetes, repositorios y actualizacio
 
 ---
 
-## Registro histórico — Decimotercera entrega y anteriores
+### Registro histórico — Decimotercera entrega y anteriores
 
-# Estado actual — Decimotercera entrega de v3
+## Estado actual — Decimotercera entrega de v3
 
 Módulos 1–13 redactados y revisados documentalmente. Módulos 14–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -392,9 +398,9 @@ Siguiente paso editorial: **Módulo 14 — jobs, fg, bg, señales y kill**.
 
 ---
 
-## Registro histórico — Duodécima entrega y anteriores
+### Registro histórico — Duodécima entrega y anteriores
 
-# Estado actual — Duodécima entrega de v3
+## Estado actual — Duodécima entrega de v3
 
 Módulos 1–12 redactados y revisados documentalmente. Módulos 13–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -408,9 +414,9 @@ Siguiente paso editorial: **Módulo 13 — Procesos; ps, top y htop opcional**.
 
 ---
 
-## Registro histórico — Undécima entrega y anteriores
+### Registro histórico — Undécima entrega y anteriores
 
-# Estado actual — Undécima entrega de v3
+## Estado actual — Undécima entrega de v3
 
 Módulos 1–11 redactados y revisados documentalmente. Módulos 12–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -424,9 +430,9 @@ Siguiente paso editorial: **Módulo 12 — Permisos, propietarios, chmod, chown,
 
 ---
 
-## Registro histórico — Décima entrega y anteriores
+### Registro histórico — Décima entrega y anteriores
 
-# Estado actual — Décima entrega de v3
+## Estado actual — Décima entrega de v3
 
 Módulos 1–10 redactados y revisados documentalmente. Módulos 11–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -440,9 +446,9 @@ Siguiente paso editorial: **Módulo 11 — Usuarios y grupos; whoami, id y conce
 
 ---
 
-## Registro histórico — Novena entrega y anteriores
+### Registro histórico — Novena entrega y anteriores
 
-# Estado actual — Novena entrega de v3
+## Estado actual — Novena entrega de v3
 
 Módulos 1–9 redactados y revisados documentalmente. Módulos 10–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -456,9 +462,9 @@ Siguiente paso editorial: **Módulo 10 — grep, find y locate; búsqueda de tex
 
 ---
 
-## Registro histórico — Octava entrega y anteriores
+### Registro histórico — Octava entrega y anteriores
 
-# Estado actual — Octava entrega de v3
+## Estado actual — Octava entrega de v3
 
 Módulos 1–8 redactados y revisados documentalmente. Módulos 9–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -472,9 +478,9 @@ Siguiente paso editorial: **Módulo 9 — Tuberías (pipes) y composición de co
 
 ---
 
-## Registro histórico — Séptima entrega y anteriores
+### Registro histórico — Séptima entrega y anteriores
 
-# Estado actual — Séptima entrega de v3
+## Estado actual — Séptima entrega de v3
 
 Módulos 1–7 redactados y revisados documentalmente. Módulos 8–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -488,9 +494,9 @@ Siguiente paso editorial: **Módulo 8 — stdin, stdout, stderr y redirecciones*
 
 ---
 
-## Registro histórico — Sexta entrega y anteriores
+### Registro histórico — Sexta entrega y anteriores
 
-# Estado actual — Sexta entrega de v3
+## Estado actual — Sexta entrega de v3
 
 Módulos 1–6 redactados y revisados documentalmente. Módulos 7–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -504,9 +510,9 @@ Siguiente paso editorial: **Módulo 7 — Lectura de archivos con cat, less, hea
 
 ---
 
-## Registro histórico — Quinta entrega y anteriores
+### Registro histórico — Quinta entrega y anteriores
 
-# Estado actual — Quinta entrega de v3
+## Estado actual — Quinta entrega de v3
 
 Módulos 1–5 redactados y revisados documentalmente. Módulos 6–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -520,9 +526,9 @@ Siguiente paso editorial: **Módulo 6 — Crear, copiar, mover y renombrar; rm y
 
 ---
 
-## Registro histórico — Cuarta entrega y anteriores
+### Registro histórico — Cuarta entrega y anteriores
 
-# Estado actual — Cuarta entrega de v3
+## Estado actual — Cuarta entrega de v3
 
 Módulos 1–4 redactados y revisados documentalmente. Módulos 5–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -534,11 +540,11 @@ Siguiente paso editorial: Módulo 5, árbol de archivos, FHS y enlaces.
 
 ---
 
-## Registro histórico — Tercera entrega y anteriores
+### Registro histórico — Tercera entrega y anteriores
 
 El contenido siguiente se conserva íntegro y refleja el estado de cada entrega pasada.
 
-# Estado actual — Tercera entrega de v3
+## Estado actual — Tercera entrega de v3
 
 Módulos 1, 2 y 3 redactados y revisados documentalmente. Módulos 4–35 pendientes. Las prácticas en el Linux del estudiante siguen pendientes de comprobar.
 
@@ -550,13 +556,13 @@ Siguiente paso editorial: Módulo 4, rutas absolutas y relativas.
 
 ---
 
-## Registro histórico — Segunda entrega
+### Registro histórico — Segunda entrega
 
 Todo el contenido que sigue corresponde a la segunda entrega y se conserva íntegro. Sus pendientes y su recuento de archivos describen ese momento.
 
-# Manual Maestro de Linux y Shell Scripting — v3 · Estado actual
+## Manual Maestro de Linux y Shell Scripting — v3 · Estado actual
 
-## Segunda entrega
+### Segunda entrega
 
 Este es el punto de entrada actualizado de la v3. Se conservan intactos los tres archivos de la primera entrega: sus referencias a «Módulos 2–35 pendientes» describen aquel corte histórico, no el estado actual.
 
@@ -569,11 +575,11 @@ Este es el punto de entrada actualizado de la v3. Se conservan intactos los tres
 | Módulos 3–35 | Pendientes de redacción | Consultar el índice |
 | Prácticas en el Linux del estudiante | Pendientes de comprobar | No equivalen a revisión documental |
 
-## Orden de lectura
+### Orden de lectura
 
 Lee M1 y después M2. La arquitectura sirve de mapa y la auditoría documenta decisiones y límites. El prefijo `02` de `02-auditoria-fuentes.md` es el nombre histórico del registro, **no el Módulo 2**. Para evitar confusión sin renombrar archivos existentes, las nuevas lecciones usan `modulo-NN-tema.md`.
 
-## Conservación y copias
+### Conservación y copias
 
 La v2 permanece separada en `linux/manuales/manual-maestro-linux-shell-scripting-2026-v2.md`. Los archivos originales no se eliminan ni se reemplazan en esta entrega.
 
@@ -581,7 +587,7 @@ La copia para Drive es una instantánea Markdown de estos cinco archivos, con es
 
 El resultado y enlace de la subida se confirman en el chat después de verificar el archivo remoto. La existencia de este README no acredita por sí sola una publicación en Drive.
 
-## Cambios de esta entrega
+### Cambios de esta entrega
 
 - Nueva lección de terminal y ayuda, con ejemplos explicados, recuperación de errores y evaluación.
 - Distinción entre prompt, privilegios, shell actual y versión de Bash consultada.

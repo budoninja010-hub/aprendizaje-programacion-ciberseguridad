@@ -56,7 +56,7 @@ La progresión principal será:
 |---|---|---|
 | Python | En curso: tipos de datos y operadores aritméticos | [python/](python/README.md) · [Progreso](python/PROGRESO.md) |
 | Java y POO | Pendiente | [java/](java/README.md) |
-| Linux | Manual v3 redactado (35 módulos); práctica del estudiante pendiente | [linux/](linux/README.md) · [Manual v3](linux/manuales/v3/README.md) |
+| Linux | Manual v3 redactado (35 módulos); práctica del estudiante pendiente | [linux/](linux/README.md) · [Manual v3](linux/manuales/v3/README.md) · [Progreso](linux/PROGRESO.md) |
 | Redes | Pendiente | [redes/](redes/README.md) |
 | Ciberseguridad ética | Pendiente | [ciberseguridad/](ciberseguridad/README.md) |
 
@@ -82,6 +82,7 @@ java/
   proyectos/              (prevista)
 
 linux/
+  PROGRESO.md             Práctica y dominio por módulo
   manuales/               Manual Maestro de Linux (v2 histórica y v3 vigente)
   comandos/               (prevista)
   bash/                   (prevista)
