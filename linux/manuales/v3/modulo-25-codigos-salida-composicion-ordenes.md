@@ -342,12 +342,10 @@ No la necesitamos todavía para nuestras prácticas principales; se incluye para
 ## 28. Preparar el laboratorio
 
 ```bash
-cd ~/linux-lab
-pwd
-ls
-mkdir -p modulo-25-status
-cd modulo-25-status
-pwd
+test -d ~/linux-lab && \
+cd ~/linux-lab && \
+mkdir -p modulo-25-status && \
+cd modulo-25-status && pwd
 ```
 
 Etiqueta de práctica: **creación en laboratorio**. No uses `sudo`.
