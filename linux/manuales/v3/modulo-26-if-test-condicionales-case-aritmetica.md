@@ -632,12 +632,10 @@ No es una tabla absoluta; es una guía pedagógica inicial.
 ## 37. Preparar el laboratorio
 
 ```bash
-cd ~/linux-lab
-pwd
-ls
-mkdir -p modulo-26-condiciones
-cd modulo-26-condiciones
-pwd
+test -d ~/linux-lab && \
+cd ~/linux-lab && \
+mkdir -p modulo-26-condiciones && \
+cd modulo-26-condiciones && pwd
 ```
 
 Etiqueta de práctica: **creación en laboratorio**.
