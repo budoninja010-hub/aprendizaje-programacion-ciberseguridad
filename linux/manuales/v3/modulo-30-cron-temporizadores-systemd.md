@@ -90,6 +90,10 @@ command -v systemctl
 
 Si `crontab` no está disponible, no instales nada automáticamente solo para completar el ejercicio. Primero identifica la distribución y el paquete correspondiente.
 
+**Distribuciones y servicio cron:** en Debian/Ubuntu normalmente se utiliza `cron.service` (paquete `cron`); en Fedora/RHEL suele emplearse Cronie con `crond.service`. La sintaxis básica de cinco campos es parecida, pero los nombres de unidad y registros dependen del sistema. Consulta la unidad instalada antes de diagnosticar fallos.
+
+**Temporizadores de usuario:** el administrador `systemd --user` puede detenerse al cerrar la última sesión. La permanencia sin sesión requiere una configuración específica denominada *lingering*, administrada con `loginctl`. No actives lingering en este laboratorio: comprueba primero la política del equipo y prueba el temporizador durante una sesión abierta.
+
 ## 6. Consultar tu crontab
 
 ```bash
