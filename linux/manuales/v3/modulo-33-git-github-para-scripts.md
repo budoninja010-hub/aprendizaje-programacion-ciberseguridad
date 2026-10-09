@@ -130,9 +130,10 @@ Son operaciones de consulta.
 ## 10. Preparar el laboratorio
 
 ```bash
-cd ~/linux-lab
-mkdir -p modulo-33-git
-cd modulo-33-git
+test -d ~/linux-lab && \
+cd ~/linux-lab && \
+mkdir -p modulo-33-git && \
+cd modulo-33-git && pwd
 pwd
 ```
 
