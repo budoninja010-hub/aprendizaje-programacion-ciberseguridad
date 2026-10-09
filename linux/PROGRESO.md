@@ -14,7 +14,7 @@ Cambia ☐ por ✅ y anota la fecha en la última columna (formato `AAAA-MM-DD`)
 
 | N.º | Módulo | Práctica | Evaluación | Dominado | Fecha |
 |---|---|---|---|---|---|
-| 1 | [GNU, Linux, kernel y distribuciones](manuales/v3/01-gnu-linux-kernel-distribuciones.md) | ☐ | ☐ | ☐ | |
+| 1 | [GNU, Linux, kernel y distribuciones](manuales/v3/modulo-01-gnu-linux-kernel-distribuciones.md) | ☐ | ☐ | ☐ | |
 | 2 | [Terminal, CLI, shell, Bash, prompt y ayuda](manuales/v3/modulo-02-terminal-cli-shell-bash-ayuda.md) | ☐ | ☐ | ☐ | |
 | 3 | [Navegación inicial: pwd, ls y cd](manuales/v3/modulo-03-navegacion-pwd-ls-cd.md) | ☐ | ☐ | ☐ | |
 | 4 | [Rutas absolutas y relativas; ~, ., .. y nombres con espacios](manuales/v3/modulo-04-rutas-absolutas-relativas-espacios.md) | ☐ | ☐ | ☐ | |

@@ -12,7 +12,7 @@ Apuntes y prácticas de Linux desde cero.
 Orden recomendado en la v3:
 
 1. [Índice y arquitectura](manuales/v3/00-indice-arquitectura.md)
-2. [Módulo 1 — GNU, Linux, kernel y distribuciones](manuales/v3/01-gnu-linux-kernel-distribuciones.md)
+2. [Módulo 1 — GNU, Linux, kernel y distribuciones](manuales/v3/modulo-01-gnu-linux-kernel-distribuciones.md)
 3. Módulos 2 a 35 en orden: cada módulo enlaza al anterior y al siguiente.
 
 Los archivos `02-` a `05-` de `v3/` son registros de auditoría e historial, no lecciones.

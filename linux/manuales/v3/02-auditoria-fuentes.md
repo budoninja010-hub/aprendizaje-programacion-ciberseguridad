@@ -1,6 +1,6 @@
 # Registro de auditoría y fuentes — v3, primera entrega
 
-[Índice](00-indice-arquitectura.md) · [Módulo 1](01-gnu-linux-kernel-distribuciones.md)
+[Índice](00-indice-arquitectura.md) · [Módulo 1](modulo-01-gnu-linux-kernel-distribuciones.md)
 
 Fecha editorial: 6 de octubre de 2026. Alcance: arquitectura, primer módulo y decisiones de integración del informe. No constituye una auditoría de capítulos aún no escritos ni de todos los libros que NotebookLM menciona.
 

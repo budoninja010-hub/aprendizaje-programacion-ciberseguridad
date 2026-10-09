@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Segunda entrega.
 
-[Índice del manual](README.md) · [← Módulo 1](01-gnu-linux-kernel-distribuciones.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 3 →](modulo-03-navegacion-pwd-ls-cd.md)
+[Índice del manual](README.md) · [← Módulo 1](modulo-01-gnu-linux-kernel-distribuciones.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 3 →](modulo-03-navegacion-pwd-ls-cd.md)
 
 ## 1. Objetivo y requisitos
 

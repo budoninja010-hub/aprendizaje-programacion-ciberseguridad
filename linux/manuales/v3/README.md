@@ -14,7 +14,7 @@ Edición 2026, versión vigente. Para registrar lo que ya practicaste usa [linux
 ## Cómo estudiar
 
 1. Lee la [arquitectura del manual](00-indice-arquitectura.md) para entender la ruta.
-2. Avanza en orden, empezando por el [Módulo 1](01-gnu-linux-kernel-distribuciones.md). Cada módulo tiene enlaces al anterior y al siguiente arriba y al final.
+2. Avanza en orden, empezando por el [Módulo 1](modulo-01-gnu-linux-kernel-distribuciones.md). Cada módulo tiene enlaces al anterior y al siguiente arriba y al final.
 3. No pases al siguiente módulo hasta completar su práctica y su mini evaluación.
 
 ## Módulos
@@ -25,7 +25,7 @@ Las fases son las definidas en la [arquitectura](00-indice-arquitectura.md).
 
 | N.º | Módulo |
 |---|---|
-| 1 | [GNU, Linux, kernel y distribuciones](01-gnu-linux-kernel-distribuciones.md) |
+| 1 | [GNU, Linux, kernel y distribuciones](modulo-01-gnu-linux-kernel-distribuciones.md) |
 | 2 | [Terminal, CLI, shell, Bash, prompt y ayuda](modulo-02-terminal-cli-shell-bash-ayuda.md) |
 | 3 | [Navegación inicial: pwd, ls y cd](modulo-03-navegacion-pwd-ls-cd.md) |
 | 4 | [Rutas absolutas y relativas; ~, ., .. y nombres con espacios](modulo-04-rutas-absolutas-relativas-espacios.md) |

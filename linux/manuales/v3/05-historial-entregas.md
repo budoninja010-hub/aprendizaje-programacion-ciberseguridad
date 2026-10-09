@@ -569,7 +569,7 @@ Este es el punto de entrada actualizado de la v3. Se conservan intactos los tres
 | Contenido | Estado | Archivo |
 |---|---|---|
 | Arquitectura de 35 módulos | Definida | [Índice original](00-indice-arquitectura.md) |
-| Módulo 1 | Redactado y revisado documentalmente | [GNU, Linux, kernel y distribuciones](01-gnu-linux-kernel-distribuciones.md) |
+| Módulo 1 | Redactado y revisado documentalmente | [GNU, Linux, kernel y distribuciones](modulo-01-gnu-linux-kernel-distribuciones.md) |
 | Módulo 2 | Redactado y revisado documentalmente | [Terminal, CLI, shell, Bash, prompt y ayuda](modulo-02-terminal-cli-shell-bash-ayuda.md) |
 | Auditoría de la primera entrega | Conservada | [Registro de auditoría y fuentes](02-auditoria-fuentes.md) |
 | Módulos 3–35 | Pendientes de redacción | Consultar el índice |
