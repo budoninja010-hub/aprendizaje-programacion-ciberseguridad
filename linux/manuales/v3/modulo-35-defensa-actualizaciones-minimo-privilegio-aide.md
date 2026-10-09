@@ -444,10 +444,11 @@ cómo volver al estado anterior
 ## 31. Preparar el laboratorio final
 
 ```bash
-cd ~/linux-lab
-mkdir -p modulo-35-defensa/evidencia
-mkdir -p modulo-35-defensa/integridad
-cd modulo-35-defensa
+test -d ~/linux-lab && \
+cd ~/linux-lab && \
+mkdir -p modulo-35-defensa/evidencia && \
+mkdir -p modulo-35-defensa/integridad && \
+cd modulo-35-defensa && pwd
 pwd
 ```
 
