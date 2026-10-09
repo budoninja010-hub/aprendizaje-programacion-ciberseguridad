@@ -983,6 +983,8 @@ Para avanzar como **DOMINADO** deberás poder:
 
 ## 55. Fuentes y límites
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 Fuentes principales:
 
 - GNU Bash Reference Manual — Conditional Constructs: https://www.gnu.org/software/bash/manual/html_node/Conditional-Constructs.html

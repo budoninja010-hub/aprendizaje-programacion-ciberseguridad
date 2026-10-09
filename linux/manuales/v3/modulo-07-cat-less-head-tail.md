@@ -591,6 +591,8 @@ Una ejecución correcta no basta para marcar el tema como dominado. En otra sesi
 
 ## 25. Fuentes y límites
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 Fuentes principales:
 
 - GNU Coreutils — `cat`: https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html

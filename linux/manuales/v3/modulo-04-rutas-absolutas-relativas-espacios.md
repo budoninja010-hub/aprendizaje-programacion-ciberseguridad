@@ -252,6 +252,8 @@ Puedes enviar una respuesta breve al chat: qué entendiste de las rutas, un ejem
 
 ## 13. Fuentes y límites de esta lección
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 ### Revisión de esta entrega
 
 Revisión documental: sintaxis de ejemplos, separación de argumentos, expansión de tilde, destinos del árbol y coherencia con M1–M3. Las referencias GNU se consultaron mediante documentación oficial indexada; la resolución de rutas se contrastó con Linux man-pages. La práctica en el Linux del estudiante sigue pendiente. No se afirma validación de ejecuciones reales.

@@ -1131,6 +1131,8 @@ Estado: EN APRENDIZAJE / PRACTICADO
 
 ## 58. Fuentes y límites
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 Fuentes principales:
 
 - Vim documentation:
@@ -1138,7 +1140,7 @@ Fuentes principales:
 - Vim user manual:
   https://vimhelp.org/usr_toc.txt.html
 - Vim reference manual:
-  https://vimhelp.org/reference_toc.txt.html
+  https://vimhelp.org/#reference_toc
 - Vim project:
   https://www.vim.org/
 

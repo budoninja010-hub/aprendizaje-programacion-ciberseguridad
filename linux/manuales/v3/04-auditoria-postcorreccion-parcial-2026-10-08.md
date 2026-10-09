@@ -94,3 +94,33 @@ Se abrieron y consultaron las páginas originales de: espejo público de iproute
 Se aplicó el hallazgo E01 de la auditoría transversal. Cambios: encabezados alineados con el contrato de M5–M35; anexo integrado en «Fuentes y límites de esta lección»; pie de navegación movido al final en M2–M4; ficha de registro añadida en M2. Una comprobación automática confirmó que ninguna línea de contenido previo se eliminó. Los enlaces internos de los 35 módulos siguen resolviendo y todos los bloques de código cierran.
 
 **Pendiente:** E04 y E05, lectura íntegra de los módulos no revisados en pasadas anteriores, verificación de enlaces externos y sincronización con Google Drive.
+
+## Octava pasada — E02, E04, E05 y enlaces externos (9 de octubre de 2026)
+
+**E02 (README con historial acumulado):** ya resuelto el 9 de octubre al convertir el README en índice y trasladar el historial a [05-historial-entregas.md](05-historial-entregas.md).
+
+**E04 (jerarquía de fuentes):** aplicado mediante el [catálogo de fuentes](06-catalogo-fuentes.md). Clasifica los 182 enlaces externos de los módulos en los cinco niveles de la auditoría. La sección «Fuentes y límites» de los 35 módulos enlaza a ese catálogo con la misma frase. No se reordenaron las listas de fuentes dentro de cada módulo.
+
+**Enlaces externos:** comprobados el 9 de octubre de 2026 desde un servicio externo (código de respuesta y título de la página). Resultado: 127 funcionan; 55 de los manuales de GNU quedaron **sin verificar** porque el servicio agotó sus créditos. Problemas corregidos:
+
+| Módulo | Problema | Corrección |
+|---|---|---|
+| M22 | `vimhelp.org/reference_toc.txt.html` → 404 | `https://vimhelp.org/#reference_toc` |
+| M35 | Enlace «Checking integrity with AIDE» abría la portada de *Security hardening* | Capítulo 7 `…/security_hardening/checking-integrity-with-aide` |
+| M16 | `…/fedora-silverblue/` redirige | `…/en-US/atomic-desktops/` |
+
+**E05 (fechas de verificación):** afirmaciones contrastadas con el texto de la fuente original el 9 de octubre de 2026.
+
+| Afirmación | Fuente | Dictamen y acción |
+|---|---|---|
+| M06: GNU Coreutils 9.11 | Manual de Coreutils en gnu.org | **Desactualizado:** el manual documenta la 9.12. Se quitó «9.11» de cada enlace y se añadió una nota de vigencia |
+| M31: GNU gzip 1.14 | Manual de gzip en gnu.org | **Desactualizado:** el manual documenta la 1.15 (3 de enero de 2026). Corregido y fechado |
+| M13: libro de man-pages 6.17 | Listado de kernel.org | El PDF existe; la edición más reciente es la 6.19. Se añadió la nota |
+| M25: GNU Bash 5.3 | Manual de Bash (edición del 18 de mayo de 2025) | Confirmado; fechado |
+| M15: Fedora 41+ usa DNF5 | Fedora Wiki, cambio *SwitchToDnf5* («Targeted release: Fedora Linux 41») | Confirmado; enlace y fecha añadidos |
+| M18: journal volátil por defecto en RHEL 10 | RHEL 10, capítulo 13 de *RHEL system roles* | Confirmado; fechado |
+| M21: UFW deshabilitado por defecto en Ubuntu | Ubuntu security documentation — Firewall | Confirmado; fechado |
+
+Las auditorías 02 y 03 citan Coreutils 9.11. No se modifican porque registran lo comprobado en su fecha.
+
+**Pendiente:** verificar los 55 enlaces de GNU restantes, lectura íntegra de los módulos no revisados en pasadas anteriores, revisión visual del PDF y sincronización con Google Drive.

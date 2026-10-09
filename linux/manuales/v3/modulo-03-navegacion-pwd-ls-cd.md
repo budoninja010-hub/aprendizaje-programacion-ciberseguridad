@@ -225,6 +225,8 @@ No pegues nombres de usuario, rutas personales, archivos privados ni capturas co
 
 ## 11. Fuentes y límites de esta lección
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 ### Revisión de esta entrega
 
 Esta entrega tiene revisión documental de sintaxis, orden pedagógico, fuentes, errores y alcance. Se contrastaron referencias oficiales de GNU mediante resultados indexados. No se afirma haber ejecutado la práctica en la distribución del estudiante. La comparación lógica/física y las reglas completas de rutas quedan para módulos posteriores.

@@ -954,6 +954,8 @@ Estado: EN APRENDIZAJE / PRACTICADO
 
 ## 51. Fuentes y límites
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 Fuentes principales verificadas:
 
 - systemd / systemctl manual:

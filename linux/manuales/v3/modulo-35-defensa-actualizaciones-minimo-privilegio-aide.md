@@ -1032,6 +1032,8 @@ Para considerar este módulo **DOMINADO** deberás poder en más de una ocasión
 
 ## 72. Fuentes y límites
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 Fuentes principales:
 
 - iproute2 upstream (origen de `ss`): https://git.kernel.org/pub/scm/network/iproute2/iproute2.git/
@@ -1039,7 +1041,7 @@ Fuentes principales:
 - systemd upstream (manuales originales de `systemctl` y `journalctl`): https://github.com/systemd/systemd/tree/main/man
 - Las guías oficiales RHEL y DNF siguientes respaldan los procedimientos específicos de distribución.
 - Red Hat Enterprise Linux 10 — Security hardening: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/security_hardening/
-- RHEL 10 — Checking integrity with AIDE: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/pdf/security_hardening/index
+- RHEL 10 — Checking integrity with AIDE: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/security_hardening/checking-integrity-with-aide
 - RHEL 10 — Managing sudo access: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/security_hardening/managing-sudo-access
 - DNF Project — Command Reference, `check-update`: https://dnf.readthedocs.io/en/latest/command_ref.html#check-update-command
 - RHEL 10 — Managing software with DNF: https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/managing_software_with_the_dnf_tool/updating-rhel-content

@@ -941,6 +941,8 @@ Para considerar este módulo **DOMINADO** deberás poder, en más de una prácti
 
 ## 56. Fuentes y límites
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 Fuentes principales:
 
 - GNU Bash Reference Manual — Looping Constructs: https://www.gnu.org/software/bash/manual/html_node/Looping-Constructs.html

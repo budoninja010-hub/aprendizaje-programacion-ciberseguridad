@@ -535,6 +535,8 @@ No pegues contenidos sensibles de `/etc`, `/proc` o `/sys`. Si una salida contie
 
 ## 19. Fuentes y límites de esta lección
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 Fuentes principales:
 
 - [Filesystem Hierarchy Standard 3.0](https://refspecs.linuxfoundation.org/FHS_3.0/fhs/index.html).

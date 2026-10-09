@@ -835,6 +835,8 @@ Para considerar este módulo **DOMINADO** deberás poder en más de una ocasión
 
 ## 58. Fuentes y límites
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 Fuentes principales:
 
 - GNU tar Manual: https://www.gnu.org/software/tar/manual/tar.html
@@ -853,7 +855,7 @@ Puntos verificados documentalmente:
 - listar miembros ayuda a inspeccionar, pero no certifica que la extracción sea segura;
 - GNU tar recomienda prestar atención a diagnósticos y estado de salida;
 - GNU tar desaconseja opciones de riesgo como `--absolute-names`, `--dereference`, `--overwrite`, `--recursive-unlink` y `--remove-files` salvo comprensión explícita;
-- GNU gzip 1.14 documenta compresión y descompresión de archivos y dispone de `--keep` y `--test`;
+- el manual oficial de GNU gzip (versión 1.15, 3 de enero de 2026; consultado el 9 de octubre de 2026) documenta compresión y descompresión de archivos y dispone de `--keep` y `--test`;
 - XZ Utils documenta `-k/--keep`, `-d/--decompress`, `-l/--list` y `-t/--test`;
 - xz utiliza por defecto el formato `.xz` y recomienda `xz -d`/`xz -dc` en scripts en lugar de depender de alias como `unxz` o `xzcat`.
 

@@ -556,6 +556,8 @@ El Módulo 26 añadirá `if`, `test`, `[ ]`, `[[ ]]`, `case` y aritmética.
 
 ## 44. Fuentes y límites
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 Fuentes principales:
 
 - DNF Project — check-update: https://dnf.readthedocs.io/en/latest/command_ref.html#check-update-command
@@ -568,7 +570,7 @@ Puntos verificados documentalmente: `0` representa éxito; `$?` contiene el esta
 
 Se posponen: `if`, `test`, `[ ]`, `[[ ]]`, `case`, comparaciones, `set -e`, `set -u`, `pipefail` como política, `trap`, funciones y `return`.
 
-**Estado de la lección:** redactada y revisada documentalmente contra GNU Bash 5.3. Las prácticas son locales, no destructivas y no requieren privilegios.
+**Estado de la lección:** redactada y revisada documentalmente contra GNU Bash 5.3 (edición del manual del 18 de mayo de 2025; vigente al consultarla el 9 de octubre de 2026). Las prácticas son locales, no destructivas y no requieren privilegios.
 
 ---
 

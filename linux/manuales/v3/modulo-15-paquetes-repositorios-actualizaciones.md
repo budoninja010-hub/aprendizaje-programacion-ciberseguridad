@@ -350,7 +350,7 @@ dnf upgrade
 dnf remove
 ```
 
-**Nota sobre versiones:** RHEL 10 documenta DNF, mientras que Fedora 41 y posteriores emplean DNF5. La documentación de DNF5 denomina `check-upgrade` a la comprobación de actualizaciones; no presupongas que `check-update` es un alias compatible en todas las instalaciones. Antes de aplicar ejemplos, identifica la versión con `dnf --version` y consulta la ayuda de tu distribución. Referencia: [DNF5 check-upgrade](https://dnf5.readthedocs.io/en/latest/commands/check-upgrade.8.html).
+**Nota sobre versiones:** RHEL 10 documenta DNF, mientras que Fedora 41 y posteriores emplean DNF5 (cambio [SwitchToDnf5](https://fedoraproject.org/wiki/Changes/SwitchToDnf5), comprobado el 9 de octubre de 2026). La documentación de DNF5 denomina `check-upgrade` a la comprobación de actualizaciones; no presupongas que `check-update` es un alias compatible en todas las instalaciones. Antes de aplicar ejemplos, identifica la versión con `dnf --version` y consulta la ayuda de tu distribución. Referencia: [DNF5 check-upgrade](https://dnf5.readthedocs.io/en/latest/commands/check-upgrade.8.html).
 
 ## 18. dnf search
 
@@ -888,6 +888,8 @@ Estado: EN APRENDIZAJE / PRACTICADO
 ```
 
 ## 45. Fuentes y límites
+
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales verificadas para esta edición:
 
