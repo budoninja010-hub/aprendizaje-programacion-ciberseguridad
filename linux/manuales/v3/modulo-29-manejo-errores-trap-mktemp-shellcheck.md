@@ -618,12 +618,10 @@ Para un script de práctica:
 ## 46. Preparar el laboratorio
 
 ```bash
-cd ~/linux-lab
-pwd
-ls
-mkdir -p modulo-29-errores
-cd modulo-29-errores
-pwd
+test -d ~/linux-lab && \
+cd ~/linux-lab && \
+mkdir -p modulo-29-errores && \
+cd modulo-29-errores && pwd
 ```
 
 Etiqueta: **creación en laboratorio**.
