@@ -15,6 +15,7 @@ La progresión debe ser gradual. No se avanzará a contenidos complejos si los f
 ## Dónde guardar cada material
 
 ### Python
+- Apuntes de clase: `python/clases/`
 - Ejercicios cortos: `python/ejercicios/`
 - Mini evaluaciones: `python/examenes/`
 - Proyectos completos: `python/proyectos/`
@@ -25,6 +26,7 @@ La progresión debe ser gradual. No se avanzará a contenidos complejos si los f
 - Proyectos: `java/proyectos/`
 
 ### Linux
+- Manual Maestro de Linux: `linux/manuales/` (la versión vigente es `v3/`)
 - Comandos y notas: `linux/comandos/`
 - Bash: `linux/bash/`
 - Prácticas: `linux/laboratorios/`
@@ -41,6 +43,10 @@ La progresión debe ser gradual. No se avanzará a contenidos complejos si los f
 ### Notas y proyectos integradores
 - Notas generales: `notas/`
 - Proyectos que mezclen varias áreas: `proyectos/`
+
+### Manuales
+- Cada área guarda sus manuales y revisiones en `<área>/manuales/`.
+- Las versiones anteriores se conservan; nunca se sobrescriben.
 
 ## Reglas de guardado
 
@@ -62,19 +68,23 @@ La progresión debe ser gradual. No se avanzará a contenidos complejos si los f
 7. En ciberseguridad, trabajar únicamente con sistemas propios, CTF, laboratorios o entornos con autorización explícita.
 8. Conservar el historial de Git como registro del progreso: las correcciones importantes deben quedar documentadas mediante commits claros.
 
-## Convención recomendada para commits
+## Convención para commits
 
-- `feat:` nueva práctica o proyecto
-- `fix:` corrección de código
-- `docs:` documentación o apuntes
-- `test:` pruebas
-- `refactor:` mejora interna sin cambiar funcionalidad
-- `chore:` mantenimiento del repositorio
+Formato: `área: verbo en infinitivo + qué cambia`, en minúsculas y sin punto final.
+
+- `python:`, `java:`, `linux:`, `redes:`, `security:` → material de esa área.
+- `docs:` → documentación general del repositorio.
+- `chore:` → mantenimiento (`.gitignore`, estructura de carpetas).
+
+Si el cambio es una corrección, dilo con el verbo: `python: corregir condición del ejercicio if`.
 
 Ejemplos:
-- `feat: agregar ejercicio de variables en Python`
-- `fix: corregir condición del ejercicio if`
-- `docs: añadir resumen de permisos Linux`
+- `python: agregar ejercicio de variables`
+- `python: corregir condición del ejercicio if`
+- `linux: añadir resumen de permisos`
+- `docs: actualizar ruta de aprendizaje`
+
+> Nota: una versión anterior de esta guía proponía prefijos `feat:`/`fix:`. Se unificó con el formato por área porque es el que usa todo el historial.
 
 ## Objetivo
 
