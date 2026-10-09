@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Duodécima entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-11-usuarios-grupos-identidad.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 11](modulo-11-usuarios-grupos-identidad.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 13 →](modulo-13-procesos-ps-top-htop.md)
 
 ## 1. Qué aprenderás
 
@@ -964,4 +964,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente. La práctica real del estudiante sigue pendiente.
 
-Siguiente módulo por redactar: **Módulo 13 — Procesos; ps, top y htop opcional**.
+---
+
+**Siguiente:** [Módulo 13 — Procesos: ps, top y htop opcional](modulo-13-procesos-ps-top-htop.md) · [Volver al índice](README.md)

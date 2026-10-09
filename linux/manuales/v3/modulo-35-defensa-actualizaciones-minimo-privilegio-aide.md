@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Trigésima quinta entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-34-almacenamiento-lsblk-df-du-montaje-fstab.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 34](modulo-34-almacenamiento-lsblk-df-du-montaje-fstab.md) · [Arquitectura](00-indice-arquitectura.md)
 
 ## 1. Propósito del módulo
 
@@ -1092,3 +1092,9 @@ Las prácticas del estudiante todavía deben ejecutarse, explicarse y revisarse 
 Siguiente fase editorial:
 
 > **auditoría transversal completa de los Módulos 1–35, corrección de inconsistencias, referencias cruzadas, seguridad, progresión pedagógica y preparación de edición consolidada.**
+
+> **Actualización:** esta auditoría se realizó el 8 de octubre de 2026. Ver [03 — Auditoría transversal completa v3](03-auditoria-transversal-completa-v3-2026-10-08.md).
+
+---
+
+**Fin del núcleo v3.** [← Módulo 34 — Almacenamiento: `lsblk`, `df`, `du`, montaje y `fstab`](modulo-34-almacenamiento-lsblk-df-du-montaje-fstab.md) · [Volver al índice](README.md)

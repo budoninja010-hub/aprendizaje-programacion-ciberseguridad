@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Trigésima segunda entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-31-tar-gzip-xz-archivos-compresion.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 31](modulo-31-tar-gzip-xz-archivos-compresion.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 33 →](modulo-33-git-github-para-scripts.md)
 
 ## 1. Qué aprenderás
 
@@ -860,4 +860,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente contra el manual oficial de rsync 3.5.1. Las prácticas son locales y `--delete` se limita a simulación con `--dry-run`.
 
-Siguiente módulo por redactar: **Módulo 33 — Git y GitHub para scripts; enlace al itinerario específico de Git**.
+---
+
+**Siguiente:** [Módulo 33 — Git y GitHub para scripts; puente al itinerario específico de Git](modulo-33-git-github-para-scripts.md) · [Volver al índice](README.md)

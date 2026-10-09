@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Vigesimoctava entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-27-bucles-lectura-lineas-nombres-seguros.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 27](modulo-27-bucles-lectura-lineas-nombres-seguros.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 29 →](modulo-29-manejo-errores-trap-mktemp-shellcheck.md)
 
 ## 1. Qué aprenderás
 
@@ -1020,4 +1020,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente contra GNU Bash. Las prácticas son locales, no destructivas y no requieren privilegios.
 
-Siguiente módulo por redactar: **Módulo 29 — Manejo de errores, `trap`, `mktemp`, límites de `set -e`/`set -u` y ShellCheck**.
+---
+
+**Siguiente:** [Módulo 29 — Manejo de errores, `trap`, `mktemp`, límites de `set -e`/`set -u` y ShellCheck](modulo-29-manejo-errores-trap-mktemp-shellcheck.md) · [Volver al índice](README.md)

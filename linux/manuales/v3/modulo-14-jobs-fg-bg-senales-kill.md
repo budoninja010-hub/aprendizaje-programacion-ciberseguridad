@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Decimocuarta entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-13-procesos-ps-top-htop.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 13](modulo-13-procesos-ps-top-htop.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 15 →](modulo-15-paquetes-repositorios-actualizaciones.md)
 
 ## 1. Qué aprenderás
 
@@ -761,4 +761,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente. La práctica real del estudiante sigue pendiente.
 
-Siguiente módulo por redactar: **Módulo 15 — Paquetes, repositorios y actualizaciones**.
+---
+
+**Siguiente:** [Módulo 15 — Paquetes, repositorios y actualizaciones](modulo-15-paquetes-repositorios-actualizaciones.md) · [Volver al índice](README.md)

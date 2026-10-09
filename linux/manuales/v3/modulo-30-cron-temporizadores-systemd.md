@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Trigésima entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-29-manejo-errores-trap-mktemp-shellcheck.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 29](modulo-29-manejo-errores-trap-mktemp-shellcheck.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 31 →](modulo-31-tar-gzip-xz-archivos-compresion.md)
 
 ## 1. Qué aprenderás
 
@@ -1020,4 +1020,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente contra Cronie, systemd y documentación vigente de RHEL 10. La práctica principal usa scripts no destructivos; la parte de systemd se limita a unidades de usuario y se incluye un procedimiento de retirada explícito.
 
-Siguiente módulo por redactar: **Módulo 31 — Archivos y compresión con `tar`, `gzip` y `xz`**.
+---
+
+**Siguiente:** [Módulo 31 — Archivos y compresión con `tar`, `gzip` y `xz`](modulo-31-tar-gzip-xz-archivos-compresion.md) · [Volver al índice](README.md)

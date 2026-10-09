@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Vigesimoprimera entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-20-ssh-sistemas-autorizados.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 20](modulo-20-ssh-sistemas-autorizados.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 22 →](modulo-22-vi-vim-edicion-segura.md)
 
 ## 1. Qué aprenderás
 
@@ -947,4 +947,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente. Las prácticas obligatorias son de consulta; no modifican el firewall.
 
-Siguiente módulo por redactar: **Módulo 22 — vi/Vim: edición segura de archivos de texto**.
+---
+
+**Siguiente:** [Módulo 22 — vi/Vim: edición segura de archivos de texto](modulo-22-vi-vim-edicion-segura.md) · [Volver al índice](README.md)

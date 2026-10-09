@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Segunda entrega.
 
-[Estado actual](README.md) · [Módulo 1](01-gnu-linux-kernel-distribuciones.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 1](01-gnu-linux-kernel-distribuciones.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 3 →](modulo-03-navegacion-pwd-ls-cd.md)
 
 ## 1. Objetivo y requisitos
 
@@ -222,7 +222,9 @@ Se revisaron progresión, sintaxis de ejemplos, comillas, coherencia con M1, adv
 
 Decisiones de precisión: prompt configurable; `help` específico del entorno Bash; `--help` no universal; documentación ausente distinta de ejecutable ausente; interrupción distinta de deshacer; consulta de versión distinta de identificación de la shell actual.
 
-Siguiente módulo por redactar: **Módulo 3 — Navegación inicial: pwd, ls y cd**.
+---
+
+**Siguiente:** [Módulo 3 — Navegación inicial: pwd, ls y cd](modulo-03-navegacion-pwd-ls-cd.md) · [Volver al índice](README.md)
 
 ## Anexo editorial — Criterios de evaluación y fuentes
 

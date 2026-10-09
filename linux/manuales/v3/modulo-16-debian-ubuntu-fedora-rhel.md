@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Decimosexta entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-15-paquetes-repositorios-actualizaciones.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 15](modulo-15-paquetes-repositorios-actualizaciones.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 17 →](modulo-17-systemd-unidades-servicios-init.md)
 
 ## 1. Qué aprenderás
 
@@ -857,4 +857,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente. Las prácticas son de identificación y consulta; no modifican configuración.
 
-Siguiente módulo por redactar: **Módulo 17 — systemd, unidades y servicios; otros sistemas init en contexto**.
+---
+
+**Siguiente:** [Módulo 17 — systemd, unidades y servicios; otros sistemas init en contexto](modulo-17-systemd-unidades-servicios-init.md) · [Volver al índice](README.md)

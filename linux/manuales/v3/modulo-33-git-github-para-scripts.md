@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Trigésima tercera entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-32-rsync-copias-restauracion.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 32](modulo-32-rsync-copias-restauracion.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 34 →](modulo-34-almacenamiento-lsblk-df-du-montaje-fstab.md)
 
 ## 1. Propósito de este módulo
 
@@ -1073,4 +1073,6 @@ Se posponen al itinerario específico:
 
 **Estado de la lección:** redactada y revisada documentalmente contra Git y GitHub Docs. El flujo pedagógico exige revisar diferencias, excluir secretos y confirmar remoto/rama antes de publicar.
 
-Siguiente módulo por redactar: **Módulo 34 — Almacenamiento: `lsblk`, `df`, `du`; montaje y `fstab`**.
+---
+
+**Siguiente:** [Módulo 34 — Almacenamiento: `lsblk`, `df`, `du`, montaje y `fstab`](modulo-34-almacenamiento-lsblk-df-du-montaje-fstab.md) · [Volver al índice](README.md)

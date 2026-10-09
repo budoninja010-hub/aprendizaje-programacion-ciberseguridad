@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Novena entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-08-stdin-stdout-stderr-redirecciones.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 8](modulo-08-stdin-stdout-stderr-redirecciones.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 10 →](modulo-10-grep-find-locate.md)
 
 ## 1. Qué aprenderás
 
@@ -577,4 +577,6 @@ Se posponen para módulos posteriores:
 
 **Estado de la lección:** redactada y revisada documentalmente. La práctica real del estudiante sigue pendiente.
 
-Siguiente módulo por redactar: **Módulo 10 — grep, find y locate; búsqueda de texto y archivos**.
+---
+
+**Siguiente:** [Módulo 10 — grep, find y locate: buscar texto y archivos](modulo-10-grep-find-locate.md) · [Volver al índice](README.md)

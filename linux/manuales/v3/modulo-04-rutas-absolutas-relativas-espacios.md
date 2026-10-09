@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Cuarta entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-03-navegacion-pwd-ls-cd.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 3](modulo-03-navegacion-pwd-ls-cd.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 5 →](modulo-05-arbol-fhs-proc-sys-enlaces.md)
 
 ## 1. Qué aprenderás
 
@@ -252,7 +252,9 @@ Puedes enviar una respuesta breve al chat: qué entendiste de las rutas, un ejem
 
 Revisión documental: sintaxis de ejemplos, separación de argumentos, expansión de tilde, destinos del árbol y coherencia con M1–M3. Las referencias GNU se consultaron mediante documentación oficial indexada; la resolución de rutas se contrastó con Linux man-pages. La práctica en el Linux del estudiante sigue pendiente. No se afirma validación de ejecuciones reales.
 
-Siguiente módulo por redactar: **Módulo 5 — Árbol de archivos y FHS; /etc, /usr, /var, /tmp, /proc, /sys y enlaces**.
+---
+
+**Siguiente:** [Módulo 5 — Árbol de archivos, FHS, /etc, /usr, /var, /tmp, /proc, /sys y enlaces](modulo-05-arbol-fhs-proc-sys-enlaces.md) · [Volver al índice](README.md)
 
 ## Anexo editorial — Criterios de evaluación y fuentes
 

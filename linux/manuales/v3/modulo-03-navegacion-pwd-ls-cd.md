@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Tercera entrega.
 
-[Estado del manual](README.md) · [Módulo anterior](modulo-02-terminal-cli-shell-bash-ayuda.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 2](modulo-02-terminal-cli-shell-bash-ayuda.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 4 →](modulo-04-rutas-absolutas-relativas-espacios.md)
 
 ## 1. Objetivo y preparación
 
@@ -229,7 +229,9 @@ Esta entrega tiene revisión documental de sintaxis, orden pedagógico, fuentes,
 
 Las referencias están enlazadas junto a sus explicaciones: GNU Coreutils para `ls` y la utilidad externa `pwd`; GNU Bash para las órdenes internas. Coreutils 9.11 sigue siendo la referencia editorial, sin exigir esa versión instalada.
 
-Siguiente módulo por redactar: **Módulo 4 — Rutas absolutas y relativas; ~, ., .. y nombres con espacios**.
+---
+
+**Siguiente:** [Módulo 4 — Rutas absolutas y relativas; ~, ., .. y nombres con espacios](modulo-04-rutas-absolutas-relativas-espacios.md) · [Volver al índice](README.md)
 
 ## Anexo editorial — Criterios de evaluación y fuentes
 

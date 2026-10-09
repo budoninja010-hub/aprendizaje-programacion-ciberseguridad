@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Vigesimosexta entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-25-codigos-salida-composicion-ordenes.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 25](modulo-25-codigos-salida-composicion-ordenes.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 27 →](modulo-27-bucles-lectura-lineas-nombres-seguros.md)
 
 ## 1. Qué aprenderás
 
@@ -1014,4 +1014,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente contra el GNU Bash Reference Manual disponible en 2026. Las prácticas son locales, no destructivas y no requieren privilegios.
 
-Siguiente módulo por redactar: **Módulo 27 — Bucles, lectura de líneas y nombres de archivo seguros**.
+---
+
+**Siguiente:** [Módulo 27 — Bucles, lectura de líneas y nombres de archivo seguros](modulo-27-bucles-lectura-lineas-nombres-seguros.md) · [Volver al índice](README.md)

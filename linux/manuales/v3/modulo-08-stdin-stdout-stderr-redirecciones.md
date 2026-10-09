@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Octava entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-07-cat-less-head-tail.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 7](modulo-07-cat-less-head-tail.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 9 →](modulo-09-pipes-composicion-comandos.md)
 
 ## 1. Qué aprenderás
 
@@ -671,4 +671,6 @@ Esta lección cubre solo los fundamentos. Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente. La práctica real del estudiante sigue pendiente.
 
-Siguiente módulo por redactar: **Módulo 9 — Tuberías (pipes) y composición de comandos**.
+---
+
+**Siguiente:** [Módulo 9 — Tuberías (pipes) y composición de comandos](modulo-09-pipes-composicion-comandos.md) · [Volver al índice](README.md)

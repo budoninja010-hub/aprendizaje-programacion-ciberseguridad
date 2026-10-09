@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Decimoséptima entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-16-debian-ubuntu-fedora-rhel.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 16](modulo-16-debian-ubuntu-fedora-rhel.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 18 →](modulo-18-logs-journalctl-diagnostico.md)
 
 ## 1. Qué aprenderás
 
@@ -984,4 +984,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente. Las prácticas son de consulta; no cambian servicios ni configuración.
 
-Siguiente módulo por redactar: **Módulo 18 — Logs y diagnóstico inicial con journalctl**.
+---
+
+**Siguiente:** [Módulo 18 — Logs y diagnóstico inicial con journalctl](modulo-18-logs-journalctl-diagnostico.md) · [Volver al índice](README.md)
