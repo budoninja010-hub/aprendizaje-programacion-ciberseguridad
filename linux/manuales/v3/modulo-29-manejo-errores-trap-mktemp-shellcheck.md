@@ -156,6 +156,8 @@ Cuando el shell termina, ejecuta la función registrada.
 
 `trap` no convierte automáticamente cualquier fallo en una excepción.
 
+**Límite:** la limpieza configurada con `trap ... EXIT` no está garantizada ante una terminación forzada o un apagado repentino. No dependas únicamente de esta limpieza para proteger información sensible.
+
 Debes distinguir:
 
 ```text
