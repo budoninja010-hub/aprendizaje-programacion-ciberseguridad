@@ -194,6 +194,8 @@ para `dnf check-update`, porque interpretarías incorrectamente el estado `100`.
 
 Este punto conecta con el **Módulo 25 — Códigos de salida** y con el **Módulo 15 — Paquetes, repositorios y actualizaciones**: el significado de un código debe consultarse en la documentación de la herramienta concreta.
 
+**Equivalentes de consulta en otras distribuciones:** en Debian y Ubuntu, `apt list --upgradable` muestra paquetes con actualizaciones disponibles según el índice local; para actualizar ese índice normalmente se utiliza `apt update`, operación que consulta repositorios y puede requerir privilegios. No instales ni actualices paquetes en esta práctica. En Fedora reciente con DNF5, la comprobación se documenta como `dnf5 check-upgrade`; revisa la distinción entre DNF4 y DNF5 del Módulo 15. Para AIDE, consulta los procedimientos y rutas de configuración propios de Debian/Ubuntu o Fedora antes de administrar una base real.
+
 ## 12. Consultar avisos de seguridad
 
 En RHEL 10 puede usarse:
