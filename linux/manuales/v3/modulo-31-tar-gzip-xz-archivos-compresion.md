@@ -110,11 +110,10 @@ Una extensión es una convención; no garantiza por sí sola el contenido real.
 ## 7. Preparar el laboratorio
 
 ```bash
-cd ~/linux-lab
-pwd
-mkdir -p modulo-31-archivos/origen
-cd modulo-31-archivos
-pwd
+test -d ~/linux-lab && \
+cd ~/linux-lab && \
+mkdir -p modulo-31-archivos/origen && \
+cd modulo-31-archivos && pwd
 ```
 
 Etiqueta: **creación en laboratorio**.
