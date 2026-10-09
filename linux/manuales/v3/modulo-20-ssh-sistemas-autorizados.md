@@ -177,7 +177,7 @@ OpenSSH mantiene identificaciones de hosts conocidos normalmente en:
 ~/.ssh/known_hosts
 ```
 
-Cuando un host ya conocido presenta una clave distinta, el cliente puede advertirlo y, por seguridad, OpenSSH deshabilita la autenticación por contraseña ante una clave de host cambiada.
+Cuando un host ya conocido presenta una clave distinta, el cliente lo advierte. Con la configuración predeterminada (`StrictHostKeyChecking ask`), y también con `yes` o `accept-new`, OpenSSH **se niega a conectar**. Solo si alguien configuró `StrictHostKeyChecking no`, la conexión puede continuar con restricciones, entre ellas la desactivación de la autenticación por contraseña (fuentes: `ssh_config(5)` y `ssh(1)`).
 
 Eso no significa automáticamente un ataque; también puede ocurrir tras:
 
@@ -351,6 +351,8 @@ sobre `~/.ssh` o claves.
 Como referencia habitual de OpenSSH: `~/.ssh` debe estar restringido al propietario (modo `700`); las claves privadas y `~/.ssh/config` pueden mantenerse en modo `600`. `authorized_keys` también debe estar protegido frente a escritura ajena. Comprueba los permisos con `ls -ld ~/.ssh` y `ls -l ~/.ssh/config` cuando existan. No cambies permisos de archivos reales sin comprender primero M12 y las políticas del equipo.
 
 ## 21. Generar una clave de laboratorio — opcional
+
+Esta sección explica el procedimiento; **no lo ejecutes aquí**. La práctica correspondiente es la sección 41 (Práctica E). Si lo ejecutaras dos veces, el segundo `mkdir` fallaría y `ssh-keygen` preguntaría si quieres sobrescribir la clave.
 
 Solo para un ejercicio local, puedes generar un par nuevo **sin reutilizar una clave real**.
 
@@ -847,6 +849,8 @@ Estado: EN APRENDIZAJE / PRACTICADO
 ```
 
 ## 49. Fuentes y límites
+
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales verificadas:
 

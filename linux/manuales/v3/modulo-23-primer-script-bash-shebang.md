@@ -881,13 +881,13 @@ Antes de subir:
 Ejemplo de ruta:
 
 ```text
-linux/ejercicios/bash/
+linux/bash/
 ```
 
 Ejemplo de commit:
 
 ```text
-linux: primer script Bash con shebang
+linux: añadir primer script Bash con shebang
 ```
 
 No se hará commit de archivos con secretos.
@@ -1006,6 +1006,8 @@ Estado: EN APRENDIZAJE / PRACTICADO
 ```
 
 ## 50. Fuentes y límites
+
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales:
 

@@ -644,7 +644,7 @@ Identifica para ti:
 
 - una unidad active/running;
 - una active/exited, si existe;
-- una inactiva, si utilizas `--all`.
+- una inactiva, si repites la consulta con `--all`: `systemctl list-units --type=service --all`.
 
 ## 34. Práctica D — archivos de unidades
 
@@ -953,6 +953,8 @@ Estado: EN APRENDIZAJE / PRACTICADO
 ```
 
 ## 51. Fuentes y límites
+
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales verificadas:
 

@@ -235,6 +235,8 @@ No pegues capturas completas del prompt ni rutas personales sin revisarlas. La r
 
 ## 12. Fuentes y límites de esta lección
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 ### Revisión de esta entrega
 
 Se revisaron progresión, sintaxis de ejemplos, comillas, coherencia con M1, advertencias y fuentes oficiales. Las referencias GNU se contrastaron mediante documentación oficial indexada; no se infiere una versión instalada a partir de ellas. La práctica interactiva en el Linux del estudiante sigue pendiente.

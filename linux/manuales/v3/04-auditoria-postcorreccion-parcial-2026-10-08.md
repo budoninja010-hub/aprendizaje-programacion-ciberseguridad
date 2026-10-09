@@ -94,3 +94,74 @@ Se abrieron y consultaron las páginas originales de: espejo público de iproute
 Se aplicó el hallazgo E01 de la auditoría transversal. Cambios: encabezados alineados con el contrato de M5–M35; anexo integrado en «Fuentes y límites de esta lección»; pie de navegación movido al final en M2–M4; ficha de registro añadida en M2. Una comprobación automática confirmó que ninguna línea de contenido previo se eliminó. Los enlaces internos de los 35 módulos siguen resolviendo y todos los bloques de código cierran.
 
 **Pendiente:** E04 y E05, lectura íntegra de los módulos no revisados en pasadas anteriores, verificación de enlaces externos y sincronización con Google Drive.
+
+## Octava pasada — E02, E04, E05 y enlaces externos (9 de octubre de 2026)
+
+**E02 (README con historial acumulado):** ya resuelto el 9 de octubre al convertir el README en índice y trasladar el historial a [05-historial-entregas.md](05-historial-entregas.md).
+
+**E04 (jerarquía de fuentes):** aplicado mediante el [catálogo de fuentes](06-catalogo-fuentes.md). Clasifica los 182 enlaces externos de los módulos en los cinco niveles de la auditoría. La sección «Fuentes y límites» de los 35 módulos enlaza a ese catálogo con la misma frase. No se reordenaron las listas de fuentes dentro de cada módulo.
+
+**Enlaces externos:** comprobados el 9 de octubre de 2026 desde un servicio externo (código de respuesta y título de la página). Resultado: 127 funcionan; 55 de los manuales de GNU quedaron **sin verificar** porque el servicio agotó sus créditos. Problemas corregidos:
+
+| Módulo | Problema | Corrección |
+|---|---|---|
+| M22 | `vimhelp.org/reference_toc.txt.html` → 404 | `https://vimhelp.org/#reference_toc` |
+| M35 | Enlace «Checking integrity with AIDE» abría la portada de *Security hardening* | Capítulo 7 `…/security_hardening/checking-integrity-with-aide` |
+| M16 | `…/fedora-silverblue/` redirige | `…/en-US/atomic-desktops/` |
+
+**E05 (fechas de verificación):** afirmaciones contrastadas con el texto de la fuente original el 9 de octubre de 2026.
+
+| Afirmación | Fuente | Dictamen y acción |
+|---|---|---|
+| M06: GNU Coreutils 9.11 | Manual de Coreutils en gnu.org | **Desactualizado:** el manual documenta la 9.12. Se quitó «9.11» de cada enlace y se añadió una nota de vigencia |
+| M31: GNU gzip 1.14 | Manual de gzip en gnu.org | **Desactualizado:** el manual documenta la 1.15 (3 de enero de 2026). Corregido y fechado |
+| M13: libro de man-pages 6.17 | Listado de kernel.org | El PDF existe; la edición más reciente es la 6.19. Se añadió la nota |
+| M25: GNU Bash 5.3 | Manual de Bash (edición del 18 de mayo de 2025) | Confirmado; fechado |
+| M15: Fedora 41+ usa DNF5 | Fedora Wiki, cambio *SwitchToDnf5* («Targeted release: Fedora Linux 41») | Confirmado; enlace y fecha añadidos |
+| M18: journal volátil por defecto en RHEL 10 | RHEL 10, capítulo 13 de *RHEL system roles* | Confirmado; fechado |
+| M21: UFW deshabilitado por defecto en Ubuntu | Ubuntu security documentation — Firewall | Confirmado; fechado |
+
+Las auditorías 02 y 03 citan Coreutils 9.11. No se modifican porque registran lo comprobado en su fecha.
+
+**Pendiente:** verificar los 55 enlaces de GNU restantes, lectura íntegra de los módulos no revisados en pasadas anteriores, revisión visual del PDF y sincronización con Google Drive.
+
+## Novena pasada — lectura íntegra de los módulos pendientes (9 de octubre de 2026)
+
+**Alcance:** lectura completa de los 22 módulos que las pasadas anteriores no habían contrastado a fondo: M5–M12, M14, M15, M17, M18, M20, M22–M24, M26, M28, M29, M31 y M33.
+
+**Comprobaciones automáticas sobre los 35 módulos:**
+
+- 1120 bloques `bash` extraídos y analizados con `bash -n` (Bash 5.2) y ShellCheck 0.11.0. Los 7 errores de sintaxis son fragmentos explicativos intencionales; los avisos restantes corresponden a fragmentos sueltos o a ejemplos marcados como «Detección de error».
+- Prácticas ejecutadas en carpetas temporales: permisos y `umask` (M12), scripts y CRLF (M23), `read`/`IFS`/`"$@"` (M24), `mktemp` + `trap`, `set -e`, `set -u` y `pipefail` (M29), `tar`/`gzip`/`xz` y `--keep-old-files` (M31), flujo Git (M33). Los resultados coincidieron con lo descrito, salvo lo indicado abajo.
+- M20 se contrastó con `ssh(1)` y `ssh_config(5)` del repositorio original openssh-portable (commit `6a46ea6`, 9-oct-2026).
+
+**Resultado:** 0 hallazgos críticos, 7 importantes y 15 mejoras opcionales. Todos aplicados.
+
+| Id | Nivel | Módulo | Hallazgo | Acción |
+|---|---|---|---|---|
+| H1 | IMPORTANTE | M05 §7 | Prometía estudiar el sticky bit en M12, que lo pospone | Texto corregido: se pospone |
+| H10 | IMPORTANTE | M11 §5 | Prometía estudiar el SGID de directorios en M12, que lo pospone | Texto corregido: se pospone |
+| H5 | IMPORTANTE | M07 §18 | Ordenaba `tail -f` antes de crear el archivo | Orden corregido |
+| H9 | IMPORTANTE | M10 §31 | «no necesariamente `app.log`» sugería una duda inexistente | Precisado |
+| H14 | IMPORTANTE | M20 §10 | Con el valor por defecto, OpenSSH rechaza la conexión ante una host key cambiada; el texto solo mencionaba desactivar la contraseña | Precisado con `ssh_config(5)` |
+| H17 | IMPORTANTE | M23 §44 | Ruta de guardado `linux/ejercicios/bash/` distinta de la del repositorio (`linux/bash/`) | Corregida |
+| H22 | IMPORTANTE | M33 §52 | Siguiendo el orden, la Práctica A fallaba con «nothing added to commit» | Práctica en un repositorio nuevo |
+| H2 | MEJORA | M31 §23, §28 | Órdenes con `cd` sin encadenar | Encadenadas con `&&` |
+| H4 | MEJORA | M06 | Ejemplos con `rm`/`mv` antes de crear la carpeta de práctica | Aviso de lectura añadido |
+| H6 | MEJORA | M07 §13 | Contradicción sobre `>` y sin comprobar el nombre | Redactado y con comprobación |
+| H7 | MEJORA | M07 §22 | «20,000» | «20 000» |
+| H8 | MEJORA | M08 §21 | `>` sin comprobación previa | Comprobación añadida |
+| H11 | MEJORA | M11 §25 | Primer uso de `$(…)` sin explicar | Explicación breve y remisión a M24 |
+| H12 | MEJORA | M15 §32 | Aviso de `apt` en tuberías no anticipado | Nota y alternativa `apt-cache search` |
+| H13 | MEJORA | M17 §33 | Pedía `--all` sin mostrarlo | Orden completa |
+| H15 | MEJORA | M20 §21 | Generación de clave duplicada con §41 | §21 marcada como explicación |
+| H16 | MEJORA | M22 §20 | Nota de compatibilidad fuera de lugar | Movida tras §22 |
+| H18 | MEJORA | M23, M33, M35 | Ejemplos de commit fuera del formato del repositorio | Alineados con `área: verbo + qué` |
+| H19 | MEJORA | M24 §2–3 | Nombre real en ejemplos | Sustituido por «Ana» |
+| H20 | MEJORA | M24, M26, M28, M29 | Prácticas sin nombre de archivo | Nombres indicados |
+| H21 | MEJORA | M31 §35 | Conflicto `File exists` no anticipado | Aviso añadido |
+| H23 | MEJORA | M33 | `pwd` duplicado y here-document explicado dos veces | Simplificado |
+
+Un hallazgo provisional (bloque de M27 marcado como código) se descartó al comprobar que ya estaba marcado como texto.
+
+**Pendiente:** verificar los 55 enlaces de GNU restantes, revisión visual del PDF y sincronización con Google Drive. La práctica real del estudiante sigue pendiente.

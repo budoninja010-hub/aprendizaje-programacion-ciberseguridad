@@ -207,7 +207,7 @@ Por eso incluso dentro de “Fedora” debes identificar la variante antes de ad
 
 Fuentes:
 - https://docs.fedoraproject.org/
-- https://docs.fedoraproject.org/en-US/fedora-silverblue/
+- https://docs.fedoraproject.org/en-US/atomic-desktops/ (Fedora Atomic Desktops User Guide; la dirección anterior `/fedora-silverblue/` redirige a esta guía, comprobado el 9 de octubre de 2026)
 
 ## 12. Fedora tradicional y paquetes
 
@@ -811,6 +811,8 @@ Estado: EN APRENDIZAJE / PRACTICADO
 ```
 
 ## 43. Fuentes y límites
+
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales verificadas para esta edición:
 

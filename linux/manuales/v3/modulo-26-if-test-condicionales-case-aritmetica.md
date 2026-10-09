@@ -666,7 +666,7 @@ bash condicion_true.sh
 
 ## 39. Práctica B — `if` y `else`
 
-Crea:
+Crea `condicion_else.sh`:
 
 ```bash
 #!/usr/bin/env bash
@@ -681,6 +681,8 @@ fi
 Antes de ejecutar, predice qué línea aparecerá.
 
 ## 40. Práctica C — comparación de texto
+
+Crea `comparar_texto.sh`:
 
 ```bash
 #!/usr/bin/env bash
@@ -697,6 +699,8 @@ fi
 Explica por qué esta práctica usa `[[ ... ]]` y por qué el script declara Bash.
 
 ## 41. Práctica D — comparación numérica
+
+Crea `comparar_numero.sh`:
 
 ```bash
 #!/usr/bin/env bash
@@ -737,6 +741,8 @@ fi
 
 ## 43. Práctica F — `case`
 
+Crea `opciones.sh`:
+
 ```bash
 #!/usr/bin/env bash
 
@@ -765,6 +771,8 @@ bash opciones.sh otra
 
 ## 44. Práctica G — `elif`
 
+Crea `signo.sh`:
+
 ```bash
 #!/usr/bin/env bash
 
@@ -784,6 +792,8 @@ Para esta práctica usa argumentos enteros sencillos: `5`, `-2` y `0`.
 La validación de entradas no numéricas se estudiará con mayor profundidad posteriormente.
 
 ## 45. Práctica H — usar una orden directamente
+
+Crea `entrar_lab.sh`:
 
 ```bash
 #!/usr/bin/env bash
@@ -982,6 +992,8 @@ Para avanzar como **DOMINADO** deberás poder:
 7. resolver otra práctica en una sesión posterior.
 
 ## 55. Fuentes y límites
+
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales:
 

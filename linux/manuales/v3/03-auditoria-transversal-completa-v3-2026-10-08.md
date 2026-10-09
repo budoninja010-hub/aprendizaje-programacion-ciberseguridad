@@ -286,7 +286,7 @@ M1–M4 contienen esas ideas, pero con encabezados diferentes (`Revisión de est
 
 **Aplicado (9-oct-2026):** encabezados unificados (`Qué aprenderás`, `Errores frecuentes y corrección mínima`, `Mini evaluación`, `Registro de aprendizaje`, `Fuentes y límites de esta lección`); el anexo editorial pasa a la sección final de fuentes y la navegación «Siguiente» queda al final del archivo (en M2–M4 aparecía antes del anexo). M2 recibe una ficha de registro de aprendizaje equivalente a la de M3. No se eliminó texto.
 
-### E02 — El README acumula demasiados estados históricos
+### E02 — El README acumula demasiados estados históricos ✅ CORREGIDO
 
 El README conserva cada entrega anterior dentro del mismo archivo.
 
@@ -301,6 +301,8 @@ El README conserva cada entrega anterior dentro del mismo archivo.
 
 Trasladar el historial cronológico a `CHANGELOG.md` o `HISTORIAL.md`, conservando todos los datos.
 
+**Aplicado (9-oct-2026):** el README quedó como índice y el historial se trasladó a [05-historial-entregas.md](05-historial-entregas.md) sin pérdida de datos.
+
 ### E03 — `02-auditoria-fuentes.md` ya es histórica ✅ CORREGIDO
 
 Su propio texto dice que solo auditaba la primera entrega y que M2–M35 seguían pendientes.
@@ -309,7 +311,7 @@ Su propio texto dice que solo auditaba la primera entrega y que M2–M35 seguía
 
 > Auditoría histórica de la primera entrega. Para la auditoría transversal del núcleo completo, consultar `03-auditoria-transversal-completa-v3-2026-10-08.md`.
 
-### E04 — Homogeneizar nomenclatura de fuente primaria
+### E04 — Homogeneizar nomenclatura de fuente primaria ✅ APLICADO
 
 Usar una jerarquía editorial:
 
@@ -321,7 +323,9 @@ Usar una jerarquía editorial:
 5. fuente secundaria, solo si aporta contexto
 ```
 
-### E05 — Añadir fecha de verificación a afirmaciones cambiantes
+**Aplicado (9-oct-2026):** [catálogo de fuentes](06-catalogo-fuentes.md) con los 182 enlaces externos clasificados y comprobados; cada módulo enlaza a él desde «Fuentes y límites». Detalle en la [octava pasada](04-auditoria-postcorreccion-parcial-2026-10-08.md).
+
+### E05 — Añadir fecha de verificación a afirmaciones cambiantes ✅ APLICADO
 
 Especialmente:
 
@@ -330,6 +334,8 @@ Especialmente:
 - ciclo de soporte;
 - defaults de seguridad;
 - herramientas predeterminadas.
+
+**Aplicado (9-oct-2026):** fechas añadidas en M06, M13, M15, M18, M21, M25 y M31 tras contrastar cada afirmación con su fuente. Se corrigieron dos versiones desactualizadas (Coreutils 9.11 → 9.12; gzip 1.14 → 1.15). Detalle en la [octava pasada](04-auditoria-postcorreccion-parcial-2026-10-08.md).
 
 ## 9. Confirmaciones importantes — contenido correcto
 

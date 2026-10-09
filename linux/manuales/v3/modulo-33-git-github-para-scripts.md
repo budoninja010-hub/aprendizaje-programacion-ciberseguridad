@@ -92,7 +92,7 @@ Un commit debe representar una unidad lógica de cambio.
 Ejemplo de este proyecto:
 
 ```text
-linux: práctica de funciones Bash
+linux: añadir práctica de funciones Bash
 ```
 
 Mejor que:
@@ -134,7 +134,6 @@ test -d ~/linux-lab && \
 cd ~/linux-lab && \
 mkdir -p modulo-33-git && \
 cd modulo-33-git && pwd
-pwd
 ```
 
 Etiqueta: **creación en laboratorio**.
@@ -255,7 +254,7 @@ Esta secuencia reduce commits accidentales.
 ## 19. Crear el primer commit
 
 ```bash
-git commit -m 'linux: primer script Bash versionado'
+git commit -m 'linux: versionar primer script Bash'
 ```
 
 El commit registra únicamente el contenido preparado.
@@ -307,7 +306,7 @@ git diff --staged
 Solo si la diferencia es correcta:
 
 ```bash
-git commit -m 'linux: amplía práctica de salida con printf'
+git commit -m 'linux: ampliar práctica de salida con printf'
 ```
 
 ## 24. Commits pequeños
@@ -406,7 +405,7 @@ no lo fuerces ni lo ignores por comodidad
 
 Push protection es una capa preventiva; no reemplaza tu propia revisión.
 
-**Antes de ejecutar:** `cat > archivo <<'EOF'` utiliza un *here-document*: envía a `cat` las líneas siguientes hasta el delimitador `EOF`. Las comillas impiden expansiones de variables y comandos dentro del bloque. La redirección `>` **crea o sobrescribe** el destino; verifica que estás en el laboratorio y que el archivo no existe antes de continuar. Si ya existe, revísalo y edítalo con Vim o conserva una copia.
+**Antes de ejecutar:** el siguiente bloque vuelve a usar un *here-document* (explicado antes de la sección 13). Recuerda que `>` crea o sobrescribe `.gitignore`: comprueba antes que no existe.
 
 ## 28. Crear `.gitignore` de práctica
 
@@ -652,12 +651,14 @@ Para cada práctica con valor de aprendizaje:
 ## 44. Ejemplos de mensajes de commit
 
 ```text
-python: ejercicio de variables y print
-java: práctica de clases y objetos
-linux: práctica de permisos
-linux: ejercicio de funciones Bash
-cybersecurity: laboratorio defensivo de análisis de logs
+python: agregar ejercicio de variables y print
+java: practicar clases y objetos
+linux: añadir práctica de permisos
+linux: agregar ejercicio de funciones Bash
+security: documentar laboratorio defensivo de análisis de logs
 ```
+
+Formato de este repositorio: `área: verbo en infinitivo + qué cambia`. Las áreas y ejemplos están en [GUIA_DE_TRABAJO.md](../../../GUIA_DE_TRABAJO.md).
 
 El mensaje debe explicar qué aprendiste o qué cambió.
 
@@ -681,13 +682,13 @@ Un ejercicio incompleto puede guardarse si tiene valor pedagógico.
 Mensaje posible:
 
 ```text
-linux: WIP práctica de bucles
+linux: guardar práctica de bucles en progreso (WIP)
 ```
 
 Después:
 
 ```text
-linux: corrige práctica de bucles y quoting
+linux: corregir práctica de bucles y quoting
 ```
 
 ## 47. Revisar un commit después de crearlo
@@ -756,13 +757,23 @@ La primera acción de seguridad es invalidar o rotar la credencial con el provee
 
 ## 52. Práctica A — estado y primer commit
 
-Dentro de `~/linux-lab/modulo-33-git`:
+Si seguiste las secciones 13 a 23, ese commit ya existe y `git commit` responderá que no hay nada que confirmar. Repite el flujo desde cero en un repositorio nuevo del laboratorio:
+
+```bash
+test -d ~/linux-lab && \
+cd ~/linux-lab && \
+mkdir modulo-33-git-practica && \
+cd modulo-33-git-practica && \
+git init -b main
+```
+
+Crea `hola.sh` como en la sección 13 y `.gitignore` como en la sección 28. Después:
 
 ```bash
 git status
 git add hola.sh
 git diff --staged
-git commit -m 'linux: primer script Bash versionado'
+git commit -m 'linux: versionar primer script Bash'
 git log --oneline --decorate
 ```
 
@@ -779,7 +790,7 @@ git status
 git diff
 git add hola.sh
 git diff --staged
-git commit -m 'linux: amplía práctica de printf'
+git commit -m 'linux: ampliar práctica de printf'
 ```
 
 ## 54. Práctica C — `.gitignore`
@@ -787,7 +798,7 @@ git commit -m 'linux: amplía práctica de printf'
 ```bash
 git add .gitignore
 git diff --staged
-git commit -m 'git: agrega exclusiones de laboratorio'
+git commit -m 'chore: agregar exclusiones de laboratorio'
 ```
 
 Después comprueba:
@@ -1027,6 +1038,8 @@ El itinerario específico de Git/GitHub profundiza en:
 No adelantes esos temas aquí si todavía no corresponden en el itinerario de Git.
 
 ## 66. Fuentes y límites
+
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales:
 

@@ -2,11 +2,13 @@
 
 Edición 2026, versión vigente. Para registrar lo que ya practicaste usa [linux/PROGRESO.md](../../PROGRESO.md).
 
-## Estado vigente — 8 de octubre de 2026
+## Estado vigente — 9 de octubre de 2026
 
 - **Núcleo:** los 35 módulos están redactados y revisados documentalmente.
 - **Auditoría:** la [auditoría transversal completa](03-auditoria-transversal-completa-v3-2026-10-08.md) dio el dictamen *apto con correcciones importantes*. Las cinco correcciones de prioridad alta están aplicadas. El seguimiento posterior está en la [auditoría post-corrección parcial](04-auditoria-postcorreccion-parcial-2026-10-08.md).
-- **Pendientes editoriales:** verificar todos los bloques de código y diagramas en el PDF, revisar otras mejoras opcionales y sincronizar la edición íntegra actualizada a Google Drive.
+- **Fuentes:** hallazgos E02, E04 y E05 aplicados. Los enlaces externos están clasificados y comprobados en el [catálogo de fuentes](06-catalogo-fuentes.md); 55 enlaces de GNU siguen sin verificar.
+- **Lectura íntegra:** completada el 9 de octubre para los 22 módulos pendientes; 7 hallazgos importantes y 15 mejoras, todos aplicados (ver la [novena pasada](04-auditoria-postcorreccion-parcial-2026-10-08.md)).
+- **Pendientes editoriales:** verificar los 55 enlaces de GNU restantes, revisar visualmente el PDF y sincronizar la edición íntegra actualizada a Google Drive.
 - **Práctica del estudiante:** pendiente. Redacción completa no equivale a dominio demostrado.
 - **Google Drive:** la Entrega 24 es una instantánea histórica; no representa el núcleo vigente y omitía el Módulo 23. La versión vigente del Módulo 20 es la de esta carpeta.
 - **Regla de respaldo:** conservar versiones anteriores y generar una copia de cada edición corregida en Google Drive; no afirmar que está sincronizada hasta verificar su contenido.
@@ -92,5 +94,6 @@ No son lecciones; documentan cómo se revisó el manual.
 | [03 — Auditoría transversal completa](03-auditoria-transversal-completa-v3-2026-10-08.md) | Revisión de los 35 módulos y hallazgos. |
 | [04 — Auditoría post-corrección parcial](04-auditoria-postcorreccion-parcial-2026-10-08.md) | Seguimiento de las correcciones aplicadas. |
 | [05 — Historial de entregas](05-historial-entregas.md) | Estado de cada entrega, de la más reciente a la más antigua. |
+| [06 — Catálogo de fuentes](06-catalogo-fuentes.md) | Jerarquía de fuentes y estado de cada enlace externo. |
 
 La versión anterior del manual (v2) se conserva en [`../manual-maestro-linux-shell-scripting-2026-v2.md`](../manual-maestro-linux-shell-scripting-2026-v2.md).

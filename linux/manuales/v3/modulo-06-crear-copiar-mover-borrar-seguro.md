@@ -18,6 +18,8 @@ Conocimientos previos:
 
 **Seguridad:** en este módulo todas las operaciones se limitan a una carpeta nueva dentro de `~/linux-lab`. No se utiliza `sudo`. No se usa `rm -rf`. No se modifica `/etc`, `/usr`, `/var`, `/proc` ni `/sys`.
 
+**Cómo leer este módulo:** las secciones 2 a 14 explican cada orden con ejemplos. No las ejecutes todavía; la práctica empieza en la sección 15, dentro de la carpeta del laboratorio.
+
 ## 2. Crear un archivo con touch
 
 `touch` se utiliza principalmente para modificar marcas de tiempo de archivos. Si el archivo indicado no existe, normalmente crea un archivo vacío.
@@ -586,15 +588,19 @@ No se considera dominado porque una práctica salga una vez. En otra sesión deb
 
 ## 27. Fuentes y límites
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 Fuentes principales:
 
-- GNU Coreutils 9.11 — `cp`: https://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html
-- GNU Coreutils 9.11 — `mv`: https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html
-- GNU Coreutils 9.11 — `rm`: https://www.gnu.org/software/coreutils/manual/html_node/rm-invocation.html
-- GNU Coreutils 9.11 — `rmdir`: https://www.gnu.org/software/coreutils/manual/html_node/rmdir-invocation.html
-- GNU Coreutils 9.11 — `touch`: https://www.gnu.org/software/coreutils/manual/html_node/touch-invocation.html
+- GNU Coreutils — `cp`: https://www.gnu.org/software/coreutils/manual/html_node/cp-invocation.html
+- GNU Coreutils — `mv`: https://www.gnu.org/software/coreutils/manual/html_node/mv-invocation.html
+- GNU Coreutils — `rm`: https://www.gnu.org/software/coreutils/manual/html_node/rm-invocation.html
+- GNU Coreutils — `rmdir`: https://www.gnu.org/software/coreutils/manual/html_node/rmdir-invocation.html
+- GNU Coreutils — `touch`: https://www.gnu.org/software/coreutils/manual/html_node/touch-invocation.html
 
 Esta lección usa una selección pequeña de opciones. No intenta cubrir todas las posibilidades de GNU Coreutils.
+
+**Vigencia (E05):** la lección se redactó con GNU Coreutils 9.11. El 9 de octubre de 2026 el manual oficial en línea documenta la versión 9.12. Las opciones usadas aquí son básicas, pero tu sistema puede tener otra versión: compruébala con `cp --version`.
 
 **Estado de la lección:** redactada y revisada documentalmente. La práctica real del estudiante sigue pendiente.
 

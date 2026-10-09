@@ -909,6 +909,8 @@ Para considerar este módulo **DOMINADO** deberás poder en más de una práctic
 
 ## 68. Fuentes y límites
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 Fuentes principales:
 
 - util-linux upstream (código fuente y manuales de `lsblk`, `findmnt`, `mount`, `fstab`): https://github.com/util-linux/util-linux

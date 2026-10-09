@@ -38,14 +38,14 @@ Una variable asocia un nombre con un valor.
 Ejemplo:
 
 ```bash
-nombre='Hugo'
+nombre='Ana'
 ```
 
 Aquí:
 
 - `nombre` = nombre de la variable;
 - `=` = asignación;
-- `'Hugo'` = valor.
+- `'Ana'` = valor.
 
 Después puedes consultar su valor mediante expansión:
 
@@ -58,7 +58,7 @@ printf '%s\n' "$nombre"
 Estas dos operaciones son distintas:
 
 ```bash
-nombre='Hugo'
+nombre='Ana'
 ```
 
 asigna.
@@ -904,7 +904,7 @@ No necesitas adoptar la forma insegura en scripts reales.
 
 ## 44. Práctica C — read
 
-Crea:
+Crea `leer_nombre.sh`:
 
 ```bash
 #!/usr/bin/env bash
@@ -917,7 +917,7 @@ Usa únicamente datos no sensibles.
 
 ## 45. Práctica D — primer argumento
 
-Script:
+Crea `argumento.sh`:
 
 ```bash
 #!/usr/bin/env bash
@@ -941,6 +941,8 @@ Observa que las comillas de la shell hacen que `dos palabras` sea un solo argume
 
 ## 46. Práctica E — contar argumentos
 
+Crea `contar.sh`:
+
 ```bash
 #!/usr/bin/env bash
 
@@ -957,7 +959,7 @@ Predice antes el resultado.
 
 ## 47. Práctica F — "$@"
 
-Crea:
+Crea `todos.sh`:
 
 ```bash
 #!/usr/bin/env bash
@@ -981,6 +983,8 @@ No necesitas dominar aún la sintaxis del bucle; el Módulo 27 la enseñará for
 
 ## 48. Práctica G — sustitución de comandos
 
+Crea `directorio.sh`:
+
 ```bash
 #!/usr/bin/env bash
 
@@ -993,6 +997,8 @@ Ejecuta dentro del laboratorio.
 No guardes rutas privadas en GitHub si contienen información personal innecesaria.
 
 ## 49. Práctica H — valor predeterminado
+
+Crea `predeterminado.sh`:
 
 ```bash
 #!/usr/bin/env bash
@@ -1117,6 +1123,8 @@ Estado: EN APRENDIZAJE / PRACTICADO
 ```
 
 ## 55. Fuentes y límites
+
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales:
 

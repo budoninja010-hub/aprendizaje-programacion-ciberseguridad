@@ -768,13 +768,15 @@ No compartas listados completos de procesos si contienen nombres, rutas o comand
 
 ## 38. Fuentes y límites
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 Fuentes principales:
 
 - procps-ng / `ps(1)`:
   https://man7.org/linux/man-pages/man1/ps.1.html
 - procps-ng upstream — `top(1)`:
   https://gitlab.com/procps-ng/procps/-/blob/master/man/top.1
-- Linux man-pages project — `proc_loadavg(5)`:
+- Linux man-pages project — `proc_loadavg(5)`, en el libro PDF de la edición 6.17 (el 9 de octubre de 2026 la edición más reciente publicada es la 6.19):
   https://www.kernel.org/pub/linux/docs/man-pages/book/man-pages-6.17.pdf
 - Linux kernel documentation — `/proc` filesystem:
   https://docs.kernel.org/filesystems/proc.html

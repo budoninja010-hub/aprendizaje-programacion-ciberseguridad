@@ -289,11 +289,13 @@ Muestra información de tamaño y relación de compresión cuando está disponib
 ## 23. Descomprimir gzip conservando el `.gz`
 
 ```bash
-mkdir -p restauracion-gzip
-cp gzip-prueba.txt.gz restauracion-gzip/
-cd restauracion-gzip
+mkdir -p restauracion-gzip && \
+cp gzip-prueba.txt.gz restauracion-gzip/ && \
+cd restauracion-gzip && \
 gzip -dk gzip-prueba.txt.gz
 ```
+
+Las órdenes van encadenadas con `&&`: si una falla, las siguientes no se ejecutan y no trabajarás en una carpeta equivocada.
 
 `-d` descomprime.
 
@@ -344,10 +346,10 @@ xz -l xz-prueba.txt.xz
 ## 28. Descomprimir xz conservando el `.xz`
 
 ```bash
-mkdir -p restauracion-xz
-cp xz-prueba.txt.xz restauracion-xz/
-cd restauracion-xz
-xz -dk xz-prueba.txt.xz
+mkdir -p restauracion-xz && \
+cp xz-prueba.txt.xz restauracion-xz/ && \
+cd restauracion-xz && \
+xz -dk xz-prueba.txt.xz && \
 cd ..
 ```
 
@@ -495,6 +497,8 @@ Ejemplo:
 ```bash
 tar -xzf practica.tar.gz --keep-old-files -C extraccion-segura
 ```
+
+Como `extraccion-segura` ya contiene la extracción de la sección 33, este ejemplo terminará con errores `File exists`: es justo lo que debe ocurrir. La Práctica F (sección 48) trabaja ese conflicto paso a paso.
 
 ## 36. `--skip-old-files`
 
@@ -835,6 +839,8 @@ Para considerar este módulo **DOMINADO** deberás poder en más de una ocasión
 
 ## 58. Fuentes y límites
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 Fuentes principales:
 
 - GNU tar Manual: https://www.gnu.org/software/tar/manual/tar.html
@@ -853,7 +859,7 @@ Puntos verificados documentalmente:
 - listar miembros ayuda a inspeccionar, pero no certifica que la extracción sea segura;
 - GNU tar recomienda prestar atención a diagnósticos y estado de salida;
 - GNU tar desaconseja opciones de riesgo como `--absolute-names`, `--dereference`, `--overwrite`, `--recursive-unlink` y `--remove-files` salvo comprensión explícita;
-- GNU gzip 1.14 documenta compresión y descompresión de archivos y dispone de `--keep` y `--test`;
+- el manual oficial de GNU gzip (versión 1.15, 3 de enero de 2026; consultado el 9 de octubre de 2026) documenta compresión y descompresión de archivos y dispone de `--keep` y `--test`;
 - XZ Utils documenta `-k/--keep`, `-d/--decompress`, `-l/--list` y `-t/--test`;
 - xz utiliza por defecto el formato `.xz` y recomienda `xz -d`/`xz -dc` en scripts en lugar de depender de alias como `unxz` o `xzcat`.
 

@@ -710,6 +710,8 @@ Después explica por qué `${1:-Invitado}` evita depender de `$1` sin definir.
 
 ## 51. Práctica D — `pipefail` controlado
 
+Crea `pipefail.sh`:
+
 ```bash
 #!/usr/bin/env bash
 
@@ -725,6 +727,8 @@ fi
 Con `pipefail`, la tubería informa fallo porque uno de sus componentes devolvió un estado no-cero.
 
 ## 52. Práctica E — límite de `set -e`
+
+Crea `errexit.sh`:
 
 ```bash
 #!/usr/bin/env bash
@@ -742,7 +746,7 @@ Explica por qué este ejemplo contradice la simplificación “cualquier fallo d
 
 ## 53. Práctica F — análisis estático
 
-Si ShellCheck está disponible, crea:
+Si ShellCheck está disponible, crea `ejemplo.sh`:
 
 ```bash
 #!/usr/bin/env bash
@@ -928,6 +932,8 @@ Para considerar este módulo **DOMINADO** deberás poder en más de una práctic
 8. explicar por qué un script que pasa `bash -n` aún puede contener errores.
 
 ## 63. Fuentes y límites
+
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales:
 

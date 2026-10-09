@@ -343,11 +343,15 @@ No borres una práctica anterior si ya existe.
 
 ## 13. Crear un archivo de texto para leer
 
-Todavía no hemos enseñado redirecciones formalmente, por lo que evitaremos crear el contenido con `>`.
+Todavía no hemos enseñado redirecciones formalmente. Para que el módulo sea autocontenido, usaremos una sola vez `printf` con `>` como herramienta controlada para generar texto dentro del laboratorio.
 
-Usa un editor simple disponible en tu entorno si ya sabes manejarlo, o crea el archivo desde el chat siguiendo una práctica guiada posterior.
+Primero comprueba que el nombre está libre:
 
-Para que el módulo sea autocontenido, puedes usar `printf` únicamente como herramienta controlada para generar texto dentro del laboratorio:
+```bash
+ls -l lectura.txt
+```
+
+Si responde que no existe, crea el archivo:
 
 ```bash
 printf 'línea 1\nlínea 2\nlínea 3\nlínea 4\nlínea 5\nlínea 6\nlínea 7\nlínea 8\nlínea 9\nlínea 10\nlínea 11\nlínea 12\n' > lectura.txt
@@ -441,16 +445,20 @@ Primera terminal:
 
 ```bash
 cd ~/linux-lab/modulo-07-lectura
-tail -f seguimiento.txt
+ls -l seguimiento.txt
 ```
 
-Si `seguimiento.txt` no existe, crea primero:
+Si `seguimiento.txt` no existe, créalo antes de seguirlo:
 
 ```bash
 touch seguimiento.txt
 ```
 
-Después vuelve a ejecutar `tail -f seguimiento.txt`.
+Después, en la misma terminal:
+
+```bash
+tail -f seguimiento.txt
+```
 
 En una segunda terminal, entra a la misma carpeta y añade una línea con:
 
@@ -524,7 +532,7 @@ Dentro de una nueva carpeta de práctica:
 5. ábrelo con un paginador;
 6. busca una palabra dentro del paginador;
 7. sal correctamente;
-8. explica qué herramienta elegirías si el archivo tuviera 20,000 líneas.
+8. explica qué herramienta elegirías si el archivo tuviera 20 000 líneas.
 
 No copies la secuencia guiada. Escribe las órdenes basándote en lo aprendido.
 
@@ -590,6 +598,8 @@ Estado: EN APRENDIZAJE / PRACTICADO
 Una ejecución correcta no basta para marcar el tema como dominado. En otra sesión debes elegir la herramienta adecuada sin que se te indique cuál usar.
 
 ## 25. Fuentes y límites
+
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales:
 

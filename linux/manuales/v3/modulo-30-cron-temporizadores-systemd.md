@@ -980,6 +980,8 @@ Para considerar este módulo **DOMINADO** deberás poder en más de una ocasión
 
 ## 64. Fuentes y límites
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 Fuentes principales:
 
 - Cronie upstream (código y manuales del proyecto): https://github.com/cronie-crond/cronie

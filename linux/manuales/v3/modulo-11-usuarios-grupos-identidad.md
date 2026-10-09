@@ -100,7 +100,7 @@ El grupo primario participa, entre otras cosas, en la asociación de grupo que p
 
 Los grupos suplementarios amplían pertenencias disponibles para decisiones de acceso.
 
-No estudiaremos todavía todos los detalles de creación de archivos, SGID de directorios o ACL. Eso corresponde al Módulo 12.
+No estudiaremos todavía todos los detalles de creación de archivos ni de ACL; el Módulo 12 introduce los permisos y las ACL básicas. El bit SGID de directorios queda fuera del núcleo inicial y se pospone.
 
 ## 6. whoami — quién soy en esta sesión
 
@@ -479,7 +479,7 @@ Primero obtén tu nombre con:
 whoami
 ```
 
-Luego, si puedes escribirlo manualmente sin copiar datos privados innecesarios:
+Luego consulta tu propia cuenta. La orden siguiente usa `$(id -un)`: Bash ejecuta primero `id -un` y coloca su resultado en ese lugar, así no necesitas escribir tu nombre. Esta sintaxis se estudia a fondo en el Módulo 24.
 
 ```bash
 getent passwd "$(id -un)"
@@ -618,6 +618,8 @@ Estado: EN APRENDIZAJE / PRACTICADO
 Antes de compartir respuestas, elimina nombres de cuenta privados si no son necesarios.
 
 ## 33. Fuentes y límites
+
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales:
 

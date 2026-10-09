@@ -448,7 +448,7 @@ La política real depende de:
 
 ## 24. RHEL 10 y persistencia
 
-La documentación de RHEL 10 describe una configuración predeterminada donde el journal puede ser volátil en `/run/log/journal` y explica cómo configurar persistencia.
+La documentación de RHEL 10 describe una configuración predeterminada donde el journal puede ser volátil en `/run/log/journal` y explica cómo configurar persistencia (comprobado en la documentación de RHEL 10 el 9 de octubre de 2026).
 
 Eso es una política de RHEL documentada, no una regla universal de systemd en todas las distribuciones.
 
@@ -909,6 +909,8 @@ Estado: EN APRENDIZAJE / PRACTICADO
 ```
 
 ## 51. Fuentes y límites
+
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales:
 

@@ -599,7 +599,7 @@ Identifica qué resultados corresponden a archivos y cuáles a directorios.
 find . -type f -name "*.txt"
 ```
 
-Debe encontrar los archivos `.txt` de la práctica, pero no necesariamente `app.log`.
+Debe encontrar los archivos `.txt` de la práctica, pero no `app.log`, porque su nombre no termina en `.txt`.
 
 Explica por qué las comillas alrededor de `*.txt` son importantes.
 
@@ -769,6 +769,8 @@ Estado: EN APRENDIZAJE / PRACTICADO
 No se marca como dominado con una sola búsqueda correcta. Debes poder escoger la herramienta sin que el tutor te diga cuál corresponde.
 
 ## 41. Fuentes y límites
+
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales:
 

@@ -262,6 +262,8 @@ Antes de compartir o guardar la ficha, omite nombres personales, rutas que ident
 
 ## 13. Fuentes y límites de esta lección
 
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+
 **Qué se conserva:** todas las explicaciones, prácticas y preguntas originales de esta entrega.
 
 **Evaluación formativa:** el estudiante debe explicar los conceptos con sus palabras, ejecutar una práctica segura en su propio entorno cuando corresponda, interpretar la salida y reconocer al menos un error sin copiar la solución. Una respuesta correcta aislada no acredita dominio.

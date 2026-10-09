@@ -248,7 +248,7 @@ UFW significa:
 Uncomplicated Firewall
 ```
 
-La documentación de Ubuntu señala que está disponible y **deshabilitado inicialmente por defecto**.
+La documentación de Ubuntu señala que está disponible y **deshabilitado inicialmente por defecto** (comprobado en la documentación de seguridad de Ubuntu el 9 de octubre de 2026).
 
 No generalizamos ese comportamiento a Debian.
 
@@ -913,6 +913,8 @@ Estado: EN APRENDIZAJE / PRACTICADO
 ```
 
 ## 51. Fuentes y límites
+
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales verificadas para esta edición:
 
