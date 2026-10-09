@@ -575,10 +575,11 @@ con una copia creada por nosotros.
 ## 45. Preparar laboratorio de `fstab` sin tocar `/etc/fstab`
 
 ```bash
-cd ~/linux-lab
-mkdir -p modulo-34-almacenamiento/origen-bind
-mkdir -p modulo-34-almacenamiento/punto-bind
-cd modulo-34-almacenamiento
+test -d ~/linux-lab && \
+cd ~/linux-lab && \
+mkdir -p modulo-34-almacenamiento/origen-bind && \
+mkdir -p modulo-34-almacenamiento/punto-bind && \
+cd modulo-34-almacenamiento && pwd
 pwd
 ```
 
