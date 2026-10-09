@@ -956,7 +956,7 @@ El proyecto se considera correcto si:
 Cuando el ejercicio esté revisado:
 
 ```text
-linux: laboratorio final de integridad y defensa
+linux: añadir laboratorio final de integridad y defensa
 ```
 
 Antes de guardarlo:

@@ -425,8 +425,6 @@ crea una nueva línea arriba.
 
 Distingue mayúsculas y minúsculas.
 
-**Compatibilidad de vi:** en sistemas mínimos, `vi` puede ser una variante reducida o funcionar en modo compatible. Si las flechas insertan caracteres inesperados, vuelve al modo normal con `Esc` y utiliza `h`, `j`, `k`, `l`. Consulta `vi --version` cuando esté disponible; si existe `vim`, puede ofrecer un comportamiento más predecible para las funciones avanzadas. En algunos modos compatibles, pulsar `u` repetidamente alterna deshacer y rehacer, y `Ctrl+r` puede no comportarse como en Vim. Verifica el editor instalado antes de seguir el ejercicio.
-
 ## 21. Deshacer con u
 
 En modo normal:
@@ -463,6 +461,8 @@ Práctica:
 4. pulsa `Ctrl+r`.
 
 Observa el cambio.
+
+**Compatibilidad de vi:** en sistemas mínimos, `vi` puede ser una variante reducida o funcionar en modo compatible. Si las flechas insertan caracteres inesperados, vuelve al modo normal con `Esc` y utiliza `h`, `j`, `k`, `l`. Consulta `vi --version` cuando esté disponible; si existe `vim`, puede ofrecer un comportamiento más predecible para las funciones avanzadas. En algunos modos compatibles, pulsar `u` repetidamente alterna deshacer y rehacer, y `Ctrl+r` puede no comportarse como en Vim. Verifica el editor instalado antes de seguir el ejercicio.
 
 ## 23. Borrar un carácter con x
 

@@ -639,6 +639,8 @@ Puedes limitarla para lectura:
 apt search bash | head
 ```
 
+Al enviar su salida a una tubería, `apt` puede mostrar el aviso `WARNING: apt does not have a stable CLI interface`. Es una advertencia para quien escribe scripts, no un error de tu práctica. Una alternativa pensada para este uso es `apt-cache search bash | head`.
+
 No interpretes cada coincidencia como un paquete que debes instalar.
 
 ## 33. Práctica C — si usas Fedora o RHEL

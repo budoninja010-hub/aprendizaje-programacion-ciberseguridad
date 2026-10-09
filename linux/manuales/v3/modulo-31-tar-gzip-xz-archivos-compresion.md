@@ -289,11 +289,13 @@ Muestra información de tamaño y relación de compresión cuando está disponib
 ## 23. Descomprimir gzip conservando el `.gz`
 
 ```bash
-mkdir -p restauracion-gzip
-cp gzip-prueba.txt.gz restauracion-gzip/
-cd restauracion-gzip
+mkdir -p restauracion-gzip && \
+cp gzip-prueba.txt.gz restauracion-gzip/ && \
+cd restauracion-gzip && \
 gzip -dk gzip-prueba.txt.gz
 ```
+
+Las órdenes van encadenadas con `&&`: si una falla, las siguientes no se ejecutan y no trabajarás en una carpeta equivocada.
 
 `-d` descomprime.
 
@@ -344,10 +346,10 @@ xz -l xz-prueba.txt.xz
 ## 28. Descomprimir xz conservando el `.xz`
 
 ```bash
-mkdir -p restauracion-xz
-cp xz-prueba.txt.xz restauracion-xz/
-cd restauracion-xz
-xz -dk xz-prueba.txt.xz
+mkdir -p restauracion-xz && \
+cp xz-prueba.txt.xz restauracion-xz/ && \
+cd restauracion-xz && \
+xz -dk xz-prueba.txt.xz && \
 cd ..
 ```
 
@@ -495,6 +497,8 @@ Ejemplo:
 ```bash
 tar -xzf practica.tar.gz --keep-old-files -C extraccion-segura
 ```
+
+Como `extraccion-segura` ya contiene la extracción de la sección 33, este ejemplo terminará con errores `File exists`: es justo lo que debe ocurrir. La Práctica F (sección 48) trabaja ese conflicto paso a paso.
 
 ## 36. `--skip-old-files`
 

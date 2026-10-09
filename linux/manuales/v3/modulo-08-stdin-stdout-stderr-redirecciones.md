@@ -480,7 +480,7 @@ Debes poder explicar qué flujo terminó en cada archivo.
 
 ## 21. Práctica E — entrada con <
 
-Crea un archivo:
+Comprueba primero que el nombre está libre con `ls -l entrada.txt`. Si no existe, crea el archivo:
 
 ```bash
 printf 'alpha\nbeta\ngamma\n' > entrada.txt

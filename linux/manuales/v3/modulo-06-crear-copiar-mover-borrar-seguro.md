@@ -18,6 +18,8 @@ Conocimientos previos:
 
 **Seguridad:** en este módulo todas las operaciones se limitan a una carpeta nueva dentro de `~/linux-lab`. No se utiliza `sudo`. No se usa `rm -rf`. No se modifica `/etc`, `/usr`, `/var`, `/proc` ni `/sys`.
 
+**Cómo leer este módulo:** las secciones 2 a 14 explican cada orden con ejemplos. No las ejecutes todavía; la práctica empieza en la sección 15, dentro de la carpeta del laboratorio.
+
 ## 2. Crear un archivo con touch
 
 `touch` se utiliza principalmente para modificar marcas de tiempo de archivos. Si el archivo indicado no existe, normalmente crea un archivo vacío.

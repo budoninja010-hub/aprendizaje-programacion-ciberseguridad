@@ -718,6 +718,8 @@ Después ejecútalo.
 
 ## 42. Práctica B — argumento de función
 
+Crea `funcion_argumento.sh`:
+
 ```bash
 #!/usr/bin/env bash
 
@@ -738,6 +740,8 @@ Explica por qué `Ana María` sigue siendo un solo argumento.
 
 ## 43. Práctica C — variable local
 
+Crea `funcion_local.sh`:
+
 ```bash
 #!/usr/bin/env bash
 
@@ -755,6 +759,8 @@ printf 'Fuera: %s\n' "$valor"
 Predice las dos líneas antes de ejecutar.
 
 ## 44. Práctica D — estado de retorno
+
+Crea `funcion_estado.sh`:
 
 ```bash
 #!/usr/bin/env bash
@@ -774,6 +780,8 @@ La función produce una decisión mediante su estado, no mediante el texto `true
 
 ## 45. Práctica E — capturar un dato
 
+Crea `funcion_dato.sh`:
+
 ```bash
 #!/usr/bin/env bash
 
@@ -790,6 +798,8 @@ printf 'Suma: %s\n' "$resultado"
 Explica por qué usamos `printf` para el dato y no `return 13` como mecanismo general de resultado.
 
 ## 46. Práctica F — recorrer argumentos dentro de función
+
+Crea `funcion_argumentos.sh`:
 
 ```bash
 #!/usr/bin/env bash

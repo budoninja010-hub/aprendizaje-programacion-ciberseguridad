@@ -644,7 +644,7 @@ Identifica para ti:
 
 - una unidad active/running;
 - una active/exited, si existe;
-- una inactiva, si utilizas `--all`.
+- una inactiva, si repites la consulta con `--all`: `systemctl list-units --type=service --all`.
 
 ## 34. Práctica D — archivos de unidades
 

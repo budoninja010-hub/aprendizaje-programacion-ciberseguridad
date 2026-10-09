@@ -599,7 +599,7 @@ Identifica qué resultados corresponden a archivos y cuáles a directorios.
 find . -type f -name "*.txt"
 ```
 
-Debe encontrar los archivos `.txt` de la práctica, pero no necesariamente `app.log`.
+Debe encontrar los archivos `.txt` de la práctica, pero no `app.log`, porque su nombre no termina en `.txt`.
 
 Explica por qué las comillas alrededor de `*.txt` son importantes.
 

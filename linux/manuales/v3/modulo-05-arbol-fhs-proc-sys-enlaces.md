@@ -183,7 +183,7 @@ No debes utilizarla para guardar algo irremplazable. La política de limpieza de
 ls -ld /tmp
 ```
 
-En muchos sistemas verás permisos especiales, pero todavía no necesitas interpretarlos. Los permisos y el **sticky bit** se estudiarán en el Módulo 12.
+En muchos sistemas verás permisos especiales (por ejemplo, una `t` al final, como en `drwxrwxrwt`), pero todavía no necesitas interpretarlos. Los permisos básicos se estudian en el Módulo 12; el **sticky bit**, que explica esa `t`, queda fuera del núcleo inicial y se pospone.
 
 **Regla:** temporal no significa “seguro para guardar secretos”. Un archivo temporal debe diseñarse con cuidado. Más adelante aprenderás `mktemp`.
 

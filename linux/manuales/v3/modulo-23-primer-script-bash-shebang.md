@@ -881,13 +881,13 @@ Antes de subir:
 Ejemplo de ruta:
 
 ```text
-linux/ejercicios/bash/
+linux/bash/
 ```
 
 Ejemplo de commit:
 
 ```text
-linux: primer script Bash con shebang
+linux: añadir primer script Bash con shebang
 ```
 
 No se hará commit de archivos con secretos.

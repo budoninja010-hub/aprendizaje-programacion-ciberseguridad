@@ -710,6 +710,8 @@ Después explica por qué `${1:-Invitado}` evita depender de `$1` sin definir.
 
 ## 51. Práctica D — `pipefail` controlado
 
+Crea `pipefail.sh`:
+
 ```bash
 #!/usr/bin/env bash
 
@@ -725,6 +727,8 @@ fi
 Con `pipefail`, la tubería informa fallo porque uno de sus componentes devolvió un estado no-cero.
 
 ## 52. Práctica E — límite de `set -e`
+
+Crea `errexit.sh`:
 
 ```bash
 #!/usr/bin/env bash
@@ -742,7 +746,7 @@ Explica por qué este ejemplo contradice la simplificación “cualquier fallo d
 
 ## 53. Práctica F — análisis estático
 
-Si ShellCheck está disponible, crea:
+Si ShellCheck está disponible, crea `ejemplo.sh`:
 
 ```bash
 #!/usr/bin/env bash
