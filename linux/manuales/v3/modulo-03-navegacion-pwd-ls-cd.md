@@ -4,7 +4,7 @@ Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Tercera ent
 
 [Índice del manual](README.md) · [← Módulo 2](modulo-02-terminal-cli-shell-bash-ayuda.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 4 →](modulo-04-rutas-absolutas-relativas-espacios.md)
 
-## 1. Objetivo y preparación
+## 1. Qué aprenderás
 
 Aprenderás a responder tres preguntas: **¿dónde estoy?, ¿qué hay aquí?, ¿cómo cambio de carpeta?** Usarás una orden para cada pregunta y comprobarás el resultado antes de continuar.
 
@@ -207,7 +207,7 @@ Si necesitas una pista: una orden informa, otra lista y otra cambia la ubicació
 
 Responde antes de pedir soluciones. El tutor señalará primero tus aciertos, explicará cada error y propondrá una variante. En otra sesión, repite la navegación sin copiar y explica una situación distinta. Una sola respuesta correcta no acredita dominio.
 
-## 10. Ficha de aprendizaje
+## 10. Registro de aprendizaje
 
 Puedes responder en el chat; no hace falta crear archivos:
 
@@ -223,17 +223,15 @@ Estado: EN APRENDIZAJE / PRACTICADO
 
 No pegues nombres de usuario, rutas personales, archivos privados ni capturas completas sin revisarlos. La redacción del manual y el aprendizaje del estudiante se registran por separado.
 
-## 11. Revisión y fuentes
+## 11. Fuentes y límites de esta lección
+
+### Revisión de esta entrega
 
 Esta entrega tiene revisión documental de sintaxis, orden pedagógico, fuentes, errores y alcance. Se contrastaron referencias oficiales de GNU mediante resultados indexados. No se afirma haber ejecutado la práctica en la distribución del estudiante. La comparación lógica/física y las reglas completas de rutas quedan para módulos posteriores.
 
 Las referencias están enlazadas junto a sus explicaciones: GNU Coreutils para `ls` y la utilidad externa `pwd`; GNU Bash para las órdenes internas. Coreutils 9.11 sigue siendo la referencia editorial, sin exigir esa versión instalada.
 
----
-
-**Siguiente:** [Módulo 4 — Rutas absolutas y relativas; ~, ., .. y nombres con espacios](modulo-04-rutas-absolutas-relativas-espacios.md) · [Volver al índice](README.md)
-
-## Anexo editorial — Criterios de evaluación y fuentes
+### Criterios de evaluación y fuentes
 
 **Qué se conserva:** todas las explicaciones, prácticas y preguntas originales de esta entrega.
 
@@ -248,3 +246,7 @@ Las referencias están enlazadas junto a sus explicaciones: GNU Coreutils para `
 - Linux kernel documentation: https://docs.kernel.org/
 
 Las fuentes se consultan según el tema tratado; no se presume que todos los enlaces respalden cada afirmación del módulo.
+
+---
+
+**Siguiente:** [Módulo 4 — Rutas absolutas y relativas; ~, ., .. y nombres con espacios](modulo-04-rutas-absolutas-relativas-espacios.md) · [Volver al índice](README.md)

@@ -4,7 +4,7 @@ Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Segunda ent
 
 [Índice del manual](README.md) · [← Módulo 1](modulo-01-gnu-linux-kernel-distribuciones.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 3 →](modulo-03-navegacion-pwd-ls-cd.md)
 
-## 1. Objetivo y requisitos
+## 1. Qué aprenderás
 
 Al terminar podrás distinguir la ventana de terminal del programa que interpreta tus órdenes, reconocer dónde escribir y elegir una ayuda adecuada. No necesitas memorizar opciones ni dominar la navegación todavía.
 
@@ -191,7 +191,7 @@ Luego completa estas acciones por separado:
 
 No publiques una captura completa: el prompt puede revelar nombres personales o de equipos. Basta describir el resultado sin esos datos.
 
-## 9. Errores y corrección mínima
+## 9. Errores frecuentes y corrección mínima
 
 | Error o confusión | Por qué puede ocurrir | Corrección |
 |---|---|---|
@@ -203,7 +203,7 @@ No publiques una captura completa: el prompt puede revelar nombres personales o 
 | Interpretar `$` como prueba de usuario normal | El prompt se puede personalizar | No deducir privilegios solo por su aspecto |
 | Pensar que Ctrl+C restaura cambios anteriores | Interrumpir no es deshacer | Revisar el efecto de cada orden antes de ejecutarla |
 
-## 10. Evaluación sin copiar
+## 10. Práctica independiente y mini evaluación
 
 1. Explica terminal, CLI, shell y Bash con tus palabras.
 2. En una línea que contiene un prompt seguido de `help cd`, identifica qué escribirías realmente.
@@ -216,17 +216,32 @@ Pistas: una interfaz y un intérprete no cumplen el mismo papel; consultar una p
 
 En otra sesión repite la distinción conceptual con un ejemplo diferente y detecta un error sin ayuda. Se considera **PRACTICADO** después de realizar la actividad; **DOMINADO** requiere evidencia repetida. La redacción terminada del módulo no significa que el estudiante ya lo domine.
 
-## 11. Revisión de esta entrega
+## 11. Registro de aprendizaje
+
+Puedes responder en el chat; no hace falta crear archivos:
+
+```text
+En mis palabras, la terminal es:
+En mis palabras, la shell es:
+La diferencia entre CLI y Bash es:
+Qué ayuda usé para cd y qué aprendí:
+Qué parte del prompt no debo copiar:
+Un error que reconocí y cómo lo corregí:
+Qué necesito repetir:
+Estado: EN APRENDIZAJE / PRACTICADO
+```
+
+No pegues capturas completas del prompt ni rutas personales sin revisarlas. La redacción del manual y el aprendizaje del estudiante se registran por separado.
+
+## 12. Fuentes y límites de esta lección
+
+### Revisión de esta entrega
 
 Se revisaron progresión, sintaxis de ejemplos, comillas, coherencia con M1, advertencias y fuentes oficiales. Las referencias GNU se contrastaron mediante documentación oficial indexada; no se infiere una versión instalada a partir de ellas. La práctica interactiva en el Linux del estudiante sigue pendiente.
 
 Decisiones de precisión: prompt configurable; `help` específico del entorno Bash; `--help` no universal; documentación ausente distinta de ejecutable ausente; interrupción distinta de deshacer; consulta de versión distinta de identificación de la shell actual.
 
----
-
-**Siguiente:** [Módulo 3 — Navegación inicial: pwd, ls y cd](modulo-03-navegacion-pwd-ls-cd.md) · [Volver al índice](README.md)
-
-## Anexo editorial — Criterios de evaluación y fuentes
+### Criterios de evaluación y fuentes
 
 **Qué se conserva:** todas las explicaciones, prácticas y preguntas originales de esta entrega.
 
@@ -241,3 +256,7 @@ Decisiones de precisión: prompt configurable; `help` específico del entorno Ba
 - Linux kernel documentation: https://docs.kernel.org/
 
 Las fuentes se consultan según el tema tratado; no se presume que todos los enlaces respalden cada afirmación del módulo.
+
+---
+
+**Siguiente:** [Módulo 3 — Navegación inicial: pwd, ls y cd](modulo-03-navegacion-pwd-ls-cd.md) · [Volver al índice](README.md)

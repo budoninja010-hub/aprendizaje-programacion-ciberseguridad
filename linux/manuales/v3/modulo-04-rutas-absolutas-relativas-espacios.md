@@ -218,7 +218,7 @@ Si no estás seguro de haberla construido bien, muéstrala al tutor con los dato
 
 Al terminar, deja las carpetas creadas tal como están. No hay un paso de limpieza con borrado.
 
-## 10. Errores y corrección mínima
+## 10. Errores frecuentes y corrección mínima
 
 | Problema | Causa posible | Corrección |
 |---|---|---|
@@ -231,7 +231,7 @@ Al terminar, deja las carpetas creadas tal como están. No hay un paso de limpie
 
 Un mensaje de error no implica por sí solo que debas reinstalar herramientas. Tampoco una orden exitosa demuestra que la ruta elegida era la correcta: comprueba intención y resultado.
 
-## 11. Práctica independiente y evaluación
+## 11. Práctica independiente y mini evaluación
 
 Sin copiar la tabla, parte del laboratorio, entra a `apuntes`, consulta el padre y navega a `mis notas`. Regresa al laboratorio y explica qué parte del recorrido fue relativa y cuál utilizó expansión de tilde. Comprueba cada cambio con `pwd`.
 
@@ -246,17 +246,17 @@ Responde después:
 
 Pista si te bloqueas: dibuja el árbol, marca dónde estás y recorre los componentes de izquierda a derecha. No se considera dominado por un único intento. En otra sesión repite con un punto de partida diferente, explica el razonamiento y detecta un error por tu cuenta.
 
-## 12. Registro y revisión
+## 12. Registro de aprendizaje
 
 Puedes enviar una respuesta breve al chat: qué entendiste de las rutas, un ejemplo explicado, un error reconocido y qué necesitas repetir. No pegues rutas personales o nombres privados sin revisarlos. La ficha del estudiante se conservará cuando exista y haya sido revisada; no se inventan respuestas ni avances.
 
+## 13. Fuentes y límites de esta lección
+
+### Revisión de esta entrega
+
 Revisión documental: sintaxis de ejemplos, separación de argumentos, expansión de tilde, destinos del árbol y coherencia con M1–M3. Las referencias GNU se consultaron mediante documentación oficial indexada; la resolución de rutas se contrastó con Linux man-pages. La práctica en el Linux del estudiante sigue pendiente. No se afirma validación de ejecuciones reales.
 
----
-
-**Siguiente:** [Módulo 5 — Árbol de archivos, FHS, /etc, /usr, /var, /tmp, /proc, /sys y enlaces](modulo-05-arbol-fhs-proc-sys-enlaces.md) · [Volver al índice](README.md)
-
-## Anexo editorial — Criterios de evaluación y fuentes
+### Criterios de evaluación y fuentes
 
 **Qué se conserva:** todas las explicaciones, prácticas y preguntas originales de esta entrega.
 
@@ -271,3 +271,7 @@ Revisión documental: sintaxis de ejemplos, separación de argumentos, expansió
 - Linux kernel documentation: https://docs.kernel.org/
 
 Las fuentes se consultan según el tema tratado; no se presume que todos los enlaces respalden cada afirmación del módulo.
+
+---
+
+**Siguiente:** [Módulo 5 — Árbol de archivos, FHS, /etc, /usr, /var, /tmp, /proc, /sys y enlaces](modulo-05-arbol-fhs-proc-sys-enlaces.md) · [Volver al índice](README.md)

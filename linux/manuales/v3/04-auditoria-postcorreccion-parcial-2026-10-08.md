@@ -88,3 +88,9 @@ Se abrieron y consultaron las páginas originales de: espejo público de iproute
 | M32: rsync 3.5.1 | https://rsync.samba.org/ ; https://lists.samba.org/archive/rsync/2026-September/033395.html | Confirmado como versión upstream publicada el 21-09-2026 |
 
 **Mejoras guardadas:** M16 incorpora fecha de corte y referencias a las versiones puntuales (commit `af9f1370769130f59496e855edf48929ac268cb3`); M32 incorpora el anuncio original y fecha de verificación (commit `4d68c2a792fee321a2f74332f4c901c0e0d55116`). Se preservaron explicaciones anteriores. **Pendiente:** revisión editorial global y validación de todos los enlaces.
+
+## Séptima pasada — normalización editorial de M1–M4 (9 de octubre de 2026)
+
+Se aplicó el hallazgo E01 de la auditoría transversal. Cambios: encabezados alineados con el contrato de M5–M35; anexo integrado en «Fuentes y límites de esta lección»; pie de navegación movido al final en M2–M4; ficha de registro añadida en M2. Una comprobación automática confirmó que ninguna línea de contenido previo se eliminó. Los enlaces internos de los 35 módulos siguen resolviendo y todos los bloques de código cierran.
+
+**Pendiente:** E04 y E05, lectura íntegra de los módulos no revisados en pasadas anteriores, verificación de enlaces externos y sincronización con Google Drive.

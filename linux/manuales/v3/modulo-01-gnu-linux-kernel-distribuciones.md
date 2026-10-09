@@ -4,7 +4,7 @@ Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Primera ent
 
 [Índice del manual](README.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 2 →](modulo-02-terminal-cli-shell-bash-ayuda.md) · [Auditoría y fuentes](02-auditoria-fuentes.md)
 
-## 1. Objetivo y diagnóstico inicial
+## 1. Qué aprenderás
 
 Al terminar podrás distinguir un núcleo, una distribución y una shell; identificar qué sistema estás usando; y explicar para qué servirá `~/linux-lab`.
 
@@ -220,7 +220,7 @@ ls
 | `uname -r` no muestra «Ubuntu» | Se consultó el núcleo | Usar la consulta de distribución, sin modificar nada |
 | El laboratorio tiene archivos | Puede contener prácticas previas | Conservarlas; no es requisito dejarlo vacío |
 
-## 10. Práctica independiente y comprobación
+## 10. Práctica independiente
 
 Primero responde sin volver a los ejemplos:
 
@@ -232,7 +232,7 @@ Primero responde sin volver a los ejemplos:
 
 Pistas si te bloqueas: la orden que cambia de directorio empieza con `c`; la que muestra dónde estás empieza con `p`. Si no puedes continuar, vuelve al paso concreto y registra qué no comprendiste.
 
-### Mini evaluación
+## 11. Mini evaluación
 
 - ¿Linux y Bash son el mismo tipo de componente?
 - ¿Conocer el núcleo basta para elegir instrucciones de administración para cualquier distribución?
@@ -241,7 +241,7 @@ Pistas si te bloqueas: la orden que cambia de directorio empieza con `c`; la que
 
 No se incluyen respuestas junto a las preguntas para que puedas intentarlo primero. La corrección debe señalar aciertos, explicar cada error y proponer una variante. En la siguiente sesión se repetirá una comprobación con otro ejemplo; una ejecución correcta hoy no certifica dominio.
 
-## 11. Registro de aprendizaje y entrega
+## 12. Registro de aprendizaje
 
 Puedes responder en el chat con esta ficha. No hace falta crear archivos adicionales ni aprender un editor todavía.
 
@@ -260,9 +260,7 @@ Estado: EN APRENDIZAJE / PRACTICADO
 
 Antes de compartir o guardar la ficha, omite nombres personales, rutas que identifiquen personas, nombres privados de equipos, direcciones de red y cualquier secreto. No copies automáticamente toda la salida de tu terminal. El tutor revisará la ficha antes de conservarla en GitHub con un nombre nuevo, sin sobrescribir ejercicios previos.
 
-**Estado de esta lección:** revisada documentalmente. Las consultas específicas de Linux y la práctica en la distribución del estudiante deben validarse en ese entorno; no se presentan como ejecutadas en su equipo.
-
-## Anexo editorial — Criterios de evaluación y fuentes
+## 13. Fuentes y límites de esta lección
 
 **Qué se conserva:** todas las explicaciones, prácticas y preguntas originales de esta entrega.
 
@@ -277,6 +275,8 @@ Antes de compartir o guardar la ficha, omite nombres personales, rutas que ident
 - Linux kernel documentation: https://docs.kernel.org/
 
 Las fuentes se consultan según el tema tratado; no se presume que todos los enlaces respalden cada afirmación del módulo.
+
+**Estado de esta lección:** revisada documentalmente. Las consultas específicas de Linux y la práctica en la distribución del estudiante deben validarse en ese entorno; no se presentan como ejecutadas en su equipo.
 
 ---
 

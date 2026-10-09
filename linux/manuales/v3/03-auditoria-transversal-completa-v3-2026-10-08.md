@@ -267,7 +267,7 @@ Las afirmaciones auditadas sobre cinco campos, entorno de cron, `OnCalendar=`, `
 
 ## 8. Hallazgos editoriales y pedagógicos
 
-### E01 — Formato desigual en M1–M4
+### E01 — Formato desigual en M1–M4 ✅ CORREGIDO
 
 M5 en adelante usa con mayor regularidad:
 
@@ -283,6 +283,8 @@ M5 en adelante usa con mayor regularidad:
 M1–M4 contienen esas ideas, pero con encabezados diferentes (`Revisión de esta entrega`, `Evaluación sin copiar`, etc.).
 
 **Recomendación:** normalizar M1–M4 al contrato visual de M5–M35 sin eliminar contenido.
+
+**Aplicado (9-oct-2026):** encabezados unificados (`Qué aprenderás`, `Errores frecuentes y corrección mínima`, `Mini evaluación`, `Registro de aprendizaje`, `Fuentes y límites de esta lección`); el anexo editorial pasa a la sección final de fuentes y la navegación «Siguiente» queda al final del archivo (en M2–M4 aparecía antes del anexo). M2 recibe una ficha de registro de aprendizaje equivalente a la de M3. No se eliminó texto.
 
 ### E02 — El README acumula demasiados estados históricos
 
@@ -416,7 +418,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 
 ### Prioridad 3 — consolidación editorial
 
-10. normalizar M1–M4.
+10. ~~normalizar M1–M4.~~ ✅ Corregido.
 11. simplificar README y mover historial.
 12. marcar `02-auditoria-fuentes.md` como histórica.
 13. homogeneizar fechas de verificación y formato de bibliografía.
