@@ -174,7 +174,12 @@ No deshabilites AppArmor para “resolver” un problema sin diagnóstico.
 Fuente:
 - https://ubuntu.com/server/docs/security-apparmor/
 
-## 10. Debian y AppArmor: no generalizar
+## 10. Debian y AppArmor: estado predeterminado y verificación
+
+**Debian habilita AppArmor de forma predeterminada desde Debian 10**, según su documentación oficial. Esto no significa que todas las instalaciones tengan los mismos perfiles cargados ni que el servicio esté activo en un sistema modificado. Para comprobarlo, consulta `aa-status` si la herramienta está disponible; no actives ni cambies perfiles durante la práctica.
+
+Fuente: https://wiki.debian.org/AppArmor/HowToUse
+
 
 Debian dispone de AppArmor y documentación relacionada, pero este manual **no afirmará que todas las instalaciones Debian tengan exactamente el mismo estado o conjunto de perfiles por defecto**.
 
