@@ -61,6 +61,8 @@ command -v vim
 
 Si `vim` no existe pero `vi` sí, puedes practicar con `vi`.
 
+**Nota para instalaciones mínimas (`vim.tiny`):** en Debian y derivados, `vi` puede apuntar a una compilación reducida de Vim. Consulta `readlink -f "$(command -v vi)"` si `readlink` está disponible, y `vi --version` si la implementación lo admite. Algunas funciones avanzadas de Vim pueden faltar. Para desplazarte de forma portable en modo normal usa `h`, `j`, `k`, `l`; no asumas que las flechas se comportan igual en todos los modos.
+
 ## 3. Un editor modal
 
 Vim es un editor **modal**.
