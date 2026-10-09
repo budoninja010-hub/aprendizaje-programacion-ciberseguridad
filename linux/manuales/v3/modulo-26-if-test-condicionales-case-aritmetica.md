@@ -854,6 +854,8 @@ fi
 
 Problema: `>` aquí no es la forma numérica adecuada para `test` y, fuera de contextos protegidos, también tiene significado de redirección para la shell.
 
+**No ejecutes el ejemplo incorrecto:** Bash interpreta `> 5` como una redirección y puede crear o vaciar un archivo llamado `5` en el directorio actual. Analízalo únicamente como ejercicio de detección de errores.
+
 Corrección con `[ ... ]`:
 
 ```bash
