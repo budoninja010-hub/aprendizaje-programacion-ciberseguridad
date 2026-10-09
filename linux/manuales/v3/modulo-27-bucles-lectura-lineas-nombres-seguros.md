@@ -647,12 +647,10 @@ contador numérico Bash       → while (( ... )) o for (( ... ))
 ## 40. Preparar el laboratorio
 
 ```bash
-cd ~/linux-lab
-pwd
-ls
-mkdir -p modulo-27-bucles
-cd modulo-27-bucles
-pwd
+test -d ~/linux-lab && \
+cd ~/linux-lab && \
+mkdir -p modulo-27-bucles && \
+cd modulo-27-bucles && pwd
 ```
 
 Etiqueta: **creación en laboratorio**.
