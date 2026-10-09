@@ -168,6 +168,8 @@ git status
 
 Es uno de los comandos que debes ejecutar con más frecuencia.
 
+**Antes del ejemplo: qué es un here-document.** La sintaxis `<<'EOF'` entrega al comando varias líneas de entrada hasta encontrar una línea que contenga únicamente `EOF`. Las comillas alrededor de `EOF` impiden que Bash expanda variables y sustituciones de comandos dentro del bloque. En `cat > archivo`, el signo `>` crea o sobrescribe el archivo: comprueba antes que el nombre está libre y que estás en el directorio del laboratorio. Si ya existe, conserva la versión anterior y usa Vim para editarla sin perder el trabajo.
+
 ## 13. Crear un archivo de práctica
 
 ```bash
