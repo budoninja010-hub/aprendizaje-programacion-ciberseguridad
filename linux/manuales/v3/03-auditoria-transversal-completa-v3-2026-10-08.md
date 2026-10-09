@@ -301,7 +301,7 @@ El README conserva cada entrega anterior dentro del mismo archivo.
 
 Trasladar el historial cronológico a `CHANGELOG.md` o `HISTORIAL.md`, conservando todos los datos.
 
-### E03 — `02-auditoria-fuentes.md` ya es histórica
+### E03 — `02-auditoria-fuentes.md` ya es histórica ✅ CORREGIDO
 
 Su propio texto dice que solo auditaba la primera entrega y que M2–M35 seguían pendientes.
 
@@ -420,7 +420,7 @@ Durante la auditoría se confirmaron, entre otros, estos puntos:
 
 10. ~~normalizar M1–M4.~~ ✅ Corregido.
 11. simplificar README y mover historial.
-12. marcar `02-auditoria-fuentes.md` como histórica.
+12. ~~marcar `02-auditoria-fuentes.md` como histórica.~~ ✅ Corregido.
 13. homogeneizar fechas de verificación y formato de bibliografía.
 
 ## 12. Dictamen de seguridad
