@@ -454,6 +454,8 @@ cd modulo-35-defensa && pwd
 pwd
 ```
 
+**Antes de ejecutar:** `cat > archivo <<'EOF'` utiliza un *here-document*: envía a `cat` las líneas siguientes hasta el delimitador `EOF`. Las comillas impiden expansiones de variables y comandos dentro del bloque. La redirección `>` **crea o sobrescribe** el destino; verifica que estás en el laboratorio y que el archivo no existe antes de continuar. Si ya existe, revísalo y edítalo con Vim o conserva una copia.
+
 ## 32. Crear archivo de evidencia inicial
 
 ```bash
