@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Vigésima entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-19-redes-ip-dns-rutas-ip-ss.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 19](modulo-19-redes-ip-dns-rutas-ip-ss.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 21 →](modulo-21-firewall-nftables-ufw-firewalld.md)
 
 ## 1. Qué aprenderás
 
@@ -882,4 +882,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente. Las prácticas son locales o requieren sistema propio/autorizado; no se realizan intentos contra terceros.
 
-Siguiente módulo por redactar: **Módulo 21 — Firewall: nftables, UFW y firewalld según el entorno**.
+---
+
+**Siguiente:** [Módulo 21 — Firewall: nftables, UFW y firewalld según el entorno](modulo-21-firewall-nftables-ufw-firewalld.md) · [Volver al índice](README.md)

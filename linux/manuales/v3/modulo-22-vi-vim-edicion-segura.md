@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Vigesimosegunda entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-21-firewall-nftables-ufw-firewalld.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 21](modulo-21-firewall-nftables-ufw-firewalld.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 23 →](modulo-23-primer-script-bash-shebang.md)
 
 ## 1. Qué aprenderás
 
@@ -1160,4 +1160,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente. Las prácticas se limitan a archivos propios del laboratorio.
 
-Siguiente módulo por redactar: **Módulo 23 — Primer script Bash y shebang**.
+---
+
+**Siguiente:** [Módulo 23 — Primer script Bash y shebang](modulo-23-primer-script-bash-shebang.md) · [Volver al índice](README.md)

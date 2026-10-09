@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Vigesimocuarta entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-23-primer-script-bash-shebang.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 23](modulo-23-primer-script-bash-shebang.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 25 →](modulo-25-codigos-salida-composicion-ordenes.md)
 
 ## 1. Qué aprenderás
 
@@ -1150,4 +1150,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente. Las prácticas usan datos no sensibles y scripts locales.
 
-Siguiente módulo por redactar: **Módulo 25 — Códigos de salida y composición con && y ||**.
+---
+
+**Siguiente:** [Módulo 25 — Códigos de salida y composición de órdenes en Bash](modulo-25-codigos-salida-composicion-ordenes.md) · [Volver al índice](README.md)

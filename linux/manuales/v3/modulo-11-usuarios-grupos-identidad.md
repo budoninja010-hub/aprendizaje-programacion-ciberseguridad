@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Undécima entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-10-grep-find-locate.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 10](modulo-10-grep-find-locate.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 12 →](modulo-12-permisos-chmod-chown-umask-sudo-acl.md)
 
 ## 1. Qué aprenderás
 
@@ -648,4 +648,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente. La práctica real del estudiante sigue pendiente.
 
-Siguiente módulo por redactar: **Módulo 12 — Permisos, propietarios, chmod, chown, umask, sudo y ACL básica**.
+---
+
+**Siguiente:** [Módulo 12 — Permisos, propietarios, chmod, chown, umask, sudo y ACL básica](modulo-12-permisos-chmod-chown-umask-sudo-acl.md) · [Volver al índice](README.md)

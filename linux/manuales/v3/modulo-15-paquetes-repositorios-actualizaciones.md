@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Decimoquinta entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-14-jobs-fg-bg-senales-kill.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 14](modulo-14-jobs-fg-bg-senales-kill.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 16 →](modulo-16-debian-ubuntu-fedora-rhel.md)
 
 ## 1. Qué aprenderás
 
@@ -918,4 +918,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente. Las prácticas administrativas reales permanecen pendientes y deben realizarse únicamente cuando se conozca la distribución y el impacto.
 
-Siguiente módulo por redactar: **Módulo 16 — Diferencias Debian, Ubuntu, Fedora y RHEL**.
+---
+
+**Siguiente:** [Módulo 16 — Diferencias entre Debian, Ubuntu, Fedora y RHEL](modulo-16-debian-ubuntu-fedora-rhel.md) · [Volver al índice](README.md)

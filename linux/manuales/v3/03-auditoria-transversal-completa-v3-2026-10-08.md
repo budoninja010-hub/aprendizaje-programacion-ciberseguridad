@@ -27,7 +27,7 @@ Sin embargo, antes de denominar esta v3 **edición consolidada final**, deben co
 Se revisaron directamente:
 
 - `00-indice-arquitectura.md`;
-- `01-gnu-linux-kernel-distribuciones.md`;
+- `modulo-01-gnu-linux-kernel-distribuciones.md`;
 - `02-auditoria-fuentes.md`;
 - `README.md`;
 - Módulos 2–35;

@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Trigésima primera entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-30-cron-temporizadores-systemd.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 30](modulo-30-cron-temporizadores-systemd.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 32 →](modulo-32-rsync-copias-restauracion.md)
 
 ## 1. Qué aprenderás
 
@@ -870,4 +870,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente contra GNU tar, GNU Gzip y XZ Utils. Las prácticas conservan originales y extraen únicamente en destinos controlados.
 
-Siguiente módulo por redactar: **Módulo 32 — Copias y restauración con `rsync`**.
+---
+
+**Siguiente:** [Módulo 32 — Copias, sincronización y restauración con `rsync`](modulo-32-rsync-copias-restauracion.md) · [Volver al índice](README.md)

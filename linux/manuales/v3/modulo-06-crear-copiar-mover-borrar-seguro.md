@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Sexta entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-05-arbol-fhs-proc-sys-enlaces.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 5](modulo-05-arbol-fhs-proc-sys-enlaces.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 7 →](modulo-07-cat-less-head-tail.md)
 
 ## 1. Qué aprenderás
 
@@ -598,4 +598,6 @@ Esta lección usa una selección pequeña de opciones. No intenta cubrir todas l
 
 **Estado de la lección:** redactada y revisada documentalmente. La práctica real del estudiante sigue pendiente.
 
-Siguiente módulo por redactar: **Módulo 7 — Lectura de archivos con cat, less, head y tail**.
+---
+
+**Siguiente:** [Módulo 7 — Leer archivos con cat, less, head y tail](modulo-07-cat-less-head-tail.md) · [Volver al índice](README.md)

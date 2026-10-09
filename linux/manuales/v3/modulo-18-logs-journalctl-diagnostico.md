@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Decimoctava entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-17-systemd-unidades-servicios-init.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 17](modulo-17-systemd-unidades-servicios-init.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 19 →](modulo-19-redes-ip-dns-rutas-ip-ss.md)
 
 ## 1. Qué aprenderás
 
@@ -936,4 +936,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente. Las prácticas son de consulta y diagnóstico; no modifican logs ni servicios.
 
-Siguiente módulo por redactar: **Módulo 19 — Redes básicas: IP, DNS, rutas, ip y ss**.
+---
+
+**Siguiente:** [Módulo 19 — Redes básicas: IP, DNS, rutas, ip y ss](modulo-19-redes-ip-dns-rutas-ip-ss.md) · [Volver al índice](README.md)

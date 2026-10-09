@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Séptima entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-06-crear-copiar-mover-borrar-seguro.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 6](modulo-06-crear-copiar-mover-borrar-seguro.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 8 →](modulo-08-stdin-stdout-stderr-redirecciones.md)
 
 ## 1. Qué aprenderás
 
@@ -608,4 +608,6 @@ Esta lección usa las funciones básicas necesarias para principiantes. No cubre
 
 **Estado de la lección:** redactada y revisada documentalmente. La práctica real del estudiante sigue pendiente.
 
-Siguiente módulo por redactar: **Módulo 8 — stdin, stdout, stderr y redirecciones**.
+---
+
+**Siguiente:** [Módulo 8 — stdin, stdout, stderr y redirecciones](modulo-08-stdin-stdout-stderr-redirecciones.md) · [Volver al índice](README.md)

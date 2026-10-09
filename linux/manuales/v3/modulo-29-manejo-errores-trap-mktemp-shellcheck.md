@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Vigesimonovena entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-28-funciones-parametros-ambito.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 28](modulo-28-funciones-parametros-ambito.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 30 →](modulo-30-cron-temporizadores-systemd.md)
 
 ## 1. Qué aprenderás
 
@@ -964,4 +964,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente contra GNU Bash, GNU Coreutils y la documentación oficial de ShellCheck. Las prácticas son locales y limitan cualquier borrado al archivo temporal creado por el propio ejercicio.
 
-Siguiente módulo por redactar: **Módulo 30 — Automatización con `cron` y temporizadores de systemd**.
+---
+
+**Siguiente:** [Módulo 30 — Automatización con `cron` y temporizadores de systemd](modulo-30-cron-temporizadores-systemd.md) · [Volver al índice](README.md)

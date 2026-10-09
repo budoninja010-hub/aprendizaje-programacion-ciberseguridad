@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Vigesimoquinta entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-24-variables-entrada-argumentos-quoting.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 24](modulo-24-variables-entrada-argumentos-quoting.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 26 →](modulo-26-if-test-condicionales-case-aritmetica.md)
 
 ## 1. Qué aprenderás
 
@@ -570,4 +570,6 @@ Se posponen: `if`, `test`, `[ ]`, `[[ ]]`, `case`, comparaciones, `set -e`, `set
 
 **Estado de la lección:** redactada y revisada documentalmente contra GNU Bash 5.3. Las prácticas son locales, no destructivas y no requieren privilegios.
 
-Siguiente módulo por redactar: **Módulo 26 — Decisiones con `if`, `test`, `[ ]`, `[[ ]]`, `case` y aritmética**.
+---
+
+**Siguiente:** [Módulo 26 — Decisiones con `if`, `test`, `[ ]`, `[[ ]]`, `case` y aritmética](modulo-26-if-test-condicionales-case-aritmetica.md) · [Volver al índice](README.md)

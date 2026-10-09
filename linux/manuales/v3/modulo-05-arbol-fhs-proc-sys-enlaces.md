@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Quinta entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-04-rutas-absolutas-relativas-espacios.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 4](modulo-04-rutas-absolutas-relativas-espacios.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 6 →](modulo-06-crear-copiar-mover-borrar-seguro.md)
 
 ## 1. Qué aprenderás
 
@@ -547,4 +547,6 @@ FHS 3.0 es una referencia estructural y no se usa para afirmar que cada distribu
 
 **Estado de la lección:** redactada y revisada documentalmente. La práctica en el equipo del estudiante todavía debe ejecutarse y evaluarse.
 
-Siguiente módulo por redactar: **Módulo 6 — Crear, copiar, mover y renombrar; rm y rmdir con seguridad**.
+---
+
+**Siguiente:** [Módulo 6 — Crear, copiar, mover, renombrar y borrar con seguridad](modulo-06-crear-copiar-mover-borrar-seguro.md) · [Volver al índice](README.md)

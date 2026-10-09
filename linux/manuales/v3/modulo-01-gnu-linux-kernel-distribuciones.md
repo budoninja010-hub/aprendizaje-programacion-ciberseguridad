@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Primera entrega.
 
-[Índice y arquitectura](00-indice-arquitectura.md) · [Auditoría y fuentes](02-auditoria-fuentes.md)
+[Índice del manual](README.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 2 →](modulo-02-terminal-cli-shell-bash-ayuda.md) · [Auditoría y fuentes](02-auditoria-fuentes.md)
 
 ## 1. Objetivo y diagnóstico inicial
 
@@ -277,3 +277,7 @@ Antes de compartir o guardar la ficha, omite nombres personales, rutas que ident
 - Linux kernel documentation: https://docs.kernel.org/
 
 Las fuentes se consultan según el tema tratado; no se presume que todos los enlaces respalden cada afirmación del módulo.
+
+---
+
+**Siguiente:** [Módulo 2 — Terminal, CLI, shell, Bash, prompt y ayuda](modulo-02-terminal-cli-shell-bash-ayuda.md) · [Volver al índice](README.md)

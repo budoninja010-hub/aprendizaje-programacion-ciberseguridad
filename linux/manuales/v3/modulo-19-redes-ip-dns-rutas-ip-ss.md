@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Decimonovena entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-18-logs-journalctl-diagnostico.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 18](modulo-18-logs-journalctl-diagnostico.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 20 →](modulo-20-ssh-sistemas-autorizados.md)
 
 ## 1. Qué aprenderás
 
@@ -1166,4 +1166,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente. Las prácticas son locales y de consulta; no modifican red ni examinan sistemas ajenos.
 
-Siguiente módulo por redactar: **Módulo 20 — SSH en sistemas propios o expresamente autorizados**.
+---
+
+**Siguiente:** [Módulo 20 — SSH en sistemas propios o expresamente autorizados](modulo-20-ssh-sistemas-autorizados.md) · [Volver al índice](README.md)

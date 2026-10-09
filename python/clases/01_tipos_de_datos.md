@@ -14,9 +14,9 @@ Reconocer los cuatro tipos de datos básicos trabajados al inicio del curso.
 ## Ejemplos
 
 ```python
-nombre = "Hugo"      # str
-edad = 40            # int
-peso = 75.5          # float
+nombre = "Ana"       # str
+edad = 25            # int
+peso = 60.5          # float
 estudia = True       # bool
 ```
 

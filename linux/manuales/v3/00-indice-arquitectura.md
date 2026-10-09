@@ -4,7 +4,7 @@
 
 Fecha editorial: 6 de octubre de 2026. Estado: trabajo en progreso. La revisión de esta entrega no equivale a validar los 35 módulos ni a certificar un sistema.
 
-**Empieza aquí:** [Módulo 1 — GNU, Linux, kernel y distribuciones](01-gnu-linux-kernel-distribuciones.md). Consulta después el [registro de auditoría y fuentes](02-auditoria-fuentes.md).
+**Empieza aquí:** [Módulo 1 — GNU, Linux, kernel y distribuciones](modulo-01-gnu-linux-kernel-distribuciones.md). Consulta después el [registro de auditoría y fuentes](02-auditoria-fuentes.md).
 
 ### 1. Propósito y alcance
 
@@ -21,7 +21,7 @@ La v2 permanece en `linux/manuales/manual-maestro-linux-shell-scripting-2026-v2.
 | Archivo nuevo | Función |
 |---|---|
 | `00-indice-arquitectura.md` | Alcance, índice, progresión y reglas editoriales |
-| `01-gnu-linux-kernel-distribuciones.md` | Primera lección completa, práctica y evaluación |
+| `modulo-01-gnu-linux-kernel-distribuciones.md` | Primera lección completa, práctica y evaluación |
 | `02-auditoria-fuentes.md` | Correcciones, fuentes, límites de verificación y pendientes |
 
 Se recomienda esta organización modular: facilita estudiar una lección y revisar commits pequeños. Un archivo único facilita imprimir, pero crece rápidamente y dificulta revisar cambios. La compilación integral se preparará cuando existan más módulos; no se duplican hoy contenidos en dos versiones que puedan divergir.

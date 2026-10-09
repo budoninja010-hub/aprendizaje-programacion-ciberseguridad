@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Vigesimotercera entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-22-vi-vim-edicion-segura.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 22](modulo-22-vi-vim-edicion-segura.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 24 →](modulo-24-variables-entrada-argumentos-quoting.md)
 
 ## 1. Qué aprenderás
 
@@ -1039,4 +1039,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente. Las prácticas usan scripts propios, cortos y sin privilegios.
 
-Siguiente módulo por redactar: **Módulo 24 — Variables, entrada, argumentos, expansiones y quoting en Bash**.
+---
+
+**Siguiente:** [Módulo 24 — Variables, entrada, argumentos, expansiones y quoting en Bash](modulo-24-variables-entrada-argumentos-quoting.md) · [Volver al índice](README.md)

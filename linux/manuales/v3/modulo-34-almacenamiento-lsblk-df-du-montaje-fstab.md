@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Trigésima cuarta entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-33-git-github-para-scripts.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 33](modulo-33-git-github-para-scripts.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 35 →](modulo-35-defensa-actualizaciones-minimo-privilegio-aide.md)
 
 ## 1. Propósito del módulo
 
@@ -951,4 +951,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente contra util-linux, GNU Coreutils y RHEL 10. Todas las prácticas son de consulta o utilizan archivos/directorios ordinarios dentro de `~/linux-lab`; no se modifican discos ni la tabla real `/etc/fstab`.
 
-Siguiente módulo por redactar: **Módulo 35 — Defensa, actualizaciones, mínimo privilegio, auditoría y AIDE**.
+---
+
+**Siguiente:** [Módulo 35 — Defensa, actualizaciones, mínimo privilegio, auditoría y AIDE](modulo-35-defensa-actualizaciones-minimo-privilegio-aide.md) · [Volver al índice](README.md)

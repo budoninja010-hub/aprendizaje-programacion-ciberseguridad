@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Vigesimoséptima entrega.
 
-[Estado actual](README.md) · [Módulo anterior](modulo-26-if-test-condicionales-case-aritmetica.md) · [Arquitectura](00-indice-arquitectura.md)
+[Índice del manual](README.md) · [← Módulo 26](modulo-26-if-test-condicionales-case-aritmetica.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 28 →](modulo-28-funciones-parametros-ambito.md)
 
 ## 1. Qué aprenderás
 
@@ -973,4 +973,6 @@ Se posponen:
 
 **Estado de la lección:** redactada y revisada documentalmente contra GNU Bash. Las prácticas son locales, no destructivas y no requieren privilegios.
 
-Siguiente módulo por redactar: **Módulo 28 — Funciones, parámetros y ámbito en Bash**.
+---
+
+**Siguiente:** [Módulo 28 — Funciones, parámetros y ámbito en Bash](modulo-28-funciones-parametros-ambito.md) · [Volver al índice](README.md)
