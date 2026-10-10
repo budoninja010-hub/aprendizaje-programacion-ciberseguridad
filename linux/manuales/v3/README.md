@@ -1,18 +1,22 @@
 # Manual Maestro de Linux y Shell Scripting — v3
 
-Edición 2026, versión vigente. Para registrar lo que ya practicaste usa [linux/PROGRESO.md](../../PROGRESO.md).
+Edición 2026, versión vigente.
 
-## Estado vigente — 9 de octubre de 2026
+## Estado — 10 de octubre de 2026
 
-- **Núcleo:** los 35 módulos están redactados y revisados documentalmente.
-- **Auditoría:** la [auditoría transversal completa](03-auditoria-transversal-completa-v3-2026-10-08.md) dio el dictamen *apto con correcciones importantes*. Las cinco correcciones de prioridad alta están aplicadas. El seguimiento posterior está en la [auditoría post-corrección parcial](04-auditoria-postcorreccion-parcial-2026-10-08.md).
-- **Fuentes:** hallazgos E02, E04 y E05 aplicados. Los enlaces externos están clasificados y comprobados en el [catálogo de fuentes](06-catalogo-fuentes.md); 55 enlaces de GNU siguen sin verificar.
-- **Lectura íntegra:** completada el 9 de octubre para los 22 módulos pendientes; 7 hallazgos importantes y 15 mejoras, todos aplicados (ver la [novena pasada](04-auditoria-postcorreccion-parcial-2026-10-08.md)).
-- **Drive:** el PDF de 597 páginas del 9 de octubre tuvo revisión visual completa según su informe, pero es **anterior** a las pasadas octava, novena y décima. Sus correcciones exclusivas ya se incorporaron aquí (ver la [décima pasada](04-auditoria-postcorreccion-parcial-2026-10-08.md)).
-- **Pendientes editoriales:** verificar los 55 enlaces de GNU restantes y regenerar en Drive el documento y el PDF desde esta versión, con nueva revisión visual de las páginas que cambien.
-- **Práctica del estudiante:** pendiente. Redacción completa no equivale a dominio demostrado.
-- **Google Drive:** la Entrega 24 es una instantánea histórica; no representa el núcleo vigente y omitía el Módulo 23. La versión vigente del Módulo 20 es la de esta carpeta.
-- **Regla de respaldo:** conservar versiones anteriores y generar una copia de cada edición corregida en Google Drive; no afirmar que está sincronizada hasta verificar su contenido.
+| Parte | Estado |
+|---|---|
+| 35 módulos | ✅ Redactados, revisados y con navegación anterior/siguiente |
+| Correcciones de las auditorías | ✅ Aplicadas (incluidas las exclusivas de la versión de Drive) |
+| Enlaces externos | ✅ 127 comprobados · ⚠️ 55 de GNU sin verificar (el sitio no respondió desde el entorno de revisión) |
+| Revisión de contenido | 🔒 Cerrada: no se abren auditorías nuevas |
+
+**Lo único que falta para la maquetación final:**
+
+1. Integrar en `main` la última rama de cambios del repositorio.
+2. Regenerar en Google Drive el documento y el PDF **desde esta carpeta** (GitHub es la fuente única de verdad; las copias de Drive anteriores son históricas).
+
+**Fuera de la maquetación** (no la bloquean): verificar los 55 enlaces de GNU cuando el sitio responda, y tu práctica de cada módulo, que se registra en [PROGRESO.md](../../PROGRESO.md).
 
 ## Cómo estudiar
 
@@ -84,17 +88,8 @@ Las fases son las definidas en la [arquitectura](00-indice-arquitectura.md).
 | 34 | [Almacenamiento: `lsblk`, `df`, `du`, montaje y `fstab`](modulo-34-almacenamiento-lsblk-df-du-montaje-fstab.md) |
 | 35 | [Defensa, actualizaciones, mínimo privilegio, auditoría y AIDE](modulo-35-defensa-actualizaciones-minimo-privilegio-aide.md) |
 
-## Documentos de control
+## Registros de control
 
-No son lecciones; documentan cómo se revisó el manual.
-
-| Archivo | Contenido |
-|---|---|
-| [00 — Índice y arquitectura](00-indice-arquitectura.md) | Diseño del manual y plan de los 35 módulos (escrito en la primera entrega). |
-| [02 — Auditoría y fuentes](02-auditoria-fuentes.md) | Registro histórico de la primera entrega. |
-| [03 — Auditoría transversal completa](03-auditoria-transversal-completa-v3-2026-10-08.md) | Revisión de los 35 módulos y hallazgos. |
-| [04 — Auditoría post-corrección parcial](04-auditoria-postcorreccion-parcial-2026-10-08.md) | Seguimiento de las correcciones aplicadas. |
-| [05 — Historial de entregas](05-historial-entregas.md) | Estado de cada entrega, de la más reciente a la más antigua. |
-| [06 — Catálogo de fuentes](06-catalogo-fuentes.md) | Jerarquía de fuentes y estado de cada enlace externo. |
+Las auditorías, el historial de entregas y el catálogo de fuentes están en [auditorias/](auditorias/README.md). No son lecciones.
 
 La versión anterior del manual (v2) se conserva en [`../manual-maestro-linux-shell-scripting-2026-v2.md`](../manual-maestro-linux-shell-scripting-2026-v2.md).

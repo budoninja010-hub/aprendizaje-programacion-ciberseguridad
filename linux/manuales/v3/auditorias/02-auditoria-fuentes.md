@@ -2,7 +2,7 @@
 
 > **Documento histórico.** Esta auditoría corresponde solo a la primera entrega (arquitectura y Módulo 1). Para la auditoría del núcleo completo consulta [03 — Auditoría transversal completa](03-auditoria-transversal-completa-v3-2026-10-08.md) y su [seguimiento post-corrección](04-auditoria-postcorreccion-parcial-2026-10-08.md).
 
-[Índice](00-indice-arquitectura.md) · [Módulo 1](modulo-01-gnu-linux-kernel-distribuciones.md)
+[Índice](../00-indice-arquitectura.md) · [Módulo 1](../modulo-01-gnu-linux-kernel-distribuciones.md)
 
 Fecha editorial: 6 de octubre de 2026. Alcance: arquitectura, primer módulo y decisiones de integración del informe. No constituye una auditoría de capítulos aún no escritos ni de todos los libros que NotebookLM menciona.
 
