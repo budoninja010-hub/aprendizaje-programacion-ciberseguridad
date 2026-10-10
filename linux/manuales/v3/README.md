@@ -11,10 +11,7 @@ Edición 2026, versión vigente.
 | Enlaces externos | ✅ 127 comprobados · ⚠️ 55 de GNU sin verificar (el sitio no respondió desde el entorno de revisión) |
 | Revisión de contenido | 🔒 Cerrada: no se abren auditorías nuevas |
 
-**Lo único que falta para la maquetación final:**
-
-1. Integrar en `main` la última rama de cambios del repositorio.
-2. Regenerar en Google Drive el documento y el PDF **desde esta carpeta** (GitHub es la fuente única de verdad; las copias de Drive anteriores son históricas).
+**Maquetación final: terminada.** PDF completo (portada, índice, arquitectura y 35 módulos; 372 páginas A4): [manual-maestro-linux-shell-scripting-v3.pdf](exportar/manual-maestro-linux-shell-scripting-v3.pdf). Se genera desde esta carpeta con [`exportar/generar_pdf.py`](exportar/generar_pdf.py), así que GitHub es la fuente única de verdad; las copias anteriores de Google Drive son históricas.
 
 **Fuera de la maquetación** (no la bloquean): verificar los 55 enlaces de GNU cuando el sitio responda, y tu práctica de cada módulo, que se registra en [PROGRESO.md](../../PROGRESO.md).
 
