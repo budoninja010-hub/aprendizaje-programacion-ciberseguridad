@@ -896,7 +896,7 @@ No se hará commit de archivos con secretos.
 
 | Error | Problema | Corrección |
 |---|---|---|
-| `./script.sh: Permission denied` | Falta permiso de ejecución | `chmod u+x` sobre archivo propio |
+| `./script.sh: Permission denied` | Puede faltar permiso de ejecución; también pueden intervenir permisos de directorios, un montaje `noexec` u otros controles | Revisar ruta y permisos; añadir `chmod u+x` solo si falta ese permiso en el archivo propio |
 | `script.sh: command not found` | Directorio actual no está en PATH | Usa `./script.sh` |
 | Shebang no funciona | No está en primera línea o intérprete no existe | Revisa primera línea |
 | `bash\r` no encontrado | Posible CRLF | Revisa formato del archivo |

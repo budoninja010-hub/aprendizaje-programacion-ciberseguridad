@@ -354,10 +354,13 @@ ls -l lectura.txt
 Si responde que no existe, crea el archivo:
 
 ```bash
-printf 'línea 1\nlínea 2\nlínea 3\nlínea 4\nlínea 5\nlínea 6\nlínea 7\nlínea 8\nlínea 9\nlínea 10\nlínea 11\nlínea 12\n' > lectura.txt
+printf '%s\n' \
+  'línea 1' 'línea 2' 'línea 3' 'línea 4' 'línea 5' 'línea 6' \
+  'línea 7' 'línea 8' 'línea 9' 'línea 10' 'línea 11' 'línea 12' \
+  > lectura.txt
 ```
 
-**Importante:** esta línea utiliza una redirección `>`, tema que todavía no se ha explicado formalmente. Aquí se usa solo para preparar el archivo de práctica. No la copies para trabajar con archivos importantes. En el Módulo 8 aprenderás exactamente qué hace y por qué puede sobrescribir.
+**Importante:** esta orden utiliza una redirección `>`, tema que todavía no se ha explicado formalmente. Aquí se usa solo para preparar el archivo de práctica. No la copies para trabajar con archivos importantes. En el Módulo 8 aprenderás exactamente qué hace y por qué puede sobrescribir.
 
 Después comprueba:
 

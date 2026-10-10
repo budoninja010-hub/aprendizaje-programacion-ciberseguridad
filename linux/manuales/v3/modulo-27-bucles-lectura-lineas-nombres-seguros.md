@@ -655,6 +655,8 @@ cd modulo-27-bucles && pwd
 
 Etiqueta: **creación en laboratorio**.
 
+Si alguna orden falla, la cadena se detiene: no continúes hasta revisar el mensaje. `test -d` comprueba primero que el laboratorio exista.
+
 ## 41. Práctica A — `for` básico
 
 Crea `for_basico.sh`:

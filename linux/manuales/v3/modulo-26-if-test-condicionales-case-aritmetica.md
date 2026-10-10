@@ -640,6 +640,8 @@ cd modulo-26-condiciones && pwd
 
 Etiqueta de práctica: **creación en laboratorio**.
 
+Si alguna orden falla, la cadena se detiene: no continúes hasta revisar el mensaje. `test -d` comprueba primero que el laboratorio exista.
+
 ## 38. Práctica A — primer `if`
 
 Crea `condicion_true.sh`:

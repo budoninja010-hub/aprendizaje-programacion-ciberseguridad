@@ -138,6 +138,8 @@ cd modulo-33-git && pwd
 
 Etiqueta: **creación en laboratorio**.
 
+Si alguna orden falla, la cadena se detiene: no continúes hasta revisar el mensaje. `test -d` comprueba primero que el laboratorio exista.
+
 ## 11. Inicializar un repositorio de práctica
 
 ```bash

@@ -118,6 +118,8 @@ pwd
 
 Etiqueta: **creación en laboratorio**.
 
+Si alguna orden falla, la cadena se detiene: no continúes hasta revisar el mensaje. `test -d` comprueba primero que el laboratorio exista.
+
 ## 8. Crear datos de práctica
 
 ```bash

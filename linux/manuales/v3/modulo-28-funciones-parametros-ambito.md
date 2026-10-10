@@ -694,6 +694,8 @@ cd modulo-28-funciones && pwd
 
 Etiqueta: **creación en laboratorio**.
 
+Si alguna orden falla, la cadena se detiene: no continúes hasta revisar el mensaje. `test -d` comprueba primero que el laboratorio exista.
+
 ## 41. Práctica A — primera función
 
 Crea `funcion_basica.sh`:
