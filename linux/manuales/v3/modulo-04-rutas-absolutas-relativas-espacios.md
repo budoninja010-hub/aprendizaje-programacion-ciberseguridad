@@ -252,7 +252,7 @@ Puedes enviar una respuesta breve al chat: qué entendiste de las rutas, un ejem
 
 ## 13. Fuentes y límites de esta lección
 
-Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](auditorias/06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 ### Revisión de esta entrega
 

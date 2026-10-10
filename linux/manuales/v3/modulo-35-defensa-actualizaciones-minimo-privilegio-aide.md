@@ -1032,7 +1032,7 @@ Para considerar este módulo **DOMINADO** deberás poder en más de una ocasión
 
 ## 72. Fuentes y límites
 
-Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](auditorias/06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales:
 
@@ -1095,7 +1095,7 @@ Siguiente fase editorial:
 
 > **auditoría transversal completa de los Módulos 1–35, corrección de inconsistencias, referencias cruzadas, seguridad, progresión pedagógica y preparación de edición consolidada.**
 
-> **Actualización:** esta auditoría se realizó el 8 de octubre de 2026. Ver [03 — Auditoría transversal completa v3](03-auditoria-transversal-completa-v3-2026-10-08.md).
+> **Actualización:** esta auditoría se realizó el 8 de octubre de 2026. Ver [03 — Auditoría transversal completa v3](auditorias/03-auditoria-transversal-completa-v3-2026-10-08.md).
 
 ---
 

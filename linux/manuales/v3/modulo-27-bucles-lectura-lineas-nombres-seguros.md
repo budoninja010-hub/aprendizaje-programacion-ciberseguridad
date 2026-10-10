@@ -655,6 +655,8 @@ cd modulo-27-bucles && pwd
 
 Etiqueta: **creación en laboratorio**.
 
+Si alguna orden falla, la cadena se detiene: no continúes hasta revisar el mensaje. `test -d` comprueba primero que el laboratorio exista.
+
 ## 41. Práctica A — `for` básico
 
 Crea `for_basico.sh`:
@@ -941,7 +943,7 @@ Para considerar este módulo **DOMINADO** deberás poder, en más de una prácti
 
 ## 56. Fuentes y límites
 
-Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](auditorias/06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales:
 

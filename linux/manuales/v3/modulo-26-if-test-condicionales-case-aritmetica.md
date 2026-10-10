@@ -640,6 +640,8 @@ cd modulo-26-condiciones && pwd
 
 Etiqueta de práctica: **creación en laboratorio**.
 
+Si alguna orden falla, la cadena se detiene: no continúes hasta revisar el mensaje. `test -d` comprueba primero que el laboratorio exista.
+
 ## 38. Práctica A — primer `if`
 
 Crea `condicion_true.sh`:
@@ -993,7 +995,7 @@ Para avanzar como **DOMINADO** deberás poder:
 
 ## 55. Fuentes y límites
 
-Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](auditorias/06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales:
 

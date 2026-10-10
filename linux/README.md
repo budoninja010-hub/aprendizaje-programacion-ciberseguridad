@@ -15,7 +15,7 @@ Orden recomendado en la v3:
 2. [Módulo 1 — GNU, Linux, kernel y distribuciones](manuales/v3/modulo-01-gnu-linux-kernel-distribuciones.md)
 3. Módulos 2 a 35 en orden: cada módulo enlaza al anterior y al siguiente.
 
-Los archivos `02-` a `06-` de `v3/` son registros de auditoría, historial y catálogo de fuentes, no lecciones.
+Los registros de auditoría, el historial y el catálogo de fuentes están en [`v3/auditorias/`](manuales/v3/auditorias/README.md); no son lecciones.
 
 ## Progreso
 

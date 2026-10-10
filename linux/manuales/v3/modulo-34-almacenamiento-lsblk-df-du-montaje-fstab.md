@@ -451,7 +451,7 @@ Antes de compartir su salida públicamente, revisa si contiene UUID, rutas de re
 
 ## 35. Los seis campos de `fstab`
 
-Una entrada tiene seis campos principales:
+Una entrada se describe mediante seis campos principales. Los campos quinto y sexto pueden omitirse y, en ese caso, toman el valor 0:
 
 ```text
 1. fuente
@@ -532,7 +532,7 @@ En muchas configuraciones modernas aparece como `0`.
 
 Se relaciona con el orden de comprobación mediante `fsck` durante el arranque.
 
-El significado apropiado depende del sistema de archivos y de la política del sistema.
+Si se omite `fs_passno`, el valor predeterminado es `0`. El significado apropiado depende del sistema de archivos y de la política del sistema.
 
 No cambies este valor por ensayo y error.
 
@@ -624,7 +624,7 @@ Haz una segunda copia:
 cp fstab-practica fstab-error
 ```
 
-Edita **solo `fstab-error`** para quitar un campo o introducir una línea mal formada.
+Edita **solo `fstab-error`** para introducir una línea mal formada; por ejemplo, deja una línea con únicamente el nombre de la fuente, sin punto de montaje ni tipo. Omitir únicamente el quinto o sexto campo no constituye por sí solo un error: sus valores predeterminados son `0`.
 
 Después:
 
@@ -772,7 +772,7 @@ Analiza:
 UUID=abc /datos ext4 defaults 0
 ```
 
-Problema: falta uno de los seis campos.
+La ausencia del sexto campo no demuestra por sí sola un error: si se omite, `fs_passno` toma el valor `0`. El ejemplo tampoco demuestra que `UUID=abc` identifique un sistema de archivos existente. Hay que distinguir una entrada parseable de una fuente y un destino utilizables.
 
 No lo pruebes instalándolo.
 
@@ -909,7 +909,7 @@ Para considerar este módulo **DOMINADO** deberás poder en más de una práctic
 
 ## 68. Fuentes y límites
 
-Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](auditorias/06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales:
 

@@ -165,3 +165,18 @@ Las auditorías 02 y 03 citan Coreutils 9.11. No se modifican porque registran l
 Un hallazgo provisional (bloque de M27 marcado como código) se descartó al comprobar que ya estaba marcado como texto.
 
 **Pendiente:** verificar los 55 enlaces de GNU restantes, revisión visual del PDF y sincronización con Google Drive. La práctica real del estudiante sigue pendiente.
+
+## Décima pasada — sincronización de correcciones de Drive hacia GitHub (10 de octubre de 2026)
+
+El PDF de Drive `Manual_Linux_2026_597_paginas_09-10-2026_EN_REVISION.pdf` y su documento fuente se generaron el 9 de octubre a las 12:52 UTC, **antes** de las pasadas octava y novena. Su informe de verificación declara una revisión visual completa de las 597 páginas y seis correcciones técnicas que no estaban en GitHub. Se comparó automáticamente el documento fuente de Drive con este repositorio: de 5763 líneas, 234 no coincidían; la mayoría eran versiones anteriores de textos ya corregidos aquí. Se incorporaron las mejoras que solo existían en Drive:
+
+| Módulo | Corrección | Evidencia |
+|---|---|---|
+| M34 §35, §41 | Los campos quinto y sexto de `fstab` pueden omitirse y valen 0 | `fstab(5)` de util-linux (commit `085a8a3`): «Defaults to zero … if not present» |
+| M34 §49 | La práctica pedía «quitar un campo», lo que no produce error si es el 5.º o 6.º | Mismo; `findmnt --verify` acepta 5 campos y da error de análisis con solo fuente y destino |
+| M34 §60 | Una línea de cinco campos se presentaba como error | Reformulado según `fstab(5)` |
+| M23 §45 | «Permission denied» también puede deberse a directorios, `noexec` u otros controles | Versión de Drive |
+| M07 §13 | `printf` reescrito en varias líneas; salida idéntica comprobada byte a byte | Versión de Drive |
+| M26–M29, M31–M33 | Nota: si una orden de la cadena falla, las siguientes no se ejecutan | Versión de Drive |
+
+**Consecuencia:** el PDF y el documento de Drive quedan desactualizados respecto a GitHub (no incluyen las pasadas octava y novena). Antes de cualquier entrega, hay que regenerarlos desde esta versión y repetir los controles visuales sobre las páginas que cambien.

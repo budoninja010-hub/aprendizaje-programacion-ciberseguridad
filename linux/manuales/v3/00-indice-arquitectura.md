@@ -4,7 +4,7 @@
 
 Fecha editorial: 6 de octubre de 2026. Estado: trabajo en progreso. La revisión de esta entrega no equivale a validar los 35 módulos ni a certificar un sistema.
 
-**Empieza aquí:** [Módulo 1 — GNU, Linux, kernel y distribuciones](modulo-01-gnu-linux-kernel-distribuciones.md). Consulta después el [registro de auditoría y fuentes](02-auditoria-fuentes.md).
+**Empieza aquí:** [Módulo 1 — GNU, Linux, kernel y distribuciones](modulo-01-gnu-linux-kernel-distribuciones.md). Los registros de revisión están en [auditorias/](auditorias/README.md).
 
 ### 1. Propósito y alcance
 

@@ -138,6 +138,8 @@ cd modulo-33-git && pwd
 
 Etiqueta: **creación en laboratorio**.
 
+Si alguna orden falla, la cadena se detiene: no continúes hasta revisar el mensaje. `test -d` comprueba primero que el laboratorio exista.
+
 ## 11. Inicializar un repositorio de práctica
 
 ```bash
@@ -1039,7 +1041,7 @@ No adelantes esos temas aquí si todavía no corresponden en el itinerario de Gi
 
 ## 66. Fuentes y límites
 
-Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](auditorias/06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 Fuentes principales:
 

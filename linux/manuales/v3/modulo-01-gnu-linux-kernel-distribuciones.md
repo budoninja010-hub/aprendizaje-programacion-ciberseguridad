@@ -2,7 +2,7 @@
 
 Manual Maestro de Linux y Shell Scripting — Edición 2026 · v3 · Primera entrega.
 
-[Índice del manual](README.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 2 →](modulo-02-terminal-cli-shell-bash-ayuda.md) · [Auditoría y fuentes](02-auditoria-fuentes.md)
+[Índice del manual](README.md) · [Arquitectura](00-indice-arquitectura.md) · [Módulo 2 →](modulo-02-terminal-cli-shell-bash-ayuda.md) · [Auditoría y fuentes](auditorias/02-auditoria-fuentes.md)
 
 ## 1. Qué aprenderás
 
@@ -262,7 +262,7 @@ Antes de compartir o guardar la ficha, omite nombres personales, rutas que ident
 
 ## 13. Fuentes y límites de esta lección
 
-Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
+Clasificación y estado de los enlaces de esta sección: [catálogo de fuentes](auditorias/06-catalogo-fuentes.md) (jerarquía E04, comprobación del 9 de octubre de 2026).
 
 **Qué se conserva:** todas las explicaciones, prácticas y preguntas originales de esta entrega.
 
